@@ -1,0 +1,10 @@
+wd=/Users/carminemusella/Desktop/tam_textmining/
+tag=FerroDrugTherapy
+ncores=6
+K=3
+A=2
+thr=1
+comb=3
+to_py=pmid-ferroptosi-set.txt
+etype=all
+rscript=/Users/carminemusella/miniconda3/envs/R41/bin/Rscript --no-environ

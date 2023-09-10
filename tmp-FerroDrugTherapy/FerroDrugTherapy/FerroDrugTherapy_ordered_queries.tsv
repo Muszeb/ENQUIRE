@@ -1,0 +1,157 @@
+c1	c2	weight	query
+1	10	1.85488870336381	TP53_amino acid transport system y+/genetics_anthelmintics/pharmacology
+1	10	1.68880329968784	TP53_amino acid transport system y+/genetics_prostatic neoplasms castration-resistant/drug therapy
+1	11	3.13506139653735	lung diseases/drug therapy_necrosis_reactive oxygen species/metabolism
+1	11	2.90627341114591	cell differentiation_neoplastic stem cells/drug effects_reactive oxygen species/metabolism
+1	12	3.47900784120643	PSTK_antineoplastic agents/pharmacology_drug synergism
+1	12	2.94213260442651	PSTK_antineoplastic agents/pharmacology_carcinoma hepatocellular/diagnosis
+1	13	2.9303663688506	ferritins_porphyrins/pharmacology_reactive oxygen species/metabolism
+1	13	2.48417526950264	ferritins_iron_reactive oxygen species/metabolism
+1	14	3.34405654926886	aminolevulinic acid/pharmacology_fibroblasts_reactive oxygen species/metabolism
+1	14	2.17796805727775	SLC7A11_aminolevulinic acid/pharmacology_reactive oxygen species/metabolism
+1	15	4.15365250612131	cell survival/drug effects_kidney_reactive oxygen species/metabolism
+1	15	3.28198339188991	b7-h1 antigen/metabolism_iron/chemistry_kidney
+1	3	3.70131648174811	cell survival/drug effects_dose-response relationship drug_reactive oxygen species/metabolism
+1	3	2.47832095538099	1-methyl-4-phenylpyridinium/toxicity_cell survival/drug effects_dose-response relationship drug
+1	4	2.80208509173625	antineoplastic agents/pharmacology_depression chemical_energy metabolism/drug effects
+1	4	2.27485222988257	antineoplastic agents/pharmacology_depression chemical_sorafenib/pharmacology
+1	5	2.57956046797546	docetaxel/pharmacology_gene expression regulation neoplastic/drug effects_protein isoforms/genetics
+1	5	2.48969223105876	antineoplastic agents/pharmacology_cyclin-dependent kinase inhibitor p21/antagonists & inhibitors_endoplasmic reticulum stress/drug effects
+1	8	2.585406730337	cell line_mebendazole/analogs & derivatives_oxidative stress/drug effects
+1	8	2.55302058252512	docetaxel/pharmacology_piperazines/pharmacology_protein isoforms/genetics
+1	9	2.17020705328804	CD274_PDCD1_iron/chemistry
+1	9	1.44737297503091	CD274_aniline compounds/pharmacology_iron/chemistry
+10	11	3.66403717549381	homeostasis_iron/metabolism_mitochondria/drug effects
+10	11	3.38007214196764	autophagy_iron/metabolism_mitochondria/drug effects
+10	12	2.4209708450376	FTH1_adenosine triphosphate/metabolism_drug resistance neoplasm
+10	12	2.34849823088273	adenosine triphosphate/metabolism_drug resistance neoplasm_mitochondria/drug effects
+10	14	2.78897152346032	SLC7A11_amino acid transport system y+/genetics_aminolevulinic acid/pharmacology
+10	14	2.61409794323027	GGT1_SLC7A11_amino acid transport system y+/genetics
+10	15	3.57670149663815	drug resistance neoplasm_oxidants/chemistry_reactive oxygen species/chemistry
+10	15	2.70400341349679	FTH1_drug resistance neoplasm_oxidants/chemistry
+10	2	3.07011587643261	TF_TFRC_mutation
+10	2	2.85917240363182	TF_TFRC_glutaredoxins/antagonists & inhibitors
+10	3	2.08878849990713	KDM5A_amino acid transport system y+/genetics_phospholipid hydroperoxide glutathione peroxidase/genetics
+10	3	1.85305935956288	breast neoplasms/diagnosis_phospholipid hydroperoxide glutathione peroxidase/genetics_protein kinase inhibitors/pharmacology
+10	4	2.61143395502977	HMOX1_colorectal neoplasms/drug therapy_erbb receptors/antagonists & inhibitors
+10	4	2.14801197755076	NOX1_colorectal neoplasms/drug therapy_erbb receptors/antagonists & inhibitors
+10	5	2.48357610146536	glutamate dehydrogenase/antagonists & inhibitors_glutathione peroxidase/metabolism_mitochondria/drug effects
+10	5	2.38387318827313	glutamate dehydrogenase/antagonists & inhibitors_mitochondria/drug effects_neoplasms/therapy
+10	7	1.66982517413717	KDM5A_MPC1_gene expression regulation neoplastic
+10	7	1.49582666402856	CDKN2A_gene expression regulation neoplastic_mitochondrial membrane transport proteins/genetics
+10	8	3.03142400321566	antineoplastic agents/adverse effects_drug resistance neoplasm_intracellular signaling peptides and proteins/metabolism
+10	8	2.05110237152488	drug resistance neoplasm_glutathione/biosynthesis_mitochondria/drug effects
+11	13	17.0363818181155	ferroptosis_tissue distribution_tumor microenvironment
+11	13	14.3222353345209	ferroptosis_photosensitizing agents/pharmacology_tissue distribution
+11	14	2.89550400278692	antineoplastic agents/therapeutic use_cell differentiation_neoplastic stem cells/drug effects
+11	14	2.15188402485024	antineoplastic agents/therapeutic use_cell differentiation_homeostasis
+11	2	1.66015432033481	TF_iron overload/drug therapy_iron/metabolism
+11	2	1.65568594640926	TFRC_iron overload/drug therapy_iron/metabolism
+11	5	2.33733043386441	MAPK1_antimalarials/pharmacology_iron/metabolism
+11	5	2.26292233212494	DENR_DNM1L_NFE2L2
+11	6	3.34325132152333	homeostasis_iron/metabolism_lysosomes/metabolism
+11	6	3.31338721184552	hemolysis_iron/metabolism_lysosomes/metabolism
+11	8	2.95571741112618	antineoplastic agents/adverse effects_intracellular signaling peptides and proteins/metabolism_iron/metabolism
+11	8	2.0193172558046	CASP3_FXN_iron/metabolism
+12	13	3.30414732189056	HDAC1_adenosine triphosphate_phospholipid hydroperoxide glutathione peroxidase/metabolism
+12	13	2.6963410646576	cell line tumor/drug effects_chlorophyllides/metabolism_photosensitizing agents/pharmacology
+12	14	3.05403969433505	GGT1_amino acid transport system y+/metabolism_biological transport
+12	14	2.91767638128048	cell proliferation/drug effects_ketones/chemistry_lipid metabolism/genetics
+12	15	3.08484826638335	PSTK_drug synergism_sorafenib/administration & dosage
+12	15	2.97055762217841	cell movement/drug effects_drug synergism_sorafenib/administration & dosage
+12	3	3.11039490879378	PSTK_biomarkers tumor_carcinoma hepatocellular/diagnosis
+12	3	2.67104393779297	biomarkers tumor_breast neoplasms/diagnosis_carcinoma hepatocellular/diagnosis
+12	4	2.89217678101042	artemisinins/pharmacology_depression chemical_energy metabolism/drug effects
+12	4	2.78928166521935	depression chemical_drug synergism_energy metabolism/drug effects
+12	5	3.05671867545828	apoptosis/drug effects_autophagy/drug effects_cell line tumor/drug effects
+12	5	2.75616122319067	apoptosis/drug effects_cell line tumor/drug effects_chlorophyllides/metabolism
+12	6	3.13640655434696	MTOR_everolimus/administration & dosage_tor serine-threonine kinases/antagonists & inhibitors
+12	6	2.66339218418039	MTOR_carbolines/administration & dosage_everolimus/administration & dosage
+12	7	1.89858750451994	GALNT14_erbb receptors/metabolism_gene expression regulation neoplastic
+12	7	1.61020782921994	CDKN2A_gene expression regulation neoplastic_n-acetylgalactosaminyltransferases/metabolism
+12	8	2.48014472200299	deferoxamine/pharmacology_drug synergism_myocardial infarction/metabolism
+12	8	2.32142027282042	PSTK_drug synergism_myocardial infarction/metabolism
+12	9	2.11345702089906	PSTK_drug resistance neoplasm/drug effects_exosomes/drug effects
+12	9	2.07604860849843	aniline compounds/pharmacology_b7-h1 antigen/antagonists & inhibitors_drug resistance neoplasm/drug effects
+13	14	3.72385533149392	antineoplastic agents/therapeutic use_glutathione_neoplasms/drug therapy
+13	14	3.28698257870969	aminolevulinic acid/pharmacology_fibroblasts_photosensitizing agents/pharmacology
+13	15	16.1443391639671	ferroptosis_oxygen_tumor microenvironment
+13	15	14.4135721571017	ferroptosis_oxygen_photosensitizing agents/pharmacology
+13	2	15.8432318097947	ferroptosis_phospholipid hydroperoxide glutathione peroxidase_tumor microenvironment
+13	2	14.1124648029294	ferroptosis_phospholipid hydroperoxide glutathione peroxidase_photosensitizing agents/pharmacology
+13	3	3.76012656885293	cell membrane_hydrogen peroxide/therapeutic use_tumor microenvironment
+13	3	2.14184913441773	breast neoplasms/drug therapy_cell membrane_tumor microenvironment
+13	4	4.54704235441401	apoptosis_ferroptosis_sorafenib/pharmacology
+13	4	2.71071277037225	apoptosis_coordination complexes/pharmacology_sorafenib/pharmacology
+13	5	10.3549753557732	ferroptosis_neoplasms/drug therapy_reactive oxygen species
+13	5	10.2682268722651	ferroptosis_neoplasms/drug therapy_triterpenes/pharmacology
+13	6	10.7408218536544	ferroptosis_neoplasms/drug therapy_sorafenib
+13	6	4.43053291948549	antibiotics antineoplastic/administration & dosage_carbon monoxide/administration & dosage_neoplasms/diagnostic imaging
+13	7	3.38959679216869	iron/therapeutic use_neoplasms/diagnostic imaging_t-lymphocytes cytotoxic/metabolism
+13	7	3.11529401912367	CALR_ascorbic acid/pharmacology_neoplasms/diagnostic imaging
+13	8	16.065954091294	ferroptosis_photosensitizing agents/therapeutic use_tumor microenvironment
+13	8	14.3351870844287	ferroptosis_photosensitizing agents/pharmacology_photosensitizing agents/therapeutic use
+13	9	15.8187893533271	ferroptosis_lipid peroxides/therapeutic use_tumor microenvironment
+13	9	14.0880223464617	ferroptosis_lipid peroxides/therapeutic use_photosensitizing agents/pharmacology
+14	15	2.91343807054166	antineoplastic agents/chemistry_ketones/chemistry_lipid metabolism/genetics
+14	15	2.65017120992209	antineoplastic agents/chemistry_b7-h1 antigen/metabolism_ketones/chemistry
+14	3	1.86073670525175	GGT1_carcinoma renal cell/drug therapy_phospholipid hydroperoxide glutathione peroxidase/genetics
+14	3	1.03145115626786	SLC9A1_carcinoma renal cell/drug therapy_phospholipid hydroperoxide glutathione peroxidase/genetics
+14	5	1.38362452300751	amino acid transport system y+/antagonists & inhibitors_antineoplastic agents/therapeutic use_reactive oxygen species
+14	5	1.34529606488817	amino acid transport system y+/antagonists & inhibitors_antineoplastic agents/therapeutic use_melanoma/drug therapy
+14	6	2.76564967601796	GGT1_carcinoma renal cell/drug therapy_everolimus/administration & dosage
+14	6	2.61763469361972	carbolines/administration & dosage_carcinoma renal cell/drug therapy_everolimus/administration & dosage
+14	7	2.11626540643752	amino acid transport system y+/antagonists & inhibitors_cystine/antagonists & inhibitors_gene expression regulation neoplastic
+14	7	1.71904678017873	CDKN2A_gene expression regulation neoplastic_glucose/antagonists & inhibitors
+14	9	2.99824996192645	imidazoles/chemistry_ketones/chemistry_lipid metabolism/genetics
+14	9	2.4886535418443	azo compounds/chemistry_imidazoles/chemistry_ketones/chemistry
+15	2	1.75250590207359	CD47_carcinoma hepatocellular/metabolism_hypoxia/drug therapy
+15	2	1.14605261154832	CD47_hypoxia/drug therapy_liver/drug effects
+15	4	2.87094668799232	depression chemical_energy metabolism/drug effects_hep g2 cells
+15	4	2.64890939060729	b7-h1 antigen/metabolism_hep g2 cells_liver neoplasms/drug therapy
+15	5	3.14165922947112	artesunate/administration & dosage_cyclin-dependent kinase inhibitor p21/antagonists & inhibitors_sorafenib/administration & dosage
+15	5	3.03148505670442	artesunate/administration & dosage_carcinoma hepatocellular/drug therapy_sorafenib/administration & dosage
+15	6	3.03014640024445	chlorophyllides_mammary neoplasms animal/drug therapy_metal-organic frameworks/chemistry
+15	6	2.97088229580036	glutathione/metabolism_mammary neoplasms animal/drug therapy_metal-organic frameworks/chemistry
+15	8	3.70463229969506	glutathione/biosynthesis_oxidants/chemistry_reactive oxygen species/chemistry
+15	8	3.6856322133909	cell line_oxidative stress/drug effects_sorafenib/administration & dosage
+15	9	3.11580661193867	CD274_b7-h1 antigen/metabolism_kidney
+15	9	2.94334330011768	CD274_PDCD1_b7-h1 antigen/metabolism
+2	3	8.04722507247356	ACSL4_GPX4_phospholipid hydroperoxide glutathione peroxidase/genetics
+2	3	5.78984424680149	ACSL4_GPX4_biomarkers tumor
+2	4	5.56951007585394	ACSL4_GPX4_NOX1
+2	4	3.12411635314684	ACSL4_NOX1_cd4-positive t-lymphocytes
+2	6	2.79213997680003	BLVRB_antineoplastic agents/administration & dosage_iron overload/drug therapy
+2	6	2.73162916297173	antineoplastic agents/administration & dosage_iron overload/drug therapy_reactive oxygen species/antagonists & inhibitors
+3	4	3.16490706513379	IFNG_NOX1_cd4-positive t-lymphocytes
+3	4	2.32842254095727	IFNG_MMP2_NOX1
+3	5	2.50236095721152	activating transcription factor 4/genetics_apoptosis/genetics_cell proliferation/genetics
+3	5	2.49788140686733	activating transcription factor 4/genetics_cell proliferation/genetics_ferroptosis/genetics
+3	6	2.44723759082996	carbolines/administration & dosage_everolimus/administration & dosage_phospholipid hydroperoxide glutathione peroxidase/genetics
+3	6	2.22162269903013	carbolines/administration & dosage_chlorophyllides/administration & dosage_phospholipid hydroperoxide glutathione peroxidase/genetics
+3	7	2.81415401480736	breast neoplasms/diagnosis_coenzyme a ligases/genetics_gene expression regulation neoplastic
+3	7	2.19923044896372	biomarkers tumor_breast neoplasms/diagnosis_gene expression regulation neoplastic
+3	8	3.72752026772953	breast neoplasms/drug therapy_cell membrane_intracellular signaling peptides and proteins/metabolism
+3	8	3.60594795796468	ERBB2_breast neoplasms/drug therapy_intracellular signaling peptides and proteins/metabolism
+3	9	3.58495015042869	IFNG_PDCD1_pharmaceutical preparations
+3	9	2.53844408360472	IFNG_MMP2_PDCD1
+4	5	3.48934482897861	lipids/chemistry_lysosomes/drug effects_methylene blue/pharmacology
+4	5	2.83413336313395	activating transcription factor 4/metabolism_lysosomes/drug effects_methylene blue/pharmacology
+4	8	3.47615629505531	intracellular signaling peptides and proteins/metabolism_necroptosis/drug effects_triple negative breast neoplasms/pathology
+4	8	3.3442616678634	lipids/chemistry_methylene blue/pharmacology_necroptosis/drug effects
+5	6	3.57369163707834	BLVRB_apoptosis/drug effects_cerebrovascular disorders/drug therapy
+5	6	3.46548388240212	apoptosis/drug effects_autophagy/drug effects_cerebrovascular disorders/drug therapy
+5	7	2.0271536372325	CALR_oxidative stress_pancreatic neoplasms
+5	7	1.76701655765381	CBR1_alcohol oxidoreductases/genetics_oxidative stress
+5	8	1.79142916540408	activating transcription factor 4/metabolism_lysosomes/drug effects_necroptosis/drug effects
+5	8	1.7900902849434	artesunate/administration & dosage_cyclin-dependent kinase inhibitor p21/antagonists & inhibitors_oxidative stress/drug effects
+5	9	3.81846654497489	PDCD1_glioblastoma/drug therapy_pharmaceutical preparations
+5	9	2.84688352249147	MAPK1_glioblastoma/drug therapy_pharmaceutical preparations
+6	8	2.98811534461716	intracellular signaling peptides and proteins/metabolism_pyroptosis/drug effects_reactive oxygen species/antagonists & inhibitors
+6	8	2.67511693549895	lipid metabolism/drug effects_pyroptosis/drug effects_reactive oxygen species/antagonists & inhibitors
+7	8	1.97365019381295	CALR_oxidative stress_ranibizumab/therapeutic use
+7	8	1.66000967081472	RPE_aging/genetics_oxidative stress
+7	9	3.21524071095233	CALR_ascorbic acid/pharmacology_ferric compounds/chemistry
+7	9	2.61738721124906	azo compounds/chemistry_ferric compounds/chemistry_t-lymphocytes cytotoxic/metabolism
+8	9	3.54594564525855	SERPINB6_breast neoplasms/therapy_photosensitizing agents/therapeutic use
+8	9	2.5079040654318	EEF1A2_mcf-7 cells_photosensitizing agents/therapeutic use
