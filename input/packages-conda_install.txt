@@ -1,0 +1,9 @@
+numpy
+pandas
+networkx
+multiprocess
+scipy
+Biopython
+nltk
+csvkit
+mysql-connector-python 

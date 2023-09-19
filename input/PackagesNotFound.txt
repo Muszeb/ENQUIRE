@@ -1,0 +1,6 @@
+bz==1.0
+blis==0.7.9
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_jnlpba_md-0.5.1.tar.gz
+english-words==1.1.0
+et-xmlfile==1.1.0
+scispacy==0.5.1

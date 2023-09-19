@@ -1,0 +1,10 @@
+wd=$(pwd)/
+tag=test_Memory2
+ncores=6
+K=3
+A=2
+thr=2
+comb=3
+to_py=pmid-ferroptosis_ImmuneSystem.txt
+etype='all'
+rscript=/home/musellla/miniconda3/envs/R363/bin/Rscript
