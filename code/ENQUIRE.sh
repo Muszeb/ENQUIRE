@@ -244,7 +244,14 @@ else
 		etype='all'
 		echo "default: both genes and MeSH terms will be collected"	
 	fi
-	
+	if [[ -z "$rscript" ]];then
+		export rscript=$(which Rscript)
+		echo "default: ${rscript} will be used as R interpreter"	
+	fi
+	if [[ -z "$ncores" ]];then
+		ncores=6
+		echo "default: ${ncores} cores will be used"	
+	fi
 	#echo "number of iterations set to $iter"
 	# status.log controls number of iterations
 	rm -f -- ${tmp}/${tag}/status.log
