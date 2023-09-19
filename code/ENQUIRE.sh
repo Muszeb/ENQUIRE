@@ -91,7 +91,7 @@ while getopts ":hp:i:t:j:c:r:a:k:w:f:e::" options;do
 			;;
 		p|--path)
 			wd=$OPTARG
-			#cd $wd
+			cd $wd
 			echo "working directory set to $wd"
 			;;
 		t|--tag) 
@@ -152,7 +152,7 @@ if [[ -z "$wd" && -z "config" ]]; then
 	echo "Error: missing working directory"
 	Help
 	exit 1
-elif [[ -z "$input" && -z "config" ]]; then
+elif [[ -z "$to_py" && -z "config" ]]; then
 	echo "Error: missing an input"
 	Help
 	exit 1
@@ -556,7 +556,7 @@ else
 					echo -e "##################\nSTOP:\n${tmp}/efetch_inputs/${to_py} is empty\n##################"
 					mkdir -p ${tmp}/${tag}
 					echo "The algorithm stops, as no new PMID has been found" > ${tmp}/${tag}/status.log
-					echo -e "It was not possible to continue the network expasion, but you can check for interesting motifs in \n ${tmp}/${prev}/data/${prev}_interactive_Cliques_Network.html"
+					#echo -e "It was not possible to continue the network expasion, but you can check for interesting motifs in \n ${tmp}/${prev}/data/${prev}_interactive_Cliques_Network.html"
     				#echo "Exit code of 0, success"
     				break
 				fi
@@ -909,6 +909,7 @@ else
 		# 	echo
 		elif [[ "$(cat ${tmp}/${tag}/status.log)" = "The algorithm stops, as no new PMID has been found" ]]; then
     		echo
+    		echo $(cat ${tmp}/${tag}/status.log)
     		echo -e "It was not possible to continue the network expasion, but you can check for interesting cliques in \n ${tmp}/${prev}/${prev}_interactive_Cliques_Network.html"
     		echo
     		echo "##############################################################"
@@ -944,19 +945,19 @@ else
 			# 	#set -e
 			# 	#exit 1
 			# fi
-			echo			
-			if ! [ -f ${tmp}/${tag}/${tag}_Complete_edges_table* ]; then							
-				echo -e "WARNING: a complete network could not be achieved,\n hence the final graphs are poorly connected,\n and are therefore marked with a '_disc_' suffix"
-				echo "tag is: $tag"
-				if python $wd"code/sort_network.py" ${tmp}/${tag}/ $tag 'incomplete'; then
-		    		echo "Exit code of 0, success"
-				else
-		    		echo "Exit code of $?, failure"
-		    		set -e
-		    		exit 1
-				fi
-				echo
-			fi
+			echo -e "WARNING: a complete network could not be achieved"			
+			# if ! [ -f ${tmp}/${tag}/${tag}_Complete_edges_table* ]; then							
+			# 	,\n hence the final graphs are poorly connected,\n and are therefore marked with a '_disc_' suffix"
+			# 	echo "tag is: $tag"
+			# 	if python $wd"code/sort_network.py" ${tmp}/${tag}/ $tag 'incomplete'; then
+		 #    		echo "Exit code of 0, success"
+			# 	else
+		 #    		echo "Exit code of $?, failure"
+		 #    		set -e
+		 #    		exit 1
+			# 	fi
+			# 	echo
+			# fi
     		# check line number of thes motives list
 			#lines=$(wc -l "${tmp}/${tag}/data/${tag}_motifs_subs_and_ranks.tsv" | cut -f 1 -d " ")
 			#[[ "$lines" -gt 1 ]] && echo "Completed - Motifs identified" || (echo -e "######## \n STOP: \n ${wd}data/${tag}_motifs_strengthonly.tsv is empty \n ########" && exit 1)
