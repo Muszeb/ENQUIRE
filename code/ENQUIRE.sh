@@ -173,9 +173,9 @@ else
 			echo "sourcing parameters from $config"
 			source $config
 			if [[ ! -n "$rscript" ]]; then
-				echo "ERROR! Rscript path was not specified under the 'rscript' variable"
-				Help
-				exit 1
+				echo -e "Rscript path was not specified under the 'rscript' variable,\n set to environment-available R interpreter"
+				rscript=$(which Rscript)
+				echo $rscript
 			elif [[ ! -f "$rscript" ]];then
 				echo "ERROR! Rscript path is unvalid:"
 				echo $rscript

@@ -1,5 +1,5 @@
 biopython==1.79
-dpath=1
+dpath>=1,<=1.4.2
 multiprocess
 networkx>=2.6
 nltk>=3.5

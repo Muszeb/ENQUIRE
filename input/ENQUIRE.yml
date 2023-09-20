@@ -5,8 +5,6 @@ channels:
   - r
   - defaults
 dependencies:
-  - coreutils
-  - findutils
   - pip>=20.2
   - python>=3.8
   - r-base=4.3
@@ -33,7 +31,7 @@ dependencies:
   - cymem
   - dbfread
   - dill
-  - dpath=1
+  - dpath=2
   - greenlet
   - idna
   - isodate
