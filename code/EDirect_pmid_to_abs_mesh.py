@@ -195,13 +195,14 @@ for k in kwk:
 
 #
 ### STATISTICAL PRECAUTION: SET MUST BE IDENTICAL BETWEEN GENES AND MESH 
-### I DON'T KNOW IF THIS IS STILL NEEDED WITH THE NEW STATISTICS ###
-if "etype" not in globals():
-	common=set(abs_dict.keys() & kw_dict.keys())# & set(tit_dict.keys()))
-elif not (etype.lower().startswith('g') or etype.lower().startswith('g')):
-	common=set(abs_dict.keys() & kw_dict.keys())# & set(tit_dict.keys()))	
-else:
-	common=set(abs_dict.keys()).union(set(kw_dict.keys()))
+### I DON'T THINK THIS IS STILL NEEDED WITH THE CURRENT STATISTICS ###
+# if "etype" not in globals():
+# 	common=set(abs_dict.keys() & kw_dict.keys())# & set(tit_dict.keys()))
+# elif not (etype.lower().startswith('g') or etype.lower().startswith('g')):
+# 	common=set(abs_dict.keys() & kw_dict.keys())# & set(tit_dict.keys()))	
+# else:
+# 	common=set(abs_dict.keys()).union(set(kw_dict.keys()))
+common=set(abs_dict.keys()).union(set(kw_dict.keys()))
 # for d in [abs_dict,kw_dict,ful_dict,tit_dict]:
 # 	dk=list(d.keys())
 # 	for key in dk:

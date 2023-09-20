@@ -5,6 +5,8 @@ channels:
   - r
   - defaults
 dependencies:
+  - coreutils
+  - findutils
   - pip>=20.2
   - python>=3.8
   - r-base=4.3
@@ -84,4 +86,3 @@ dependencies:
   - wasabi
   - xlrd
   - xmltodict==0.13.0
-prefix: /home/musellla/miniconda3/envs/ENQUIRE
