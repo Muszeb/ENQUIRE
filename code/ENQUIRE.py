@@ -4,7 +4,7 @@
 #### THESE VARIABLES SHALL BE PASSED TO ENQUIRE.sh (examples) ####
 # wd=$(pwd)/
 # tag=SplicingFactors_Neoplasms_Antigens
-# ncores=32
+# ncores=6
 # K=3
 # A=2
 # thr=2
@@ -21,6 +21,7 @@ import pandas as pd
 import subprocess
 import glob 
 import re
+import bz2
 #
 try:
 	import _pickle as pickle
@@ -77,15 +78,17 @@ def globtabsub(globbing):
 
 # 2) Execute ENQUIRE.sh 
 
-def run(tag,to_py,thr=1,wd="$(pwd)/",comb=4,A=2,K=3,etype='all',rscript="/home/musellla/miniconda3/envs/R363/bin/Rscript",ncores=32):
+def run(tag,to_py,thr=1,wd="os.getcwd()",comb=4,A=2,K=3,etype='all',ncores=6):
 	#
-	execstr="./code/ENQUIRE.sh -p %s -t %s -i %s -r %s -c %s -a %s -k %s -e %s -w %s -j %s"
+	execstr="./ENQUIRE.sh -p %s -t %s -i %s -r %s -c %s -a %s -k %s -e %s -j %s > stdout.txt 2> stderr.txt "
 	#
 	process=subprocess.Popen('echo '+wd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
 	wd,dnull=process.communicate()
 	wd=wd.decode().strip('\n')
+	# print(wd)
 	#
-	process=subprocess.Popen(execstr % (str(wd),
+	process=subprocess.Popen(execstr % (
+        str(wd),
 		str(tag),
 		str(to_py),
 		str(thr),
@@ -93,16 +96,16 @@ def run(tag,to_py,thr=1,wd="$(pwd)/",comb=4,A=2,K=3,etype='all',rscript="/home/m
 		str(A),
 		str(K),
 		str(etype),
-		str(rscript),
 		str(ncores),), shell=True,
 		stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-	#
+# 	print('os.getcwd():')
+# 	print(os.getcwd())
 	stdout, stderr = process.communicate()
-	# 3) Point at working directory (wd) and store dataframes into a dictionary #
-	#
-	if os.getcwd() != wd:
-		os.chdir(wd+'tmp-'+tag)
-	#
+# 	if os.getcwd() != wd:
+# 		os.chdir(wd)
+	
+	
+
 	ENQRES=dict()
 	#
 	# 4) save in dict-like structure #
@@ -115,16 +118,52 @@ def run(tag,to_py,thr=1,wd="$(pwd)/",comb=4,A=2,K=3,etype='all',rscript="/home/m
 		'Maximum attempts (A)':A,
 		'Expansion constraint (K)':K,
 		'Entity types': etype,
-		'Rscript':rscript,
 		'Number of cores':ncores}
 	#
 	#
 	ENQRES['Literature Data']=globtab('*/*Complete_edges_literature_links.tsv')
 	ENQRES['Edgelist Data']=globtab('*/*Complete_edges_table_subgraph.tsv')
 	ENQRES['Nodelist Data']=globtab('*/*Complete_nodes_table_subgraph.tsv')
+	# ---
 	ENQRES['Subgraphs Node Data']=globtabsub('*/data/subgraphs/*nodes_table*')
 	ENQRES['Subgraphs Edge Data']=globtabsub('*/data/subgraphs/*edges_table*')
 	ENQRES['Gene-Subgraphs Edge Data']=globtabsub('*/data/gene-subgraphs/*edges_table*')
 	ENQRES['Gene-Subgraphs Node Data']=globtabsub('*/data/gene-subgraphs/*nodes_table*')
 	#
-	return ENQRES
+	# return stdout, stderr, ENQRES
+	return wd, stdout, stderr, ENQRES
+
+
+# output_=run('SplicingFactors_Neoplasms_Antigens', 'pmid-ferroptosis_ImmuneSystem.txt',      1,     "/Users/surya/Documents/GITHUB-REPOSITORIES/ENQUIRE/",     4,2,3,"all",6)
+# print(output_)
+
+
+wd, stdout, stderr, ENQRES=run('SplicingFactors_Neoplasms_Antigens', 'pmid-ferroptosis_ImmuneSystem.txt',      1,     "/Users/surya/Documents/GITHUB-REPOSITORIES/ENQUIRE/",     4,2,3,"all",6)
+stdout.to_csv('stdout.txt')
+stderr.to_csv('stderr.txt')
+ENQRES.to_csv('ENQRES.txt')
+
+
+
+# print(wd, stdout, stderr, ENQRES)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
