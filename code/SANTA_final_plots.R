@@ -731,7 +731,7 @@ g=induced_subgraph(g,names(hot.KW))
 # gc(verbose=F)
 #### CLUSTER PROPAGATION ####
 i=0
-set.seed(i);tCC=cluster_leiden(g,objective_function = 'modularity',beta=0,n_iterations=1)# ,weights = NULL,resolution_parameter = 1.5,beta = 0.001,n_iterations = 1000)
+set.seed(i);tCC=cluster_leiden(g,objective_function = 'modularity',n_iterations=1)# ,weights = NULL,resolution_parameter = 1.5,beta = 0.001,n_iterations = 1000)
 #tCC=cluster_leiden(g,resolution_parameter=1/(2*sum(strength(g))),vertex_weights=strength(g),beta=0,n_iterations=1)
 newmod=modularity(g,weight=E(g)$weight,membership = tCC$membership)
 lastmod=0
@@ -741,7 +741,7 @@ while ((newmod-lastmod)>0){
     tCC=newtCC
   }
   i=i+1
-  set.seed(i);newtCC=cluster_leiden(g,objective_function = 'modularity',beta=0,n_iterations=1,initial_membership=tCC$membership)
+  set.seed(i);newtCC=cluster_leiden(g,objective_function = 'modularity',n_iterations=1,initial_membership=tCC$membership)
   lastmod=newmod
   newmod=modularity(g,weight=E(g)$weight,membership = newtCC$membership)  
 }

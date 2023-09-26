@@ -470,7 +470,7 @@ for (data in names(NetS)){
   # 4) a matrix nperm X max(B) that contains sampled Knet values 
   # 5) an nper vector that containst sampled AUK values  
   # 6) at most each core needs to evaluate #cliques objects 
-  required=2*as.numeric(object.size(B)+object.size(g.tm)+
+  required=as.numeric(object.size(B)+object.size(g.tm)+
   object.size(numeric(500))+object.size(numeric(max(NetS$NEIGHnet$B)))+object.size(matrix(1000,500))+
   object.size(rep(vector('list',2),length(lpaths.in.graph))))/1E3 # returns KB
   print(sprintf("given B and 500 Knet permutations,each core will need %f GB",required/1E6))
@@ -808,7 +808,7 @@ environment(custom_leiden) <- asNamespace("igraph")
 #assignInNamespace("cluster_leiden", custom_leiden, ns = "igraph")    
 #####
 i=0
-set.seed(i);tCC=cluster_leiden(g,objective_function = 'modularity',beta=0,n_iterations=1)# ,weights = NULL,resolution_parameter = 1.5,beta = 0.001,n_iterations = 1000)
+set.seed(i);tCC=cluster_leiden(g,objective_function = 'modularity',n_iterations=1)# ,weights = NULL,resolution_parameter = 1.5,beta = 0.001,n_iterations = 1000)
 #tCC=cluster_leiden(g,resolution_parameter=1/(2*sum(strength(g))),vertex_weights=strength(g),beta=0,n_iterations=1)
 newmod=modularity(g,weight=E(g)$weight,membership = tCC$membership)
 lastmod=0
@@ -818,7 +818,7 @@ while ((newmod-lastmod)>0){
     tCC=newtCC
   }
   i=i+1
-  set.seed(i);newtCC=cluster_leiden(g,objective_function = 'modularity',beta=0,n_iterations=1,initial_membership=tCC$membership)
+  set.seed(i);newtCC=cluster_leiden(g,objective_function = 'modularity',n_iterations=1,initial_membership=tCC$membership)
   lastmod=newmod
   newmod=modularity(g,weight=E(g)$weight,membership = newtCC$membership)  
 }
