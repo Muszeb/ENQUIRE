@@ -1,6 +1,5 @@
 #!/home/musellla/miniconda3/envs/R363/lib/R/bin/Rscript
 # SANTA RANKINGS BASED ON JACCARD DISTANCE-DERIVED NODE AND EDGE ATTRIBUTES
-options(Ncpus = 16L)
 args = commandArgs(trailingOnly=TRUE)
 if (length(args) < 3) {
   stop("At least three arguments must be supplied (working dir, tag and ncores)", call.=FALSE)
@@ -56,6 +55,7 @@ if (isFALSE(exists("libloc"))) {
 print(c("library in use:",libloc))
 ### install missing libraries ###
 print("check for missing, required packages...")
+options(Ncpus = combs)
 list.of.packages <- c("igraph","RColorBrewer","BiocManager","tidyr","parallel","reshape2","stringr","ggplot2","snow","dplyr","networkD3","htmlwidgets","data.table","poolr","VarianceGamma")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages(lib.loc=libloc)[,"Package"])]
 if(length(new.packages)){

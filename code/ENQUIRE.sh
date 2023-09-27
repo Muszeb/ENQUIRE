@@ -164,12 +164,12 @@ if [[ -n "$config" ]]; then
 fi
 
 if [[ -z "$wd" ]]; then
-	echo -e "Warning: missing working directory, ENQUIRE will use the current working directory"
+	echo -e "Warning:\nMissing working directory, ENQUIRE will use the current working directory"
 	wd=$(pwd)/
 fi
 
 if [[ -z "$rscript" ]]; then
-	echo -e "Rscript path was not specified under the 'rscript' variable,\n set to environment-available R interpreter"
+	echo -e "Warning:\nRscript path was not specified under the 'rscript' variable,\n set to environment-available R interpreter"
 	rscript=$(which Rscript)
 	echo "$rscript"
 fi
@@ -232,17 +232,18 @@ else
 		i=$(($(find "${tmp}/" -maxdepth 1 -type d | wc -l)-2)) # -2 because of "." and "efetch inputs"
 		it=$i
 	fi
+	### DEFAULT VALUES ###
 	if [[ -z "$comb" ]];then
 		comb=4
-		echo "default: $comb entities out of a motifs pairs will generate an esearch query"
+		echo "default: ${comb} entities out of a motifs pairs will generate an esearch query"
 	fi
 	if [[ -z "$thr" ]];then
 		thr=1
-		echo "default: no representativeness threshold set"	
+		echo "default: representativeness threshold set to $thr"	
 	fi
 	if [[ -z "$A" ]];then
 		A=2
-		echo "default: 1 attempt per pair of subgraphs will be performed"	
+		echo "default: ${A} attempt per pair of subgraphs will be performed"	
 	fi
 	if [[ -z "$etype" ]];then
 		etype='all'
@@ -255,6 +256,10 @@ else
 	if [[ -z "$ncores" ]];then
 		ncores=6
 		echo "default: ${ncores} cores will be used"	
+	fi
+	if [[ -z "$K" ]];then
+		K=3
+		echo "default: connectivity requirement set to ${K} communities"	
 	fi
 	#echo "number of iterations set to $iter"
 	# status.log controls number of iterations
@@ -270,7 +275,7 @@ else
 	#ulimit -s 33554432
 	### SAVE INPUT PARAMETERS! ###
 	echo "Save Parameters in ad hoc file"
-	echo -e "wd=${wd}\ntag=${tag}\nncores=${ncores}\nK=${K}\nA=${A}\nthr=${thr}\ncomb=${comb}\nto_py=${to_py}\netype=${etype}\nrscript=${rscript}" > "${tmp}/ENQUIRE_input_parameters.txt"
+	echo -e "wd=${wd}\ntag=${tag}\nncores=${ncores}\nK=${K}\nA=${A}\nthr=${thr}\ncomb=${comb}\nto_py=${input}\netype=${etype}\nrscript=${rscript}" > "${tmp}/ENQUIRE_input_parameters.txt"
 	echo
 	###
 	while  [[ "$(wc -w < "${tmp}/${tag}/status.log")" -lt 1 ]];

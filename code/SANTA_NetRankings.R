@@ -6,7 +6,6 @@ print("SANTA: NODE RANKINGS BASED ON JACCARD DISTANCE-DERIVED NODE AND EDGE ATTR
 #if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager",repos="https://ftp.fau.de/cran/",lib.loc=libloc)
 # CHECK FOR DEPENDENCIES TO BE INSTALLED
 # set library location
-options(Ncpus = 8)
 args = commandArgs(trailingOnly=TRUE)
 if (length(args) < 2) {
   stop("At least three arguments must be supplied (working dir, tag and ncores)", call.=FALSE)
@@ -31,6 +30,7 @@ if (isFALSE(exists("libloc"))) {
 print(c("library in use:",libloc))
 #libloc="/home/musellla/miniconda3/envs/bioinfo/lib/R/library"
 #
+options(Ncpus = combs)
 list.of.packages <- c("igraph","BiocManager","tidyr","magrittr","pkgconfig")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages(lib.loc=libloc)[,"Package"])]
 if(length(new.packages)) install.packages(new.packages,repos="https://cloud.r-project.org/",lib=libloc,destdir = libloc) # FAU mirror
