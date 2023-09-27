@@ -218,7 +218,7 @@ else
 	rm -rf "${tmp}/efetch_inputs"
 	mkdir -p "${tmp}/efetch_inputs"
 	cp -f "$to_py" "${tmp}/efetch_inputs"
-	to_py="${tmp}/efetch_inputs/$(basename ${to_py})"
+	to_py="$(basename $to_py)"
 	#
 	touch "${tmp}/previous_iteration.txt"
 	# check if an expansion has already happened, hence update tag #
