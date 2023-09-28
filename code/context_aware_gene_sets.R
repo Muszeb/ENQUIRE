@@ -41,15 +41,15 @@ option_list <- list(
     make_option(c("-n", "--nodetable"),action="store", type="character", default=NULL, 
     help="Path to an ENQUIRE-generated, Gene/MeSH node table file (required)",
     metavar="path",dest="test_nodes"),
-    make_option(c("-t", "--tag"),action="store", type="character", default=NULL, 
-    help="tag prefix (default to NULL)",
+    make_option(c("-t", "--tag"),action="store", type="character", default="ENQUIRE", 
+    help="tag prefix (default to 'ENQUIRE')",
     metavar="tag",dest="tag"),
     make_option(c("-d", "--membdeg"),action="store", type="numeric", default=.05, 
     help="minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]",
     metavar="parameter",dest="d"),
     make_option(c("-s", "--setsize"),action="store", type="numeric", default=2, 
     help="minimal gene set size (default: 2)",
-    metavar="parameter",dest="d"))
+    metavar="parameter",dest="s"))
 
 # get command line options, if help option encountered print help and exit,
 # otherwise if options not found on command line then set defaults, 
@@ -190,13 +190,13 @@ library(openxlsx)
 wb <- createWorkbook()
 # 1)= genes x cluster name membership degree #
 addWorksheet(wb, "GenesXClusterMembDeg",gridLines = T)
-gcmat=res.fcm$u[genes,]
+gcmat=res.fcm$u[match(genes,rownames(res.fcm$u)),]
 writeDataTable(wb, "GenesXClusterMembDeg", as.data.frame(gcmat), rowNames = T)
 # 2) gene sets according to k/d
 addWorksheet(wb, "FuzzyGeneSets",gridLines = T)
 gcl=apply(gcmat,2,function(cls)(rownames(gcmat)[cls>=d]))
-gcl=gcl[sapply(gcl,function(v)(length(v)>=s))]
-ml=max(sapply(gcl,length))
+gcl=gcl[which(lengths(gcl)>=s)]
+ml=max(lengths(gcl))
 gcl=lapply(gcl,function(v)(c(v,rep('',ml-length(v)))))
 gcl=rbind(labslong[as.numeric(str_match(names(gcl),"[0-9]+")[,1])],as.data.frame(gcl))
 rownames(gcl)=c('MeSH Centroids (4)',seq(1,nrow(gcl)-1))
@@ -206,5 +206,5 @@ addWorksheet(wb, "PCA-CrispClusters",gridLines = T)
 writeDataTable(wb, "PCA-CrispClusters", pcashard, rowNames = T)
 # save!
 setwd(opt$wd)
-xlsxfile = sprintf("%s_context_aware_gene_sets.xlsx",tag)
+xlsxfile = sprintf("%s_context_aware_gene_sets.xlsx",opt$tag)
 saveWorkbook(wb, xlsxfile, overwrite = T) 
