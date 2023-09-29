@@ -360,7 +360,7 @@ for (data in names(NetS2)){
   net=NetS2[data][[1]]
   g.tm=net$graph
   B=net$B
-  clusterExport(cl, c("g.tm","B","Kstat"))
+  clusterExport(cl, c("g.tm","B","Kstat","customKnet"))
   clusterEvalQ(cl,environment(customKnet) <- asNamespace('SANTA'))
   clusterEvalQ(cl,assignInNamespace("Knet", customKnet, ns = "SANTA"))  
   print(c("Knet applied to",data))
