@@ -30,7 +30,7 @@ if (isFALSE(exists("libloc"))) {
 print(c("library in use:",libloc))
 #libloc="/home/musellla/miniconda3/envs/bioinfo/lib/R/library"
 #
-options(Ncpus = combs)
+options(Ncpus = 4)
 list.of.packages <- c("igraph","BiocManager","tidyr","magrittr","pkgconfig")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages(lib.loc=libloc)[,"Package"])]
 if(length(new.packages)) install.packages(new.packages,repos="https://cloud.r-project.org/",lib=libloc,destdir = libloc) # FAU mirror
