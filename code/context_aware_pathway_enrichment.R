@@ -184,7 +184,7 @@ V(g2)$qweight=qvref(V(g2)$weight)
 #V(g2)$qweight=V(g2)$krank
 par(mfrow=c(1,1))
 png(file.path(opt$od,paste0(opt$tag,"_Qscore_VS_degree.png")),width = 12, height = 12,units = 'in',bg='grey95',res=200)
-plot(V(g2)$weight~degree(g2),xlab='degree',ylab='score')+title(sprintf("Correlation for %s scores: %f",tag,cor(V(g2)$weight,degree(g2))))
+plot(V(g2)$weight~degree(g2),xlab='degree',ylab='score')+title(sprintf("Correlation for %s scores: %f",opt$tag,cor(V(g2)$weight,degree(g2))))
 dev.off()
 #### APPLY KNET ####
 ### COMPUTE DISTANCE MATRIX ###
