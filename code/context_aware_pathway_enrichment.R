@@ -11,7 +11,7 @@ print("check for missing, required packages...")
 if (!("BiocManager" %in% installed.packages(lib.loc=libloc)[,"Package"])){
   install.packages("BiocManager",repos="https://cloud.r-project.org/",lib=libloc,destdir = libloc)
 }
-list.of.packages <- c("optparse","RColorBrewer","openxlsx","igraph","stringr","dplyr","SANTA","parallel")
+list.of.packages <- c("optparse","data.table","RColorBrewer","openxlsx","igraph","stringr","dplyr","SANTA","parallel")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages(lib.loc=libloc)[,"Package"])]
 if (length(new.packages)>=1){  
   BiocManager::install(new.packages,lib=libloc,destdir = libloc) # FAU mirror
@@ -71,7 +71,6 @@ print("#####")
 
 library(SANTA)
 library(stringr)
-library(ggplot2)
 library(dplyr)
 library(parallel)
 library(igraph)
