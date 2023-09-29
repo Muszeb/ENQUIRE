@@ -1021,14 +1021,14 @@ else
 	echo
 	echo "edit headers..."
 	new_header_edge="KW1\tKW2\tP.value\tadj.P.value\tFisherP.value\tztPois.cdf\tRaw.CO.Occurrence\tExpansion"
-	sed -i -e -- "1s/.*/$(echo -e "$new_header_edge")/" */*_edges_table_subgraph.tsv
+	sed -i -e "1s/.*/$(echo -e "$new_header_edge")/" */*_edges_table_subgraph.tsv
 	new_header_node="KW\tCategory\tRepresentativeness\tRaw.Occurrence\tBetweenness.centrality\tCloseness.centrality\tStrength\tWscore\tKnode\tKnode.rank\tCommunityMembership"
-	sed -i -e -- "1s/.*/$(echo -e "$new_header_node")/" */*Complete_nodes_table_subgraph.tsv
+	sed -i -e  "1s/.*/$(echo -e "$new_header_node")/" */*Complete_nodes_table_subgraph.tsv
 	new_header_node=$(echo "$new_header_node" | sed 's/\\tCommunityMembership//')
-	sed -i -e -- "1s/.*/$(echo -e "$new_header_node")/" */*Genes_nodes_table_subgraph.tsv	
-	sed -i -e -- "1s/.*/$(echo -e "$new_header_node")/" */*MeSH_nodes_table_subgraph.tsv	
+	sed -i -e "1s/.*/$(echo -e "$new_header_node")/" */*Genes_nodes_table_subgraph.tsv	
+	sed -i -e "1s/.*/$(echo -e "$new_header_node")/" */*MeSH_nodes_table_subgraph.tsv	
 	new_header_links="PMID\tKW1\tKW2\tlink\tlink_explicit\tQuerySet"
-	sed -i -e -- "1s/.*/$(echo -e $new_header_links)/" */*_Complete_edges_literature_links.tsv
+	sed -i -e "1s/.*/$(echo -e $new_header_links)/" */*_Complete_edges_literature_links.tsv
 	echo
 	echo
 	echo "JOB FINISHED!" 
