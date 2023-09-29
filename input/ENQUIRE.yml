@@ -39,6 +39,7 @@ dependencies:
   - joblib
   - langcodes
   - leather
+  - libxml2
   - markupsafe
   - multiprocess
   - murmurhash
