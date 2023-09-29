@@ -54,7 +54,7 @@ if (isFALSE(exists("libloc"))) {
 #
 print(c("library in use:",libloc))
 ### install missing libraries ###
-options(Ncpus = combs)
+options(Ncpus = ncores)
 print("check for missing, required packages...")
 list.of.packages <- c("igraph","RColorBrewer","BiocManager","tidyr","parallel","reshape2","stringr","ggplot2","snow","dplyr","networkD3","htmlwidgets","data.table","poolr","VarianceGamma","magrittr","pkgconfig")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages(lib.loc=libloc)[,"Package"])]
