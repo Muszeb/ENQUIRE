@@ -5,33 +5,23 @@ channels:
   - r
   - defaults
 dependencies:
-  - pip>=20.2
-  - python>=3.8
-  - r-base=4.3
-  - readline
-  - setuptools
-  - sqlite
-  - tk
-  - wheel
-  - xz
-  - zlib
   - agate
   - agate-dbf
   - agate-excel
   - agate-sql
   - babel
-  - biopython==1.79
+  - biopython
   - catalogue
   - certifi
   - charset-normalizer
   - click
   - confection
   - conllu
-  - csvkit==1.1.0
+  - csvkit
   - cymem
   - dbfread
   - dill
-  - dpath=2
+  - dpath=1
   - greenlet
   - idna
   - isodate
@@ -39,21 +29,21 @@ dependencies:
   - joblib
   - langcodes
   - leather
-  - libxml2
   - markupsafe
   - multiprocess
   - murmurhash
-  - networkx>=2.6
-  - nltk>=3.5
+  - networkx[version='>=2.7']
+  - nltk[version='>=3.8.1']
   - nmslib
   - numpy
   - olefile
   - openpyxl
   - packaging
-  - pandas>=1.3
+  - pandas[version='>=1.3']
   - parsedatetime
   - pathy
   - patsy
+  - pip[version='>=20.2']
   - preshed
   - psutil
   - pybind11
@@ -61,27 +51,36 @@ dependencies:
   - pysbd
   - python-dateutil
   - python-slugify
+  - python[version='>=3.8']
   - pytimeparse
   - pytz
+  - r-base
+  - readline
   - regex
   - requests
   - scikit-learn
   - scipy
+  - setuptools
   - six
   - smart-open
-  - spacy==3.4.4
-  - spacy-legacy==3.0.12
+  - spacy
+  - spacy-legacy
   - spacy-loggers
   - sqlalchemy
+  - sqlite
   - srsly
-  - statsmodels==0.13.5
+  - statsmodels
   - text-unidecode
   - thinc
   - threadpoolctl
+  - tk
   - tqdm
   - typer
   - typing-extensions
   - urllib3
   - wasabi
+  - wheel
   - xlrd
-  - xmltodict==0.13.0
+  - xmltodict
+  - xz
+  - zlib
