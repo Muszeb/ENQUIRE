@@ -1,4 +1,4 @@
-options(Ncpus = 8L)
+options(Ncpus = 4L)
 ###
 if (isFALSE(exists("libloc"))) {
   libloc=.libPaths()[1]  
