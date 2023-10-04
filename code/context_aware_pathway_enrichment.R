@@ -38,29 +38,35 @@ option_list <- list(
               help="Working directory (default to current working directory)",dest="wd",
               type="character",metavar="path"),
   make_option(c("-o", "--outdirectory"), action="store", default=getwd(),
-              help="Output directory (default to current working directory)",dest="od",
+              help="Output directory (default to current working directory, and must preexist)",dest="od",
               type="character",metavar="path"),
   make_option(c("-n","--netpathdata"),action="store", type="character", default='input/ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz', 
-              help="Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).\n\t\tIf the current working directory is not the 'ENQUIRE' folder, the default path will throw an error.",
+              help="Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).\n\t\tIf the current working directory is not the 'ENQUIRE' folder, the default path ('input/...') will throw an error.",
               metavar="path",dest="NetS2"),
   make_option(c("-e", "--edgetable"),action="store", type="character", default=NULL, 
-              help="Path to an ENQUIRE-generated, gene-gene edge table file (required)",
+              help="Path to an ENQUIRE-generated, gene-gene edge table file (required).",
               metavar="path",dest="test_net"),
   make_option(c("-c", "--cores"),action="store", type="numeric", default=4, 
-              help="max number of cores used (PSOCK parallelization) (default: 4), >1 recommended",
+              help="max number of cores used (PSOCK parallelization) (default: 4), >1 recommended.",
               metavar="parameter",dest="ncores"),
   make_option(c("-t", "--tag"),action="store", type="character", default="ENQUIRE", 
-              help="tag prefix (default to 'ENQUIRE')",
+              help="tag prefix (default to 'ENQUIRE').",
               metavar="tag",dest="tag"),
   make_option(c("-s", "--setsize"),action="store", type="numeric", default=100, 
-              help="maximum Reactome pathway size (default: 100, minimum 3)",
-              metavar="parameter",dest="s"))
+              help="maximum Reactome pathway size (default: 100, minimum 3).",
+              metavar="parameter",dest="s"),
+  make_option(c("-p", "--permutations"),action="store", type="numeric", default=100, 
+              help="number of permutations to infer KNet null distribution\n\t\t(default: 100, the higher the more accurate the test statistics).",
+              metavar="parameter",dest="nperm"),
+  make_option(c("-f", "--padjust"),action="store", type="character", default='holm', 
+              help="P-value adjustment method, must be one of [holm, hochberg, hommel, bonferroni, BH, BY, fdr, none].\n\t\tDefault and recommended: holm, as the p-value null distribution is not guaranteed to be uniform.",
+              metavar="parameter",dest="adjust"))
 
 # get command line options, if help option encountered print help and exit,
 # otherwise if options not found on command line then set defaults 
 opt <- parse_args(OptionParser(option_list=option_list))
 if (is.null(opt$test_net)){
-  print("ERROR: missing inputs!")
+  print("ERROR: missing input!")
   print("Do 'Rscript context_aware_pathway_enrichment.R -h' for printing help")
   stop()
 }
@@ -75,7 +81,10 @@ library(dplyr)
 library(parallel)
 library(igraph)
 library(data.table)
-
+library(openxlsx)
+###
+#### SAVE OUTPUT ####
+wb <- createWorkbook()
 ####### preload ####
 print("load precomputed data...")
 load(file.path(opt$NetS2))
@@ -182,9 +191,11 @@ qvref=Vectorize(ecdf(V(g2)$weight))
 V(g2)$qweight=qvref(V(g2)$weight)
 #V(g2)$qweight=V(g2)$krank
 par(mfrow=c(1,1))
+addWorksheet(wb, "Qscore_VS_node_degree",gridLines = F)
 png(file.path(opt$od,paste0(opt$tag,"_Qscore_VS_degree.png")),width = 12, height = 12,units = 'in',bg='grey95',res=200)
 plot(V(g2)$weight~degree(g2),xlab='degree',ylab='score')+title(sprintf("Correlation for %s scores: %f",opt$tag,cor(V(g2)$weight,degree(g2))))
 dev.off()
+insertImage(wb,file =  file.path(opt$od,paste0(opt$tag,"_Qscore_VS_degree.png")),sheet = "Qscore_VS_node_degree",units = 'in',width = 10, height = 10)
 #### APPLY KNET ####
 ### COMPUTE DISTANCE MATRIX ###
 print("prepare matrices for Knet...")
@@ -210,7 +221,7 @@ over=over[over>thr]
 pathways.in.graph=pathways.in.graph[pathways.in.graph %in% names(over)]
 ### SET BOUNDARIES FOR A PATHWAY SET SIZE (KNET RESTRICTIONS) ###
 ptab=table(unname(pathways.in.graph))
-ptab=names(ptab[ptab > 2 & ptab < 100])
+ptab=names(ptab[ptab > 2 & ptab <= opt$s])
 pw.ids = unique(unname(pathways.in.graph[pathways.in.graph %in% ptab]))
 pathways.in.graph=pathways.in.graph[pathways.in.graph %in% pw.ids]
 lpaths.in.graph=sapply(unique(pw.ids), function(pw){
@@ -221,6 +232,9 @@ lpaths.in.graph=sapply(unique(pw.ids), function(pw){
   return(genes)})
 #
 lpaths.in.graph=lpaths.in.graph[sapply(lpaths.in.graph, function(v)(length(v)>2))]
+lpaths.in.graph=lpaths.in.graph[order(names(lpaths.in.graph))]
+#
+print(sprintf("%i Reactome pathways will be tested",length(lpaths.in.graph)))
 #
 get.chunks=function(x,n) split(x, cut(seq_along(x), n, labels = FALSE)) 
 #
@@ -230,7 +244,7 @@ chunks=get.chunks(lpaths.in.graph,ncores)
 #### CUSTOM LOW-MEMORY KNET FUNCTION #### 
 customKnet <- function(
     g, 
-    nperm=100, 
+    nperm=opt$nperm, 
     dist.method=c("shortest.paths", "diffusion", "mfpt"), 
     vertex.attr="pheno",
     edge.attr=NULL,
@@ -240,6 +254,20 @@ customKnet <- function(
     B=NULL,
     verbose=TRUE
   ){
+    # Define Shuffle with set.seed
+    Shuffle <- function(
+      x, 
+      ignore=NULL,
+      seed=NULL
+    ){
+    # shuffle the values in x
+    # ignore should be a logical vector equal in length to x
+    # for each T value in ignore, the corresponding value in x is not shuffled
+    if (is.null(ignore)) ignore <- rep(F, length(x))
+    if (is.null(seed)) set.seed(seed)
+    x[!ignore] <- sample(x[!ignore])
+    x    
+    }
     # calculate the Knet function for a graph, along with permutations if required
 
     # check that vertex weights and edge distances are present and suitable. Convert if neccessary
@@ -290,7 +318,7 @@ customKnet <- function(
             K.perm <- list()
             for (i in seq_len(nperm)) {
                 set.seed(i)
-                vertex.weights.shuffled <- Shuffle(vertex.weights, ignore=vertex.weights.is.na)
+                vertex.weights.shuffled <- Shuffle(vertex.weights, ignore=vertex.weights.is.na,seed=i)
                 K.perm[[i]] <- .Call("computenetK_fewzeros", Bv, vertex.weights.shuffled, nvertices, maxB)
             }
             K.perm <- do.call("cbind", K.perm)
@@ -341,7 +369,7 @@ Kstat=function(chunk){
   #
   pws=setdiff(pws,badp)
   #
-  result_knet <- Knet(g.tm, nperm=500, vertex.attr=pws, edge.attr="weight", verbose=T,B = B)
+  result_knet <- Knet(g.tm, vertex.attr=pws, nperm=opt$nperm, edge.attr="weight", verbose=T,B = B)
   #result_knet <- Compactness(g.tm, nperm=300, vertex.attr=pws, edge.attr="weight", verbose=T)
   if (length(pws) == 1){
     result_knet=list(result_knet)
@@ -357,31 +385,33 @@ for (data in names(NetS2)){
   print("initialize parallelization")
   cl <- makeCluster(ncores,type = 'PSOCK')
   clusterEvalQ(cl, library(SANTA))
-  net=NetS2[data][[1]]
-  g.tm=net$graph
-  B=net$B
-  clusterExport(cl, c("g.tm","B","Kstat","customKnet"))
+  #net=NetS2[data][[1]]
+  g.tm=g2
+  B=NetS2$STRINGnet$B
+  clusterExport(cl, c("g.tm","B","Kstat","customKnet","opt"))
   clusterEvalQ(cl,environment(customKnet) <- asNamespace('SANTA'))
   clusterEvalQ(cl,assignInNamespace("Knet", customKnet, ns = "SANTA"))  
   print(c("Knet applied to",data))
   result_knet=parLapply(cl,chunks, Kstat)
   stopCluster(cl)
   gc()
-  print(c("Knet completed",data))
+  print("Knet completed")
   print("Prepare results table...")
   result_knet=do.call("c", result_knet)
   names(result_knet)=str_replace(names(result_knet),"[0-9]+.","")
   #
+  addWorksheet(wb, "KNet_pvalue_distribution",gridLines = F)
   #result_knet <- Knet(g.tm, nperm=100, vertex.attr=pw.ids, edge.attr="conf", verbose=T,B = B,parallel = 32)
   pvals=sapply(result_knet, function(res){return(res$pval)})
   pvals=sort(pvals, decreasing = FALSE)
-  png(file.path(opt$od,paste0(opt$tag,"_KNet_pvalue_distribution.png")),width = 12, height = 12,units = 'in',bg='grey95',res=200)
+  png(file.path(opt$od,paste0(opt$tag,"_KNet_pvalue_distribution.png")),width = 12, height = 8,units = 'in',bg='grey95',res=200)
   hist(pvals)
   dev.off()
+  insertImage(wb,file =  file.path(opt$od,paste0(opt$tag,"_KNet_pvalue_distribution.png")),sheet = "KNet_pvalue_distribution",units = 'in',width = 12, height = 8)
   ### APPLY BH BASED ON PRIORS DISTRIBUTION INSTEAD OF U(0,1) #### 
-  qvals=p.adjust(pvals,method = 'holm')
-  critq=length(qvals[qvals<=0.05])
-  print(c("CRITICAL Q-VALUE AT POSITION",critq))
+  qvals=p.adjust(pvals,method = opt$adjust)
+  #critq=length(qvals[qvals<=0.05])
+  #print(c("CRITICAL Q-VALUE AT POSITION",critq))
   ###
   print("save output...")
   #fraction <- vector(mode = "character", length = length(names(pvals)))
@@ -400,9 +430,16 @@ for (data in names(NetS2)){
   cats=pathcat[match(names(pvals),pathcat)]
   #cats=cats[!duplicated(cats)]
   #
-  enrichment<- data.frame(names(cats),names(pvals), unname(pvals), qvals, p.adjust(unname(pvals), method = 'holm'),sapply(result_knet[names(pvals)],'[[','AUK.obs'), pathway_size,overlap,percentage, row.names = NULL,stringsAsFactors = F)
-  colnames(enrichment) <- c("category","pathway", "p_KNet","adj_p_modBH", "adj_p_Holm","AUK.obs","pathway_size","overlap","%")
-  write.table(enrichment,file.path(opt$od,paste0(opt$tag,"_KNet_pathway_enrichment.tsv")),row.names = F,quote = F, sep = '\t')
+  addWorksheet(wb, "Results_KNet_pathway_enrichment",gridLines = T)
+  #
+  enrichment<- data.frame(names(cats),names(pvals), unname(pvals), qvals, sapply(result_knet[names(pvals)],'[[','AUK.obs'), pathway_size,overlap,percentage, row.names = NULL,stringsAsFactors = F)
+  colnames(enrichment) <- c("Reactome Category","Reactome Pathway", "P-value_KNet",paste0("adjusted p-value_(",opt$adjust,")"), "Observed Area Under KNet (AUK)","Pathway_size","Overlap size","Overlap %")
+  writeDataTable(wb, "Results_KNet_pathway_enrichment", enrichment, rowNames = T)
+  #write.table(enrichment,file.path(opt$od,paste0(opt$tag,"_KNet_pathway_enrichment.tsv")),row.names = F,quote = F, sep = '\t')
   #results[sprintf("%s",data)]=list(enrichment)
+  xlsxfile = sprintf("%s_context_aware_gene_sets.xlsx",opt$tag)
+  saveWorkbook(wb, xlsxfile, overwrite = T) 
 }
+###
+print("CONTEXT-AWARE PATHWAY ENRICHMENT COMPLETED!")
 ###
