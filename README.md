@@ -12,7 +12,8 @@ cd ENQUIRE
 ```
 ```bash
 # MacOS
-git clone https://github.com/Muszeb/ENQUIRE.git -b ENQUIRE-MACOS
+git clone https://github.com/Muszeb/ENQUIRE.git
+git checkout ENQUIRE-MACOS
 cd ENQUIRE
 ```
 
@@ -34,8 +35,8 @@ https://everything.curl.dev/get.
 '
 sudo apt-get update
 sudo apt-get install -y curl
-
-
+```
+```bash
 : '
 2) Download a virtual environment manager. Here, we show how to download and install `micromamba`.
 Suggested alternatives are `mamba` and `miniconda` - see https://mamba.readthedocs.io/en/latest/installation.html.
@@ -50,8 +51,8 @@ echo "export PATH=${mambapath}:$PATH" >> ${HOME}/.bashrc
 
 # This command allows micromamba to execute shell commands
 eval "$(micromamba shell hook --shell bash)"
-
-
+```
+```bash
 : '
 3) Create a virtual environment and install Python and R package dependencies.
 Do `cd ENQUIRE` to run the following commands from within ENQUIRE main folder).
@@ -74,8 +75,8 @@ $(which Rscript) code/install_R_libraries.R
 
 # Clean environment
 micromamba clean --all --yes
-
-
+```
+```bash
 : '
 4) Install EDirect.
 See here for the latest  and OS-specific installation command:
@@ -84,8 +85,8 @@ https://www.ncbi.nlm.nih.gov/books/NBK179288/
 # Install EDirect under your HOME directory - manually adding the edirect path to .bash_profile keeps the latter cleaner
 yes n | sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
 echo "export PATH=$PATH:$HOME/edirect" >> $HOME/.bash_profile # necessary 
-
-
+```
+```bash
 : '
 5) Install Pandoc.
 See here for the latest  and OS-specific installation command: https://pandoc.org/installing.html
@@ -122,7 +123,7 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
 - The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
 ![Exemplary PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
     
-- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the ENQUIRE folder, type on the command line:
+- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
 
 ```bash
 python code/efetch_references.py tag ref1 ref2 ref3 ...
@@ -139,31 +140,39 @@ File "code/efetch_references.py", line 28, in <module>
     raise KeyError(glob)
 KeyError: '**/Link'`
 ```
-might occur. As a rule of thumb, check the "page navigation" menu on the Pubmed page of the article of interest ([example of a review with non indexed references](https://pubmed.ncbi.nlm.nih.gov/33086849/)). 
+might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" menu on the Pubmed page of the article of interest.
 
 </details>
 
 <details><summary>LAUNCHING ENQUIRE</summary> 
 
-- After the download, you should see a folder called `tam_textmining`: this is the main directory from which the program is supposed to be run.
+- After the download, you should see a folder called `ENQUIRE`: this is the main directory from which the program is supposed to be run.
 
-- Before running an actual task, it is recommended to inspect the flowchart stored as a PDF in the main repository and the Help section of the code by running (from the main repo directory):
+- Before running an actual task, let's look at an overview of ENQUIRE's methodology:
+  
+![https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_methods_overview.png)
+-
+- it is recommended to inspect the flowchart stored as a PDF in the main repository and the Help section of the code by running (from the main repo directory):
  
-    ```
+    ```bash
+    conda activate ENQUIRE
+    cd ENQUIRE
     ./code/ENQUIRE.sh -h
     ``` 
 
-    Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. A typical job might look something like
+    Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
 
+    ```bash
+    ./code/ENQUIRE.sh -t ICI_and_Colitis -i input/test_input/pmid-ICI_and_Colitis.txt
     ```
-    ./code/ENQUIRE.sh -p $(pwd)/ -t ICI_and_Colitis -j 6 -i test_input/pmid-ICI_and_Colitis.txt -r 1 -c 4 -a 3 -k 3 -w $rscript
-    ```
-    but the passing of the parameters could be easen by using the `textmining_config.txt` file that resides in the `/input` subdirectory: the left hand side of each variable assignment must be left unchanged, while the right hand side can be tweaked according to one's needs. Then the program could be launched by running:
+    Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the `/input` subdirectory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Then, the program could be launched by running:
 
+    ```bash
+    ./code/ENQUIRE.sh -f input/ENQUIRE_config.txt
     ```
-    ./code/ENQUIRE.sh -f input/textmining_config.txt
-    ```
-At the first execution of the above code using a fresh R distibution, ENQUIRE will launch the installation of all the necessary libraries, which will take several minutes. If the `.libPaths()` object behaves as expected, the process should go smoothly and happen only once.  
+</details>
+
+<details><summary>EXECUTING POST-HOC ANALYSES</summary> 
 
 </details>
 
@@ -180,13 +189,13 @@ At the first execution of the above code using a fresh R distibution, ENQUIRE wi
     ```    
     Where `N` shall be a size expressed in Kb to set as the maximum stack size. You could first check the number returned by `Cstack_info()` in an active R shell. You can read more about the issue [here](https://stackoverflow.com/questions/14719349/error-c-stack-usage-is-too-close-to-the-limit) and [here](https://rdrr.io/r/base/Cstack_info.html). 
 
-- When running the Fuzzy-C-Means Gene Sets clustering, We observed difficulties and/or failures in installing the R packages `factoextra`, `qgraph`, `car` and `randomcoloR` under R 3.6.3. In particular, under **Arch Linux** distributions,`randomcoloR` requires an *ad hoc* installation of the dependency `V8`. Please read [here](https://github.com/jeroen/V8/issues/80) about the issue, where it is suggested to install the [Arch Linux specific `v8-r` package](https://aur.archlinux.org/packages/v8-r). This shall allow the script `fuzzy_clustering_genesets_executive.R` to successfully install all R libraries. For packages `factoextra`, `qgraph` and `car`, an *ad hoc* "installation recipe" that compiles from specific versions of the repositories is executed within the code, hence these packages should hopefully not give any problem.
-
+- When running the Fuzzy-C-Means Gene Sets clustering, We observed difficulties and/or failures in installing some of the R packages. In particular, under **Arch Linux** distributions, an *ad hoc* installation of the dependency `V8` might be needed. Please read [here](https://github.com/jeroen/V8/issues/80) about the issue, where it is suggested to install the [Arch Linux specific `v8-r` package](https://aur.archlinux.org/packages/v8-r). This shall allow the script `context_aware_gene_sets.R` to successfully install all R libraries. We recommend trying installing from source with an *ad hoc*, R-version-specific versions of the involved packages, in an R interactive shell. 
 </details>
 
-<details><summary>NEW: IMPORTANT UPDATES ON PUBMED'S ACCESSIBILITY</summary>
+<details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
 As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/so22_updated_pubmed_e_utilities.html) have been applied to NCBI's e-utilities. In particular, it is now impossible to stream all records exceeding 10,000 PMIDs from any particular query to the PubMed database. This required to redesign the use of the e-utilities. While it's overall functionality was still preserved, we cannot guarantee the retrieval of all matching records, if the network-based queries obtained by intersecting relevant entities match more than 10,000 records (typically, this is a rare event when intersecting at least 4 distinct entities).
 </details>
+
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
 
 - Provided a recognisable "tag" has been passed to textmining algorithm, a typical output would produce a folder `tmp-tag`, which in turn contains as many subdirectories as the number of steps/iterations performed. For example, if the algorithm constructed 
