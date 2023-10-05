@@ -119,36 +119,31 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
     28640701
     24725689
 
-The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
-![/home/musellla/Pictures/Screenshot from 2023-10-05 12-13-25.png](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/ENQUIRE_Results_Example.png)  
+- The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
+![Exemplary PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
     
-</details>
+- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the ENQUIRE folder, type on the command line:
 
-<details><summary>HOW TO EXTRACT LITERATURE FROM REVIEW PAPERS</summary>
-
-- It is now possible to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic), by means of the python script `efetch_references.py`. From the main repository, type on the command line 
-
-```
+```bash
 python code/efetch_references.py tag ref1 ref2 ref3 ...
-
 ```
-
-where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used in the textmining pipeline. 
+where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
 DISCLAIMER: if the references are not annotated into the Pubmed's API, an error such as 
 
-`File "code/efetch_references.py", line 28, in <module>
+```python
+File "code/efetch_references.py", line 28, in <module>
     refs+=refparse(p)
   File "code/efetch_references.py", line 20, in refparse
     refs=dpath.get(data,"**/Link") # list of {Id:value} dicts
   File "/home/musellla/miniconda3/envs/wokenv/lib/python3.8/site-packages/dpath/util.py", line 178, in get
     raise KeyError(glob)
 KeyError: '**/Link'`
-
+```
 might occur. As a rule of thumb, check the "page navigation" menu on the Pubmed page of the article of interest ([example of a review with non indexed references](https://pubmed.ncbi.nlm.nih.gov/33086849/)). 
 
 </details>
 
-<details><summary>LAUNCHING THE ALGORITHM</summary> 
+<details><summary>LAUNCHING ENQUIRE</summary> 
 
 - After the download, you should see a folder called `tam_textmining`: this is the main directory from which the program is supposed to be run.
 
