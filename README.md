@@ -24,7 +24,7 @@ ENQUIRE installation consists of 5 steps, although your system may already satis
 4) Installing `EDirect`.
 5) Installing `Pandoc`.
 
-Below is an exemplary recipe for the whole installation process. If you are using a Debian GNU/Linux system, you may install everything by doing `bash code/install_everything.sh`. Please check the installation specifications and change them accordingly to fit to your OS and working environment. Windows user may want to first [locate their local disk from a UNIX virtual machine](https://askubuntu.com/questions/943006/how-to-navigate-to-c-drive-in-bash-on-wsl-ubuntu).  
+Below is an exemplary recipe for the whole installation process. If you are using a Debian GNU/Linux system and with `sudo` rights, you may install everything by doing `bash code/install_everything.sh`. Please check the installation specifications and change them accordingly to fit to your OS and working environment. Windows user may want to first [locate their local disk from a UNIX virtual machine](https://askubuntu.com/questions/943006/how-to-navigate-to-c-drive-in-bash-on-wsl-ubuntu).  
 
 ```bash
 : '
