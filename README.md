@@ -29,7 +29,7 @@ Below is an exemplary recipe for the whole installation process. If you are usin
 ```bash
 : '
 1) Install `curl` to be able to download and install a virtual environment manager and EDirect.
-`apt-get` is a Debian-specific package manager, you may want to check which package manager works best on your OS:
+`apt-get` is Debian-specific, you may want to check which package manager works best on your OS:
 https://everything.curl.dev/get.
 '
 sudo apt-get update
@@ -38,7 +38,8 @@ sudo apt-get install -y curl
 
 : '
 2) Download a virtual environment manager. Here, we show how to download and install `micromamba`.
-Suggested alternatives are `mamba` and `miniconda` - see https://mamba.readthedocs.io/en/latest/installation.html.
+Suggested alternatives are `mamba` and `miniconda`,
+see https://mamba.readthedocs.io/en/latest/installation.html.
 '
 #Change the following variable to customize the installation path:
 mambapath=$HOME/bin
@@ -80,7 +81,7 @@ micromamba clean --all --yes
 4) Install EDirect.
 See here for the latest  and OS-specific installation command: https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
 '
-# Install EDirect under your HOME directory - manually adding the edirect path to .bash_profile keeps the latter cleaner
+# Install EDirect under your HOME directory. manually adding the edirect path to .bash_profile keeps the latter cleaner
 yes n | sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
 echo "export PATH=$PATH:$HOME/edirect" >> $HOME/.bash_profile # necessary 
 
