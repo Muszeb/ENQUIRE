@@ -172,6 +172,89 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 
 <details><summary>EXECUTING POST-HOC ANALYSES</summary> 
 
+#### Context-aware gene set annotation 
+- Activate `ENQUIRE` environment and run `Rscript code/context_aware_gene_sets.R` from the `ENQUIRE` directory to perform automatic annotation of gene sets, using ENQUIRE-generated, Gene/MeSH edge and node tables and Fuzzy-C-Means (FCM). See the original manuscript for further information.
+
+```
+Usage: Rscript code/context_aware_gene_sets.R [options]
+
+Options:
+	-w PATH, --directory=PATH
+		Output directory [default to current working directory]
+
+	-e PATH, --edgetable=PATH
+		Path to an ENQUIRE-generated, Gene/MeSH edge table file (required)
+
+	-n PATH, --nodetable=PATH
+		Path to an ENQUIRE-generated, Gene/MeSH node table file (required)
+
+	-t TAG, --tag=TAG
+		tag prefix (default to 'ENQUIRE')
+
+	-d PARAMETER, --membdeg=PARAMETER
+		minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]
+
+	-s PARAMETER, --setsize=PARAMETER
+		minimal gene set size (default: 2)
+
+	-h, --help
+		Show this help message and exit
+```
+
+- You can use the exemplary output files contained in `tmp-FerroDrugTherapy` to test the script:
+```bash
+Rscript code/context_aware_gene_sets.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_edges_table_subgraph.tsv -n tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_nodes_table_subgraph.tsv
+```
+Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
+
+#### Context-aware pathway enrichment analysis
+- Activate `ENQUIRE` environment and run `Rscript code/context_aware_pathway_enrichment.R` from the `ENQUIRE` directory to perform topology-based, pathway enrichment analysis using SANTA and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
+
+```
+Usage: Rscript code/context_aware_pathway_enrichment.R [options]
+
+Options:
+	-w PATH, --directory=PATH
+		Working directory (default to current working directory)
+
+	-o PATH, --outdirectory=PATH
+		Output directory (default to current working directory, and must preexist)
+
+	-n PATH, --netpathdata=PATH
+		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
+		If the current working directory is not the 'ENQUIRE' folder, the default path ('input/...') will throw an error.
+
+	-e PATH, --edgetable=PATH
+		Path to an ENQUIRE-generated, gene-gene edge table file (required).
+
+	-c PARAMETER, --cores=PARAMETER
+		max number of cores used (PSOCK parallelization) (default: 4), >1 recommended.
+
+	-t TAG, --tag=TAG
+		tag prefix (default to 'ENQUIRE').
+
+	-s PARAMETER, --setsize=PARAMETER
+		maximum Reactome pathway size (default: 100, minimum 3).
+
+	-p PARAMETER, --permutations=PARAMETER
+		number of permutations to infer KNet null distribution
+		(default: 100, the higher the more accurate the test statistics).
+
+	-f PARAMETER, --padjust=PARAMETER
+		P-value adjustment method, must be one of [holm, hochberg, hommel, bonferroni, BH, BY, fdr, none].
+		Default and recommended: holm, as the p-value null distribution is not guaranteed to be uniform.
+
+	-h, --help
+		Show this help message and exit
+```
+
+- You can use the exemplary output files contained in `tmp-FerroDrugTherapy` to test the script:
+```bash
+Rscript code/context_aware_pathway_enrichment.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_edges_table_subgraph.tsv -c 8 -s 30
+```
+Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
+
+ 
 </details>
 
 <details><summary> FREQUENTLY ENCOUNTERED ERRORS </summary>
@@ -187,7 +270,7 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
     ```    
     Where `N` shall be a size expressed in Kb to set as the maximum stack size. You could first check the number returned by `Cstack_info()` in an active R shell. You can read more about the issue [here](https://stackoverflow.com/questions/14719349/error-c-stack-usage-is-too-close-to-the-limit) and [here](https://rdrr.io/r/base/Cstack_info.html). 
 
-- When running the Fuzzy-C-Means Gene Sets clustering, We observed difficulties and/or failures in installing some of the R packages. In particular, under **Arch Linux** distributions, an *ad hoc* installation of the dependency `V8` might be needed. Please read [here](https://github.com/jeroen/V8/issues/80) about the issue, where it is suggested to install the [Arch Linux specific `v8-r` package](https://aur.archlinux.org/packages/v8-r). This shall allow the script `context_aware_gene_sets.R` to successfully install all R libraries. We recommend trying installing from source with an *ad hoc*, R-version-specific versions of the involved packages, in an R interactive shell. 
+- When running the Fuzzy-C-Means Gene Sets clustering, We observed difficulties and/or failures in installing some of the R packages. In particular, under **Arch Linux** distributions, an *ad hoc* installation of the dependency `V8` might be needed. Please read [here](https://github.com/jeroen/V8/issues/80) about the issue, where it is suggested to install the [Arch Linux specific `v8-r` package](https://aur.archlinux.org/packages/v8-r). This shall allow the script `context_aware_gene_sets.R` to successfully install all R libraries. We recommend trying installing from source with an *ad hoc*, R-version-specific versions of the involved packages, in an R interactive shell.
 </details>
 
 <details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
