@@ -150,7 +150,7 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 
 - Before running an actual task, let's look at an overview of ENQUIRE's methodology:
   
-![https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_methods_overview.png)
+![https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_methods_overview.png).
 -
 - it is recommended to inspect the flowchart stored as a PDF in the main repository and the Help section of the code by running (from the main repo directory):
  
