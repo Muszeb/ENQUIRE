@@ -1,124 +1,105 @@
 # ENQUIRE
 
-<details><summary>INITIALIZATION</summary> 
+<details><summary>INSTALLATION</summary> 
 
 ENQUIRE can currently be installed and run on UNIX systems such as MacOS, Linux and UNIX emulators/virtual machines for Windows such as WSL, CygWin or MSYS2 (installation of UNIX emulators is not included in this guide).
 
-Start by downloading the repository folder stored under the branch "ENQUIRE".
-
-The script requires Python 3.8 or later versions (tested up to 3.9.X) on Linux and UNIX emulators, while Python 3.7 is necessary to run ENQUIRE on MacOS (ad hoc build is under construction).
-To successfully run ENQUIRE, we need to successfully install **Python and its required libraries**, **EDirect** and an **R version 3.X**. This section is therefore divided into these free subcapters, as well as an additional **frequently encountered errors** section.  
-
-<details><summary>INSTALL PYTHON AND REQUIRED LIBRARIES </summary> 
-
-<details><summary>THROUGH CONDA (RECOMMENDED)</summary> 
-
-The easiest way to install all required packages is to create a new `conda` environment: the algorithm will therefore only work if such environment is "activated". 
-To create a dedicated `conda` environment, first install an Anaconda or Miniconda distribution (e.g.: [from here](https://repo.continuum.io/miniconda/)).
-For example, on Linux you could run: 
-
+Start by cloning and accessing the repository. If using MacOS, clone the `ENQUIRE-MACOS` branch (this branch assumes you have MacOS-specific `coreutils` and `findutils` installed). 
+```bash
+# Linux/WSL/CygWing/MSYS2 
+git clone https://github.com/Muszeb/ENQUIRE.git
+cd ENQUIRE
 ```
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
+```bash
+# MacOS
+git clone https://github.com/Muszeb/ENQUIRE.git -b ENQUIRE-MACOS
+cd ENQUIRE
 ```
 
-and on MacOS:
+ENQUIRE installation consists of 5 steps, although your system may already satisfy some of the requirements. 
 
-```
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
+1) Installing `curl` to be able to download and install a virtual environment manager and `EDirect`.
+2) Downloading a virtual environment manager.
+3) Creating a virtual environment and install Python and R package dependencies.
+4) Installing `EDirect`.
+5) Installing `Pandoc`.
+
+Below is an exemplary recipe for the whole installation process. If you are using a Debian GNU/Linux system, you may install everything by doing `bash code/install_everything.sh`. Please check the installation specifications and change them accordingly to fit to your OS and working environment. Windows user may want to first [locate their local disk from a UNIX virtual machine](https://askubuntu.com/questions/943006/how-to-navigate-to-c-drive-in-bash-on-wsl-ubuntu).  
+
+```bash
+: '
+1) Install `curl` to be able to download and install a virtual environment manager and EDirect.
+`apt-get` is a Debian-specific package manager, you may want to check which package manager works best on your OS:
+https://everything.curl.dev/get.
+'
+sudo apt-get update
+sudo apt-get install -y curl
+
+
+: '
+2) Download a virtual environment manager. Here, we show how to download and install `micromamba`.
+Suggested alternatives are `mamba` and `miniconda` - see https://mamba.readthedocs.io/en/latest/installation.html.
+'
+#Change the following variable to customize the installation path:
+mambapath=$HOME/bin
+
+# Download micromamba and export path to micromamba (possibly update .bashrc)
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj "${mambapath}/micromamba"
+export PATH="${mambapath}:$PATH"
+echo "export PATH=${mambapath}:$PATH" >> ${HOME}/.bashrc
+
+# This command allows micromamba to execute shell commands
+eval "$(micromamba shell hook --shell bash)"
+
+
+: '
+3) Create a virtual environment and install Python and R package dependencies.
+Do `cd ENQUIRE` to run the following commands from within ENQUIRE main folder).
+If using a different environment manager like mamba,
+do `mamba env create -n ENQUIRE -f input/ENQUIRE.yml` followed by `mamba activate ENQUIRE`
+and skip to the `pip install` command.
+'
+# Create an ad hoc environment.
+# If you have another virtual environment manager installed (e.g miniconda),
+# the environment might be installed under '$HOME/othermanager/envs'
+micromamba create -n ENQUIRE 
+micromamba activate ENQUIRE
+
+# Install Python libraries `ENQUIRE` environment, from the `input/ENQUIRE.yml` file.
+micromamba install -y -q -f input/ENQUIRE.yml
+pip install -r input/PackagesNotFound.txt # these packages can't be installed by environment managers
+
+# Install R libraries under the ENQUIRE environment (remember to "activate ENQUIRE"!)
+$(which Rscript) code/install_R_libraries.R 
+
+# Clean environment
+micromamba clean --all --yes
+
+
+: '
+4) Install EDirect.
+See here for the latest  and OS-specific installation command: https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
+'
+# Install EDirect under your HOME directory - manually adding the edirect path to .bash_profile keeps the latter cleaner
+yes n | sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+echo "export PATH=$PATH:$HOME/edirect" >> $HOME/.bash_profile # necessary 
+
+
+: '
+5) Install Pandoc.
+See here for the latest  and OS-specific installation command: https://pandoc.org/installing.html
+'
+# Install Pandoc 
+sudo apt-get install -y pandoc
 ```
 
-- Once `conda` has being installed, use the file called `ENQUIRE.yml` that resides in the `input` subdirectory to generate a new environment called "ENQUIRE" (or any other name you like), by running from the main directory of this repository (Windows user may want to first [locate their local disk from a UNIX virtual machine](https://askubuntu.com/questions/943006/how-to-navigate-to-c-drive-in-bash-on-wsl-ubuntu)): 
+Alternatively (but not recommended), you can install all the required R and Python libraries independent of a virtual environment manager (steps 2-3). First, install `python>=3.8`, `R>=4.2`, and `pip >= 20.2`. Then, from the `ENQUIRE` directory run
 
-```
-conda env create --name ENQUIRE -f input/ENQUIRE.yml
-```
-
-The environment can then be activated by running:
-
-```
-conda activate ENQUIRE
-```
-The environment will have Python 3.8.X and R 3.6.3 installed by default.
-
-- Sometimes, an installation conflict can happen, such that conda does not install some of the required packages. We recommend   running a trial of the installation while redirecting the stdout 2 to a log file (add `2> logfile.log` to the installation command). In case the installation of a package fails, we recommend running an ad-hoc pip installation like `pip install package==x.x.x` within the ENQUIRE environment, choosing a package version as close as possible to those reported in input/ENQUIRE_pip_requirements.txt.
-For example, the package `en-ner-jnlpba-md` (check [scispacy's repository](https://allenai.github.io/scispacy/) cannot be installed through `conda`. Then, run the following command to install the last missing packages:   
-```
-conda activate ENQUIRE
-pip install -r input/PackagesNotFound.txt
-```
-</details>
-
-<details><summary>WITHOUT ANY ENVIRONMENT</summary>
-
-Alternatively, to install all the required Python libraries, install `python >= 3.8` and `pip >= 20.2`, then from the main directory run
-
-```
+```bash
 pip install -r input/ENQUIRE_pip_requirements.txt
+Rscript code/install_R_libraries.R
 ```
-</details>
-</details>
-
-<details><summary> INSTALLING R 3.X </summary>
-
-If You followed the installation through `conda`, R version 3.6.3 should be installed under the `ENQUIRE` environment with its corresponding `Rscript` interpreter. The latter is required to run node ranking functions from the [SANTA](http://bioconductor.org/packages/release/bioc/html/SANTA.html) package. If needed, a second yml file named `R363_env.yml` can be found in the `input/` folder of the main repository. Then, to install `R 3.6.3` separately, simply run 
-
-```
-conda env create --name R363 -f input/R363_env.yml
-```
-
-Now it is necessary to locate the `Rscript` interpreter. Its file path needs to be passed to ENQUIRE whenever a job is launched. To get the `Rscript` file path, you could run: 
-        
-```
-conda activate ENQUIRE
-which Rscript    
-```
-The printed output should look something like `/home/usr/miniconda3/envs/ENQUIRE/bin/Rscript`. One way to let ENQUIRE know the `RScript` path would be to `export` the file path via (the variable name is important!):
-
-```
-export rscript=$(which Rscript)
-```
-
-which will let ENQUIRE know the `Rscript` location within the current terminal session. To have this set for any terminal session, write the `rscript` variable into a terminal profile file, such as the `.bashrc`. 
-If you don't want to generate the `rscript` variable in your interactive bash shell, just pass `$(which Rscript)` to the `-w` argument of `ENQUIRE.sh`.
-Alternatively, copy paste the exact file path and add the line `rscript=/home/usr/miniconda3/envs/R363/bin/Rscript` to your `textmining_config.txt` file (more on that under "Launching the algorithm").
-
-
-</details>
-
-<details><summary>INSTALL EDIRECT FROM NCBI (E-UTILITIES) </summary> 
-
-As stated in [this document from NCBI](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (Created: April 23, 2013; Last    Update: January 4, 2023.):
-
-EDirect will run on Unix and Macintosh computers, and under the Cygwin or [WSL (Windows 10+ users)](https://ubuntu.com/wsl) Unix-emulation environments on Windows PCs. To install the EDirect software, open a terminal window and execute one of the following two commands:
-
-```
-sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
-```
-
-```
-sh -c "$(wget -q ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh -O -)"
-```
-
-This will download a number of scripts and several precompiled programs into an "edirect" folder in the user's home directory. It may then print an additional command for updating the PATH environment variable in the user's configuration file. The editing instructions will look something like:
-
-```
-echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile
-```
-
-As a convenience, the installation process ends by offering to run the PATH update command for you. Answer "y" and press the Return key if you want it run. If the PATH is already set correctly, or if you prefer to make any editing changes manually, just press Return.
-
-Once installation is complete, run:
-
-```
-export PATH=${PATH}:${HOME}/edirect
-```
-
-to set the PATH for the current terminal session.
-
-</details>
-
+Note that this does not replace steps 1, 4 and 5 described above.
 </details>
 
 <details><summary>INPUT FILE</summary>
