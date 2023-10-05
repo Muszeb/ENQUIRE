@@ -148,11 +148,9 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 
 - After the download, you should see a folder called `ENQUIRE`: this is the main directory from which the program is supposed to be run.
 
-- Before running an actual task, let's look at an overview of ENQUIRE's methodology:
-  
-![https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_methods_overview.png).
--
-- it is recommended to inspect the flowchart stored as a PDF in the main repository and the Help section of the code by running (from the main repo directory):
+- Before running an actual task, take a look at `ENQUIRE_methods_overview.png`: the figure briefly illustrates the main steps of the algorithm.
+   
+- Now activate the `ENQUIRE` environment (unless you followed the pip-only installation) and inspect the code Help section by running (from the `ENQUIRE` directory):
  
     ```bash
     conda activate ENQUIRE
@@ -165,7 +163,7 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
     ```bash
     ./code/ENQUIRE.sh -t ICI_and_Colitis -i input/test_input/pmid-ICI_and_Colitis.txt
     ```
-    Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the `/input` subdirectory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Then, the program could be launched by running:
+    Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the `/input` subdirectory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Additional information on the parameters are given in `ENQUIRE_flowchart.png`. Then, the program can be launched by running:
 
     ```bash
     ./code/ENQUIRE.sh -f input/ENQUIRE_config.txt
