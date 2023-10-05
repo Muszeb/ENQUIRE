@@ -203,7 +203,7 @@ Options:
 
 - You can use the exemplary output files contained in `tmp-FerroDrugTherapy` to test the script:
 ```bash
-Rscript code/context_aware_gene_sets.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_edges_table_subgraph.tsv -n tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_nodes_table_subgraph.tsv
+Rscript code/context_aware_gene_sets.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Complete_edges_table_subgraph.tsv -n tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Complete_nodes_table_subgraph.tsv
 ```
 Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
 
