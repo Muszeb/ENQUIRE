@@ -205,7 +205,7 @@ Options:
 ```bash
 Rscript code/context_aware_gene_sets.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Complete_edges_table_subgraph.tsv -n tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Complete_nodes_table_subgraph.tsv
 ```
-Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
+Please note that the script might last quite long, due to FCM. 
 
 #### Context-aware pathway enrichment analysis
 - Activate `ENQUIRE` environment and run `Rscript code/context_aware_pathway_enrichment.R` from the `ENQUIRE` directory to perform topology-based, pathway enrichment analysis using SANTA and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
@@ -253,8 +253,6 @@ Options:
 Rscript code/context_aware_pathway_enrichment.R -e tmp-FerroDrugTherapy/FerroDrugTherapy/FerroDrugTherapy_Genes_edges_table_subgraph.tsv -c 8 -s 30
 ```
 Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
-
- 
 </details>
 
 <details><summary> FREQUENTLY ENCOUNTERED ERRORS </summary>
