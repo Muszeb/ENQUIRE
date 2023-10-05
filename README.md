@@ -118,6 +118,10 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
     33711241
     28640701
     24725689
+
+The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
+![/home/musellla/Pictures/Screenshot from 2023-10-05 12-13-25.png](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/ENQUIRE_Results_Example.png)  
+    
 </details>
 
 <details><summary>HOW TO EXTRACT LITERATURE FROM REVIEW PAPERS</summary>
