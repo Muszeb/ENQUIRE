@@ -149,6 +149,7 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 - After the download, you should see a folder called `ENQUIRE`: this is the main directory from which the program is supposed to be run.
 
 - Before running an actual task, take a look at `ENQUIRE_methods_overview.png`: the figure briefly illustrates the main steps of the algorithm.
+  ![](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_methods_overview.png)
    
 - Now activate the `ENQUIRE` environment (unless you followed the pip-only installation) and inspect the code Help section by running (from the `ENQUIRE` directory):
  
