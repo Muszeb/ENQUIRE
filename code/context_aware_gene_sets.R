@@ -115,7 +115,7 @@ print("perform FCM with Ward-derived initial centers...")
 res.fcm <- ppclust::fcm(x,stand = F,memberships = uStart,centers = shards,m=2,fixcent = F,nstart=3,iter.max = 1E6,con.val=1e-9,numseed = 2202)
 #
 genes=test_nodes[test_nodes[,2,drop=T]=='GENE',1,drop=T]
-print(genes)
+#print(genes)
 #
 print("...done, produce output data...")
 #### use PCA then custom plot ####
@@ -137,7 +137,7 @@ pcashard=pcashardf
 d=opt$d
 s=opt$s
 ### genes set of at least 2 - given minimum memberships to cluster ###
-okclust=as.character(seq(1,ncol(res.fcm$u))[apply(res.fcm$u[genes,],2,function(v)(sum(as.numeric(v>=d))>=s))])
+okclust=as.character(seq(1,ncol(res.fcm$u))[apply(res.fcm$u[match(genes,rownames(res.fcm$u)),],2,function(v)(sum(as.numeric(v>=d))>=s))])
 ###
 pcashard$Cluster=factor(as.numeric(pcashard$Cluster),levels = sort(as.numeric(unique(pcashard$Cluster))))
 ##### implement cluster labels ####
