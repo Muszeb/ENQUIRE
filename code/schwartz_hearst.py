@@ -2,7 +2,7 @@ import logging
 import regex
 import sys
 from collections import defaultdict, Counter
-
+import random
 """
 A Python 3 refactoring of Vincent Van Asch's Python 2 code at
 
@@ -270,7 +270,9 @@ def select_definition(definition, abbrev):
 def extract_abbreviation_definition_pairs(file_path=None,
                                           doc_text=None,
                                           most_common_definition=False,
-                                          first_definition=False):
+                                          first_definition=False,
+                                          seed=2202):
+    random.seed(seed)
     abbrev_map = dict()
     list_abbrev_map = defaultdict(list)
     counter_abbrev_map = dict()
