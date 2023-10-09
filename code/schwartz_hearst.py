@@ -18,7 +18,7 @@ Biocomputing, 2003, pp 451-462.
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 log = logging.getLogger(__name__)
-
+random.seed(2202)
 
 class Candidate(str):
     def __init__(self, value):
@@ -47,12 +47,12 @@ def yield_lines_from_doc(doc_text):
         yield line.strip()
 
 
-def best_candidates(sentence):
+def best_candidates(sentence,seed=2202):
     """
     :param sentence: line read from input file
     :return: a Candidate iterator
     """
-
+    random.seed(seed)
     if '(' in sentence:
         # Check some things first
         if sentence.count('(') != sentence.count(')'):
@@ -140,7 +140,7 @@ def conditions(candidate):
     return viable
 
 
-def get_definition(candidate, sentence):
+def get_definition(candidate, sentence, seed=2202):
     """
     Takes a candidate and a sentence and returns the definition candidate.
 
@@ -152,6 +152,7 @@ def get_definition(candidate, sentence):
     :return: candidate definition for this abbreviation
     """
     # Take the tokens in front of the candidate
+    random.seed(seed)
     tokens = regex.split(r'[\s\-]+', sentence[:candidate.start - 2].lower())
     # the char that we are looking for
     key = candidate[0].lower()
@@ -200,7 +201,7 @@ def get_definition(candidate, sentence):
         raise ValueError('There are less keys in the tokens in front of candidate than there are in the candidate')
 
 
-def select_definition(definition, abbrev):
+def select_definition(definition, abbrev, seed=2202):
     """
     Takes a definition candidate and an abbreviation candidate
     and returns True if the chars in the abbreviation occur in the definition
@@ -211,7 +212,7 @@ def select_definition(definition, abbrev):
     :param abbrev: candidate abbreviation
     :return:
     """
-
+    random.seed(seed)
     if len(definition) < len(abbrev):
         raise ValueError('Abbreviation is longer than definition')
 
