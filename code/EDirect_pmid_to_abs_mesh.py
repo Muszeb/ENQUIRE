@@ -303,6 +303,8 @@ greek_alphabet = {
 	b'\xcf\x87':	 'chi',
 	b'\xcf\x88':	 'psi',
 	b'\xcf\x89':	 'omega',}
+# replace greek, non-ASCII spellings
+ful_dict=dict({k:re.sub('[\u0080-\uFFFF]',greek_sub_f,v) for k,v in ful_dict.items()})
 #
 def greek_sub_a(m):
 	if m.group() is not None:
@@ -361,10 +363,20 @@ if len(list(ful_dict.items())) < ncores:
 
 var_names_nlp=["nlp_"+str(i) for i in range(ncores)]
 for name in var_names_nlp:
+	random.seed(2202)
+	spacy.util.fix_random_seed(2202)
+	fix_random_seed(2202)
+	np.random.seed(2202)
+	os.environ['PYTHONHASHSEED'] = str(2202)
 	globals()[name] = nlp
 
 with Pool(ncores) as pool:
 	print("scispacy starmap ...")
+	random.seed(2202)
+	spacy.util.fix_random_seed(2202)
+	fix_random_seed(2202)
+	np.random.seed(2202)
+	os.environ['PYTHONHASHSEED'] = str(2202)
 	res=pool.starmap(celliNER,distro(list(ful_dict.items()),ncores,'nlp_'))
 
 cell_dict={}
@@ -378,7 +390,6 @@ for d in res:
 
 #abs_dict=dict({k:[re.sub('[\u0080-\uFFFF]',greek_sub_a,i) for i in v] for k,v in abs_dict.items()})
 print("finding abbreviations")
-ful_dict=dict({k:re.sub('[\u0080-\uFFFF]',greek_sub_f,v) for k,v in ful_dict.items()})
 abb_dict=dict({key:abb_pairs(val) for key,val in ful_dict.items()})
 abb_dict={pmid:{ab:df for ab,df in abb_dict[pmid].items() if df not in cell_dict[pmid]} for pmid in list(abb_dict.keys())} 
 #abb_dict=pd.Series(abb_dict)
