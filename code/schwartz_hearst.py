@@ -3,6 +3,7 @@ import regex
 import sys
 from collections import defaultdict, Counter
 import random
+import numpy as np
 """
 A Python 3 refactoring of Vincent Van Asch's Python 2 code at
 
@@ -19,7 +20,8 @@ Biocomputing, 2003, pp 451-462.
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 log = logging.getLogger(__name__)
 random.seed(2202)
-
+np.random.seed(2202)                                                         
+os.environ['PYTHONHASHSEED'] = str(2202)
 class Candidate(str):
     def __init__(self, value):
         super().__init__()
@@ -52,6 +54,8 @@ def best_candidates(sentence,seed=2202):
     :param sentence: line read from input file
     :return: a Candidate iterator
     """
+    np.random.seed(seed)                                                         
+    os.environ['PYTHONHASHSEED'] = str(seed)
     random.seed(seed)
     if '(' in sentence:
         # Check some things first
@@ -152,6 +156,8 @@ def get_definition(candidate, sentence, seed=2202):
     :return: candidate definition for this abbreviation
     """
     # Take the tokens in front of the candidate
+    np.random.seed(seed)                                                         
+    os.environ['PYTHONHASHSEED'] = str(seed)
     random.seed(seed)
     tokens = regex.split(r'[\s\-]+', sentence[:candidate.start - 2].lower())
     # the char that we are looking for
@@ -212,6 +218,8 @@ def select_definition(definition, abbrev, seed=2202):
     :param abbrev: candidate abbreviation
     :return:
     """
+    np.random.seed(seed)                                                         
+    os.environ['PYTHONHASHSEED'] = str(seed)
     random.seed(seed)
     if len(definition) < len(abbrev):
         raise ValueError('Abbreviation is longer than definition')
@@ -273,6 +281,8 @@ def extract_abbreviation_definition_pairs(file_path=None,
                                           most_common_definition=False,
                                           first_definition=False,
                                           seed=2202):
+    np.random.seed(seed)                                                         
+    os.environ['PYTHONHASHSEED'] = str(seed)
     random.seed(seed)
     abbrev_map = dict()
     list_abbrev_map = defaultdict(list)
@@ -323,10 +333,16 @@ def extract_abbreviation_definition_pairs(file_path=None,
         if most_common_definition:
             # Return the most common definition for each term
             for k,v in list_abbrev_map.items():
+                np.random.seed(seed)                                                         
+                os.environ['PYTHONHASHSEED'] = str(seed)
+                random.seed(seed)
                 counter_abbrev_map[k] = Counter(v).most_common(1)[0][0]
         else:
             # Return the first definition for each term
             for k, v in list_abbrev_map.items():
+                np.random.seed(seed)                                                         
+                os.environ['PYTHONHASHSEED'] = str(seed)
+                random.seed(seed)
                 counter_abbrev_map[k] = v[0]
         return counter_abbrev_map
 

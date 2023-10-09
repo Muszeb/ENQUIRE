@@ -31,6 +31,7 @@ nltk.download('words')
 from nltk.corpus import words
 from nltk.stem import WordNetLemmatizer
 from english_words import english_words_set
+from thinc.api import fix_random_seed
 import spacy
 import scispacy
 import xmltodict
@@ -337,6 +338,7 @@ def abb_pairs(s):
 def celliNER(items,model):
 	random.seed(2202)
 	spacy.util.fix_random_seed(2202)
+	fix_random_seed(2202)
 	np.random.seed(2202)
 	os.environ['PYTHONHASHSEED'] = str(2202)
 	nlp = globals()[model]
