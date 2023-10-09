@@ -319,6 +319,8 @@ def greek_sub_f(m):
 #
 def abb_pairs(s):
 	random.seed(2202)
+	os.environ['PYTHONHASHSEED'] = str(2202)
+	np.random.seed(2202)
 	d=extract_abbreviation_definition_pairs(doc_text=s,first_definition=True)
 	d={str(k):str(v) for k,v in d.items()}
 	# Deal with abbreviations of plurals etc...
@@ -334,10 +336,11 @@ def abb_pairs(s):
 #
 def celliNER(items,model):
 	random.seed(2202)
-	nlp = globals()[model]
-	items = [(x[1],x[0]) for x in items]
 	spacy.util.fix_random_seed(2202)
 	np.random.seed(2202)
+	os.environ['PYTHONHASHSEED'] = str(2202)
+	nlp = globals()[model]
+	items = [(x[1],x[0]) for x in items]
 	docs = nlp.pipe(items, as_tuples=True)
 	d={int(tpl[1]):list(set([str(ent) for ent in tpl[0].ents if ent.label_ in ["CELL_TYPE", "CELL_LINE"]])) for tpl in docs}
 	return d

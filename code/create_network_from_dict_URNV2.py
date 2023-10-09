@@ -546,9 +546,13 @@ if  prunedg.size()!=0:
 	nx.set_edge_attributes(prunedg, idict, "weight")
 	try:
 		random.seed(2202)
+		np.random.seed(2202)                                                         
+      	os.environ['PYTHONHASHSEED'] = str(2202)
 		CC=nx_comm.louvain_communities(prunedg,weight='weight',seed=2202)
 	except ZeroDivisionError:
 		random.seed(2202)
+		np.random.seed(2202)                                                         
+      	os.environ['PYTHONHASHSEED'] = str(2202)
 		print("WARNING!\nAll edges have a weight of 0, hence a weighted Louvain clustering is not possible.")
 		CC=nx_comm.louvain_communities(prunedg,weight=None,seed=2202)
 	badv=[c for c in CC if len(c)==1]
