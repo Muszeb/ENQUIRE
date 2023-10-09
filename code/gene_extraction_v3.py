@@ -33,11 +33,14 @@ from english_words import english_words_set
 from Bio import pairwise2
 from itertools import starmap
 import csv
+import warnings
 try:
     import _pickle as pickle
 except ModuleNotFoundError:
     	import pickle
 
+#
+warnings.simplefilter(action='ignore', category=FutureWarning)
 # Pickle a file and then compress it into a file with extension 
 def compress_pickle(title, data):
 	with bz2.BZ2File(title + ".pbz2", "w") as f: 
@@ -155,7 +158,8 @@ else:
 			al=re.sub('[\u0080-\uFFFF]',greek_sub_a,al)
 			return al
 	#
-	aliasdf['alias_symbol']=aliasdf.alias_symbol.apply(alclean,1)
+	aliasdf['alias_symbol']=aliasdf['alias_symbol'].apply(alclean,1)
+	# ``ser.astype(object).apply()``
 	# remove 1-2 letters only aliases
 	aliasdf=aliasdf[~(aliasdf.alias_symbol==False)]
 	# aliases=aliasdf.aliases.tolist()

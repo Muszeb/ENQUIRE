@@ -387,7 +387,8 @@ def hyperurn(Aij,csi,vseq,M=M,m=m):
 	# Aij is a dict item, annotated as a ((v1,v2),count)
 	ij,Aij=Aij
 	poix=vseq[list(ij)]
-	csiij=2*csi[poix[0],][poix[1]]
+	#csiij=2*csi[poix[0],][poix[1]]
+	csiij=2*csi[poix.iloc[0]][poix.iloc[1]]
 	return ij,1-hypergeom.cdf(Aij, M, csiij, m)
 
 ###
@@ -405,7 +406,8 @@ def approxurn(Aij,csi,vseq,M=M,m=m):
 	# Aij is a dict item, annotated as a ((v1,v2),count)
 	ij,Aij=Aij
 	poix=vseq[list(ij)]
-	csiij=2*csi[poix[0],][poix[1]]
+	#csiij=2*csi[poix[0],][poix[1]]
+	csiij=2*csi[poix.iloc[0]][poix.iloc[1]]
 	p=csiij/M
 	Z=(Aij-m*p)/math.sqrt(((M-m)/(M-1))*m*p*(1-p))
 	return ij,1-norm.cdf(Z)

@@ -341,7 +341,7 @@ def hyperlink(v):
 		return '=HYPERLINK("'+pubmed+s+'/", "'+s+'")'
 	links=[link(s) for s in l]
 	links_expl=[pubmed+s for s in l]
-	return [{'PMID': i, 'kw1': v[0], 'kw2': v[1], 'link':s, 'link_explicit':t} for i,s,t in zip(l,links,links_expl)]
+	return [{'PMID': i, 'kw1': v.iloc[0], 'kw2': v.iloc[1], 'link':s, 'link_explicit':t} for i,s,t in zip(l,links,links_expl)]
 ###	
 hypes=edge_tbl[['kw1','kw2']].apply(hyperlink,axis=1).tolist()
 hypes=list(itertools.chain.from_iterable(hypes))

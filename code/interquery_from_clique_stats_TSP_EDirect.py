@@ -207,6 +207,7 @@ while j < A:
 	### The Communities might belong to different subgraphs! ###
 	#### best TSP ####
 	S = [net.subgraph(c).copy() for c in nx.connected_components(net)]
+	random.seed(2202)
 	best_p=[tsp(n) for n in S]
 	#if len(best_p)==1:
 	#	best_p=[best_p]

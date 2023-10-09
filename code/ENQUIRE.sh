@@ -6,32 +6,32 @@ Help(){
 	echo
 	echo "####################################################################################"
 	echo
-	echo "Iterative correlate-query-expand network construction by literature texmining"
+	echo "Expanding Networks by Querying Unexpectedly Inter-Related Entities"
 	echo
 	echo "####################################################################################" 
 	echo 
 	echo "####################################################################################"
 	echo
-	echo "Syntax: ./code/txtmining_master.sh (-options...), " #" <working directory> <input PubMed_abstracts.txt>"
+	echo "Usage: ./code/ENQUIRE.sh (-options...), " #" <working directory> <input PubMed_abstracts.txt>"
 	echo
-	echo -e "Where\t[-flag_short|--flag_long|config file variable, if available]:"
+	echo -e "Legend:\t[-flag_short|--flag_long|config file variable, if available]:"
 	echo
 	#echo "<working directory> = "
 	#echo "<input PubMed_abstracts.txt> =	"
-	echo "[-p|--path|wd] = the path to the working directory (wd) : it's supposed to be the git repo, with ./code and ./input as subfolders."
-	echo -e "[-i|--input|to_py] = input.txt (to be saved under "wd/input/"): a 'seed' text file containing one PMID per line. It can be obtained from PubMed advanced queries specifying 'PMID' as the downloading option.\n\tA minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended"
-	echo "[-t|--tag|tag] = A characteristic tag definining the task."
-	echo "[-j|--ncores|ncores] = The max number of CPU cores to be used."		
-	echo "[-c|--combine-set|comb] = how many N entities to intersect to construct a query? (4: default and recommended, 3: loose searches, 5:very strict queries)." 
-	echo -e "[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be considered for querying? (default: 0 %).\n\tExample: if 10 papers out of 100 contain nodes belonging to a subgraph, that subgraph has 10% representativeness." 
-	echo "[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs? (1: conservative, 2: moderate, 3: greedy)."
-	echo -e "[-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:\n\teach gene/MeSH term must be connected to at least K original communities to be incorporate in the expanded network "
-	echo -e "[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).\nThis option overwrites any parameter set by a different option"
-	echo "[-w|--rscript|rscript] = path to the Rscript compiler of an installed R version (e.g. the one installed using ENQUIRE.yml)"
-	echo "[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? omit or 'all' to textmine both entities"
-	echo "[-h|--help] = print help."
+	echo -e "[-p|--path|wd] = the path to the working directory (wd).\n\tIt must be the ENQUIRE main folder, with ./code and ./input as subfolders.\n\tThe default is the current working directory.\n"
+	echo -e "[-i|--input|to_py] = input.txt: a 'seed' input text file containing one PMID per line.\n\tIt can be obtained from a PubMed querying specifying 'PMID' as the download format option.\n\tA minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.\n"
+	echo -e "[-t|--tag|tag] = A characteristic tag definining the task.\n\tIt must be an alphanumeric string.\n"
+	echo -e "[-j|--ncores|ncores] = The max number of CPU cores to be used.\n\tDefault is 6.\n"		
+	echo -e "[-c|--combine-set|comb] = how many N entities to intersect to construct a query?\n\t3: loose searches, 4: moderate (default), 5: very strict queries.\n" 
+	echo -e "[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).\n\tExample: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.\n" 
+	echo -e "[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?\n\t1: conservative, 2: moderate (default), 3: greedy.\n"
+	echo -e "[-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:\n\teach gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.\n"
+	echo -e "[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).\n\tThis option overwrites any parameter set by a different option.\n"
+	echo -e "[-w|--rscript|rscript] = path to the Rscript compiler of an installed R version (Should be the one installed using 'input/ENQUIRE.yml').\n\tThe default is 'which Rscript').\n"
+	echo -e "[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.\n"
+	echo -e "[-h|--help] = print this help message."
 	echo
-	echo "you might be seeing this Help because of an input error."
+	echo "You might be seeing this Help because of an input error."
 	echo
 	echo "####################################################################################"
 	exit 0

@@ -59,8 +59,8 @@ node_tbl=node_tbl.drop_duplicates(subset=['KW'])
 edge_tbl=edge_tbl.drop_duplicates(subset=['kw1','kw2'])
 # you have to consider swapped occurrences too
 oks=pd.DataFrame()
-oks['kw1']=edge_tbl[['kw1','kw2']].apply(lambda x: x.sort_values()[0],axis=1)
-oks['kw2']=edge_tbl[['kw1','kw2']].apply(lambda x: x.sort_values()[1],axis=1)
+oks['kw1']=edge_tbl[['kw1','kw2']].apply(lambda x: x.sort_values().iloc[0],axis=1)
+oks['kw2']=edge_tbl[['kw1','kw2']].apply(lambda x: x.sort_values().iloc[1],axis=1)
 oks=list(oks.drop_duplicates().index)
 edge_tbl=edge_tbl.filter(oks,axis=0)
 #
