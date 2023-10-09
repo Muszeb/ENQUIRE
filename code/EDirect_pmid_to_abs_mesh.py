@@ -36,6 +36,7 @@ import scispacy
 import xmltodict
 import dpath
 from collections import ChainMap
+import random
 #import abbreviations
 #from abbreviations import schwartz_hearst
 #import nltk
@@ -331,6 +332,7 @@ def abb_pairs(s):
 	return d #{str(k):str(v) for k,v in d.items()}
 #
 def celliNER(items,model):
+	random.seed(2202)
 	nlp = globals()[model]
 	items = [(x[1],x[0]) for x in items]
 	docs = nlp.pipe(items, as_tuples=True)

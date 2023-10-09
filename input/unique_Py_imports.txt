@@ -1,4 +1,3 @@
-#abbreviations schwartz_hearst
 biopython
 datetime
 english_words
