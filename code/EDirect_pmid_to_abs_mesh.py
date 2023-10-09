@@ -337,6 +337,7 @@ def celliNER(items,model):
 	nlp = globals()[model]
 	items = [(x[1],x[0]) for x in items]
 	spacy.util.fix_random_seed(2202)
+	np.random.seed(2202)
 	docs = nlp.pipe(items, as_tuples=True)
 	d={int(tpl[1]):list(set([str(ent) for ent in tpl[0].ents if ent.label_ in ["CELL_TYPE", "CELL_LINE"]])) for tpl in docs}
 	return d
