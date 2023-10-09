@@ -303,8 +303,6 @@ greek_alphabet = {
 	b'\xcf\x87':	 'chi',
 	b'\xcf\x88':	 'psi',
 	b'\xcf\x89':	 'omega',}
-# replace greek, non-ASCII spellings
-ful_dict=dict({k:re.sub('[\u0080-\uFFFF]',greek_sub_f,v) for k,v in ful_dict.items()})
 #
 def greek_sub_a(m):
 	if m.group() is not None:
@@ -319,6 +317,9 @@ def greek_sub_f(m):
 			return greek_alphabet[m.group().encode('utf-8')]
 		except:
 			return ' '
+#
+# replace greek, non-ASCII spellings
+ful_dict=dict({k:re.sub('[\u0080-\uFFFF]',greek_sub_f,v) for k,v in ful_dict.items()})
 #
 def abb_pairs(s):
 	random.seed(2202)
