@@ -69,8 +69,8 @@ else:
 		#0.
 		if abb[i] or cell[i]:
 			# LIST ORDER MAY DIFFER BETWEEN RUNS! DIFFERENT RESULTS COULD BE OBTAINED WHEN REMOVING STRINGS #
-			# use decreasing length as a proxy for more specific -> less specific order
-			for v in sorted(list(abb[i].values()) + cell[i],key=len):
+			# use alphabetica, THEN decreasing length (reverse) as a proxy for more specific -> less specific order
+			for v in sorted(sorted(list(abb[i].values()) + cell[i]),key=len,reverse=True):
 				ful[i]=re.sub(re.escape(v), "", ful[i])
 	#
 	for i in ful_dict.keys():
