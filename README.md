@@ -275,24 +275,26 @@ Please note that the script might last quite long, and it benefits from a high p
 </details>
 
 <details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
-As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/so22_updated_pubmed_e_utilities.html) have been applied to NCBI's e-utilities. In particular, it is now impossible to stream all records exceeding 10,000 PMIDs from any particular query to the PubMed database. This required to redesign the use of the e-utilities. While it's overall functionality was still preserved, we cannot guarantee the retrieval of all matching records, if the network-based queries obtained by intersecting relevant entities match more than 10,000 records (typically, this is a rare event when intersecting at least 4 distinct entities).
+	
+- As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/so22_updated_pubmed_e_utilities.html) have been applied to NCBI's e-utilities. In particular, it is now impossible to stream all records exceeding 10,000 PMIDs from any particular query to the PubMed database. This required to redesign the use of the e-utilities. While it's overall functionality was still preserved, we cannot guarantee the retrieval of all matching records, if the network-based queries obtained by intersecting relevant entities match more than 10,000 records (typically, this is a rare event when intersecting at least 4 distinct entities).
 </details>
 
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
 
-- Provided a recognisable "tag" has been passed to textmining algorithm, a typical output would produce a folder `tmp-tag`, which in turn contains as many subdirectories as the number of steps/iterations performed. For example, if the algorithm constructed 
+- Provided a recognisable `tag` has been passed to textmining algorithm, a typical output would produce a folder named `tmp-tag`, which in turn contains as many subdirectories as the number of steps/iterations performed. For example, if the algorithm performed 
     
-    1. Raw Gene-Mesh network from the original set of papers;
-    2. One query expansion while the Gene-Mesh network was not complete yet;
-    3. One query-expansion while the Gene-Mesh network was complete, but not the Gene-Gene one;
+    1. Reconstruction of a Gene/Mesh network from the original set of papers;
+    2. One query expansion and network reconstruction as the Gene/Mesh network was not fully connected yet;
+    3. One query expansion and network reconstruction as the gene-gene network was not fully connected yet, then stopped;
 
-    Then there will be three subfolders, namely `tag`, `tag_iteration1`, `tag_subgraph_expansion2`. The counter attached to folders and file names records the subsequent attempts to the reconstruction of co-occurence networks. Typically, within each of these sub-folders three pairs of edges and nodes tables can be found corresponding to the respective "Complete" (Gene-Mesh), "Gene" and "Mesh" networks for each iterations (TSV files). These files can be easily imported in Cytoscape or similar graph visualization tools.
+    Then there will be three subfolders, namely `tag`, `tag_subgraph_expansion1`, `tag_subgraph_expansion2`. The counter attached to folders and file names records the subsequent attempts to the expansion and reconstruction of co-occurence networks. Typically, within each of these sub-folders/iterations, three pairs of edge and node tables can be found, respectively corresponding to "Complete" (Gene/Mesh), "Gene"- and "Mesh"-only networks (TSV files). These files can be easily imported in Cytoscape or similar graph visualization tools.
     
-    Whenever it wasn't possible to obtain one or more of the aforementioned networks, the pipeline should print a message with information on the most meaningful files to look at. It is worth mentioning that the file "tag...Complete_literature_links.tsv" within each subfolder allows fast retrieval of specific edge-associated papers by means of encoded hyperlinks. The batch of queries that were tested in each iteration is stored in "tag...ordered_queries.tsv" within each respective subfolder, with the number of columns corresponding to the `a` attempts at connecting any two communities. Additional meta-data can be explored under the `data/` subfolder. 
+    Whenever it wasn't possible to obtain one or more of the aforementioned networks, the pipeline should print a message with information on the most meaningful files to look at. It is worth mentioning that the file `tag...Complete_literature_links.tsv` within each subfolder allows fast retrieval of specific edge-associated papers by means of encoded hyperlinks. The batch of queries that were tested in each iteration is stored in `tag...ordered_queries.tsv` within each respective subfolder. Additional meta-data can be explored under the `data/` subfolder. 
     
-    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given job, which can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`.
+    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`.
    
-    Please contact Luca for any clarification on the purposes of any file.
-- NEW: interactive .html networks
-    It is now possible to visually inspect Gene-MeSH networks and the reduced networks of entities participating in cliques in two .html files, respectively stored within each iteration's subfolder as "tag...interactive_Gene-MeSH_Network.html" and "tag...interactive_Cliques_Network.html". An exemplary file can be found in the main repository, in the context of a case study of signal transduction pathways in uveal melanoma. 
+    Please don't hesitate to contact us for any clarification on the purposes of any file.
+  
+- Interactive .html networks
+    It is possible to visually inspect Gene/MeSH networks and the reduced networks containing only cliques in two .html files, respectively stored within each iteration's subfolder as `tag...interactive_Gene-MeSH_Network.html` and `tag...interactive_Cliques_Network.html`. An exemplary file can be found in the main repository, in the context of a case study of signal transduction pathways in uveal melanoma. 
 </details>
