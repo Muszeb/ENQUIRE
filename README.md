@@ -8,15 +8,18 @@ The accelerating growth in scientific literature is overwhelming our capacity to
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the [installation steps](https://github.com/apptainer/apptainer/blob/main/INSTALL.md) specific to your setup and install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed.  
+ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the [installation steps](https://github.com/apptainer/apptainer/blob/main/INSTALL.md) specific to your setup and install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed.
 
-Next, clone the repository:
+Next, clone the repository, download the SIF image file `ENQUIRE.sif` within the repository main folder, and make it executable:
 
 ```bash
 git clone https://github.com/Muszeb/ENQUIRE.git
-
+cd ENQUIRE 
+curl https://jveralab.net/ENQUIRE.sif -o ENQUIRE.sif
+chmod +x ENQUIRE.sif
 ```
-You can then place `ENQUIRE.sif` wherever you wish to, and possibly add its location to your `PATH` variable for an easier calling.#
+
+You can then place the `ENQUIRE` directory of `ENQUIRE.sif` wherever you wish to, and possibly add its location to your `PATH` variable for an easier calling.
 
 </details>
 
@@ -89,6 +92,12 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
     ```
 	####################################################################################
 
+	Expanding Networks by Querying Unexpectedly Inter-Related Entities
+
+	####################################################################################
+
+	####################################################################################
+
 	Usage: ./ENQUIRE.sif ENQUIRE.sh [script_arguments]
 
 	Legend:	[-flag_short|--flag_long|config file variable, if available]:
@@ -119,12 +128,16 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 	[-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
 		each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
 
+	[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
+
 	[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
 		This option overwrites any parameter set by a different option.
 
-	[-w|--rscript|rscript] = path to the Rscript compiler of an installed R version (Should be the one installed within the SIF image, the deault).
+	[-w|--rscript|rscript] = path to the Rscript compiler. If using 'ENQUIRE.sif', it defaults to the containerized version of R.
 
-	[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
+	[-d|--inputdata|sd] = path to the input data folder compiler. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
+		WARNING: this option is still under development, to allow users to set different species targets
+		and subsequently change the H.s. specific metadata.
 
 	[-h|--help] = print this help message.
 

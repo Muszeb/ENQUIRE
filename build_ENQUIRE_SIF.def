@@ -1,0 +1,134 @@
+Bootstrap: docker
+From: debian
+  
+%labels
+  TITLE "ENQUIRE"
+  OWNER "Luca Musella"
+  INSTITUTION "Laboratory of Systems Tumor Immunology, Uniklinikum Erlangen and FAU Erlangen-Nuernberg"
+  DESCRIPTION "Image file for ENQUIRE - Expanding Networks by Querying Unexpectedly Inter-Related Entities"
+  LICENSE: "GNU General Public License v3.0"
+
+%files
+  # run from ENQUIRE directory
+  code code
+  input input
+
+%post -c /bin/bash
+
+  # add labels 
+  VAL="$(myprog --version)"
+  echo "my.label $VAL" >> "$APPTAINER_LABELS"
+
+  # Install minimal dependencies
+  apt-get update
+  apt-get install -y curl tar bzip2 perl coreutils findutils locales #cpanminus libxml-simple-perl libwww-perl libnet-perl build-essential
+
+  # Set the locale to avoid perl warnings 
+  sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
+  echo "export LANGUAGE=en_US.UTF-8" >> ~/.bash_profile
+  echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
+  echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
+
+
+  # Create environment for micromamba
+  mkdir -p /opt/env/micromamba
+
+  # Download micromamba
+  curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
+
+  # Setup the base environment
+  export MAMBA_ROOT_PREFIX=/opt/env/micromamba
+  eval "$(micromamba shell hook -s posix)"
+  micromamba activate
+
+  # Install the packages we want, from the env.yml file
+  micromamba install -y -q -f input/ENQUIRE.yml
+  pip install -r input/PackagesNotFound.txt
+  
+  # Install R libraries
+
+  Rscript code/install_R_libraries.R
+
+  # Install Pandoc
+
+  apt-get install -y pandoc
+
+  # Install EDirect 
+  yes | sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+
+  # Clean
+  
+  micromamba clean --all --yes
+  apt-get clean
+
+  # Copy the necessary directories within the SIF image
+  # (build from within the repo)
+
+  mkdir -p /bin/code
+  mkdir -p /bin/input
+
+  cp -r code/* /bin/code/
+  cp -r input/* /bin/input/
+
+%environment
+  # Environment available at runtime, enriched by the 
+  # scripts that set up micromamba
+  export MAMBA_ROOT_PREFIX="/opt/env/micromamba"
+  eval "$(micromamba shell hook -s posix)"
+  micromamba activate
+  
+  export APPTAINERENV_PREPEND_PATH="/root/edirect"
+  export PATH="${PATH}:/root/edirect"
+  
+  export LANGUAGE="en_US.UTF-8"
+  export LANG="en_US.UTF-8"
+  export LC_ALL="en_US.UTF-8"
+
+#  export LANGUAGE=(unset)
+#  export LC_ALL=(unset)
+#  export LC_TIME="C"
+#  export LC_MONETARY="C"
+#  export LC_CTYPE="C.UTF-8"
+#  export LC_ADDRESS="C"
+#  export LC_TELEPHONE="C"
+#  export LC_NAME="C"
+#  export LC_MEASUREMENT="C"
+#  export LC_IDENTIFICATION="C"
+#  export LC_NUMERIC="C"
+#  export LC_PAPER="C"
+#  export LANG="en_US.UTF-8"
+   export sd=/bin/
+
+%runscript
+  #!/bin/bash
+  #echo -e "this is PATH:\n$PATH"
+	echo "Arguments received: $*"
+  if [ -n "$1" ]; then
+    file=$1
+    if [ "${file: -3}" = ".sh" ]; then
+      echo "bash script has been passed"
+      script_path="/bin/code/$1"
+      shift
+      exec "$script_path" "$@"
+      exit 0
+    elif [ "${file: -3}" = ".py" ]; then
+      echo "python script has been passed"
+      script_path="/bin/code/$1"
+      shift
+      python "$script_path" "$@"
+      exit 0
+    elif [ "${file: -2}" = ".R" ]; then
+      echo "R script has been passed"
+      script_path="/bin/code/$1"
+      shift
+      Rscript "$script_path" "$@"
+      exit 0
+    else
+      echo -e "Unknown script extension,\nmust be one of [.sh,.py,.R]"
+      echo "Usage: ./ENQUIRE.sif <script_name> [script_arguments]"
+      exit 1
+    fi
+  else
+      echo "Usage: ./ENQUIRE.sif <script_name> [script_arguments]"
+      exit 1
+  fi
