@@ -1,0 +1,9 @@
+wd=$(pwd)/
+tag=test_enquire
+ncores=6
+K=3
+A=2
+thr=2
+comb=3
+to_py=test_input/pmid-ferroptosis_ImmuneSystem.txt
+etype='all'

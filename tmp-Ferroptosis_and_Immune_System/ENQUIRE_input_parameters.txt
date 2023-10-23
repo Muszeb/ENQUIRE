@@ -1,0 +1,10 @@
+wd=/home/usr/ENQUIRE/
+tag=Ferroptosis_and_Immune_System
+ncores=40
+K=3
+A=2
+thr=1
+comb=3
+to_py=input/pmid-ferroptosis_ImmuneSystem.txt
+etype=all
+rscript=/home/usr/miniconda3/envs/ENQUIRE_new/bin/Rscript --no-environ

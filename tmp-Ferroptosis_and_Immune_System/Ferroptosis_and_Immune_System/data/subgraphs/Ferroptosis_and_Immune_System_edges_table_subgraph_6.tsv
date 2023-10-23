@@ -1,0 +1,7 @@
+kw1	kw2	crit_p	edge_weight	iteration	pg	inv_edge_weight	R1C1
+cytoskeletal proteins/metabolism	b-lymphocytes/metabolism	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
+cytoskeletal proteins/metabolism	glutathione peroxidase/therapeutic use	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
+cytoskeletal proteins/metabolism	BDKRB2	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
+glutathione peroxidase/therapeutic use	b-lymphocytes/metabolism	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
+glutathione peroxidase/therapeutic use	BDKRB2	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
+b-lymphocytes/metabolism	BDKRB2	0.0	0.037037037037037	0	0.0	0.4895921776240851	1
