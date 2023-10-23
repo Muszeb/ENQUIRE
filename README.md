@@ -89,76 +89,76 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
    
 - you can inspect the code Help section by running (from the `ENQUIRE` directory) `./ENQUIRE.sif ENQUIRE.sh -h`:
  
-    ```
-	####################################################################################
+```
+####################################################################################
 
-	Expanding Networks by Querying Unexpectedly Inter-Related Entities
+Expanding Networks by Querying Unexpectedly Inter-Related Entities
 
-	####################################################################################
+####################################################################################
 
-	####################################################################################
+####################################################################################
 
-	Usage: ./ENQUIRE.sif ENQUIRE.sh [script_arguments]
+Usage: ./ENQUIRE.sif ENQUIRE.sh [script_arguments]
 
-	Legend:	[-flag_short|--flag_long|config file variable, if available]:
+Legend:	[-flag_short|--flag_long|config file variable, if available]:
 
-	[-p|--path|wd] = the path to the working directory (wd), where the output directory will be written in.
-		It must be the ENQUIRE main folder, with ./code and ./input as subfolders.
-		The default is the current working directory.
+[-p|--path|wd] = the path to the working directory (wd), where the output directory will be written in.
+	It must be the ENQUIRE main folder, with ./code and ./input as subfolders.
+	The default is the current working directory.
 
-	[-i|--input|to_py] = input.txt: a 'seed' input text file containing one PMID per line.
-		It can be obtained from a PubMed querying specifying 'PMID' as the download format option.
-		A minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.
+[-i|--input|to_py] = input.txt: a 'seed' input text file containing one PMID per line.
+	It can be obtained from a PubMed querying specifying 'PMID' as the download format option.
+	A minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.
 
-	[-t|--tag|tag] = A characteristic tag definining the task.
-		It must be an alphanumeric string.
+[-t|--tag|tag] = A characteristic tag definining the task.
+	It must be an alphanumeric string.
 
-	[-j|--ncores|ncores] = The max number of CPU cores to be used.
-		Default is 6.
+[-j|--ncores|ncores] = The max number of CPU cores to be used.
+	Default is 6.
 
-	[-c|--combine-set|comb] = how many N entities to intersect to construct a query?
-		3: loose searches, 4: moderate (default), 5: very strict queries.
+[-c|--combine-set|comb] = how many N entities to intersect to construct a query?
+	3: loose searches, 4: moderate (default), 5: very strict queries.
 
-	[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).
-		Example: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.
+[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).
+	Example: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.
 
-	[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?
-		1: conservative, 2: moderate (default), 3: greedy.
+[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?
+	1: conservative, 2: moderate (default), 3: greedy.
 
-	[-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
-		each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
+[-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
+	each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
 
-	[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
+[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
 
-	[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
-		This option overwrites any parameter set by a different option.
+[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
+	This option overwrites any parameter set by a different option.
 
-	[-w|--rscript|rscript] = path to the Rscript compiler. If using 'ENQUIRE.sif', it defaults to the containerized version of R.
+[-w|--rscript|rscript] = path to the Rscript compiler. If using 'ENQUIRE.sif', it defaults to the containerized version of R.
 
-	[-d|--inputdata|sd] = path to the input data folder compiler. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
-		WARNING: this option is still under development, to allow users to set different species targets
-		and subsequently change the H.s. specific metadata.
+[-d|--inputdata|sd] = path to the input data folder compiler. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
+	WARNING: this option is still under development, to allow users to set different species targets
+	and subsequently change the H.s. specific metadata.
 
-	[-h|--help] = print this help message.
+[-h|--help] = print this help message.
 
-	You might be seeing this Help because of an input error.
+You might be seeing this Help because of an input error.
 
-	####################################################################################
-    ``` 
+####################################################################################
+``` 
 
-    Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
+Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
 
-    ```bash
-		# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
-    	./ENQUIRE.sif ENQUIRE.sh -t ICI_and_Colitis -i test_input/pmid-ICI_and_Colitis.txt
-    ```
+```bash
+	# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
+	./ENQUIRE.sif ENQUIRE.sh -t ICI_and_Colitis -i test_input/pmid-ICI_and_Colitis.txt
+```
 
-    Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the main `ENQUIRE` directory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Additional information on the parameters are given in `ENQUIRE_flowchart.png`. Then, the program can be launched by running:
+Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the main `ENQUIRE` directory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Additional information on the parameters are given in `ENQUIRE_flowchart.png`. Then, the program can be launched by running:
 
-    ```bash
-		# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
-    	./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
-    ```
+```bash
+	# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
+	./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
+```
 </details>
 
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
