@@ -25,7 +25,7 @@ You can then place the `ENQUIRE` directory of `ENQUIRE.sif` wherever you wish to
 
 <details><summary>USAGE</summary> 
 
-**The examplary code snippets assume that you're running the commands from the `ENQUIRE` main directory (do `cd /path/to/ENQUIRE` to test them).**
+**The exemplary code snippets assume that you're running the commands from the `ENQUIRE` main directory (do `cd /path/to/ENQUIRE` to test them).**
 Here is how you call ENQUIRE scripts using `ENQUIRE.sif`:
 
 ```bash
