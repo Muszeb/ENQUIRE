@@ -172,19 +172,19 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 
     Then there will be three subfolders, namely `tag`, `tag_subgraph_expansion1`, `tag_subgraph_expansion2`. The counter attached to folders and file names records the subsequent attempts to the expansion and reconstruction of co-occurence networks.
 
-	![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/output_overview/main_structure.png)
+	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/main_structure.png)
 
    Typically, within each of these sub-folders/iterations, three pairs of edge and node tables can be found, respectively corresponding to "Complete" (Gene/Mesh), "Gene"- and "Mesh"-only networks (TSV files). These files can be easily imported in Cytoscape or similar graph visualization tools.
 
-	![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/output_overview/node_edgetabs.png)
+	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/node_edgetabs.png)
 
 	Whenever it wasn't possible to obtain one or more of the aforementioned networks, the pipeline should print a message with information on the most meaningful files to look at. It is worth mentioning that the file `tag...Complete_literature_links.tsv` within each subfolder allows fast retrieval of specific edge-associated papers by means of encoded hyperlinks.
 
- 	![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/output_overview/litlinks.png)
+ 	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/litlinks.png)
 
 	The batch of queries that were tested in each iteration is stored in `tag...ordered_queries.tsv` within each respective subfolder. Additional meta-data can be explored under the `data/` subfolder. Besides node and edge tables for individual subgraphs (i.e. gene/MeSH of gene-only connected components), here you could also explore how the original co-occurrence multigraph looked like, before the network-based test statistics (`tag...edge_list_allxall.tsv`). 
 	
-	![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/output_overview/data.png)
+	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/data.png)
 
     Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`.
    
@@ -194,7 +194,7 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 
 	It is also possible to visually inspect Gene-MeSH networks and the reduced networks containing only cliques in two .html files, respectively stored within each iteration's subfolder as `tag...interactive_Gene-MeSH_Network.html` and `tag...interactive_Cliques_Network.html`.
 
-	![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-MACOS/output_overview/html.png)
+	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/html.png)
 
 </details>
 
