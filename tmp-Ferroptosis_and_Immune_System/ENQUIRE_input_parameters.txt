@@ -1,10 +1,10 @@
-wd=/home/usr/ENQUIRE/
+wd=/home/musellla/ENQUIRE_singularity/ENQUIRE/
 tag=Ferroptosis_and_Immune_System
-ncores=40
+ncores=6
 K=3
 A=2
-thr=1
+thr=2
 comb=3
-to_py=input/pmid-ferroptosis_ImmuneSystem.txt
+to_py=test_input/pmid-ferroptosis_ImmuneSystem.txt
 etype=all
-rscript=/home/usr/miniconda3/envs/ENQUIRE_new/bin/Rscript --no-environ
+rscript=/opt/env/micromamba/bin/Rscript --no-environ
