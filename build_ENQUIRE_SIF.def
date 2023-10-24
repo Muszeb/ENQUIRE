@@ -2,12 +2,12 @@ Bootstrap: docker
 From: debian
   
 %labels
-  TITLE "ENQUIRE"
-  OWNER "Luca Musella"
-  INSTITUTION "Laboratory of Systems Tumor Immunology, Uniklinikum Erlangen and FAU Erlangen-Nuernberg"
+  LICENSE "GNU General Public License v3.0"
   DESCRIPTION "Image file for ENQUIRE - Expanding Networks by Querying Unexpectedly Inter-Related Entities"
-  LICENSE: "GNU General Public License v3.0"
-
+  INSTITUTION "Laboratory of Systems Tumor Immunology, Uniklinikum Erlangen and FAU Erlangen-Nuernberg"
+  OWNER "Luca Musella"
+  TITLE "ENQUIRE"
+  
 %files
   # run from ENQUIRE directory
   code code
@@ -15,13 +15,10 @@ From: debian
 
 %post -c /bin/bash
 
-  # add labels 
-  VAL="$(myprog --version)"
-  echo "my.label $VAL" >> "$APPTAINER_LABELS"
-
   # Install minimal dependencies
   apt-get update
-  apt-get install -y curl tar bzip2 perl coreutils findutils locales #cpanminus libxml-simple-perl libwww-perl libnet-perl build-essential
+  #apt-get update && apt-get install -y --no-install-recommends apt-utils
+  apt-get install -y apt-utils curl tar bzip2 perl coreutils findutils locales
 
   # Set the locale to avoid perl warnings 
   sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
@@ -29,6 +26,9 @@ From: debian
   echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
   echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
 
+  # add labels 
+  #VAL="$(myprog --version)"
+  #echo "my.label $VAL" >> "$APPTAINER_LABELS"
 
   # Create environment for micromamba
   mkdir -p /opt/env/micromamba
@@ -83,21 +83,7 @@ From: debian
   export LANGUAGE="en_US.UTF-8"
   export LANG="en_US.UTF-8"
   export LC_ALL="en_US.UTF-8"
-
-#  export LANGUAGE=(unset)
-#  export LC_ALL=(unset)
-#  export LC_TIME="C"
-#  export LC_MONETARY="C"
-#  export LC_CTYPE="C.UTF-8"
-#  export LC_ADDRESS="C"
-#  export LC_TELEPHONE="C"
-#  export LC_NAME="C"
-#  export LC_MEASUREMENT="C"
-#  export LC_IDENTIFICATION="C"
-#  export LC_NUMERIC="C"
-#  export LC_PAPER="C"
-#  export LANG="en_US.UTF-8"
-   export sd=/bin/
+  export sd=/bin/
 
 %runscript
   #!/bin/bash
@@ -125,10 +111,10 @@ From: debian
       exit 0
     else
       echo -e "Unknown script extension,\nmust be one of [.sh,.py,.R]"
-      echo "Usage: ./ENQUIRE.sif <script_name> [script_arguments]"
+      echo -e "Usage: ./ENQUIRE.sif <script_name> [script_arguments],\n\twhere <script_name> is one of:\n\t- ENQUIRE.sh\n\t- efetch_references.py\n\t- context_aware_gene_sets.R\n\t- context_aware_pathway_enrichment.R"
       exit 1
     fi
   else
-      echo "Usage: ./ENQUIRE.sif <script_name> [script_arguments]"
+      echo -e "Usage: ./ENQUIRE.sif <script_name> [script_arguments],\n\twhere <script_name> is one of:\n\t- ENQUIRE.sh\n\t- efetch_references.py\n\t- context_aware_gene_sets.R\n\t- context_aware_pathway_enrichment.R"
       exit 1
   fi
