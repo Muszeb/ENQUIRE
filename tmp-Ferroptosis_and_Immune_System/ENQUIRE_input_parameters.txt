@@ -1,4 +1,4 @@
-wd=/home/musellla/ENQUIRE_singularity/ENQUIRE/
+wd=$(pwd)/
 tag=Ferroptosis_and_Immune_System
 ncores=6
 K=3
@@ -7,4 +7,3 @@ thr=2
 comb=3
 to_py=test_input/pmid-ferroptosis_ImmuneSystem.txt
 etype=all
-rscript=/opt/env/micromamba/bin/Rscript --no-environ
