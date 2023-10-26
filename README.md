@@ -10,7 +10,7 @@ The accelerating growth in scientific literature is overwhelming our capacity to
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the [installation steps](https://github.com/apptainer/apptainer/blob/main/INSTALL.md) specific to your setup and install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed.
+ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the [installation steps](https://github.com/apptainer/apptainer/blob/main/INSTALL.md) specific to your setup and install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`)
 
 Next, clone the repository, download the SIF image file `ENQUIRE.sif` from [our lab's website](http://sysbiomed-erlangen.weebly.com/) with `curl`, check that the file is intact with `md5sum`,and make it executable:
 
@@ -28,10 +28,11 @@ You can then place the `ENQUIRE` directory or `ENQUIRE.sif` wherever you wish to
 
 <details><summary>USAGE</summary> 
 
-**The exemplary code snippets assume that you're running the commands from the `ENQUIRE` main directory (do `cd /path/to/ENQUIRE` to test them).**
+**The exemplary code snippets assume that `apptainer` location is added to your `PATH` variable, and that you're running the commands from the `ENQUIRE` main directory (do `cd /path/to/ENQUIRE` to test them).**
 Here is how you call ENQUIRE scripts using `ENQUIRE.sif`:
 
 ```bash
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 Usage: ./ENQUIRE.sif <script_name> [script_argument]
 ```
 
@@ -66,21 +67,25 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
 - Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
 
 ```bash
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif efetch_references.py tag ref1 ref2 ref3 ...
 ```
 where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
 DISCLAIMER: if the references are not annotated into the Pubmed's API, an error such as 
 
 ```python
-File "code/efetch_references.py", line 28, in <module>
+Traceback (most recent call last):
+  File "/bin/code/efetch_references.py", line 29, in <module>
     refs+=refparse(p)
-  File "code/efetch_references.py", line 20, in refparse
+          ^^^^^^^^^^^
+  File "/bin/code/efetch_references.py", line 21, in refparse
     refs=dpath.get(data,"**/Link") # list of {Id:value} dicts
-  File "/home/musellla/miniconda3/envs/wokenv/lib/python3.8/site-packages/dpath/util.py", line 178, in get
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/env/micromamba/lib/python3.11/site-packages/dpath/__init__.py", line 189, in get
     raise KeyError(glob)
-KeyError: '**/Link'`
+KeyError: '**/Link'
 ```
-might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" menu on the Pubmed page of the article of interest.
+might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation state of an article.
 
 </details>
 
@@ -152,15 +157,15 @@ You might be seeing this Help because of an input error.
 Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
 
 ```bash
-	# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
-	./ENQUIRE.sif ENQUIRE.sh -t ICI_and_Colitis -i test_input/pmid-ICI_and_Colitis.txt
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
+./ENQUIRE.sif ENQUIRE.sh -t ICI_and_Colitis -i test_input/pmid-ICI_and_Colitis.txt
 ```
 
 Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the main `ENQUIRE` directory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Additional information on the parameters are given in `ENQUIRE_flowchart.png`. Then, the program can be launched by running:
 
 ```bash
-	# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
-	./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
+./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
 ```
 </details>
 
@@ -233,7 +238,7 @@ Options:
 
 - You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
 ```bash
-# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv 
 -n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
 ```
@@ -282,7 +287,7 @@ Options:
 
 - You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
 ```bash
-# assuming you did `cd ENQUIRE` and `ENQUIRE.sif` resides there
+# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
 ```
 Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
@@ -290,6 +295,8 @@ Please note that the script might last quite long, and it benefits from a high p
 </details>
 
 <details><summary> POSSIBLE SOURCES OF ERRORS </summary>
+
+- Test the command `which apptainer`: if `apptainer` location is not in your `PATH` variable, you need to invoke it by specifying its path, that is doing `/path/to/apptainer run /path/to/ENQUIRE.sif ...` instead of `./path/to/ENQUIRE.sif ...`
 
 - Test the command `awk '/MemAvailable/ {print $2}' /proc/meminfo` on your command line: this is the way ENQUIRE checks the available RAM on Linux systems, in order to avoid overflows.  Make sure `awk` is installed on your system. If you witness a non-awk related issue, contact us with information on your system and possible solutions to alternatively track the available memory on your OS.
 
