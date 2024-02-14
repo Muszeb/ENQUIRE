@@ -11,71 +11,63 @@
 "SLC40A1"	1
 "t-lymphocytes cytotoxic/immunology"	1
 "ACSL3"	2
+"ATG5"	2
+"autophagy-related proteins/genetics"	2
+"cell cycle/drug effects"	2
 "cell survival"	2
 "cells cultured"	2
 "coenzyme a ligases/metabolism"	2
-"ferritins/blood"	2
-"genetic variation"	2
+"flavonolignans/pharmacology"	2
+"glutathione peroxidase/metabolism"	2
 "glutathione/metabolism"	2
-"hemeproteins/toxicity"	2
 "host-pathogen interactions"	2
 "iron chelating agents/pharmacology"	2
 "iron/metabolism"	2
-"listeriosis/etiology"	2
-"liver x receptors/agonists"	2
 "lymph/metabolism"	2
 "macrophages/drug effects"	2
-"malaria/genetics"	2
 "melanoma/blood"	2
 "neoplasm metastasis/drug therapy"	2
 "oleic acid/metabolism"	2
 "oxidative stress/drug effects"	2
 "phospholipid hydroperoxide glutathione peroxidase/metabolism"	2
-"TF"	2
-"transferrin/metabolism"	2
+"precursor cell lymphoblastic leukemia-lymphoma/metabolism"	2
 "tuberculosis/metabolism"	2
-"tumor suppressor protein p53/genetics"	2
 "ACSL4"	3
+"adjuvants immunologic/chemistry"	3
 "AIFM2"	3
-"ATG5"	3
+"antineoplastic agents/chemistry"	3
+"apoptosis/drug effects"	3
 "ATL1"	3
-"autophagy-related proteins/genetics"	3
 "autophagy/drug effects"	3
+"biological products/chemistry"	3
 "cd8-positive t-lymphocytes/drug effects"	3
-"CD8A"	3
-"cell cycle/drug effects"	3
+"dextrans/chemistry"	3
+"dichloroacetic acid/chemistry"	3
+"drug synergism"	3
 "endoplasmic reticulum/drug effects"	3
-"flavonolignans/pharmacology"	3
-"glutathione peroxidase/metabolism"	3
-"precursor cell lymphoblastic leukemia-lymphoma/metabolism"	3
+"energy metabolism/drug effects"	3
+"gels/chemistry"	3
+"gold/chemistry"	3
+"macrophages/cytology"	3
+"mitochondria/drug effects"	3
+"neoplasms/drug therapy"	3
+"protein kinase inhibitors/chemistry"	3
+"pyruvate dehydrogenase acetyl-transferring kinase/antagonists & inhibitors"	3
 "S100A4"	3
+"saponins/chemistry"	3
+"urinary bladder neoplasms/pathology"	3
 "actins/metabolism"	4
-"amino acid transport system y+/genetics"	4
 "amino acid transport system y+/metabolism"	4
-"antineoplastic agents immunological/administration & dosage"	4
-"ATM"	4
-"cd8-positive t-lymphocytes/immunology"	4
 "cell line"	4
 "collagen type i/metabolism"	4
-"cysteine/metabolism"	4
 "FN1"	4
-"fusion regulatory protein 1 heavy chain/metabolism"	4
-"gene expression regulation neoplastic/drug effects"	4
 "hepatic stellate cells/drug effects"	4
 "hepatocytes/drug effects"	4
 "HIF1A"	4
 "hypoxia-inducible factor 1 alpha subunit/metabolism"	4
-"interferon-gamma/immunology"	4
-"lipid metabolism/drug effects"	4
 "liver cirrhosis/drug therapy"	4
-"melanoma/genetics"	4
 "MMRN1"	4
-"nivolumab/therapeutic use"	4
-"SLC3A2"	4
-"SLC7A11"	4
-"SLC9A1"	4
 "sorafenib/pharmacology"	4
-"sulfasalazine/administration & dosage"	4
 "adaptor proteins vesicular transport/genetics"	5
 "cyclohexylamines/pharmacology"	5
 "inflammation/drug therapy"	5
@@ -89,166 +81,159 @@
 "toll-like receptor 4/genetics"	5
 "TRIM69"	5
 "ventricular function left/drug effects"	5
-"adjuvants immunologic/chemistry"	6
-"antineoplastic agents/chemistry"	6
-"apoptosis/drug effects"	6
-"biological products/chemistry"	6
+"aniline compounds/chemistry"	6
+"antibodies monoclonal humanized/pharmacology"	6
+"ascorbic acid/pharmacology"	6
+"b7-h1 antigen/metabolism"	6
+"benzylidene compounds/chemistry"	6
 "bone marrow/drug effects"	6
+"CALR"	6
+"calreticulin/metabolism"	6
+"CD36"	6
+"cd36 antigens/antagonists & inhibitors"	6
+"cd8-positive t-lymphocytes/cytology"	6
 "cytokines/metabolism"	6
-"dextrans/chemistry"	6
-"dichloroacetic acid/chemistry"	6
 "drug interactions"	6
-"drug synergism"	6
-"energy metabolism/drug effects"	6
-"gels/chemistry"	6
-"gold/chemistry"	6
+"exosomes/metabolism"	6
+"fatty acids/metabolism"	6
+"ferric compounds/chemistry"	6
 "ileum/drug effects"	6
-"macrophages/cytology"	6
-"mitochondria/drug effects"	6
+"immunogenic cell death/drug effects"	6
+"interferon-gamma/metabolism"	6
+"metal-organic frameworks/chemistry"	6
+"multiple myeloma/drug therapy"	6
 "necroptosis/drug effects"	6
-"neoplasms/drug therapy"	6
-"protein kinase inhibitors/chemistry"	6
-"pyruvate dehydrogenase acetyl-transferring kinase/antagonists & inhibitors"	6
+"neoplasms/diagnostic imaging"	6
+"phenol/chemistry"	6
+"programmed cell death 1 receptor/metabolism"	6
 "radiation-protective agents/pharmacology"	6
-"saponins/chemistry"	6
 "small molecule libraries/pharmacology"	6
-"urinary bladder neoplasms/pathology"	6
-"allografts"	7
-"BTRC"	7
-"cell movement/drug effects"	7
-"CTLA4"	7
-"GABPA"	7
-"glycogen synthase kinase 3/metabolism"	7
-"GSK3B"	7
-"iron/chemistry"	7
-"lung neoplasms/drug therapy"	7
-"MTOR"	7
-"nf-e2-related factor 2/genetics"	7
-"PRKAA2"	7
-"tor serine-threonine kinases/metabolism"	7
-"aniline compounds/chemistry"	8
-"antibodies monoclonal humanized/pharmacology"	8
-"ascorbic acid/pharmacology"	8
-"b7-h1 antigen/metabolism"	8
-"benzylidene compounds/chemistry"	8
-"CALR"	8
-"calreticulin/metabolism"	8
-"CD36"	8
-"cd36 antigens/antagonists & inhibitors"	8
-"cd8-positive t-lymphocytes/cytology"	8
-"exosomes/metabolism"	8
-"fatty acids/metabolism"	8
-"ferric compounds/chemistry"	8
-"immunogenic cell death/drug effects"	8
-"interferon-gamma/metabolism"	8
-"metal-organic frameworks/chemistry"	8
-"multiple myeloma/drug therapy"	8
-"neoplasms/diagnostic imaging"	8
-"PDCD1"	8
-"phenol/chemistry"	8
-"programmed cell death 1 receptor/metabolism"	8
-"t-lymphocytes cytotoxic/metabolism"	8
-"aniline compounds/pharmacology"	9
-"b7-h1 antigen/antagonists & inhibitors"	9
-"benzylidene compounds/pharmacology"	9
-"cell line tumor/transplantation"	9
-"drug resistance neoplasm/drug effects"	9
-"exosomes/drug effects"	9
-"hyaluronic acid/chemistry"	9
-"immune checkpoint inhibitors/pharmacology"	9
-"immunologic memory"	9
-"skin neoplasms/drug therapy"	9
-"t-lymphocytes cytotoxic/drug effects"	9
-"tumor escape/drug effects"	9
-"antioxidants/pharmacology"	10
-"biopterin/analogs & derivatives"	10
-"carbolines/pharmacology"	10
-"cell proliferation/drug effects"	10
-"cell survival/drug effects"	10
-"cystine/antagonists & inhibitors"	10
-"dose-response relationship drug"	10
-"folic acid antagonists/pharmacology"	10
-"gene expression"	10
-"glutathione"	10
-"inflammation mediators/antagonists & inhibitors"	10
-"iron/blood"	10
-"jurkat cells"	10
-"kidney"	10
-"lipopolysaccharides/toxicity"	10
-"liver/pathology"	10
-"malondialdehyde/blood"	10
-"methotrexate/pharmacology"	10
-"microglia/drug effects"	10
-"nf-e2-related factor 2/biosynthesis"	10
-"NFE2L2"	10
-"oxidative stress"	10
-"phospholipid hydroperoxide glutathione peroxidase"	10
-"phospholipid hydroperoxide glutathione peroxidase/antagonists & inhibitors"	10
-"piperazines/pharmacology"	10
-"raw 264.7 cells"	10
-"spleen/pathology"	10
-"tetrahydrofolate dehydrogenase/genetics"	10
-"vitamin e/pharmacology"	10
-"ASAH2"	11
-"asparaginase"	11
-"cisplatin"	11
-"colonic neoplasms/drug therapy"	11
-"diterpenes/pharmacology"	11
-"heme oxygenase-1/metabolism"	11
-"HMOX1"	11
-"killer cells natural/metabolism"	11
-"lymphocytes tumor-infiltrating/immunology"	11
-"lymphoma t-cell"	11
-"membrane proteins/metabolism"	11
-"myeloid-derived suppressor cells/immunology"	11
-"neutral ceramidase/antagonists & inhibitors"	11
-"t-lymphocytes/immunology"	11
-"TP53"	11
-"tumor suppressor protein p53/metabolism"	11
-"b-lymphocytes/metabolism"	12
-"BDKRB2"	12
-"cytoskeletal proteins/metabolism"	12
-"glutathione peroxidase/therapeutic use"	12
-"bacterial toxins/metabolism"	13
-"endothelial cells/metabolism"	13
-"FTH1"	13
-"heart ventricles/diagnostic imaging"	13
-"hemodynamics/drug effects"	13
-"HMGB1"	13
-"hmgb1 protein/metabolism"	13
-"hypertension pulmonary/chemically induced"	13
-"inflammasomes/metabolism"	13
-"inflammation/metabolism"	13
-"lung/blood supply"	13
-"macrophages/metabolism"	13
-"monocrotaline/toxicity"	13
-"nlr family pyrin domain-containing 3 protein/metabolism"	13
-"NLRP3"	13
-"NOX4"	13
-"toll-like receptor 4/metabolism"	13
-"basic-leucine zipper transcription factors/analysis"	14
-"drug resistance neoplasm"	14
-"GGT1"	14
-"HLF"	14
-"IL6"	14
-"JAK2"	14
-"STAT3"	14
-"TGFB1"	14
-"triple negative breast neoplasms/drug therapy"	14
-"tumor-associated macrophages/drug effects"	14
-"biomarkers tumor"	15
-"carcinoma pancreatic ductal/metabolism"	15
-"cell transformation neoplastic/genetics"	15
-"diet"	15
-"dna"	15
-"KDM8"	15
-"macrophages"	15
-"membrane proteins/genetics"	15
-"pancreas/metabolism"	15
-"pancreatitis/genetics"	15
-"phospholipid hydroperoxide glutathione peroxidase/genetics"	15
-"proto-oncogene proteins p21(ras)/metabolism"	15
-"quinoxalines/pharmacology"	15
-"spiro compounds/pharmacology"	15
-"STING1"	15
-"tumor microenvironment"	15
+"t-lymphocytes cytotoxic/metabolism"	6
+"amino acid transport system y+/genetics"	7
+"antineoplastic agents immunological/administration & dosage"	7
+"ATM"	7
+"cd8-positive t-lymphocytes/immunology"	7
+"CD8A"	7
+"cysteine/metabolism"	7
+"fusion regulatory protein 1 heavy chain/metabolism"	7
+"gene expression regulation neoplastic/drug effects"	7
+"interferon-gamma/immunology"	7
+"lipid metabolism/drug effects"	7
+"melanoma/genetics"	7
+"nivolumab/therapeutic use"	7
+"SLC3A2"	7
+"SLC9A1"	7
+"sulfasalazine/administration & dosage"	7
+"aniline compounds/pharmacology"	8
+"b7-h1 antigen/antagonists & inhibitors"	8
+"benzylidene compounds/pharmacology"	8
+"cell line tumor/transplantation"	8
+"drug resistance neoplasm/drug effects"	8
+"exosomes/drug effects"	8
+"hyaluronic acid/chemistry"	8
+"immune checkpoint inhibitors/pharmacology"	8
+"immunologic memory"	8
+"skin neoplasms/drug therapy"	8
+"t-lymphocytes cytotoxic/drug effects"	8
+"tumor escape/drug effects"	8
+"antioxidants/pharmacology"	9
+"carbolines/pharmacology"	9
+"cell proliferation/drug effects"	9
+"cell survival/drug effects"	9
+"cystine/antagonists & inhibitors"	9
+"dose-response relationship drug"	9
+"folic acid antagonists/pharmacology"	9
+"gene expression"	9
+"glutathione"	9
+"inflammation mediators/antagonists & inhibitors"	9
+"iron/blood"	9
+"jurkat cells"	9
+"kidney"	9
+"lipopolysaccharides/toxicity"	9
+"liver/pathology"	9
+"malondialdehyde/blood"	9
+"methotrexate/pharmacology"	9
+"microglia/drug effects"	9
+"nf-e2-related factor 2/biosynthesis"	9
+"NFE2L2"	9
+"oxidative stress"	9
+"phospholipid hydroperoxide glutathione peroxidase"	9
+"phospholipid hydroperoxide glutathione peroxidase/antagonists & inhibitors"	9
+"piperazines/pharmacology"	9
+"raw 264.7 cells"	9
+"spleen/pathology"	9
+"tetrahydrofolate dehydrogenase/genetics"	9
+"vitamin e/pharmacology"	9
+"ASAH2"	10
+"asparaginase"	10
+"cisplatin"	10
+"colonic neoplasms/drug therapy"	10
+"diterpenes/pharmacology"	10
+"ferritins/blood"	10
+"genetic variation"	10
+"heme oxygenase-1/metabolism"	10
+"hemeproteins/toxicity"	10
+"HMOX1"	10
+"killer cells natural/metabolism"	10
+"listeriosis/etiology"	10
+"liver x receptors/agonists"	10
+"lymphocytes tumor-infiltrating/immunology"	10
+"lymphoma t-cell"	10
+"malaria/genetics"	10
+"membrane proteins/metabolism"	10
+"myeloid-derived suppressor cells/immunology"	10
+"neutral ceramidase/antagonists & inhibitors"	10
+"SLC7A11"	10
+"t-lymphocytes/immunology"	10
+"TF"	10
+"TP53"	10
+"transferrin/metabolism"	10
+"tumor suppressor protein p53/genetics"	10
+"tumor suppressor protein p53/metabolism"	10
+"b-lymphocytes/metabolism"	11
+"BDKRB2"	11
+"cytoskeletal proteins/metabolism"	11
+"glutathione peroxidase/therapeutic use"	11
+"bacterial toxins/metabolism"	12
+"endothelial cells/metabolism"	12
+"FTH1"	12
+"heart ventricles/diagnostic imaging"	12
+"hemodynamics/drug effects"	12
+"HMGB1"	12
+"hmgb1 protein/metabolism"	12
+"hypertension pulmonary/chemically induced"	12
+"inflammasomes/metabolism"	12
+"inflammation/metabolism"	12
+"lung/blood supply"	12
+"macrophages/metabolism"	12
+"monocrotaline/toxicity"	12
+"nlr family pyrin domain-containing 3 protein/metabolism"	12
+"NLRP3"	12
+"NOX4"	12
+"toll-like receptor 4/metabolism"	12
+"basic-leucine zipper transcription factors/analysis"	13
+"drug resistance neoplasm"	13
+"GGT1"	13
+"HLF"	13
+"IL6"	13
+"JAK2"	13
+"STAT3"	13
+"TGFB1"	13
+"triple negative breast neoplasms/drug therapy"	13
+"tumor-associated macrophages/drug effects"	13
+"biomarkers tumor"	14
+"carcinoma pancreatic ductal/metabolism"	14
+"cell transformation neoplastic/genetics"	14
+"diet"	14
+"dna"	14
+"KDM8"	14
+"macrophages"	14
+"membrane proteins/genetics"	14
+"pancreas/metabolism"	14
+"pancreatitis/genetics"	14
+"phospholipid hydroperoxide glutathione peroxidase/genetics"	14
+"proto-oncogene proteins p21(ras)/metabolism"	14
+"quinoxalines/pharmacology"	14
+"spiro compounds/pharmacology"	14
+"STING1"	14
+"tumor microenvironment"	14

@@ -2583,9 +2583,9 @@
         <Day>18</Day>
       </DateCompleted>
       <DateRevised>
-        <Year>2022</Year>
-        <Month>02</Month>
-        <Day>18</Day>
+        <Year>2023</Year>
+        <Month>11</Month>
+        <Day>08</Day>
       </DateRevised>
       <Article PubModel="Electronic">
         <Journal>
@@ -3035,6 +3035,10 @@
         </Reference>
         <Reference>
           <Citation>Ren JX, Sun X, Yan XL, Guo ZN, Yang Y. Ferroptosis in neurological diseases. Front Cell Neurosci. 2020;14218.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC7370841</ArticleId>
+            <ArticleId IdType="pubmed">32754017</ArticleId>
+          </ArticleIdList>
         </Reference>
         <Reference>
           <Citation>Cui Y, Zhang Y, Zhao X, Shao L, Liu G, Sun C, Xu R, Zhang Z. ACSL4 exacerbates ischemic stroke by promoting ferroptosis-induced brain injury and neuroinflammation. Brain Behav Immun. 2021;93:312&#x2013;321. doi: 10.1016/j.bbi.2021.01.003.</Citation>
@@ -3257,6 +3261,9 @@
         </Reference>
         <Reference>
           <Citation>Sun Y, Chen P, Zhai B, Zhang M, Xiang Y, Fang J, et al. The emerging role of ferroptosis in inflammation. Biomed Pharmacother. 2020;127110108.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">32234642</ArticleId>
+          </ArticleIdList>
         </Reference>
         <Reference>
           <Citation>Fink MP, Heard SO. Laboratory models of sepsis and septic shock. J Surg Res. 1990;49(2):186&#x2013;196. doi: 10.1016/0022-4804(90)90260-9.</Citation>
@@ -9995,7 +10002,7 @@
       </DateCompleted>
       <DateRevised>
         <Year>2023</Year>
-        <Month>10</Month>
+        <Month>12</Month>
         <Day>13</Day>
       </DateRevised>
       <Article PubModel="Print-Electronic">
@@ -10179,8 +10186,8 @@
           <NameOfSubstance UI="D014810">Vitamin E</NameOfSubstance>
         </Chemical>
         <Chemical>
-          <RegistryNumber>22150-76-1</RegistryNumber>
-          <NameOfSubstance UI="D001708">Biopterin</NameOfSubstance>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D001708">Biopterins</NameOfSubstance>
         </Chemical>
         <Chemical>
           <RegistryNumber>48TCX9A1VT</RegistryNumber>
@@ -10214,7 +10221,7 @@
           <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D001708" MajorTopicYN="N">Biopterin</DescriptorName>
+          <DescriptorName UI="D001708" MajorTopicYN="N">Biopterins</DescriptorName>
           <QualifierName UI="Q000031" MajorTopicYN="N">analogs &amp; derivatives</QualifierName>
           <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
         </MeshHeading>

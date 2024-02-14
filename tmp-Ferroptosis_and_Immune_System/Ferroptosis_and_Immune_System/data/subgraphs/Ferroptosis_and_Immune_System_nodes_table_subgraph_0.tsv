@@ -1,199 +1,197 @@
 entity	category	node_weight	occurrence
-b7-h1 antigen/metabolism	MESH	0.037037037037037	1
-interferon-gamma/metabolism	MESH	0.037037037037037	1
-benzylidene compounds/chemistry	MESH	0.037037037037037	1
-programmed cell death 1 receptor/metabolism	MESH	0.037037037037037	1
-immunogenic cell death/drug effects	MESH	0.037037037037037	1
-phenol/chemistry	MESH	0.037037037037037	1
-aniline compounds/chemistry	MESH	0.037037037037037	1
-exosomes/metabolism	MESH	0.037037037037037	1
-cd8-positive t-lymphocytes/cytology	MESH	0.074074074074074	2
-ferric compounds/chemistry	MESH	0.1111111111111111	3
-metal-organic frameworks/chemistry	MESH	0.037037037037037	1
-phospholipid hydroperoxide glutathione peroxidase/genetics	MESH	0.037037037037037	1
-biomarkers tumor	MESH	0.037037037037037	1
+dna	MESH	0.037037037037037	1
+diet	MESH	0.037037037037037	1
 spiro compounds/pharmacology	MESH	0.037037037037037	1
-carcinoma pancreatic ductal/metabolism	MESH	0.037037037037037	1
-proto-oncogene proteins p21(ras)/metabolism	MESH	0.037037037037037	1
+quinoxalines/pharmacology	MESH	0.037037037037037	1
 cell transformation neoplastic/genetics	MESH	0.037037037037037	1
+tumor microenvironment	MESH	0.074074074074074	2
+phospholipid hydroperoxide glutathione peroxidase/genetics	MESH	0.037037037037037	1
+carcinoma pancreatic ductal/metabolism	MESH	0.037037037037037	1
+macrophages	MESH	0.037037037037037	1
+pancreas/metabolism	MESH	0.037037037037037	1
+proto-oncogene proteins p21(ras)/metabolism	MESH	0.037037037037037	1
+biomarkers tumor	MESH	0.037037037037037	1
+pancreatitis/genetics	MESH	0.037037037037037	1
 KDM8	GENE	0.037037037037037	1
 STING1	GENE	0.037037037037037	1
-tumor microenvironment	MESH	0.074074074074074	2
-pancreatitis/genetics	MESH	0.037037037037037	1
-pancreas/metabolism	MESH	0.037037037037037	1
-quinoxalines/pharmacology	MESH	0.037037037037037	1
-macrophages	MESH	0.037037037037037	1
-diet	MESH	0.037037037037037	1
-dna	MESH	0.037037037037037	1
 membrane proteins/genetics	MESH	0.037037037037037	1
-precursor cell lymphoblastic leukemia-lymphoma/metabolism	MESH	0.037037037037037	1
-glutathione/metabolism	MESH	0.1111111111111111	3
-flavonolignans/pharmacology	MESH	0.037037037037037	1
-cell cycle/drug effects	MESH	0.037037037037037	1
-jurkat cells	MESH	0.074074074074074	2
-autophagy/drug effects	MESH	0.074074074074074	2
-autophagy-related proteins/genetics	MESH	0.037037037037037	1
-glutathione peroxidase/metabolism	MESH	0.037037037037037	1
-ATG5	GENE	0.037037037037037	1
 iron/metabolism	MESH	0.1481481481481481	4
 host-pathogen interactions	MESH	0.037037037037037	1
-iron chelating agents/pharmacology	MESH	0.037037037037037	1
 tuberculosis/metabolism	MESH	0.037037037037037	1
-cell survival	MESH	0.037037037037037	1
 phospholipid hydroperoxide glutathione peroxidase/metabolism	MESH	0.074074074074074	2
-lymph/metabolism	MESH	0.037037037037037	1
-melanoma/blood	MESH	0.037037037037037	1
-coenzyme a ligases/metabolism	MESH	0.037037037037037	1
-oleic acid/metabolism	MESH	0.037037037037037	1
-ACSL3	GENE	0.037037037037037	1
-neoplasm metastasis/drug therapy	MESH	0.037037037037037	1
-hemeproteins/toxicity	MESH	0.037037037037037	1
-genetic variation	MESH	0.037037037037037	1
-ferritins/blood	MESH	0.037037037037037	1
-malaria/genetics	MESH	0.037037037037037	1
-listeriosis/etiology	MESH	0.037037037037037	1
-tumor suppressor protein p53/genetics	MESH	0.037037037037037	1
-transferrin/metabolism	MESH	0.037037037037037	1
-liver x receptors/agonists	MESH	0.037037037037037	1
-TF	GENE	0.037037037037037	1
-oxidative stress/drug effects	MESH	0.074074074074074	2
+iron chelating agents/pharmacology	MESH	0.037037037037037	1
+glutathione/metabolism	MESH	0.1111111111111111	3
+macrophages/drug effects	MESH	0.1481481481481481	4
+cells cultured	MESH	0.074074074074074	2
+carbolines/pharmacology	MESH	0.074074074074074	2
 cystine/antagonists & inhibitors	MESH	0.037037037037037	1
 folic acid antagonists/pharmacology	MESH	0.037037037037037	1
-antioxidants/pharmacology	MESH	0.037037037037037	1
-phospholipid hydroperoxide glutathione peroxidase/antagonists & inhibitors	MESH	0.037037037037037	1
-biopterin/analogs & derivatives	MESH	0.037037037037037	1
-gene expression regulation neoplastic	MESH	0.074074074074074	2
-piperazines/pharmacology	MESH	0.074074074074074	2
+microglia/drug effects	MESH	0.037037037037037	1
 cell proliferation/drug effects	MESH	0.037037037037037	1
 tetrahydrofolate dehydrogenase/genetics	MESH	0.037037037037037	1
-oxidative stress	MESH	0.074074074074074	2
-vitamin e/pharmacology	MESH	0.037037037037037	1
-carbolines/pharmacology	MESH	0.074074074074074	2
-dose-response relationship drug	MESH	0.074074074074074	2
+raw 264.7 cells	MESH	0.037037037037037	1
+lipopolysaccharides/toxicity	MESH	0.037037037037037	1
 methotrexate/pharmacology	MESH	0.037037037037037	1
-cells cultured	MESH	0.074074074074074	2
-macrophages/drug effects	MESH	0.1481481481481481	4
-cation transport proteins/genetics	MESH	0.037037037037037	1
-brain neoplasms/genetics	MESH	0.037037037037037	1
-t-lymphocytes cytotoxic/immunology	MESH	0.037037037037037	1
-acetaminophen/pharmacology	MESH	0.037037037037037	1
-hyaluronan receptors/genetics	MESH	0.037037037037037	1
-glioblastoma/genetics	MESH	0.037037037037037	1
-heat-shock proteins/genetics	MESH	0.037037037037037	1
-CD44	GENE	0.037037037037037	1
-HSPB1	GENE	0.037037037037037	1
-SLC40A1	GENE	0.037037037037037	1
-kidney	MESH	0.037037037037037	1
-liver/pathology	MESH	0.037037037037037	1
-iron/blood	MESH	0.037037037037037	1
-spleen/pathology	MESH	0.037037037037037	1
-phospholipid hydroperoxide glutathione peroxidase	MESH	0.037037037037037	1
-malondialdehyde/blood	MESH	0.037037037037037	1
-glutathione	MESH	0.037037037037037	1
-PDCD1	GENE	0.1111111111111111	3
-fatty acids/metabolism	MESH	0.037037037037037	1
-antibodies monoclonal humanized/pharmacology	MESH	0.037037037037037	1
-cd36 antigens/antagonists & inhibitors	MESH	0.037037037037037	1
-multiple myeloma/drug therapy	MESH	0.037037037037037	1
-CD36	GENE	0.037037037037037	1
-tumor microenvironment/drug effects	MESH	0.1481481481481481	4
-cell line tumor/transplantation	MESH	0.074074074074074	2
-myeloid-derived suppressor cells/immunology	MESH	0.037037037037037	1
-lymphocytes tumor-infiltrating/immunology	MESH	0.037037037037037	1
-benzylidene compounds/pharmacology	MESH	0.037037037037037	1
+phospholipid hydroperoxide glutathione peroxidase/antagonists & inhibitors	MESH	0.037037037037037	1
+nf-e2-related factor 2/biosynthesis	MESH	0.037037037037037	1
+inflammation mediators/antagonists & inhibitors	MESH	0.037037037037037	1
+antioxidants/pharmacology	MESH	0.037037037037037	1
+vitamin e/pharmacology	MESH	0.037037037037037	1
+dose-response relationship drug	MESH	0.074074074074074	2
+gene expression	MESH	0.037037037037037	1
+jurkat cells	MESH	0.074074074074074	2
+gene expression regulation neoplastic	MESH	0.074074074074074	2
+piperazines/pharmacology	MESH	0.074074074074074	2
+oxidative stress	MESH	0.074074074074074	2
 hyaluronic acid/chemistry	MESH	0.037037037037037	1
-neutral ceramidase/antagonists & inhibitors	MESH	0.037037037037037	1
 t-lymphocytes cytotoxic/drug effects	MESH	0.037037037037037	1
-membrane proteins/metabolism	MESH	0.037037037037037	1
-heme oxygenase-1/metabolism	MESH	0.037037037037037	1
-exosomes/drug effects	MESH	0.037037037037037	1
+cell line tumor/transplantation	MESH	0.074074074074074	2
 immunologic memory	MESH	0.037037037037037	1
-colonic neoplasms/drug therapy	MESH	0.037037037037037	1
 tumor escape/drug effects	MESH	0.037037037037037	1
-immune checkpoint inhibitors/pharmacology	MESH	0.037037037037037	1
-t-lymphocytes/immunology	MESH	0.037037037037037	1
-aniline compounds/pharmacology	MESH	0.037037037037037	1
-drug resistance neoplasm/drug effects	MESH	0.037037037037037	1
+exosomes/drug effects	MESH	0.037037037037037	1
 skin neoplasms/drug therapy	MESH	0.037037037037037	1
+drug resistance neoplasm/drug effects	MESH	0.037037037037037	1
+b7-h1 antigen/antagonists & inhibitors	MESH	0.074074074074074	2
+benzylidene compounds/pharmacology	MESH	0.037037037037037	1
+immune checkpoint inhibitors/pharmacology	MESH	0.037037037037037	1
+aniline compounds/pharmacology	MESH	0.037037037037037	1
+calreticulin/metabolism	MESH	0.037037037037037	1
+neoplasms/diagnostic imaging	MESH	0.037037037037037	1
+t-lymphocytes cytotoxic/metabolism	MESH	0.037037037037037	1
+ascorbic acid/pharmacology	MESH	0.037037037037037	1
+CALR	GENE	0.037037037037037	1
+transferrin/metabolism	MESH	0.037037037037037	1
+listeriosis/etiology	MESH	0.037037037037037	1
+hemeproteins/toxicity	MESH	0.037037037037037	1
+ferritins/blood	MESH	0.037037037037037	1
+genetic variation	MESH	0.037037037037037	1
+tumor suppressor protein p53/genetics	MESH	0.037037037037037	1
+liver x receptors/agonists	MESH	0.037037037037037	1
+malaria/genetics	MESH	0.037037037037037	1
+TF	GENE	0.037037037037037	1
+TP53	GENE	0.1111111111111111	3
+lymphocytes tumor-infiltrating/immunology	MESH	0.037037037037037	1
+t-lymphocytes/immunology	MESH	0.037037037037037	1
+colonic neoplasms/drug therapy	MESH	0.037037037037037	1
+myeloid-derived suppressor cells/immunology	MESH	0.037037037037037	1
+neutral ceramidase/antagonists & inhibitors	MESH	0.037037037037037	1
+heme oxygenase-1/metabolism	MESH	0.037037037037037	1
+tumor microenvironment/drug effects	MESH	0.1481481481481481	4
+membrane proteins/metabolism	MESH	0.037037037037037	1
 ASAH2	GENE	0.037037037037037	1
 HMOX1	GENE	0.037037037037037	1
-cd8-positive t-lymphocytes/immunology	MESH	0.1111111111111111	3
-lipid metabolism/drug effects	MESH	0.037037037037037	1
-gene expression regulation neoplastic/drug effects	MESH	0.037037037037037	1
-amino acid transport system y+/genetics	MESH	0.037037037037037	1
-antineoplastic agents immunological/administration & dosage	MESH	0.037037037037037	1
-ATM	GENE	0.037037037037037	1
-SLC9A1	GENE	0.074074074074074	2
-sulfasalazine/administration & dosage	MESH	0.037037037037037	1
 tumor suppressor protein p53/metabolism	MESH	0.074074074074074	2
-TP53	GENE	0.1111111111111111	3
+ACSL3	GENE	0.037037037037037	1
+oxidative stress/drug effects	MESH	0.074074074074074	2
+cell survival	MESH	0.037037037037037	1
+coenzyme a ligases/metabolism	MESH	0.037037037037037	1
+lymph/metabolism	MESH	0.037037037037037	1
+melanoma/blood	MESH	0.037037037037037	1
+neoplasm metastasis/drug therapy	MESH	0.037037037037037	1
+oleic acid/metabolism	MESH	0.037037037037037	1
+exosomes/metabolism	MESH	0.037037037037037	1
+ferric compounds/chemistry	MESH	0.1111111111111111	3
+metal-organic frameworks/chemistry	MESH	0.037037037037037	1
+b7-h1 antigen/metabolism	MESH	0.037037037037037	1
+benzylidene compounds/chemistry	MESH	0.037037037037037	1
+aniline compounds/chemistry	MESH	0.037037037037037	1
+programmed cell death 1 receptor/metabolism	MESH	0.037037037037037	1
+cd8-positive t-lymphocytes/cytology	MESH	0.074074074074074	2
+immunogenic cell death/drug effects	MESH	0.037037037037037	1
+phenol/chemistry	MESH	0.037037037037037	1
+interferon-gamma/metabolism	MESH	0.037037037037037	1
+gold/chemistry	MESH	0.037037037037037	1
+urinary bladder neoplasms/pathology	MESH	0.037037037037037	1
+gels/chemistry	MESH	0.037037037037037	1
+adjuvants immunologic/chemistry	MESH	0.037037037037037	1
+dextrans/chemistry	MESH	0.037037037037037	1
+asparaginase	MESH	0.037037037037037	1
+killer cells natural/metabolism	MESH	0.037037037037037	1
+cisplatin	MESH	0.037037037037037	1
+diterpenes/pharmacology	MESH	0.037037037037037	1
+lymphoma t-cell	MESH	0.037037037037037	1
 cell survival/drug effects	MESH	0.1111111111111111	3
-raw 264.7 cells	MESH	0.037037037037037	1
-inflammation mediators/antagonists & inhibitors	MESH	0.037037037037037	1
-microglia/drug effects	MESH	0.037037037037037	1
-lipopolysaccharides/toxicity	MESH	0.037037037037037	1
-gene expression	MESH	0.037037037037037	1
-nf-e2-related factor 2/biosynthesis	MESH	0.037037037037037	1
 NFE2L2	GENE	0.074074074074074	2
-b7-h1 antigen/antagonists & inhibitors	MESH	0.074074074074074	2
-nivolumab/therapeutic use	MESH	0.037037037037037	1
-fusion regulatory protein 1 heavy chain/metabolism	MESH	0.037037037037037	1
-interferon-gamma/immunology	MESH	0.037037037037037	1
-cysteine/metabolism	MESH	0.037037037037037	1
+liver/pathology	MESH	0.037037037037037	1
+spleen/pathology	MESH	0.037037037037037	1
+malondialdehyde/blood	MESH	0.037037037037037	1
+glutathione	MESH	0.037037037037037	1
+iron/blood	MESH	0.037037037037037	1
+phospholipid hydroperoxide glutathione peroxidase	MESH	0.037037037037037	1
+kidney	MESH	0.037037037037037	1
+multiple myeloma/drug therapy	MESH	0.037037037037037	1
+antibodies monoclonal humanized/pharmacology	MESH	0.037037037037037	1
+cd36 antigens/antagonists & inhibitors	MESH	0.037037037037037	1
+cytokines/metabolism	MESH	0.074074074074074	2
+CD36	GENE	0.037037037037037	1
+fatty acids/metabolism	MESH	0.037037037037037	1
 melanoma/genetics	MESH	0.037037037037037	1
+cysteine/metabolism	MESH	0.037037037037037	1
+fusion regulatory protein 1 heavy chain/metabolism	MESH	0.037037037037037	1
+amino acid transport system y+/metabolism	MESH	0.074074074074074	2
 SLC3A2	GENE	0.037037037037037	1
-neoplasms/drug therapy	MESH	0.074074074074074	2
+SLC9A1	GENE	0.074074074074074	2
+nivolumab/therapeutic use	MESH	0.037037037037037	1
+interferon-gamma/immunology	MESH	0.037037037037037	1
+PDCD1	GENE	0.1111111111111111	3
+cell cycle/drug effects	MESH	0.037037037037037	1
+autophagy-related proteins/genetics	MESH	0.037037037037037	1
+precursor cell lymphoblastic leukemia-lymphoma/metabolism	MESH	0.037037037037037	1
+glutathione peroxidase/metabolism	MESH	0.037037037037037	1
+flavonolignans/pharmacology	MESH	0.037037037037037	1
+ATG5	GENE	0.037037037037037	1
+autophagy/drug effects	MESH	0.074074074074074	2
 cd8-positive t-lymphocytes/drug effects	MESH	0.037037037037037	1
-endoplasmic reticulum/drug effects	MESH	0.037037037037037	1
+neoplasms/drug therapy	MESH	0.074074074074074	2
 ACSL4	GENE	0.037037037037037	1
 AIFM2	GENE	0.037037037037037	1
 ATL1	GENE	0.037037037037037	1
 S100A4	GENE	0.037037037037037	1
-amino acid transport system y+/metabolism	MESH	0.074074074074074	2
-CD8A	GENE	0.1111111111111111	3
-SLC7A11	GENE	0.1481481481481481	4
-killer cells natural/metabolism	MESH	0.037037037037037	1
-diterpenes/pharmacology	MESH	0.037037037037037	1
-asparaginase	MESH	0.037037037037037	1
-cisplatin	MESH	0.037037037037037	1
-lymphoma t-cell	MESH	0.037037037037037	1
-t-lymphocytes cytotoxic/metabolism	MESH	0.037037037037037	1
-ascorbic acid/pharmacology	MESH	0.037037037037037	1
-neoplasms/diagnostic imaging	MESH	0.037037037037037	1
-calreticulin/metabolism	MESH	0.037037037037037	1
-CALR	GENE	0.037037037037037	1
-cell line tumor	MESH	0.3703703703703703	10
-mitochondria/drug effects	MESH	0.074074074074074	2
-antineoplastic agents/chemistry	MESH	0.037037037037037	1
-energy metabolism/drug effects	MESH	0.037037037037037	1
-drug synergism	MESH	0.037037037037037	1
-dichloroacetic acid/chemistry	MESH	0.037037037037037	1
-saponins/chemistry	MESH	0.037037037037037	1
-protein kinase inhibitors/chemistry	MESH	0.037037037037037	1
-biological products/chemistry	MESH	0.037037037037037	1
-pyruvate dehydrogenase acetyl-transferring kinase/antagonists & inhibitors	MESH	0.037037037037037	1
-macrophages/cytology	MESH	0.074074074074074	2
-apoptosis/drug effects	MESH	0.074074074074074	2
-cytokines/metabolism	MESH	0.074074074074074	2
-dextrans/chemistry	MESH	0.037037037037037	1
-urinary bladder neoplasms/pathology	MESH	0.037037037037037	1
-gold/chemistry	MESH	0.037037037037037	1
-adjuvants immunologic/chemistry	MESH	0.037037037037037	1
-gels/chemistry	MESH	0.037037037037037	1
-small molecule libraries/pharmacology	MESH	0.037037037037037	1
-radiation-protective agents/pharmacology	MESH	0.037037037037037	1
-bone marrow/drug effects	MESH	0.037037037037037	1
-drug interactions	MESH	0.037037037037037	1
-ileum/drug effects	MESH	0.037037037037037	1
-necroptosis/drug effects	MESH	0.037037037037037	1
+endoplasmic reticulum/drug effects	MESH	0.037037037037037	1
+cd8-positive t-lymphocytes/immunology	MESH	0.1111111111111111	3
+CD8A	GENE	0.1851851851851851	5
+actins/metabolism	MESH	0.037037037037037	1
+hepatocytes/drug effects	MESH	0.037037037037037	1
+collagen type i/metabolism	MESH	0.037037037037037	1
 liver cirrhosis/drug therapy	MESH	0.037037037037037	1
 hypoxia-inducible factor 1 alpha subunit/metabolism	MESH	0.037037037037037	1
-hepatocytes/drug effects	MESH	0.037037037037037	1
-actins/metabolism	MESH	0.037037037037037	1
 sorafenib/pharmacology	MESH	0.037037037037037	1
-cell line	MESH	0.037037037037037	1
-collagen type i/metabolism	MESH	0.037037037037037	1
 hepatic stellate cells/drug effects	MESH	0.037037037037037	1
+cell line	MESH	0.037037037037037	1
 FN1	GENE	0.037037037037037	1
 HIF1A	GENE	0.037037037037037	1
 MMRN1	GENE	0.037037037037037	1
+SLC7A11	GENE	0.1481481481481481	4
+brain neoplasms/genetics	MESH	0.037037037037037	1
+glioblastoma/genetics	MESH	0.037037037037037	1
+t-lymphocytes cytotoxic/immunology	MESH	0.037037037037037	1
+hyaluronan receptors/genetics	MESH	0.037037037037037	1
+cation transport proteins/genetics	MESH	0.037037037037037	1
+heat-shock proteins/genetics	MESH	0.037037037037037	1
+acetaminophen/pharmacology	MESH	0.037037037037037	1
+CD44	GENE	0.037037037037037	1
+HSPB1	GENE	0.037037037037037	1
+SLC40A1	GENE	0.037037037037037	1
+amino acid transport system y+/genetics	MESH	0.037037037037037	1
+gene expression regulation neoplastic/drug effects	MESH	0.037037037037037	1
+sulfasalazine/administration & dosage	MESH	0.037037037037037	1
+ATM	GENE	0.037037037037037	1
+antineoplastic agents immunological/administration & dosage	MESH	0.037037037037037	1
+lipid metabolism/drug effects	MESH	0.037037037037037	1
+pyruvate dehydrogenase acetyl-transferring kinase/antagonists & inhibitors	MESH	0.037037037037037	1
+dichloroacetic acid/chemistry	MESH	0.037037037037037	1
+apoptosis/drug effects	MESH	0.074074074074074	2
+energy metabolism/drug effects	MESH	0.037037037037037	1
+macrophages/cytology	MESH	0.074074074074074	2
+drug synergism	MESH	0.037037037037037	1
+antineoplastic agents/chemistry	MESH	0.037037037037037	1
+protein kinase inhibitors/chemistry	MESH	0.037037037037037	1
+saponins/chemistry	MESH	0.037037037037037	1
+biological products/chemistry	MESH	0.037037037037037	1
+mitochondria/drug effects	MESH	0.074074074074074	2
+drug interactions	MESH	0.037037037037037	1
+necroptosis/drug effects	MESH	0.037037037037037	1
+small molecule libraries/pharmacology	MESH	0.037037037037037	1
+ileum/drug effects	MESH	0.037037037037037	1
+radiation-protective agents/pharmacology	MESH	0.037037037037037	1
+bone marrow/drug effects	MESH	0.037037037037037	1

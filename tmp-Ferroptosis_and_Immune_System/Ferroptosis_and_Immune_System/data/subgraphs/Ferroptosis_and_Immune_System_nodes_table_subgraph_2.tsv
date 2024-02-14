@@ -1,14 +1,14 @@
 entity	category	node_weight	occurrence
-GABPA	GENE	0.037037037037037	1
-nf-e2-related factor 2/genetics	MESH	0.037037037037037	1
-iron/chemistry	MESH	0.037037037037037	1
-CTLA4	GENE	0.037037037037037	1
-lung neoplasms/drug therapy	MESH	0.037037037037037	1
-MTOR	GENE	0.037037037037037	1
-allografts	MESH	0.037037037037037	1
-cell movement/drug effects	MESH	0.037037037037037	1
-GSK3B	GENE	0.037037037037037	1
-BTRC	GENE	0.037037037037037	1
-PRKAA2	GENE	0.037037037037037	1
-tor serine-threonine kinases/metabolism	MESH	0.037037037037037	1
-glycogen synthase kinase 3/metabolism	MESH	0.037037037037037	1
+TLR4	GENE	0.074074074074074	2
+cyclohexylamines/pharmacology	MESH	0.074074074074074	2
+TICAM1	GENE	0.037037037037037	1
+neutrophils/immunology	MESH	0.037037037037037	1
+adaptor proteins vesicular transport/genetics	MESH	0.037037037037037	1
+toll-like receptor 4/genetics	MESH	0.037037037037037	1
+phenylenediamines/pharmacology	MESH	0.074074074074074	2
+neutrophil infiltration	MESH	0.037037037037037	1
+myocardial reperfusion injury/drug therapy	MESH	0.037037037037037	1
+ventricular function left/drug effects	MESH	0.037037037037037	1
+inflammation/drug therapy	MESH	0.037037037037037	1
+myocardium/immunology	MESH	0.037037037037037	1
+TRIM69	GENE	0.037037037037037	1

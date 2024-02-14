@@ -1,0 +1,4 @@
+entity	category	node_weight	occurrence	repGM	repGT
+SLC40A1	GENE	0.025	1	2.5	2.5
+CD44	GENE	0.025	1	2.5	2.5
+HSPB1	GENE	0.025	1	2.5	2.5
