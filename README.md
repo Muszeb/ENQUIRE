@@ -139,6 +139,9 @@ Legend:	[-flag_short|--flag_long|config file variable, if available]:
 	WARNING: this option is still under development, to allow users to set different species targets
 	and subsequently change the H.s. specific metadata.
 
+[-m|--cellentitymodule|CELLTAGSBOOL] = Boolean, enable removing of character spans tagged as cell lines or types (e.g. 'CD8+ T-cell')?
+	Default: False.
+
 [-h|--help] = print this help message.
 
 You might be seeing this Help because of an input error.
