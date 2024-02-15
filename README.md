@@ -71,21 +71,7 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
 ./ENQUIRE.sif efetch_references.py tag ref1 ref2 ref3 ...
 ```
 where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
-DISCLAIMER: if the references are not annotated into the Pubmed's API, an error such as 
-
-```python
-Traceback (most recent call last):
-  File "/bin/code/efetch_references.py", line 29, in <module>
-    refs+=refparse(p)
-          ^^^^^^^^^^^
-  File "/bin/code/efetch_references.py", line 21, in refparse
-    refs=dpath.get(data,"**/Link") # list of {Id:value} dicts
-         ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/env/micromamba/lib/python3.11/site-packages/dpath/__init__.py", line 189, in get
-    raise KeyError(glob)
-KeyError: '**/Link'
-```
-might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation state of an article.
+**DISCLAIMER**: if the references are not annotated into the Pubmed's API, The script will silently return no match - this may go unnoticed when fetching references from multiple articles. As a rule of thumb, look for "References" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation status of an article.
 
 </details>
 
@@ -93,8 +79,14 @@ might occur. As a rule of thumb, look for "MeSH terms" in the "page navigation" 
 
 - Before running an actual task, take a look at `ENQUIRE_methods_overview.png`: the figure briefly illustrates the main steps of the algorithm.
 
-- After the download, you should see a folder called `ENQUIRE`: this is the main directory from which the program is supposed to be run.
-   
+- In the next exemplary code snippet, we assumed you cloned this repository and `ENQUIRE` is your current working directory.
+
+- **IMPORTANT NOTE**: it is highly recommended to get an **NCBI API_KEY** before running ENQUIRE. [Getting one is very easy](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us). You can then copy the API key and enter it as an environmental variable on the command line, like so: 
+```bash
+export NCBI_API_KEY=your_api_key_here
+```
+This will ensure your API KEY is passed as an environmental variable to all ENQUIRE runs within the same terminal session. 
+
 - you can inspect the code Help section by running (from the `ENQUIRE` directory) `./ENQUIRE.sif ENQUIRE.sh -h`:
  
 ```
@@ -305,7 +297,19 @@ Please note that the script might last quite long, and it benefits from a high p
     ```
     ulimit -s N 
     ```    
-    Where `N` shall be a size expressed in Kb to set as the maximum stack size. You could first check the number returned by `Cstack_info()` in an active R shell. You can read more about the issue [here](https://stackoverflow.com/questions/14719349/error-c-stack-usage-is-too-close-to-the-limit) and [here](https://rdrr.io/r/base/Cstack_info.html). 
+    Where `N` shall be a size expressed in Kb to set as the maximum stack size. You could first check the number returned by `Cstack_info()` in an active R shell. You can read more about the issue [here](https://stackoverflow.com/questions/14719349/error-c-stack-usage-is-too-close-to-the-limit) and [here](https://rdrr.io/r/base/Cstack_info.html).
+
+- If you get a `curl`-related error of the form 
+```bash
+HTTP/1.1 400 Bad Request
+ WARNING:  FAILURE ( Thu Feb 15 10:24:24 AM CET 2024 )
+```
+
+It means that NCBI is not willing to process your request. Sometimes, this can be due to a server hiccup, but most times using an API KEY fixes the issue. [Getting one is very easy](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us). You can then copy the API key and enter it as an environmental variable on the command line, like so: 
+```bash
+export NCBI_API_KEY=your_api_key_here
+```
+This will ensure your API KEY is passed as an environmental variable to all ENQUIRE runs within the same terminal session. 
 
 </details>
 
