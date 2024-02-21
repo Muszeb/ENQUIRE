@@ -21,8 +21,6 @@ cd ENQUIRE
 
 then, download the SIF image file `ENQUIRE.sif` from [FigShare](https://figshare.com/articles/software/ENQUIRE/24434845) and place it in the repository, check that the file is intact with `md5sum`, and make it executable
 
-<iframe src="https://widgets.figshare.com/articles/24434845/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
-
 ```
 md5sum -c md5sum_ENQUIRE_sif.txt
 chmod +x ENQUIRE.sif
