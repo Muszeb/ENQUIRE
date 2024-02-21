@@ -10,7 +10,7 @@ The accelerating growth in scientific literature is overwhelming our capacity to
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the installation steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac) install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`)
+ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the installation steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac) install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
 
 Next, clone the repository:
 
@@ -19,7 +19,9 @@ git clone https://github.com/Muszeb/ENQUIRE.git
 cd ENQUIRE
 ```
 
-then, download the SIF image file `ENQUIRE.sif` from [FigShare](http://sysbiomed-erlangen.weebly.com/) and place it in the repository, check that the file is intact with `md5sum`, and make it executable:
+then, download the SIF image file `ENQUIRE.sif` from [FigShare](https://figshare.com/articles/software/ENQUIRE/24434845) and place it in the repository, check that the file is intact with `md5sum`, and make it executable
+
+<iframe src="https://widgets.figshare.com/articles/24434845/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 ```
 md5sum -c md5sum_ENQUIRE_sif.txt
