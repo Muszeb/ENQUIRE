@@ -12,12 +12,16 @@ The accelerating growth in scientific literature is overwhelming our capacity to
 
 ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the [installation steps](https://github.com/apptainer/apptainer/blob/main/INSTALL.md) specific to your setup and install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.3 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`)
 
-Next, clone the repository, download the SIF image file `ENQUIRE.sif` from [our lab's website](http://sysbiomed-erlangen.weebly.com/) with `curl`, check that the file is intact with `md5sum`,and make it executable:
+Next, clone the repository:
 
 ```bash
 git clone https://github.com/Muszeb/ENQUIRE.git
-cd ENQUIRE 
-curl https://jveralab.net/ENQUIRE.sif -o ENQUIRE.sif
+cd ENQUIRE
+```
+
+then, download the SIF image file `ENQUIRE.sif` from [FigShare](http://sysbiomed-erlangen.weebly.com/) and place it in the repository, check that the file is intact with `md5sum`, and make it executable:
+
+```
 md5sum -c md5sum_ENQUIRE_sif.txt
 chmod +x ENQUIRE.sif
 ```
