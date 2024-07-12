@@ -114,32 +114,32 @@ Legend:	[-flag_short|--flag_long|config file variable, if available]:
 	It can be obtained from a PubMed querying specifying 'PMID' as the download format option.
 	A minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.
 
-[-t|--tag|tag] = A characteristic tag definining the task.
-	It must be an alphanumeric string.
+[-t|--tag|tag] = A tag definining the task.
+	It must be an alphanumeric string (underline_spaced_words are accepted).
 
 [-j|--ncores|ncores] = The max number of CPU cores to be used.
 	Default is 6.
 
-[-c|--combine-set|comb] = how many N entities to intersect to construct a query?
+[-c|--combine-set|comb] = how many k entities should be intersected to construct a query?
 	3: loose searches, 4: moderate (default), 5: very strict queries.
 
-[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).
-	Example: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.
+[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps (default: 1 %).
+	Example: if a subgraph contains nodes exclusively mentioned in 1 paper out of a total of 100, that subgraph has a 1% representativeness.
 
-[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?
+[-a|--attempts|A] = how many query attempts (i.e. k-sized graphlets) should be run to connect any two network communities?
 	1: conservative, 2: moderate (default), 3: greedy.
 
 [-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
 	each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
 
-[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
+[-e|--entity|etype] = which entity type ('gene','MeSH') are you interested into? Omit or 'all' to textmine both entities.
 
 [-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
 	This option overwrites any parameter set by a different option.
 
 [-w|--rscript|rscript] = path to the Rscript compiler. If using 'ENQUIRE.sif', it defaults to the containerized version of R.
 
-[-d|--inputdata|sd] = path to the input data folder compiler. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
+[-d|--inputdata|sd] = path to the input data folder. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
 	WARNING: this option is still under development, to allow users to set different species targets
 	and subsequently change the H.s. specific metadata.
 
@@ -153,7 +153,7 @@ You might be seeing this Help because of an input error.
 ####################################################################################
 ``` 
 
-Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
+Let's set up an example: we want to extract biomedical information from publications dealing with chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
 
 ```bash
 # assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
@@ -228,8 +228,24 @@ Options:
 	-d PARAMETER, --membdeg=PARAMETER
 		minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]
 
+	-r PARAMETER, --round=PARAMETER
+		Should membership degrees be rounded to the first significant digit (helps the stability of the results)?
+		default: True [T,F]
+
 	-s PARAMETER, --setsize=PARAMETER
 		minimal gene set size (default: 2)
+
+	-v VARIANCE, --varthreshold=VARIANCE
+		Dimensionality reduction based on the chosen proportion of Variance
+		observed upon PCA-transforming the inverse-log-similarity between nodes (default: 0.99. range [0-1]).
+		Set it to 1 to use untrasformed, scaled node similarities.
+
+	-m MESH, --meshxgs=MESH
+		How many MeSH terms which are closest to the cluster centroids should be used to describe a gene set? (default:3)
+
+	-p PATH, --netpathdata=PATH
+		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
+		If using the ENQUIRE.sif singularity image, the default path should point to the containerized copy of the file.
 
 	-h, --help
 		Show this help message and exit
@@ -241,7 +257,7 @@ Options:
 ./ENQUIRE.sif context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv 
 -n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
 ```
-Please note that the script might last quite long, due to the FCM algorithm.
+The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_gene_sets.xlsx` as well as a plot showing the reconstructed gene sets as a PNG image. Please note that the script might last quite long, due to the FCM algorithm.
 
 #### Context-aware pathway enrichment analysis
 - Run `./ENQUIRE.sif context_aware_pathway_enrichment.R [options]` to perform topology-based, pathway enrichment analysis using [SANTA](https://www.bioconductor.org/packages/devel/bioc/vignettes/SANTA/inst/doc/SANTA-vignette.html), Reactome *H. sapiens* pathways, and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
@@ -258,7 +274,7 @@ Options:
 
 	-n PATH, --netpathdata=PATH
 		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
-		If the current working directory is not the 'ENQUIRE' folder, the default path ('input/...') will throw an error.
+		If using the ENQUIRE.sif singularity image, the default path should point to the containerized copy of the file.
 
 	-e PATH, --edgetable=PATH
 		Path to an ENQUIRE-generated, gene-gene edge table file (required).
@@ -278,18 +294,22 @@ Options:
 
 	-f PARAMETER, --padjust=PARAMETER
 		P-value adjustment method, must be one of [holm, hochberg, hommel, bonferroni, BH, BY, fdr, none].
-		Default and recommended: holm, as the p-value null distribution is not guaranteed to be uniform.
+		Default: holm.
+
+	-q QSCORENET, --qscorenet=QSCORENET
+		Do you want to save a copy of the STRING network in GRAPHML format with ENQUIRE-inferred QScores as node weights?
+		default: False [T,F]
 
 	-h, --help
 		Show this help message and exit
 ```
 
-- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
+- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script (we reduce the number of tested pathways with the `s` parameter to speed up the process):
 ```bash
 # assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
 ```
-Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
+The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_pathway_enrichment.xlsx`, together with two PNG images showing the test statistics p-value distribution and the correlation between the Node score and degree. Please note that the script might take quite long to finish, and it benefits from a high performance computer, if available. 
 
 </details>
 
