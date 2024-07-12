@@ -1,12 +1,5 @@
 entity	category	node_weight	occurrence
-tor serine-threonine kinases/metabolism	MESH	0.0277777777777777	1
-iron/chemistry	MESH	0.0277777777777777	1
-allografts	MESH	0.0277777777777777	1
-glycogen synthase kinase 3/metabolism	MESH	0.0277777777777777	1
-MTOR	GENE	0.0277777777777777	1
-GSK3B	GENE	0.0277777777777777	1
-cell movement/drug effects	MESH	0.0277777777777777	1
-PRKAA2	GENE	0.0277777777777777	1
-lung neoplasms/drug therapy	MESH	0.0277777777777777	1
-CTLA4	GENE	0.0277777777777777	1
-BTRC	GENE	0.0277777777777777	1
+BDKRB2	GENE	0.037037037037037	1
+b-lymphocytes/metabolism	MESH	0.037037037037037	1
+glutathione peroxidase/therapeutic use	MESH	0.037037037037037	1
+cytoskeletal proteins/metabolism	MESH	0.037037037037037	1

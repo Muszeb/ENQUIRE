@@ -1,42 +1,43 @@
-KW	Category	Representativeness	Raw.Occurrence	Betweenness.centrality	Closeness.centrality	Strength	Wscore	Knode	Knode.rank
-ACSL3	GENE	0.037037037037037	1	NA	NA	NA	NA	NA	NA
-ACSL4	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	2
-AIFM2	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	1
-ASAH2	GENE	0.037037037037037	1	0	1.51739888275967	1.01146625515371	0.5625	0.09375	3
-ATG5	GENE	0.037037037037037	1	NA	NA	NA	NA	NA	NA
-ATL1	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	4
-ATM	GENE	0.037037037037037	1	0	1.41141368707348	0.505733127576854	0.32	-0.0752	4
-BDKRB2	GENE	0.037037037037037	1	NA	NA	NA	NA	NA	NA
-CALR	GENE	0.037037037037037	1	NA	NA	NA	NA	NA	NA
-CD36	GENE	0.037037037037037	1	NA	NA	NA	NA	NA	NA
-CD44	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	2
-CD8A	GENE	0.185185185185185	5	0	2.11049184699612	0.818648189165463	0.64	0.3168	1
-FN1	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	3
-FTH1	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	2
-GGT1	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	5
-HIF1A	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	2
-HLF	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	1
-HMGB1	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	4
-HMOX1	GENE	0.037037037037037	1	0	1.51739888275967	1.01146625515371	0.5625	0.09375	2
-HSPB1	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	1
-IL6	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	4
-JAK2	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	6
-KDM8	GENE	0.037037037037037	1	0	2.02319851034623	0.505733127576854	1	0	2
-MMRN1	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	1
-NFE2L2	GENE	0.074074074074074	2	NA	NA	NA	NA	NA	NA
-NLRP3	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	3
-NOX4	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	1
-PDCD1	GENE	0.111111111111111	3	NA	NA	NA	NA	NA	NA
-S100A4	GENE	0.037037037037037	1	0	2.02319851034623	1.51719938273056	1	0	3
-SLC3A2	GENE	0.037037037037037	1	0	1.41141368707348	0.505733127576854	0.32	-0.0752	5
-SLC40A1	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	3
-SLC7A11	GENE	0.148148148148148	4	0	2.11049184699612	0.818648189165463	0.64	0.3168	2
-SLC9A1	GENE	0.074074074074074	2	6	2.96024969344608	2.64876263348463	1	0.2944	3
-STAT3	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	2
-STING1	GENE	0.037037037037037	1	0	2.02319851034623	0.505733127576854	1	0	1
-TF	GENE	0.037037037037037	1	0	1.21391910620774	0.505733127576854	0.1875	-0.08984375	4
-TGFB1	GENE	0.037037037037037	1	0	2.02319851034623	2.52866563788427	1	0	3
-TICAM1	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	3
-TLR4	GENE	0.074074074074074	2	0	2.02319851034623	1.01146625515371	1	0	2
-TP53	GENE	0.111111111111111	3	2	2.02319851034623	1.51719938273056	1	0.10546875	1
-TRIM69	GENE	0.037037037037037	1	0	2.02319851034623	1.01146625515371	1	0	1
+"KW"	"Category"	"Representativeness"	"Raw.Occurrence"	"Betweenness.centrality"	"Closeness.centrality"	"Strength"	"Wscore"	"Knode"	"Knode.rank"	"ReactomeReactions"	"ReactomePathways"	"PMIDlist"
+"ACSL3"	"GENE"	0.037037037037037	1	NA	NA	NA	NA	NA	NA	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"
+"ACSL4"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	3	NA	NA	"[33277233]"
+"AIFM2"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	4	NA	NA	"[33277233]"
+"ASAH2"	"GENE"	0.037037037037037	1	0	1.51850419093383	1.01218580168847	0.5625	0.09375	3	NA	NA	"[33547170]"
+"ATG5"	"GENE"	0.037037037037037	1	NA	NA	NA	NA	NA	NA	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"
+"ATL1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	2	NA	NA	"[33277233]"
+"ATM"	"GENE"	0.037037037037037	1	0	1.50908967446387	1.01218580168847	0.48	0.16	4	NA	NA	"[31554642]"
+"BDKRB2"	"GENE"	0.037037037037037	1	NA	NA	NA	NA	NA	NA	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"
+"CALR"	"GENE"	0.037037037037037	1	NA	NA	NA	NA	NA	NA	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"
+"CD36"	"GENE"	0.037037037037037	1	0	2.02467225457844	0.506092900844234	1	0	2	NA	NA	"[33691090]"
+"CD44"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	2	NA	NA	"[34062295]"
+"CD8A"	"GENE"	0.185185185185185	5	0	2.11286992302569	0.818930917610817	0.32	0.176	3	NA	NA	"[31043744,31554642]"
+"FN1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	3	"[Exocytosis of platelet alpha granule contents]"	"[Platelet degranulation ]"	"[34811833]"
+"FTH1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	2	"[Exocytosis of ficolin-rich granule lumen proteins]"	"[Neutrophil degranulation]"	"[35197507]"
+"GGT1"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	7	NA	NA	"[34991659]"
+"HIF1A"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	2	NA	NA	"[34811833]"
+"HLF"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	4	NA	NA	"[34991659]"
+"HMGB1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	4	"[Exocytosis of ficolin-rich granule lumen proteins]"	"[Neutrophil degranulation]"	"[35197507]"
+"HMOX1"	"GENE"	0.037037037037037	1	0	1.51850419093383	1.01218580168847	0.5625	0.09375	2	NA	NA	"[33547170]"
+"HSPB1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	1	NA	NA	"[34062295]"
+"IL6"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	3	"[PTPN11 is phosphorylated,Tyrosine phosphorylation of STAT1, STAT3 by IL6 receptor,IL6ST is tyrosine phosphorylated,JAK activation,Assembly of hexameric IL-6 receptor,IL6:IL6R binds IL6ST:JAK1,JAK2,(TYK2),IL6:IL6R-2 binds IL6ST:JAK1, JAK2, (TYK2),Serine phosphorylation of STATs,Phosphorylated STATs are released,Tyrosine phosphorylated IL6ST binds STAT1,STAT3,Expression of STAT3-upregulated extracellular proteins]"	"[Interleukin-6 signaling,Interleukin-4 and Interleukin-13 signaling]"	"[34991659]"
+"JAK2"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	5	"[PTPN11 is phosphorylated,Tyrosine phosphorylation of STAT1, STAT3 by IL6 receptor,IL6ST is tyrosine phosphorylated,JAK activation,Assembly of hexameric IL-6 receptor,IL6:IL6R binds IL6ST:JAK1,JAK2,(TYK2),IL6:IL6R-2 binds IL6ST:JAK1, JAK2, (TYK2),IL20:IL20RA:JAK1:IL20RB:p‑JAK2,p‑JAK3 binds STAT3,p-STAT3 dissociates from IL20:IL20RA:JAK1:IL20RB:p-Y1007,Y1008-JAK2,p-JAK3,IL20:IL20RA:JAK1:IL20RB:p-JAK3,p-JAK2:STAT3 phosphorylates STAT3,STAT3 binds to p-Y-IL23R in IL23:IL23 receptor,p-Y693-STAT4, p-Y705-STAT3 dissociate from IL23:IL23 receptor,STAT3, STAT4 are phosphorylated by p-JAK2, p-TYK2 in IL23:IL23 receptor,STAT4 binds p-Y-IL23R in IL23:IL23 receptor,p-STAT1, p-STAT3 dissociate from IL27RA:IL12RB2 receptor,JAK1,JAK2 bound to IL27RA:IL12RB2 receptor phosphorylate STAT1,STAT1,STAT3 associate with IL27RA:IL12RB2 receptor, STAT3 bind p-Y611-IL27RA from Interleukin-27:Interleukin-27 receptor complex,STAT3 and STAT1 are phosphorylated by JAKs after IL27:IL27R interaction,p-Y701-STAT1 and p-Y705-STAT3 dissociate from IL27:IL27 receptor,p-Y-JAK1,2 phosphorylates STAT1,3,5 in CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-Y-JAK2:p-TYK2,CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2 binds STAT1,5,CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2:p-Y-STAT1,5 dissociates yielding CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2 and p-Y-STAT1,JAK2 Phosphoryates STAT3 in Response to Leptin,Phosphorylated LEPR Binds STAT3,Phosphorylated STAT3 Dissociates from Leptin Receptor,STAT6 bind IL13:IL13R type II,p-Y-STATs dissociate,STAT6 phosphorylation,JAK2 phosphorylates STAT1/STAT3,Disassociation and translocation of STATs to the nucleus downstream of KIT mutants,Dimerization of STATs downstream of KIT mutants,Recruitment of STATs by KIT mutants,Phosphorylation of STATs downstream of KIT mutants,Disassociation and translocation of STATs to the nucleus,Dimerization of STATs,Phosphorylation of STATs,Recruitment of STATs,JAK2 binds STAT1/3,Serine phosphorylation of STATs,Phosphorylated STATs are released,Tyrosine phosphorylated IL6ST binds STAT1,STAT6 bind p-Y-IL4R,JAK1 phosphorylates STAT3,STAT6,p-Y705-STAT3,p-Y641-STAT6 dissociate]"	"[Interleukin-6 signaling,Interleukin-20 family signaling,Interleukin-23 signaling,Interleukin-35 Signalling,Interleukin-27 signaling,Signaling by CSF3 (G-CSF),Signaling by Leptin,Interleukin-4 and Interleukin-13 signaling,Growth hormone receptor signaling,Signaling by phosphorylated juxtamembrane, extracellular and kinase domain KIT mutants,Signaling by SCF-KIT]"	"[34991659]"
+"KDM8"	"GENE"	0.037037037037037	1	0	2.02467225457844	0.506092900844234	1	0	2	NA	NA	"[33311482]"
+"MMRN1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	1	"[Exocytosis of platelet alpha granule contents]"	"[Platelet degranulation ]"	"[34811833]"
+"NFE2L2"	"GENE"	0.074074074074074	2	NA	NA	NA	NA	NA	NA	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"	"This node is isolated in this subgraph - no data available"
+"NLRP3"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	3	NA	NA	"[35197507]"
+"NOX4"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	1	NA	NA	"[35197507]"
+"PDCD1"	"GENE"	0.111111111111111	3	0	2.02467225457844	0.506092900844234	1	0	1	NA	NA	"[33691090]"
+"S100A4"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.5182787025327	1	0	1	NA	NA	"[33277233]"
+"SLC3A2"	"GENE"	0.037037037037037	1	0	1.41259215555683	0.506092900844234	0.16	-0.184	5	NA	NA	"[31043744]"
+"SLC40A1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	3	NA	NA	"[34062295]"
+"SLC7A11"	"GENE"	0.148148148148148	4	0	2.33632505693518	1.32502381845505	0.64	0.296	1	NA	NA	"[31554642,31043744]"
+"SLC9A1"	"GENE"	0.074074074074074	2	5	2.96306751954152	2.6500476369101	1	0.256	2	NA	NA	"[31554642,31043744]"
+"SMAD3"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	1	"[An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3,Activated type I receptor phosphorylates SMAD2/3 directly,Phosphorylated SMAD2/3 dissociates from TGFBR]"	"[TGF-beta receptor signaling activates SMADs]"	"[34991659]"
+"STAT3"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	6	"[Tyrosine phosphorylation of STAT1, STAT3 by IL6 receptor,Serine phosphorylation of STATs,Phosphorylated STATs are released,Tyrosine phosphorylated IL6ST binds STAT1,STAT3,Expression of STAT3-upregulated extracellular proteins,IL20:IL20RA:JAK1:IL20RB:p‑JAK2,p‑JAK3 binds STAT3,p-STAT3 dissociates from IL20:IL20RA:JAK1:IL20RB:p-Y1007,Y1008-JAK2,p-JAK3,IL20:IL20RA:JAK1:IL20RB:p-JAK3,p-JAK2:STAT3 phosphorylates STAT3,STAT3 binds to p-Y-IL23R in IL23:IL23 receptor,p-Y693-STAT4, p-Y705-STAT3 dissociate from IL23:IL23 receptor, STAT4 are phosphorylated by p-JAK2, p-TYK2 in IL23:IL23 receptor,STAT4 binds p-Y-IL23R in IL23:IL23 receptor,p-STAT1, p-STAT3 dissociate from IL27RA:IL12RB2 receptor,JAK1,JAK2 bound to IL27RA:IL12RB2 receptor phosphorylate STAT1,STAT1,STAT3 associate with IL27RA:IL12RB2 receptor, STAT3 bind p-Y611-IL27RA from Interleukin-27:Interleukin-27 receptor complex,STAT3 and STAT1 are phosphorylated by JAKs after IL27:IL27R interaction,p-Y701-STAT1 and p-Y705-STAT3 dissociate from IL27:IL27 receptor,p-Y-JAK1,2 phosphorylates STAT1,3,5 in CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-Y-JAK2:p-TYK2,CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2 binds STAT1,5,CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2:p-Y-STAT1,5 dissociates yielding CSF3 dimer:2xp-4Y-CSF3R:LYN:p-Y-JAK1:p-JAK2:p-SYK:p-HCK:p-TYK2 and p-Y-STAT1,JAK2 Phosphoryates STAT3 in Response to Leptin,Phosphorylated LEPR Binds STAT3,Phosphorylated STAT3 Dissociates from Leptin Receptor,STAT6 bind IL13:IL13R type II,p-Y-STATs dissociate,STAT6 phosphorylation,JAK2 phosphorylates STAT1/STAT3,Disassociation and translocation of STATs to the nucleus downstream of KIT mutants,Dimerization of STATs downstream of KIT mutants,Recruitment of STATs by KIT mutants,Phosphorylation of STATs downstream of KIT mutants,Disassociation and translocation of STATs to the nucleus,Dimerization of STATs,Phosphorylation of STATs,Recruitment of STATs,JAK2 binds STAT1/3,STAT6 bind p-Y-IL4R,JAK1 phosphorylates STAT3,STAT6,p-Y705-STAT3,p-Y641-STAT6 dissociate]"	"[Interleukin-6 signaling,Interleukin-4 and Interleukin-13 signaling,Interleukin-20 family signaling,Interleukin-23 signaling,Interleukin-35 Signalling,Interleukin-27 signaling,Signaling by CSF3 (G-CSF),Signaling by Leptin,Growth hormone receptor signaling,Signaling by phosphorylated juxtamembrane, extracellular and kinase domain KIT mutants,Signaling by SCF-KIT]"	"[34991659]"
+"STING1"	"GENE"	0.037037037037037	1	0	2.02467225457844	0.506092900844234	1	0	1	NA	NA	"[33311482]"
+"TF"	"GENE"	0.037037037037037	1	0	1.21480335274706	0.506092900844234	0.1875	-0.08984375	4	NA	NA	"[31980600]"
+"TGFB1"	"GENE"	0.037037037037037	1	0	2.02467225457844	3.0365574050654	1	0	2	"[Expression of STAT3-upregulated extracellular proteins,An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3,Activated type I receptor phosphorylates SMAD2/3 directly,Phosphorylated SMAD2/3 dissociates from TGFBR]"	"[Interleukin-4 and Interleukin-13 signaling,TGF-beta receptor signaling activates SMADs]"	"[34991659]"
+"TICAM1"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	2	"[TRAM:TLR4:LY96:LPS:CD14 recruits TRIF (TICAM1),TRAF3 binds TICAM1:activated TLR4 complex,Auto-ubiquitination of TRAF3,RIP3 binds TRIF to mediate necroptosis,SARM binds TICAM1:TRAM:TLR4:LY96:LPS:CD14,TRIF:activated TLR3/TLR4 complex recruits RIP1,TLR4-induced ripoptosome assembly,K63-linked ubiquitination of RIP1 bound to the activated TLR complex,Caspase-8 processing within TLR4 complex,Activated TLR4:TICAM1 recruits TRAF6,Auto ubiquitination of TRAF6 bound to the activated TLR4 complex,Phosphorylated TAK1 leaves activated TLR receptor complex]"	"[MyD88-independent TLR4 cascade ,Activation of IRF3, IRF7 mediated by TBK1, IKBKE,TRIF-mediated programmed cell death,IKK complex recruitment mediated by RIP1,Caspase activation via Death Receptors in the presence of ligand,TRAF6-mediated induction of TAK1 complex within TLR4 complex]"	"[30830879]"
+"TLR4"	"GENE"	0.074074074074074	2	0	2.02467225457844	1.01218580168847	1	0	3	"[TRAM:TLR4:LY96:LPS:CD14 recruits TRIF (TICAM1),TRAF3 binds TICAM1:activated TLR4 complex,Auto-ubiquitination of TRAF3,RIP3 binds TRIF to mediate necroptosis,SARM binds TICAM1:TRAM:TLR4:LY96:LPS:CD14,TRIF:activated TLR3/TLR4 complex recruits RIP1,TLR4-induced ripoptosome assembly,K63-linked ubiquitination of RIP1 bound to the activated TLR complex,Caspase-8 processing within TLR4 complex,Activated TLR4:TICAM1 recruits TRAF6,Auto ubiquitination of TRAF6 bound to the activated TLR4 complex,Phosphorylated TAK1 leaves activated TLR receptor complex]"	"[MyD88-independent TLR4 cascade ,Activation of IRF3, IRF7 mediated by TBK1, IKBKE,TRIF-mediated programmed cell death,IKK complex recruitment mediated by RIP1,Caspase activation via Death Receptors in the presence of ligand,TRAF6-mediated induction of TAK1 complex within TLR4 complex]"	"[30830879]"
+"TP53"	"GENE"	0.111111111111111	3	2	2.02467225457844	1.5182787025327	1	0.10546875	1	NA	NA	"[33547170,31980600]"
+"TRIM69"	"GENE"	0.037037037037037	1	0	2.02467225457844	1.01218580168847	1	0	1	NA	NA	"[30830879]"

@@ -3,252 +3,1013 @@
 <PubmedArticleSet>
   <PubmedArticle>
     <MedlineCitation Status="MEDLINE" Owner="NLM">
-      <PMID Version="1">30645008</PMID>
+      <PMID Version="1">31738155</PMID>
       <DateCompleted>
-        <Year>2020</Year>
-        <Month>05</Month>
-        <Day>05</Day>
+        <Year>2021</Year>
+        <Month>02</Month>
+        <Day>03</Day>
       </DateCompleted>
       <DateRevised>
         <Year>2021</Year>
-        <Month>08</Month>
-        <Day>16</Day>
+        <Month>02</Month>
+        <Day>03</Day>
       </DateRevised>
-      <Article PubModel="Print-Electronic">
+      <Article PubModel="Print">
         <Journal>
-          <ISSN IssnType="Electronic">1938-3673</ISSN>
+          <ISSN IssnType="Electronic">1875-5992</ISSN>
           <JournalIssue CitedMedium="Internet">
-            <Volume>105</Volume>
-            <Issue>5</Issue>
+            <Volume>20</Volume>
+            <Issue>3</Issue>
             <PubDate>
-              <Year>2019</Year>
-              <Month>May</Month>
+              <Year>2020</Year>
             </PubDate>
           </JournalIssue>
-          <Title>Journal of leukocyte biology</Title>
-          <ISOAbbreviation>J Leukoc Biol</ISOAbbreviation>
+          <Title>Anti-cancer agents in medicinal chemistry</Title>
+          <ISOAbbreviation>Anticancer Agents Med Chem</ISOAbbreviation>
         </Journal>
-        <ArticleTitle>Tamoxifen induces toxicity, causes autophagy, and partially reverses dexamethasone resistance in Jurkat T cells.</ArticleTitle>
+        <ArticleTitle>Anti-Tumour Activity of Glycodendrimer Nanoparticles in a Subcutaneous MEC-1 Xenograft Model of Human Chronic Lymphocytic Leukemia.</ArticleTitle>
         <Pagination>
-          <StartPage>983</StartPage>
-          <EndPage>998</EndPage>
-          <MedlinePgn>983-998</MedlinePgn>
+          <StartPage>325</StartPage>
+          <EndPage>334</EndPage>
+          <MedlinePgn>325-334</MedlinePgn>
         </Pagination>
-        <ELocationID EIdType="doi" ValidYN="Y">10.1002/JLB.2VMA0818-328R</ELocationID>
+        <ELocationID EIdType="doi" ValidYN="Y">10.2174/1871520619666191019093558</ELocationID>
         <Abstract>
-          <AbstractText>Estrogens demonstrate biological activity in numerous organ systems, including the immune system, and exert their effects through estrogen receptors (ER) of two types: intracellular ERα and ERβ that activate transcriptional factors and membrane G protein-coupled ER GPER. The latter is capable to mediate fast activation of cytosolic signaling pathways, influencing transcriptional events in response to estrogens. Tamoxifen (TAM), widely used in chemotherapy of ERα-positive breast cancer, is considered as an ERα antagonist and GPER agonist. TAM was shown to possess "off-target" cytotoxicity, not related to ER in various tumor types. The present work was designed to study biological effects of TAM on the glucocorticoid (GC)-resistant cell line Jurkat, derived from acute lymphoblastic leukemia of T lineage (T-ALL). We have shown that T-ALL cell lines, in contrast to healthy T cells, express only GPER, but not ERα or ERβ. TAM compromised mitochondrial function and reduced the viability and proliferation of Jurkat cells. Additionally, TAM induced autophagy in a GPER-dependent manner. Gene expression profiling revealed the up-regulation of autophagy-related gene ATG5. Interestingly, TAM sensitized Jurkat cells to dexamethasone (DEX) treatment, which may be related to its capacity to cause autophagy. We suggest that TAM-based adjuvant therapy may represent a novel strategy in T-ALL patients handling.</AbstractText>
-          <CopyrightInformation>&#xa9;2019 Society for Leukocyte Biology.</CopyrightInformation>
+          <AbstractText Label="BACKGROUND">Chronic Lymphocytic Leukaemia (CLL) is an indolent disorder, which mainly affects older adults. Since the advent of chemoimmunotherapy, great progress has been made in its treatment. However, some patients develop a more aggressive form of the disease and are included in the group of high-risk CLL patients with a dismal prognosis and a need for new therapies.</AbstractText>
+          <AbstractText Label="OBJECTIVE">Maltotriose-modified poly(propylene imine) dendrimers were presented as potential agents in targeted therapy for CLL in the murine xenograft model.</AbstractText>
+          <AbstractText Label="METHODS">Tumour, brain and internal organs resected from NOD scid gamma mice were subjected to gross and histopathological evaluation.</AbstractText>
+          <AbstractText Label="RESULTS">The results of ex vivo tissue examination indicated that open-shell glycodendrimers prevented/inhibited the spread of CLL into the brain and internal organs and its transformation into a more aggressive form.</AbstractText>
+          <AbstractText Label="CONCLUSION">The results of the study have a potentially important impact on the design of future personalized therapies as well as clinical trials.</AbstractText>
+          <CopyrightInformation>Copyright&#xa9; Bentham Science Publishers; For any queries, please email at epub@benthamscience.net.</CopyrightInformation>
         </Abstract>
         <AuthorList CompleteYN="Y">
           <Author ValidYN="Y">
-            <LastName>Torres-López</LastName>
-            <ForeName>Liliana</ForeName>
-            <Initials>L</Initials>
+            <LastName>Ziemba</LastName>
+            <ForeName>Barbara</ForeName>
+            <Initials>B</Initials>
             <AffiliationInfo>
-              <Affiliation>University Center for Biomedical Research, University of Colima, Colima, Mexico.</Affiliation>
+              <Affiliation>GeneaMed LTD, Lodz, Poland.</Affiliation>
             </AffiliationInfo>
             <AffiliationInfo>
-              <Affiliation>Faculty for Chemical Sciences, University of Colima, Colima, Mexico.</Affiliation>
-            </AffiliationInfo>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Maycotte</LastName>
-            <ForeName>Paola</ForeName>
-            <Initials>P</Initials>
-            <AffiliationInfo>
-              <Affiliation>CONACYT-Biomedical Research Center of the East, Mexican Social Security Institute, Puebla, Mexico.</Affiliation>
+              <Affiliation>Department of Clinical and Laboratory Genetics, Medical University of Lodz, Lodz, Poland.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Liñán-Rico</LastName>
-            <ForeName>Andrómeda</ForeName>
-            <Initials>A</Initials>
+            <LastName>Sikorska</LastName>
+            <ForeName>Hanna</ForeName>
+            <Initials>H</Initials>
             <AffiliationInfo>
-              <Affiliation>CONACYT-University Center for Biomedical Research, University of Colima, Colima, Mexico.</Affiliation>
+              <Affiliation>Bio-Assistance, Montreal, QC, Canada.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Liñán-Rico</LastName>
-            <ForeName>Liliana</ForeName>
-            <Initials>L</Initials>
+            <LastName>Jander</LastName>
+            <ForeName>Magdalena</ForeName>
+            <Initials>M</Initials>
             <AffiliationInfo>
-              <Affiliation>University Center for Biomedical Research, University of Colima, Colima, Mexico.</Affiliation>
+              <Affiliation>GeneaMed LTD, Lodz, Poland.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Donis-Maturano</LastName>
-            <ForeName>Luis</ForeName>
-            <Initials>L</Initials>
+            <LastName>Kuncman</LastName>
+            <ForeName>Wojciech</ForeName>
+            <Initials>W</Initials>
             <AffiliationInfo>
-              <Affiliation>Ensenada Biomedical Innovation Department, Center for Scientific Research and Higher Education, Ensenada, Baja California, Mexico.</Affiliation>
+              <Affiliation>Department of Pathomorphology, Medical University of Lodz, Lodz, Poland.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Delgado-Enciso</LastName>
-            <ForeName>Iván</ForeName>
+            <LastName>Danilewicz</LastName>
+            <ForeName>Marian</ForeName>
+            <Initials>M</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Pathomorphology, Medical University of Lodz, Lodz, Poland.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Appelhans</LastName>
+            <ForeName>Dietmar</ForeName>
+            <Initials>D</Initials>
+            <AffiliationInfo>
+              <Affiliation>Leibniz Institute of Polymer Research Dresden, Dresden, Germany.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Bryszewska</LastName>
+            <ForeName>Maria</ForeName>
+            <Initials>M</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of General Biophysics, Faculty of Biology and Environmental Protection, University of Lodz, Lodz, Poland.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Borowiec</LastName>
+            <ForeName>Maciej</ForeName>
+            <Initials>M</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Clinical and Laboratory Genetics, Medical University of Lodz, Lodz, Poland.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Franiak-Pietryga</LastName>
+            <ForeName>Ida</ForeName>
             <Initials>I</Initials>
             <AffiliationInfo>
-              <Affiliation>Medical School, University of Colima and Cancerology Institute of Colima State, Health Services, Colima, Mexico.</Affiliation>
+              <Affiliation>GeneaMed LTD, Lodz, Poland.</Affiliation>
+            </AffiliationInfo>
+            <AffiliationInfo>
+              <Affiliation>Department of Clinical and Laboratory Genetics, Medical University of Lodz, Lodz, Poland.</Affiliation>
+            </AffiliationInfo>
+            <AffiliationInfo>
+              <Affiliation>Moores Cancer Center, University of California, San Diego, CA, United States.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>Netherlands</Country>
+        <MedlineTA>Anticancer Agents Med Chem</MedlineTA>
+        <NlmUniqueID>101265649</NlmUniqueID>
+        <ISSNLinking>1871-5206</ISSNLinking>
+      </MedlineJournalInfo>
+      <ChemicalList>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D000970">Antineoplastic Agents</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D050091">Dendrimers</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D011126">Polypropylenes</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D014312">Trisaccharides</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="C443641">poly(propyleneimine)</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>639K0T34IK</RegistryNumber>
+          <NameOfSubstance UI="C008317">maltotriose</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>FA2DM6879K</RegistryNumber>
+          <NameOfSubstance UI="D014740">Vidarabine</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>P2K93U8740</RegistryNumber>
+          <NameOfSubstance UI="C024352">fludarabine</NameOfSubstance>
+        </Chemical>
+      </ChemicalList>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D000970" MajorTopicYN="N">Antineoplastic Agents</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="Y">chemistry</QualifierName>
+          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D017209" MajorTopicYN="N">Apoptosis</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D001853" MajorTopicYN="N">Bone Marrow</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D045744" MajorTopicYN="N">Cell Line, Tumor</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D050091" MajorTopicYN="N">Dendrimers</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="Y">chemistry</QualifierName>
+          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D000076722" MajorTopicYN="N">Drug Development</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D064593" MajorTopicYN="N">Heterografts</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007167" MajorTopicYN="N">Immunotherapy</DescriptorName>
+          <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D015451" MajorTopicYN="N">Leukemia, Lymphocytic, Chronic, B-Cell</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
+          <QualifierName UI="Q000628" MajorTopicYN="Y">therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051379" MajorTopicYN="N">Mice</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009374" MajorTopicYN="N">Neoplasms, Experimental</DescriptorName>
+          <QualifierName UI="Q000188" MajorTopicYN="N">drug therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D011126" MajorTopicYN="N">Polypropylenes</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="Y">chemistry</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014018" MajorTopicYN="N">Tissue Distribution</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014312" MajorTopicYN="N">Trisaccharides</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="Y">chemistry</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014740" MajorTopicYN="N">Vidarabine</DescriptorName>
+          <QualifierName UI="Q000031" MajorTopicYN="N">analogs &amp; derivatives</QualifierName>
+          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+      <KeywordList Owner="NOTNLM">
+        <Keyword MajorTopicYN="N">Poly(propylene imine)</Keyword>
+        <Keyword MajorTopicYN="N">anticancer therapy</Keyword>
+        <Keyword MajorTopicYN="N">chronic lymphocytic leukaemia</Keyword>
+        <Keyword MajorTopicYN="N">dendrimer</Keyword>
+        <Keyword MajorTopicYN="N">ex vivo</Keyword>
+        <Keyword MajorTopicYN="N">in vivo</Keyword>
+        <Keyword MajorTopicYN="N">tumour.</Keyword>
+      </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2019</Year>
+          <Month>3</Month>
+          <Day>28</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="revised">
+          <Year>2019</Year>
+          <Month>6</Month>
+          <Day>4</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2019</Year>
+          <Month>7</Month>
+          <Day>1</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2019</Year>
+          <Month>11</Month>
+          <Day>19</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2021</Year>
+          <Month>2</Month>
+          <Day>4</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2019</Year>
+          <Month>11</Month>
+          <Day>19</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">31738155</ArticleId>
+        <ArticleId IdType="doi">10.2174/1871520619666191019093558</ArticleId>
+        <ArticleId IdType="pii">ACAMC-EPUB-101641</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">28280037</PMID>
+      <DateCompleted>
+        <Year>2017</Year>
+        <Month>09</Month>
+        <Day>12</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2022</Year>
+        <Month>04</Month>
+        <Day>09</Day>
+      </DateRevised>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1538-7445</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>77</Volume>
+            <Issue>9</Issue>
+            <PubDate>
+              <Year>2017</Year>
+              <Month>May</Month>
+              <Day>01</Day>
+            </PubDate>
+          </JournalIssue>
+          <Title>Cancer research</Title>
+          <ISOAbbreviation>Cancer Res</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Local Activation of p53 in the Tumor Microenvironment Overcomes Immune Suppression and Enhances Antitumor Immunity.</ArticleTitle>
+        <Pagination>
+          <StartPage>2292</StartPage>
+          <EndPage>2305</EndPage>
+          <MedlinePgn>2292-2305</MedlinePgn>
+        </Pagination>
+        <ELocationID EIdType="doi" ValidYN="Y">10.1158/0008-5472.CAN-16-2832</ELocationID>
+        <Abstract>
+          <AbstractText>Mutations in tumor suppressor p53 remain a vital mechanism of tumor escape from apoptosis and senescence. Emerging evidence suggests that p53 dysfunction also fuels inflammation and supports tumor immune evasion, thereby serving as an immunological driver of tumorigenesis. Therefore, targeting p53 in the tumor microenvironment (TME) also represents an immunologically desirable strategy for reversing immunosuppression and enhancing antitumor immunity. Using a pharmacological p53 activator nutlin-3a, we show that local p53 activation in TME comprising overt tumor-infiltrating leukocytes (TILeus) induces systemic antitumor immunity and tumor regression, but not in TME with scarce TILeus, such as B16 melanoma. Maneuvers that recruit leukocytes to TME, such as TLR3 ligand in B16 tumors, greatly enhanced nutlin-induced antitumor immunity and tumor control. Mechanistically, nutlin-3a-induced antitumor immunity was contingent on two nonredundant but immunologically synergistic p53-dependent processes: reversal of immunosuppression in the TME and induction of tumor immunogenic cell death, leading to activation and expansion of polyfunctional CD8 CTLs and tumor regression. Our study demonstrates that unlike conventional tumoricidal therapies, which rely on effective p53 targeting in each tumor cell and often associate with systemic toxicity, this immune-based strategy requires only limited local p53 activation to alter the immune landscape of TME and subsequently amplify immune response to systemic antitumor immunity. Hence, targeting the p53 pathway in TME can be exploited to reverse immunosuppression and augment therapeutic benefits beyond tumoricidal effects to harness tumor-specific, durable, and systemic antitumor immunity with minimal toxicity. Cancer Res; 77(9); 2292-305. ©2017 AACR.</AbstractText>
+          <CopyrightInformation>&#xa9;2017 American Association for Cancer Research.</CopyrightInformation>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Guo</LastName>
+            <ForeName>Gang</ForeName>
+            <Initials>G</Initials>
+            <AffiliationInfo>
+              <Affiliation>Cancer Immunology, Inflammation and Tolerance Program, Georgia Cancer Center, Department of Biochemistry and Molecular Biology, Medical College of Georgia, Augusta University, Augusta, Georgia.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Meza-Robles</LastName>
-            <ForeName>Carmen</ForeName>
-            <Initials>C</Initials>
+            <LastName>Yu</LastName>
+            <ForeName>Miao</ForeName>
+            <Initials>M</Initials>
             <AffiliationInfo>
-              <Affiliation>Medical School, University of Colima and Cancerology Institute of Colima State, Health Services, Colima, Mexico.</Affiliation>
+              <Affiliation>Cancer Immunology, Inflammation and Tolerance Program, Georgia Cancer Center, Department of Biochemistry and Molecular Biology, Medical College of Georgia, Augusta University, Augusta, Georgia.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Vásquez-Jiménez</LastName>
-            <ForeName>Clemente</ForeName>
-            <Initials>C</Initials>
+            <LastName>Xiao</LastName>
+            <ForeName>Wei</ForeName>
+            <Initials>W</Initials>
             <AffiliationInfo>
-              <Affiliation>University Center for Biomedical Research, University of Colima, Colima, Mexico.</Affiliation>
+              <Affiliation>Cancer Immunology, Inflammation and Tolerance Program, Georgia Cancer Center, Department of Biochemistry and Molecular Biology, Medical College of Georgia, Augusta University, Augusta, Georgia.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Hernández-Cruz</LastName>
-            <ForeName>Arturo</ForeName>
-            <Initials>A</Initials>
+            <LastName>Celis</LastName>
+            <ForeName>Esteban</ForeName>
+            <Initials>E</Initials>
             <AffiliationInfo>
-              <Affiliation>National Laboratory of Channelopathies (LaNCa), National Autonomous University of Mexico, Mexico City, Mexico.</Affiliation>
-            </AffiliationInfo>
-            <AffiliationInfo>
-              <Affiliation>Department of Cognitive Neuroscience-Institute of Cellular Physiology, National Autonomous University of Mexico, Mexico City, Mexico.</Affiliation>
+              <Affiliation>Cancer Immunology, Inflammation and Tolerance Program, Georgia Cancer Center, Department of Biochemistry and Molecular Biology, Medical College of Georgia, Augusta University, Augusta, Georgia.</Affiliation>
             </AffiliationInfo>
           </Author>
           <Author ValidYN="Y">
-            <LastName>Dobrovinskaya</LastName>
-            <ForeName>Oxana</ForeName>
-            <Initials>O</Initials>
-            <Identifier Source="ORCID">0000-0003-1526-6517</Identifier>
+            <LastName>Cui</LastName>
+            <ForeName>Yan</ForeName>
+            <Initials>Y</Initials>
             <AffiliationInfo>
-              <Affiliation>University Center for Biomedical Research, University of Colima, Colima, Mexico.</Affiliation>
+              <Affiliation>Cancer Immunology, Inflammation and Tolerance Program, Georgia Cancer Center, Department of Biochemistry and Molecular Biology, Medical College of Georgia, Augusta University, Augusta, Georgia. ycui@augusta.edu.</Affiliation>
             </AffiliationInfo>
           </Author>
         </AuthorList>
         <Language>eng</Language>
         <GrantList CompleteYN="Y">
           <Grant>
-            <GrantID>2015-1/114</GrantID>
-            <Agency>CONACyT</Agency>
-            <Country>International</Country>
+            <GrantID>R01 CA136828</GrantID>
+            <Acronym>CA</Acronym>
+            <Agency>NCI NIH HHS</Agency>
+            <Country>United States</Country>
           </Grant>
           <Grant>
-            <GrantID>279820</GrantID>
-            <Agency>Laboratorio Nacional de Canalopat&#xed;as</Agency>
-            <Country>International</Country>
+            <GrantID>R01 CA157303</GrantID>
+            <Acronym>CA</Acronym>
+            <Agency>NCI NIH HHS</Agency>
+            <Country>United States</Country>
           </Grant>
           <Grant>
-            <GrantID>DGAPA-UNAM</GrantID>
-            <Agency>Laboratorio Nacional de Canalopat&#xed;as</Agency>
-            <Country>International</Country>
-          </Grant>
-          <Grant>
-            <GrantID>PAPIIT-IN211616</GrantID>
-            <Agency>Laboratorio Nacional de Canalopat&#xed;as</Agency>
-            <Country>International</Country>
-          </Grant>
-          <Grant>
-            <GrantID>IG200119</GrantID>
-            <Agency>Laboratorio Nacional de Canalopat&#xed;as</Agency>
-            <Country>International</Country>
-          </Grant>
-          <Grant>
-            <GrantID>AH-C</GrantID>
-            <Agency>Laboratorio Nacional de Canalopat&#xed;as</Agency>
-            <Country>International</Country>
+            <GrantID>R01 CA169133</GrantID>
+            <Acronym>CA</Acronym>
+            <Agency>NCI NIH HHS</Agency>
+            <Country>United States</Country>
           </Grant>
         </GrantList>
         <PublicationTypeList>
           <PublicationType UI="D016428">Journal Article</PublicationType>
-          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
         </PublicationTypeList>
         <ArticleDate DateType="Electronic">
-          <Year>2019</Year>
-          <Month>01</Month>
-          <Day>15</Day>
+          <Year>2017</Year>
+          <Month>03</Month>
+          <Day>09</Day>
         </ArticleDate>
       </Article>
       <MedlineJournalInfo>
-        <Country>England</Country>
-        <MedlineTA>J Leukoc Biol</MedlineTA>
-        <NlmUniqueID>8405628</NlmUniqueID>
-        <ISSNLinking>0741-5400</ISSNLinking>
+        <Country>United States</Country>
+        <MedlineTA>Cancer Res</MedlineTA>
+        <NlmUniqueID>2984705R</NlmUniqueID>
+        <ISSNLinking>0008-5472</ISSNLinking>
       </MedlineJournalInfo>
       <ChemicalList>
         <Chemical>
           <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C502778">ATG5 protein, human</NameOfSubstance>
+          <NameOfSubstance UI="D007093">Imidazoles</NameOfSubstance>
         </Chemical>
         <Chemical>
           <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D018931">Antineoplastic Agents, Hormonal</NameOfSubstance>
+          <NameOfSubstance UI="D010879">Piperazines</NameOfSubstance>
         </Chemical>
         <Chemical>
           <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D000071187">Autophagy-Related Protein 5</NameOfSubstance>
+          <NameOfSubstance UI="D016159">Tumor Suppressor Protein p53</NameOfSubstance>
         </Chemical>
         <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C506487">ESR1 protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C000600034">ESR2 protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D047628">Estrogen Receptor alpha</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D047629">Estrogen Receptor beta</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C109584">GPER1 protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D011960">Receptors, Estrogen</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D043562">Receptors, G-Protein-Coupled</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>094ZI81Y45</RegistryNumber>
-          <NameOfSubstance UI="D013629">Tamoxifen</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>7S5I7G3JQL</RegistryNumber>
-          <NameOfSubstance UI="D003907">Dexamethasone</NameOfSubstance>
+          <RegistryNumber>53IA0V845C</RegistryNumber>
+          <NameOfSubstance UI="C482205">nutlin 3</NameOfSubstance>
         </Chemical>
       </ChemicalList>
       <CitationSubset>IM</CitationSubset>
       <MeshHeadingList>
         <MeshHeading>
-          <DescriptorName UI="D018931" MajorTopicYN="N">Antineoplastic Agents, Hormonal</DescriptorName>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D017209" MajorTopicYN="N">Apoptosis</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D063646" MajorTopicYN="N">Carcinogenesis</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="Y">immunology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007093" MajorTopicYN="N">Imidazoles</DescriptorName>
+          <QualifierName UI="Q000008" MajorTopicYN="N">administration &amp; dosage</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007113" MajorTopicYN="N">Immunity, Innate</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007165" MajorTopicYN="N">Immunosuppression Therapy</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D016246" MajorTopicYN="N">Lymphocytes, Tumor-Infiltrating</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
+          <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D008546" MajorTopicYN="N">Melanoma, Experimental</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+          <QualifierName UI="Q000276" MajorTopicYN="Y">immunology</QualifierName>
+          <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051379" MajorTopicYN="N">Mice</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009154" MajorTopicYN="N">Mutation</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D010879" MajorTopicYN="N">Piperazines</DescriptorName>
+          <QualifierName UI="Q000008" MajorTopicYN="N">administration &amp; dosage</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D013602" MajorTopicYN="N">T-Lymphocytes, Cytotoxic</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D059016" MajorTopicYN="N">Tumor Microenvironment</DescriptorName>
+          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D016159" MajorTopicYN="N">Tumor Suppressor Protein p53</DescriptorName>
+          <QualifierName UI="Q000096" MajorTopicYN="N">biosynthesis</QualifierName>
+          <QualifierName UI="Q000276" MajorTopicYN="Y">immunology</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2016</Year>
+          <Month>10</Month>
+          <Day>24</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="revised">
+          <Year>2016</Year>
+          <Month>12</Month>
+          <Day>7</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2017</Year>
+          <Month>2</Month>
+          <Day>28</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2017</Year>
+          <Month>3</Month>
+          <Day>11</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2017</Year>
+          <Month>9</Month>
+          <Day>13</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2017</Year>
+          <Month>3</Month>
+          <Day>11</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pmc-release">
+          <Year>2018</Year>
+          <Month>5</Month>
+          <Day>1</Day>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">28280037</ArticleId>
+        <ArticleId IdType="mid">NIHMS858424</ArticleId>
+        <ArticleId IdType="pmc">PMC5465961</ArticleId>
+        <ArticleId IdType="doi">10.1158/0008-5472.CAN-16-2832</ArticleId>
+        <ArticleId IdType="pii">0008-5472.CAN-16-2832</ArticleId>
+      </ArticleIdList>
+      <ReferenceList>
+        <Reference>
+          <Citation>Levine AJ. p53, the cellular gatekeeper for growth and division. Cell. 1997;88(3):323&#x2013;31.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">9039259</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Olivier M, Hollstein M, Hainaut P. TP53 mutations in human cancers: origins, consequences, and clinical use. Cold Spring Harbor perspectives in biology. 2010;2(1):a001008.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC2827900</ArticleId>
+            <ArticleId IdType="pubmed">20182602</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Vazquez A, Bond EE, Levine AJ, Bond GL. The genetics of the p53 pathway, apoptosis and cancer therapy. Nature reviews Drug discovery. 2008;7(12):979&#x2013;87.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19043449</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Guo G, Marrero L, Rodriguez P, Del Valle L, Ochoa A, Cui Y. Trp53 inactivation in the tumor microenvironment promotes tumor progression by expanding the immunosuppressive lymphoid-like stromal network. Cancer Res. 2013;73(6):1668&#x2013;75.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3602383</ArticleId>
+            <ArticleId IdType="pubmed">23319800</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Zhang S, Zheng M, Kibe R, Huang Y, Marrero L, Warren S, et al. Trp53 negatively regulates autoimmunity via the STAT3-Th17 axis. Faseb J. 2011;25(7):2387&#x2013;98.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3114529</ArticleId>
+            <ArticleId IdType="pubmed">21471252</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Menendez D, Shatz M, Resnick MA. Interactions between the tumor suppressor p53 and immune responses. Curr Opin Oncol. 2013;25(1):85&#x2013;92.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23150340</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Cooks T, Harris CC, Oren M. Caught in the cross fire: p53 in inflammation. Carcinogenesis. 2014;35(8):1680&#x2013;90.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4123652</ArticleId>
+            <ArticleId IdType="pubmed">24942866</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Gudkov AV, Gurova KV, Komarova EA. Inflammation and p53: A Tale of Two Stresses. Genes &amp; cancer. 2011;2(4):503&#x2013;16.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3135644</ArticleId>
+            <ArticleId IdType="pubmed">21779518</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Schwitalla S, Ziegler PK, Horst D, Becker V, Kerle I, Begus-Nahrmann Y, et al. Loss of p53 in enterocytes generates an inflammatory microenvironment enabling invasion and lymph node metastasis of carcinogen-induced colorectal tumors. Cancer cell. 2013;23(1):93&#x2013;106.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23273920</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Khoo KH, Verma CS, Lane DP. Drugging the p53 pathway: understanding the route to clinical efficacy. Nature reviews Drug discovery. 2014;13(3):217&#x2013;36.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">24577402</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Brown CJ, Lain S, Verma CS, Fersht AR, Lane DP. Awakening guardian angels: drugging the p53 pathway. Nat Rev Cancer. 2009;9(12):862&#x2013;73.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19935675</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Topalian SL, Drake CG, Pardoll DM. Immune checkpoint blockade: a common denominator approach to cancer therapy. Cancer cell. 2015;27(4):450&#x2013;61.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4400238</ArticleId>
+            <ArticleId IdType="pubmed">25858804</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Pardoll D. Cancer and the Immune System: Basic Concepts and Targets for Intervention. Semin Oncol. 2015;42(4):523&#x2013;38.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC5595144</ArticleId>
+            <ArticleId IdType="pubmed">26320058</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Burgess A, Chia KM, Haupt S, Thomas D, Haupt Y, Lim E. Clinical Overview of MDM2/X-Targeted Therapies. Frontiers in oncology. 2016;6:7.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4728205</ArticleId>
+            <ArticleId IdType="pubmed">26858935</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Xue W, Zender L, Miething C, Dickins RA, Hernando E, Krizhanovsky V, et al. Senescence and tumour clearance is triggered by p53 restoration in murine liver carcinomas. Nature. 2007;445(7128):656&#x2013;60.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4601097</ArticleId>
+            <ArticleId IdType="pubmed">17251933</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Lujambio A, Akkari L, Simon J, Grace D, Tschaharganeh DF, Bolden JE, et al. Non-cell-autonomous tumor suppression by p53. Cell. 2013;153(2):449&#x2013;60.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3702034</ArticleId>
+            <ArticleId IdType="pubmed">23562644</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Kroemer G, Galluzzi L, Kepp O, Zitvogel L. Immunogenic cell death in cancer therapy. Annu Rev Immunol. 2013;31:51&#x2013;72.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23157435</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Zitvogel L, Galluzzi L, Smyth MJ, Kroemer G. Mechanism of action of conventional and targeted anticancer therapies: reinstating immunosurveillance. Immunity. 2013;39(1):74&#x2013;88.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23890065</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Formenti SC, Demaria S. Combining radiotherapy and cancer immunotherapy: a paradigm shift. Journal of the National Cancer Institute. 2013;105(4):256&#x2013;65.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3576324</ArticleId>
+            <ArticleId IdType="pubmed">23291374</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Galluzzi L, Buque A, Kepp O, Zitvogel L, Kroemer G. Immunological Effects of Conventional Chemotherapy and Targeted Anticancer Agents. Cancer cell. 2015;28(6):690&#x2013;714.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">26678337</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Vassilev LT, Vu BT, Graves B, Carvajal D, Podlaski F, Filipovic Z, et al. In vivo activation of the p53 pathway by small-molecule antagonists of MDM2. Science. 2004;303(5659):844&#x2013;8.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">14704432</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Chen L, McGowan P, Ashe S, Johnston J, Li Y, Hellstrom I, et al. Tumor immunogenicity determines the effect of B7 costimulation on T cell-mediated tumor immunity. J Exp Med. 1994;179(2):523&#x2013;32.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC2191382</ArticleId>
+            <ArticleId IdType="pubmed">7507508</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Lechner MG, Karimi SS, Barry-Holson K, Angell TE, Murphy KA, Church CH, et al. Immunogenicity of murine solid tumor models as a defining feature of in vivo behavior and response to immunotherapy. J Immunother. 2013;36(9):477&#x2013;89.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3910494</ArticleId>
+            <ArticleId IdType="pubmed">24145359</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Cui Y, Kelleher E, Straley E, Fuchs E, Gorski K, Levitsky H, et al. Immunotherapy of established tumors using bone marrow transplantation with antigen gene--modified hematopoietic stem cells. Nat Med. 2003;9(7):952&#x2013;8.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">12778137</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Hong M, Lai MD, Lin YS, Lai MZ. Antagonism of p53-dependent apoptosis by mitogen signals. Cancer Res. 1999;59(12):2847&#x2013;52.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">10383145</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Apetoh L, Ghiringhelli F, Tesniere A, Criollo A, Ortiz C, Lidereau R, et al. The interaction between HMGB1 and TLR4 dictates the outcome of anticancer chemotherapy and radiotherapy. Immunol Rev. 2007;220:47&#x2013;59.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17979839</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Yamazaki T, Hannani D, Poirier-Colame V, Ladoire S, Locher C, Sistigu A, et al. Defective immunogenic cell death of HMGB1-deficient tumors: compensatory therapy with TLR4 agonists. Cell death and differentiation. 2014;21(1):69&#x2013;78.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3857617</ArticleId>
+            <ArticleId IdType="pubmed">23811849</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Broz ML, Binnewies M, Boldajipour B, Nelson AE, Pollack JL, Erle DJ, et al. Dissecting the tumor myeloid compartment reveals rare activating antigen-presenting cells critical for T cell immunity. Cancer cell. 2014;26(5):638&#x2013;52.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4254577</ArticleId>
+            <ArticleId IdType="pubmed">25446897</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Roberts EW, Broz ML, Binnewies M, Headley MB, Nelson AE, Wolf DM, et al. Critical Role for CD103+/CD141+ Dendritic Cells Bearing CCR7 for Tumor Antigen Trafficking and Priming of T Cell Immunity in Melanoma. Cancer cell. 2016</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC5374862</ArticleId>
+            <ArticleId IdType="pubmed">27424807</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Gabrilovich DI, Ostrand-Rosenberg S, Bronte V. Coordinated regulation of myeloid cells by tumours. Nat Rev Immunol. 2012;12(4):253&#x2013;68.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3587148</ArticleId>
+            <ArticleId IdType="pubmed">22437938</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Ostrand-Rosenberg S, Sinha P. Myeloid-derived suppressor cells: linking inflammation and cancer. J Immunol. 2009;182(8):4499&#x2013;506.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC2810498</ArticleId>
+            <ArticleId IdType="pubmed">19342621</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Thevenot PT, Sierra RA, Raber PL, Al-Khami AA, Trillo-Tinoco J, Zarreii P, et al. The stress-response sensor chop regulates the function and accumulation of myeloid-derived suppressor cells in tumors. Immunity. 2014;41(3):389&#x2013;401.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4171711</ArticleId>
+            <ArticleId IdType="pubmed">25238096</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Cubillos-Ruiz JR, Mohamed E, Rodriguez PC. Unfolding anti-tumor immunity: ER stress responses sculpt tolerogenic myeloid cells in cancer. J Immunother Cancer. 2017;5:5.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC5240216</ArticleId>
+            <ArticleId IdType="pubmed">28105371</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Schreiber TH, Raez L, Rosenblatt JD, Podack ER. Tumor immunogenicity and responsiveness to cancer vaccine therapy: the state of the art. Semin Immunol. 2010;22(3):105&#x2013;12.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC2884069</ArticleId>
+            <ArticleId IdType="pubmed">20226686</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Joyce JA, Fearon DT. T cell exclusion, immune privilege, and the tumor microenvironment. Science. 2015;348(6230):74&#x2013;80.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">25838376</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Gajewski TF, Woo SR, Zha Y, Spaapen R, Zheng Y, Corrales L, et al. Cancer immunotherapy strategies based on overcoming barriers within the tumor microenvironment. Curr Opin Immunol. 2013;25(2):268&#x2013;76.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23579075</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Peske JD, Thompson ED, Gemta L, Baylis RA, Fu YX, Engelhard VH. Effector lymphocyte-induced lymph node-like vasculature enables naive T-cell entry into tumours and enhanced anti-tumour immunity. Nat Commun. 2015;6:7114.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4435831</ArticleId>
+            <ArticleId IdType="pubmed">25968334</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Salazar AM, Erlich RB, Mark A, Bhardwaj N, Herberman RB. Therapeutic in situ autovaccination against solid cancers with intratumoral poly-ICLC: case report, hypothesis, and clinical trial. Cancer Immunol Res. 2014;2(8):720&#x2013;4.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">24801836</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Takemura R, Takaki H, Okada S, Shime H, Akazawa T, Oshiumi H, et al. PolyI:C-Induced, TLR3/RIP3-Dependent Necroptosis Backs Up Immune Effector-Mediated Tumor Elimination In Vivo. Cancer Immunol Res. 2015;3(8):902&#x2013;14.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">25898986</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Zhu X, Nishimura F, Sasaki K, Fujita M, Dusak JE, Eguchi J, et al. Toll like receptor-3 ligand poly-ICLC promotes the efficacy of peripheral vaccinations with tumor antigen-derived peptide epitopes in murine CNS tumor models. J Transl Med. 2007;5:10.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC1802742</ArticleId>
+            <ArticleId IdType="pubmed">17295916</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Marvel D, Gabrilovich DI. Myeloid-derived suppressor cells in the tumor microenvironment: expect the unexpected. J Clin Invest. 2015;125(9):3356&#x2013;64.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4588239</ArticleId>
+            <ArticleId IdType="pubmed">26168215</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Pitt JM, Marabelle A, Eggermont A, Soria JC, Kroemer G, Zitvogel L. Targeting the tumor microenvironment: removing obstruction to anticancer immune responses and immunotherapy. Ann Oncol. 2016;27(8):1482&#x2013;92.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">27069014</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Gabrilovich DI, Nagaraj S. Myeloid-derived suppressor cells as regulators of the immune system. Nat Rev Immunol. 2009;9(3):162&#x2013;74.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC2828349</ArticleId>
+            <ArticleId IdType="pubmed">19197294</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Ma Y, Adjemian S, Mattarollo SR, Yamazaki T, Aymeric L, Yang H, et al. Anticancer chemotherapy-induced intratumoral recruitment and differentiation of antigen-presenting cells. Immunity. 2013;38(4):729&#x2013;41.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23562161</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Sanchez-Paulete AR, Cueto FJ, Martinez-Lopez M, Labiano S, Morales-Kastresana A, Rodriguez-Ruiz ME, et al. Cancer Immunotherapy with Immunomodulatory Anti-CD137 and Anti-PD-1 Monoclonal Antibodies Requires BATF3-Dependent Dendritic Cells. Cancer Discov. 2016;6(1):71&#x2013;9.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC5036540</ArticleId>
+            <ArticleId IdType="pubmed">26493961</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Menendez D, Lowe JM, Snipe J, Resnick MA. Ligand dependent restoration of human TLR3 signaling and death in p53 mutant cells. Oncotarget. 2016</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC5308678</ArticleId>
+            <ArticleId IdType="pubmed">27533082</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Shatz M, Menendez D, Resnick MA. The human TLR innate immune gene family is differentially influenced by DNA stress and p53 status in cancer cells. Cancer Res. 2012;72(16):3948&#x2013;57.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC3443562</ArticleId>
+            <ArticleId IdType="pubmed">22673234</ArticleId>
+          </ArticleIdList>
+        </Reference>
+      </ReferenceList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">23521677</PMID>
+      <DateCompleted>
+        <Year>2013</Year>
+        <Month>11</Month>
+        <Day>08</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2019</Year>
+        <Month>12</Month>
+        <Day>10</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Electronic">1875-533X</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>20</Volume>
+            <Issue>19</Issue>
+            <PubDate>
+              <Year>2013</Year>
+            </PubDate>
+          </JournalIssue>
+          <Title>Current medicinal chemistry</Title>
+          <ISOAbbreviation>Curr Med Chem</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Oleocanthal inhibits proliferation and MIP-1α expression in human multiple myeloma cells.</ArticleTitle>
+        <Pagination>
+          <StartPage>2467</StartPage>
+          <EndPage>2475</EndPage>
+          <MedlinePgn>2467-75</MedlinePgn>
+        </Pagination>
+        <Abstract>
+          <AbstractText>Multiple myeloma (MM) is a plasma cell malignancy that causes devastating bone destruction by activating osteoclasts in the bone marrow milieu. MM is the second of all hematological malignancies. Thus, the search for new pharmacological weapons is under intensive investigation being MM a critically important public health goal. Recently, it has been demonstrated that macrophage inflammatory protein 1- alpha (MIP-1 α) is crucially involved in the development of osteolytic bone lesions in MM. Phenolic components of extra virgin olive oil are reported to have anti tumor activity. However, the underlying mechanisms and specific targets of extra virgin olive oil remain to be elucidated. In the present study, we investigated the effects of a recently isolated novel extra virgin olive oil polyphenol, oleocanthal, on the human multiple myeloma cell line ARH-77. Here we report that this natural compound has a remarkable in vitro activity by inhibiting MIP-1 α expression and secretion in MM cells. In addition, we also demonstrated that oleocanthal inhibits MM cells proliferation by inducing the activation of apoptosis mechanisms and by down-regulating ERK1/2 and AKT signal transduction pathways. This in vitro study suggests a therapeutic potential of oleocanthal in treating multiple myeloma.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Scotece</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+            <AffiliationInfo>
+              <Affiliation>SERGAS, Santiago University Clinical Hospital Research Laboratory 9 (NEIRID LAB: Laboratory of Neuroendocrine Interactions in Rheumatology and Inflammatory Diseases), Institute of Medical Research (IDIS), Santiago de Compostela, 15706, Spain.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Gómez</LastName>
+            <ForeName>R</ForeName>
+            <Initials>R</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Conde</LastName>
+            <ForeName>J</ForeName>
+            <Initials>J</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Lopez</LastName>
+            <ForeName>V</ForeName>
+            <Initials>V</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Gómez-Reino</LastName>
+            <ForeName>J J</ForeName>
+            <Initials>JJ</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Lago</LastName>
+            <ForeName>F</ForeName>
+            <Initials>F</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Smith</LastName>
+            <ForeName>A B</ForeName>
+            <Initials>AB</Initials>
+            <Suffix>3rd</Suffix>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Gualillo</LastName>
+            <ForeName>O</ForeName>
+            <Initials>O</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United Arab Emirates</Country>
+        <MedlineTA>Curr Med Chem</MedlineTA>
+        <NlmUniqueID>9440157</NlmUniqueID>
+        <ISSNLinking>0929-8673</ISSNLinking>
+      </MedlineJournalInfo>
+      <ChemicalList>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D000447">Aldehydes</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D000970">Antineoplastic Agents</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D054405">Chemokine CCL3</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D000081004">Cyclopentane Monoterpenes</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D000069463">Olive Oil</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D010636">Phenols</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D010938">Plant Oils</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>AC7QO6038O</RegistryNumber>
+          <NameOfSubstance UI="C503534">oleocanthal</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>EC 2.7.11.1</RegistryNumber>
+          <NameOfSubstance UI="D051057">Proto-Oncogene Proteins c-akt</NameOfSubstance>
+        </Chemical>
+      </ChemicalList>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000447" MajorTopicYN="N">Aldehydes</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="N">chemistry</QualifierName>
           <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D001343" MajorTopicYN="N">Autophagy</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="Y">drug effects</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+          <DescriptorName UI="D000970" MajorTopicYN="N">Antineoplastic Agents</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="N">chemistry</QualifierName>
+          <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D000071187" MajorTopicYN="N">Autophagy-Related Protein 5</DescriptorName>
-          <QualifierName UI="Q000819" MajorTopicYN="N">agonists</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015496" MajorTopicYN="N">CD4-Positive T-Lymphocytes</DescriptorName>
-          <QualifierName UI="Q000166" MajorTopicYN="N">cytology</QualifierName>
+          <DescriptorName UI="D017209" MajorTopicYN="N">Apoptosis</DescriptorName>
           <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-          <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
         </MeshHeading>
         <MeshHeading>
           <DescriptorName UI="D045744" MajorTopicYN="N">Cell Line, Tumor</DescriptorName>
@@ -258,1413 +1019,101 @@
           <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D002470" MajorTopicYN="N">Cell Survival</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D003907" MajorTopicYN="N">Dexamethasone</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D019008" MajorTopicYN="N">Drug Resistance, Neoplasm</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D047628" MajorTopicYN="N">Estrogen Receptor alpha</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
+          <DescriptorName UI="D054405" MajorTopicYN="N">Chemokine CCL3</DescriptorName>
           <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D047629" MajorTopicYN="N">Estrogen Receptor beta</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D020869" MajorTopicYN="N">Gene Expression Profiling</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015972" MajorTopicYN="Y">Gene Expression Regulation, Neoplastic</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D019169" MajorTopicYN="N">Jurkat Cells</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D008213" MajorTopicYN="N">Lymphocyte Activation</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D053078" MajorTopicYN="N">Membrane Potential, Mitochondrial</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D008928" MajorTopicYN="N">Mitochondria</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D061251" MajorTopicYN="N">Primary Cell Culture</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D011960" MajorTopicYN="N">Receptors, Estrogen</DescriptorName>
-          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D043562" MajorTopicYN="N">Receptors, G-Protein-Coupled</DescriptorName>
-          <QualifierName UI="Q000819" MajorTopicYN="N">agonists</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015398" MajorTopicYN="N">Signal Transduction</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D013629" MajorTopicYN="N">Tamoxifen</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
-        </MeshHeading>
-      </MeshHeadingList>
-      <KeywordList Owner="NOTNLM">
-        <Keyword MajorTopicYN="N">GPER</Keyword>
-        <Keyword MajorTopicYN="N">Jurkat cells</Keyword>
-        <Keyword MajorTopicYN="N">apoptosis</Keyword>
-        <Keyword MajorTopicYN="N">autophagy</Keyword>
-        <Keyword MajorTopicYN="N">cell cycle</Keyword>
-        <Keyword MajorTopicYN="N">estrogen receptors</Keyword>
-        <Keyword MajorTopicYN="N">glucocorticoid resistance</Keyword>
-        <Keyword MajorTopicYN="N">proliferation</Keyword>
-        <Keyword MajorTopicYN="N">tamoxifen</Keyword>
-      </KeywordList>
-    </MedlineCitation>
-    <PubmedData>
-      <History>
-        <PubMedPubDate PubStatus="received">
-          <Year>2018</Year>
-          <Month>8</Month>
-          <Day>30</Day>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="revised">
-          <Year>2018</Year>
-          <Month>11</Month>
-          <Day>30</Day>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="accepted">
-          <Year>2018</Year>
-          <Month>12</Month>
-          <Day>5</Day>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="pubmed">
-          <Year>2019</Year>
-          <Month>1</Month>
-          <Day>16</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="medline">
-          <Year>2020</Year>
-          <Month>5</Month>
-          <Day>6</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="entrez">
-          <Year>2019</Year>
-          <Month>1</Month>
-          <Day>16</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-      </History>
-      <PublicationStatus>ppublish</PublicationStatus>
-      <ArticleIdList>
-        <ArticleId IdType="pubmed">30645008</ArticleId>
-        <ArticleId IdType="doi">10.1002/JLB.2VMA0818-328R</ArticleId>
-      </ArticleIdList>
-    </PubmedData>
-  </PubmedArticle>
-  <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
-      <PMID Version="1">28848090</PMID>
-      <DateCompleted>
-        <Year>2017</Year>
-        <Month>11</Month>
-        <Day>16</Day>
-      </DateCompleted>
-      <DateRevised>
-        <Year>2021</Year>
-        <Month>12</Month>
-        <Day>04</Day>
-      </DateRevised>
-      <Article PubModel="Print-Electronic">
-        <Journal>
-          <ISSN IssnType="Electronic">1421-9778</ISSN>
-          <JournalIssue CitedMedium="Internet">
-            <Volume>42</Volume>
-            <Issue>6</Issue>
-            <PubDate>
-              <Year>2017</Year>
-            </PubDate>
-          </JournalIssue>
-          <Title>Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology</Title>
-          <ISOAbbreviation>Cell Physiol Biochem</ISOAbbreviation>
-        </Journal>
-        <ArticleTitle>MicroRNA-199a-5p Induced Autophagy and Inhibits the Pathogenesis of Ankylosing Spondylitis by Modulating the mTOR Signaling via Directly Targeting Ras Homolog Enriched in Brain (Rheb).</ArticleTitle>
-        <Pagination>
-          <StartPage>2481</StartPage>
-          <EndPage>2491</EndPage>
-          <MedlinePgn>2481-2491</MedlinePgn>
-        </Pagination>
-        <ELocationID EIdType="doi" ValidYN="Y">10.1159/000480211</ELocationID>
-        <Abstract>
-          <AbstractText Label="BACKGROUND/AIMS" NlmCategory="OBJECTIVE">Ankylosing spondylitis (AS) is an inflammatory and immune disease leading to disability. Autophagy has been identified as a potential player in understanding the pathogenesis of AS.</AbstractText>
-          <AbstractText Label="METHODS" NlmCategory="METHODS">MiRNA-199a-5p and autophagy-related gene expression were determined by qRT-PCR or Western blot. Cytokine production was determined using ELISA assays. Proliferation was determined by MTT assay. MiRNA-199a-5p and Ras homolog enriched in brain (Rheb) were upregulated or downregulated by overexpression of plasmid or siRNA transfection.</AbstractText>
-          <AbstractText Label="RESULTS" NlmCategory="RESULTS">Expression of miRNA-199a-5p, and autophagy-related genes LC3, beclin1, and ATG5 was significantly decreased in T cells of AS patients. Serum concentrations of TNF-&#x3b1;, IL-17, and IL-23 were promoted in AS patients, compared to healthy controls. MiRNA-199a-5p expression levels also showed significant negative correlations with the Ankylosing Spondylitis Disease Activity Score (ASDAS) and modified Stoke Ankylosing Spon dylitis Spinal Score (mSASSS) of AS patients. In Jurkat T cells and T cells isolated from AS patients, miRNA-199a-5p overexpression promoted autophagy-related genes expression and decreased TNF-&#x3b1;, IL-17, and IL-23 levels, whereas inhibition of miRNA-199a-5p attenuated these effects. As a direct target of miRNA-199a-5p, Rheb inhibition led to a striking decrease in the phosphorylation of the mechanistic target of rapamycin (mTOR) and induced autophagy. Moreover, pcDNA3.1-Rheb effectively reduced the inhibiting effects of mTOR signaling caused by miRNA-199a-5p overexpression. All effects were offset by pretreating with rapamycin (an mTOR antagonist).</AbstractText>
-          <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">AS patients with advanced spinal damage had decreased autophagy levels and that miRNA-199a-5p may induce autophagy and inhibit the pathogenesis of AS by modulating the mTOR signaling via direct targeting Rheb.</AbstractText>
-          <CopyrightInformation>&#xa9; 2017 The Author(s). Published by S. Karger AG, Basel.</CopyrightInformation>
-        </Abstract>
-        <AuthorList CompleteYN="Y">
-          <Author ValidYN="Y">
-            <LastName>Wang</LastName>
-            <ForeName>Yahan</ForeName>
-            <Initials>Y</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Luo</LastName>
-            <ForeName>Jianping</ForeName>
-            <Initials>J</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Wang</LastName>
-            <ForeName>Xiaogang</ForeName>
-            <Initials>X</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Yang</LastName>
-            <ForeName>Bin</ForeName>
-            <Initials>B</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Cui</LastName>
-            <ForeName>Liyang</ForeName>
-            <Initials>L</Initials>
-          </Author>
-        </AuthorList>
-        <Language>eng</Language>
-        <PublicationTypeList>
-          <PublicationType UI="D016428">Journal Article</PublicationType>
-        </PublicationTypeList>
-        <ArticleDate DateType="Electronic">
-          <Year>2017</Year>
-          <Month>08</Month>
-          <Day>22</Day>
-        </ArticleDate>
-      </Article>
-      <MedlineJournalInfo>
-        <Country>Germany</Country>
-        <MedlineTA>Cell Physiol Biochem</MedlineTA>
-        <NlmUniqueID>9113221</NlmUniqueID>
-        <ISSNLinking>1015-8987</ISSNLinking>
-      </MedlineJournalInfo>
-      <ChemicalList>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D000071183">Autophagy-Related Proteins</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D016207">Cytokines</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D035683">MicroRNAs</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C490211">RHEB protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D000076205">Ras Homolog Enriched in Brain Protein</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>EC 2.7.1.1</RegistryNumber>
-          <NameOfSubstance UI="C546842">MTOR protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>EC 2.7.11.1</RegistryNumber>
-          <NameOfSubstance UI="D058570">TOR Serine-Threonine Kinases</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>W36ZG6FT64</RegistryNumber>
-          <NameOfSubstance UI="D020123">Sirolimus</NameOfSubstance>
-        </Chemical>
-      </ChemicalList>
-      <CitationSubset>IM</CitationSubset>
-      <MeshHeadingList>
-        <MeshHeading>
-          <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001343" MajorTopicYN="Y">Autophagy</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D000071183" MajorTopicYN="N">Autophagy-Related Proteins</DescriptorName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D016022" MajorTopicYN="N">Case-Control Studies</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D045744" MajorTopicYN="N">Cell Line, Tumor</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D016207" MajorTopicYN="N">Cytokines</DescriptorName>
-          <QualifierName UI="Q000097" MajorTopicYN="N">blood</QualifierName>
+          <DescriptorName UI="D000081004" MajorTopicYN="N">Cyclopentane Monoterpenes</DescriptorName>
         </MeshHeading>
         <MeshHeading>
           <DescriptorName UI="D015536" MajorTopicYN="N">Down-Regulation</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="Y">drug effects</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+          <DescriptorName UI="D015972" MajorTopicYN="N">Gene Expression Regulation, Neoplastic</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
         </MeshHeading>
         <MeshHeading>
           <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D019169" MajorTopicYN="N">Jurkat Cells</DescriptorName>
+          <DescriptorName UI="D020935" MajorTopicYN="N">MAP Kinase Signaling System</DescriptorName>
+          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D035683" MajorTopicYN="N">MicroRNAs</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
+          <DescriptorName UI="D009101" MajorTopicYN="N">Multiple Myeloma</DescriptorName>
+          <QualifierName UI="Q000188" MajorTopicYN="Y">drug therapy</QualifierName>
           <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+          <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+          <DescriptorName UI="D000069463" MajorTopicYN="N">Olive Oil</DescriptorName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D034622" MajorTopicYN="N">RNA Interference</DescriptorName>
+          <DescriptorName UI="D010636" MajorTopicYN="N">Phenols</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="N">chemistry</QualifierName>
+          <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
         </MeshHeading>
         <MeshHeading>
-          <DescriptorName UI="D000076205" MajorTopicYN="N">Ras Homolog Enriched in Brain Protein</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+          <DescriptorName UI="D010938" MajorTopicYN="N">Plant Oils</DescriptorName>
+          <QualifierName UI="Q000737" MajorTopicYN="Y">chemistry</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051057" MajorTopicYN="N">Proto-Oncogene Proteins c-akt</DescriptorName>
+          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
         </MeshHeading>
         <MeshHeading>
           <DescriptorName UI="D015398" MajorTopicYN="N">Signal Transduction</DescriptorName>
           <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
         </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D020123" MajorTopicYN="N">Sirolimus</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D013167" MajorTopicYN="N">Spondylitis, Ankylosing</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-          <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D013601" MajorTopicYN="N">T-Lymphocytes</DescriptorName>
-          <QualifierName UI="Q000166" MajorTopicYN="N">cytology</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D058570" MajorTopicYN="N">TOR Serine-Threonine Kinases</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015854" MajorTopicYN="N">Up-Regulation</DescriptorName>
-        </MeshHeading>
       </MeshHeadingList>
-      <KeywordList Owner="NOTNLM">
-        <Keyword MajorTopicYN="N">Ankylosing spondylitis</Keyword>
-        <Keyword MajorTopicYN="N">Autophagy</Keyword>
-        <Keyword MajorTopicYN="N">Mechanistic target of rapamycin (mTOR)</Keyword>
-        <Keyword MajorTopicYN="N">MicroRNA-199a-5p</Keyword>
-        <Keyword MajorTopicYN="N">Ras homolog enriched in brain (Rheb)</Keyword>
-      </KeywordList>
     </MedlineCitation>
     <PubmedData>
       <History>
         <PubMedPubDate PubStatus="received">
-          <Year>2017</Year>
-          <Month>3</Month>
-          <Day>2</Day>
+          <Year>2013</Year>
+          <Month>2</Month>
+          <Day>13</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="revised">
+          <Year>2013</Year>
+          <Month>2</Month>
+          <Day>1</Day>
         </PubMedPubDate>
         <PubMedPubDate PubStatus="accepted">
-          <Year>2017</Year>
-          <Month>5</Month>
+          <Year>2013</Year>
+          <Month>3</Month>
+          <Day>13</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2013</Year>
+          <Month>3</Month>
           <Day>26</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
         </PubMedPubDate>
         <PubMedPubDate PubStatus="pubmed">
-          <Year>2017</Year>
-          <Month>8</Month>
-          <Day>30</Day>
+          <Year>2013</Year>
+          <Month>3</Month>
+          <Day>26</Day>
           <Hour>6</Hour>
           <Minute>0</Minute>
         </PubMedPubDate>
         <PubMedPubDate PubStatus="medline">
-          <Year>2017</Year>
+          <Year>2013</Year>
           <Month>11</Month>
-          <Day>29</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="entrez">
-          <Year>2017</Year>
-          <Month>8</Month>
-          <Day>30</Day>
+          <Day>10</Day>
           <Hour>6</Hour>
           <Minute>0</Minute>
         </PubMedPubDate>
       </History>
       <PublicationStatus>ppublish</PublicationStatus>
       <ArticleIdList>
-        <ArticleId IdType="pubmed">28848090</ArticleId>
-        <ArticleId IdType="doi">10.1159/000480211</ArticleId>
-        <ArticleId IdType="pii">000480211</ArticleId>
+        <ArticleId IdType="pubmed">23521677</ArticleId>
+        <ArticleId IdType="doi">10.2174/0929867311320190006</ArticleId>
+        <ArticleId IdType="pii">CMC-EPUB-20130315-17</ArticleId>
       </ArticleIdList>
-    </PubmedData>
-  </PubmedArticle>
-  <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
-      <PMID Version="1">24280212</PMID>
-      <DateCompleted>
-        <Year>2014</Year>
-        <Month>04</Month>
-        <Day>08</Day>
-      </DateCompleted>
-      <DateRevised>
-        <Year>2021</Year>
-        <Month>10</Month>
-        <Day>21</Day>
-      </DateRevised>
-      <Article PubModel="Print-Electronic">
-        <Journal>
-          <ISSN IssnType="Electronic">1083-351X</ISSN>
-          <JournalIssue CitedMedium="Internet">
-            <Volume>289</Volume>
-            <Issue>2</Issue>
-            <PubDate>
-              <Year>2014</Year>
-              <Month>Jan</Month>
-              <Day>10</Day>
-            </PubDate>
-          </JournalIssue>
-          <Title>The Journal of biological chemistry</Title>
-          <ISOAbbreviation>J Biol Chem</ISOAbbreviation>
-        </Journal>
-        <ArticleTitle>Decreased affinity of recombinant human tumor necrosis factor-related apoptosis-inducing ligand (rhTRAIL) D269H/E195R to osteoprotegerin (OPG) overcomes TRAIL resistance mediated by the bone microenvironment.</ArticleTitle>
-        <Pagination>
-          <StartPage>1071</StartPage>
-          <EndPage>1078</EndPage>
-          <MedlinePgn>1071-8</MedlinePgn>
-        </Pagination>
-        <ELocationID EIdType="doi" ValidYN="Y">10.1074/jbc.M113.491589</ELocationID>
-        <Abstract>
-          <AbstractText>The bone marrow microenvironment provides important signals for the survival and proliferation of hematopoietic and malignant cells. In multiple myeloma, plasma cells are surrounded by stromal cells including osteoblasts. These stromal cells protect multiple myeloma cells from apoptosis induced by chemotherapeutic agents. Osteoprotegerin (OPG), a soluble receptor of the cytokine TNF-related apoptosis-inducing ligand (TRAIL), is secreted by osteoblasts and has been implicated in the prevention of cell death induced by TRAIL in malignant cells. Previously, we have designed death receptor-specific TRAIL variants that induce apoptosis exclusively via one of its death receptors. Here, we have studied in detail the interaction between recombinant human (rhTRAIL) variants and OPG. We show that a DR5-specific variant (rhTRAIL D269H/E195R) displays a significantly decreased affinity to OPG. Furthermore, this rhTRAIL variant shows a much higher activity when compared with rhTRAIL WT and retains its effectiveness in inducing cell death in multiple myeloma cell lines, in the presence of OPG secreted by stromal cells. We also demonstrate that stromal cells are largely insensitive to high concentrations of this rhTRAIL variant. In conclusion, rhTRAIL D269H/E195R is a potential therapy for multiple myeloma due to its high effectiveness and diminished binding to OPG.</AbstractText>
-        </Abstract>
-        <AuthorList CompleteYN="Y">
-          <Author ValidYN="Y">
-            <LastName>Bosman</LastName>
-            <ForeName>Matthieu C J</ForeName>
-            <Initials>MC</Initials>
-            <AffiliationInfo>
-              <Affiliation>From the Department of Pharmaceutical Biology, Groningen Research Institute of Pharmacy, University of Groningen, 9713 AV Groningen and.</Affiliation>
-            </AffiliationInfo>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Reis</LastName>
-            <ForeName>Carlos R</ForeName>
-            <Initials>CR</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Schuringa</LastName>
-            <ForeName>Jan J</ForeName>
-            <Initials>JJ</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Vellenga</LastName>
-            <ForeName>Edo</ForeName>
-            <Initials>E</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Quax</LastName>
-            <ForeName>Wim J</ForeName>
-            <Initials>WJ</Initials>
-          </Author>
-        </AuthorList>
-        <Language>eng</Language>
-        <PublicationTypeList>
-          <PublicationType UI="D016428">Journal Article</PublicationType>
-          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
-        </PublicationTypeList>
-        <ArticleDate DateType="Electronic">
-          <Year>2013</Year>
-          <Month>11</Month>
-          <Day>26</Day>
-        </ArticleDate>
-      </Article>
-      <MedlineJournalInfo>
-        <Country>United States</Country>
-        <MedlineTA>J Biol Chem</MedlineTA>
-        <NlmUniqueID>2985121R</NlmUniqueID>
-        <ISSNLinking>0021-9258</ISSNLinking>
-      </MedlineJournalInfo>
-      <ChemicalList>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D050505">Mutant Proteins</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D053244">Osteoprotegerin</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D011994">Recombinant Proteins</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D053221">TNF-Related Apoptosis-Inducing Ligand</NameOfSubstance>
-        </Chemical>
-      </ChemicalList>
-      <CitationSubset>IM</CitationSubset>
-      <MeshHeadingList>
-        <MeshHeading>
-          <DescriptorName UI="D019943" MajorTopicYN="N">Amino Acid Substitution</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D017209" MajorTopicYN="N">Apoptosis</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001667" MajorTopicYN="N">Binding, Competitive</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015153" MajorTopicYN="N">Blotting, Western</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001853" MajorTopicYN="N">Bone Marrow</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
-          <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D045744" MajorTopicYN="N">Cell Line, Tumor</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D002470" MajorTopicYN="N">Cell Survival</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D019008" MajorTopicYN="N">Drug Resistance, Neoplasm</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D009101" MajorTopicYN="N">Multiple Myeloma</DescriptorName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-          <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D050505" MajorTopicYN="N">Mutant Proteins</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D009154" MajorTopicYN="Y">Mutation</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D053244" MajorTopicYN="N">Osteoprotegerin</DescriptorName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D011485" MajorTopicYN="N">Protein Binding</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D011994" MajorTopicYN="N">Recombinant Proteins</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D020349" MajorTopicYN="N">Surface Plasmon Resonance</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D053221" MajorTopicYN="N">TNF-Related Apoptosis-Inducing Ligand</DescriptorName>
-          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D059016" MajorTopicYN="N">Tumor Microenvironment</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
-        </MeshHeading>
-      </MeshHeadingList>
-      <KeywordList Owner="NOTNLM">
-        <Keyword MajorTopicYN="N">Drug Design</Keyword>
-        <Keyword MajorTopicYN="N">Multiple Myeloma</Keyword>
-        <Keyword MajorTopicYN="N">Surface Plasmon Resonance (SPR)</Keyword>
-        <Keyword MajorTopicYN="N">Trail</Keyword>
-        <Keyword MajorTopicYN="N">Tumor Microenvironment</Keyword>
-      </KeywordList>
-    </MedlineCitation>
-    <PubmedData>
-      <History>
-        <PubMedPubDate PubStatus="entrez">
-          <Year>2013</Year>
-          <Month>11</Month>
-          <Day>28</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="pubmed">
-          <Year>2013</Year>
-          <Month>11</Month>
-          <Day>28</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="medline">
-          <Year>2014</Year>
-          <Month>4</Month>
-          <Day>9</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-      </History>
-      <PublicationStatus>ppublish</PublicationStatus>
-      <ArticleIdList>
-        <ArticleId IdType="pubmed">24280212</ArticleId>
-        <ArticleId IdType="pmc">PMC3887175</ArticleId>
-        <ArticleId IdType="doi">10.1074/jbc.M113.491589</ArticleId>
-        <ArticleId IdType="pii">S0021-9258(20)41574-1</ArticleId>
-      </ArticleIdList>
-      <ReferenceList>
-        <Reference>
-          <Citation>Kyle R. A., Rajkumar S. V. (2004) Multiple myeloma. N. Engl. J. Med. 351, 1860&#x2013;1873</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">15509819</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Palumbo A., Anderson K. (2011) Multiple myeloma. N. Engl. J. Med. 364, 1046&#x2013;1060</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">21410373</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Jones R. J., Armstrong S. A. (2008) Cancer stem cells in hematopoietic malignancies. Biol. Blood Marrow Transplant. 14, Suppl. 1, 12&#x2013;16</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">18162216</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Valent P., Bonnet D., De Maria R., Lapidot T., Copland M., Melo J. V., Chomienne C., Ishikawa F., Schuringa J. J., Stassi G., Huntly B., Herrmann H., Soulier J., Roesch A., Schuurhuis G. J., W&#xf6;hrer S., Arock M., Zuber J., Cerny-Reiterer S., Johnsen H. E., Andreeff M., Eaves C. (2012) Cancer stem cell definitions and terminology: the devil is in the details. Nat. Rev. Cancer 12, 767&#x2013;775</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">23051844</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Huff C. A., Matsui W. (2008) Multiple myeloma cancer stem cells. J. Clin. Oncol. 26, 2895&#x2013;2900</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC2610256</ArticleId>
-            <ArticleId IdType="pubmed">18539970</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Matsui W. (2011) Perspective: A model disease. Nature 480, S58.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC4339071</ArticleId>
-            <ArticleId IdType="pubmed">22169808</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Donnenberg V. S., Donnenberg A. D. (2005) Multiple drug resistance in cancer revisited: the cancer stem cell hypothesis. J. Clin. Pharmacol. 45, 872&#x2013;877</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">16027397</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Silvestris F., Cafforio P., Tucci M., Grinello D., Dammacco F. (2003) Upregulation of osteoblast apoptosis by malignant plasma cells: a role in myeloma bone disease. Br. J. Haematol. 122, 39&#x2013;52</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12823344</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Gonzalvez F., Ashkenazi A. (2010) New insights into apoptosis signaling by Apo2L/TRAIL. Oncogene 29, 4752&#x2013;4765</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">20531300</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Yang A., Wilson N. S., Ashkenazi A. (2010) Proapoptotic DR4 and DR5 signaling in cancer cells: toward clinical translation. Curr. Opin. Cell Biol. 22, 837&#x2013;844</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">20813513</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Gazitt Y. (1999) TRAIL is a potent inducer of apoptosis in myeloma cells derived from multiple myeloma patients and is not cytotoxic to hematopoietic stem cells. Leukemia 13, 1817&#x2013;1824</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10557057</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Lincz L. F., Yeh T. X., Spencer A. (2001) TRAIL-induced eradication of primary tumour cells from multiple myeloma patient bone marrows is not related to TRAIL receptor expression or prior chemotherapy. Leukemia 15, 1650&#x2013;1657</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">11587225</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Mitsiades C. S., Treon S. P., Mitsiades N., Shima Y., Richardson P., Schlossman R., Hideshima T., Anderson K. C. (2001) TRAIL/Apo2L ligand selectively induces apoptosis and overcomes drug resistance in multiple myeloma: therapeutic applications. Blood 98, 795&#x2013;804</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">11468181</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Vitovski S., Chantry A. D., Lawson M. A., Croucher P. I. (2012) Targeting tumour-initiating cells with TRAIL based combination therapy ensures complete and lasting eradication of multiple myeloma tumours in vivo. PLoS One 7, e35830.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3353958</ArticleId>
-            <ArticleId IdType="pubmed">22615740</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Locklin R. M., Croucher P. I., Russell R. G., Edwards C. M. (2007) Agonists of TRAIL death receptors induce myeloma cell apoptosis that is not prevented by cells of the bone marrow microenvironment. Leukemia 21, 805&#x2013;812</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">17315027</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Shipman C. M., Croucher P. I. (2003) Osteoprotegerin is a soluble decoy receptor for tumor necrosis factor-related apoptosis-inducing ligand/Apo2 ligand and can function as a paracrine survival factor for human myeloma cells. Cancer Res. 63, 912&#x2013;916</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12615702</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Holen I., Shipman C. M. (2006) Role of osteoprotegerin (OPG) in cancer. Clin. Sci. 110, 279&#x2013;291</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">16464170</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>van der Sloot A. M., Tur V., Szegezdi E., Mullally M. M., Cool R. H., Samali A., Serrano L., Quax W. J. (2006) Designed tumor necrosis factor-related apoptosis-inducing ligand variants initiating apoptosis exclusively via the DR5 receptor. Proc. Natl. Acad. Sci. U.S.A. 103, 8634&#x2013;8639</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC1482632</ArticleId>
-            <ArticleId IdType="pubmed">16731632</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Reis C. R., van der Sloot A. M., Natoni A., Szegezdi E., Setroikromo R., Meijer M., Sjollema K., Stricher F., Cool R. H., Samali A., Serrano L., Quax W. J. (2010) Rapid and efficient cancer cell killing mediated by high-affinity death receptor homotrimerizing TRAIL variants. Cell Death Dis. 1, e83.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3035906</ArticleId>
-            <ArticleId IdType="pubmed">21368856</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Reis C. R., van Assen A. H., Quax W. J., Cool R. H. (2011) Unraveling the binding mechanism of trivalent tumor necrosis factor ligands and their receptors. Mol. Cell. Proteomics 10, M110.002808.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3013454</ArticleId>
-            <ArticleId IdType="pubmed">20852190</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Reis C. R., van der Sloot A. M., Szegezdi E., Natoni A., Tur V., Cool R. H., Samali A., Serrano L., Quax W. J. (2009) Enhancement of antitumor properties of rhTRAIL by affinity increase toward its death receptors. Biochemistry 48, 2180&#x2013;2191</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">19236007</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Tur V., van der Sloot A. M., Reis C. R., Szegezdi E., Cool R. H., Samali A., Serrano L., Quax W. J. (2008) DR4-selective tumor necrosis factor-related apoptosis-inducing ligand (TRAIL) variants obtained by structure-based design. J. Biol. Chem. 283, 20560&#x2013;20568</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">18474604</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Vitovski S., Phillips J. S., Sayers J., Croucher P. I. (2007) Investigating the interaction between osteoprotegerin and receptor activator of NF-&#x3ba;B or tumor necrosis factor-related apoptosis-inducing ligand: evidence for a pivotal role for osteoprotegerin in regulating two distinct pathways. J. Biol. Chem. 282, 31601&#x2013;31609</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">17702740</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Truneh A., Sharma S., Silverman C., Khandekar S., Reddy M. P., Deen K. C., McLaughlin M. M., Srinivasula S. M., Livi G. P., Marshall L. A., Alnemri E. S., Williams W. V., Doyle M. L. (2000) Temperature-sensitive differential affinity of TRAIL for its receptors: DR5 is the highest affinity receptor. J. Biol. Chem. 275, 23319&#x2013;23325</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10770955</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Gasparian M. E., Chernyak B. V., Dolgikh D. A., Yagolovich A. V., Popova E. N., Sycheva A. M., Moshkovskii S. A., Kirpichnikov M. P. (2009) Generation of new TRAIL mutants DR5-A and DR5-B with improved selectivity to death receptor 5. Apoptosis 14, 778&#x2013;787</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">19412666</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Emery J. G., McDonnell P., Burke M. B., Deen K. C., Lyn S., Silverman C., Dul E., Appelbaum E. R., Eichman C., DiPrinzio R., Dodds R. A., James I. E., Rosenberg M., Lee J. C., Young P. R. (1998) Osteoprotegerin is a receptor for the cytotoxic ligand TRAIL. J. Biol. Chem. 273, 14363&#x2013;14367</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">9603945</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Luan X., Lu Q., Jiang Y., Zhang S., Wang Q., Yuan H., Zhao W., Wang J., Wang X. (2012) Crystal structure of human RANKL complexed with its decoy receptor osteoprotegerin. J. Immunol. 189, 245&#x2013;252</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">22664871</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Nelson C. A., Warren J. T., Wang M. W., Teitelbaum S. L., Fremont D. H. (2012) RANKL employs distinct binding modes to engage RANK and the osteoprotegerin decoy receptor. Structure. 20, 1971&#x2013;1982</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3607351</ArticleId>
-            <ArticleId IdType="pubmed">23039992</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Zinonos I., Labrinidis A., Lee M., Liapis V., Hay S., Ponomarev V., Diamond P., Findlay D. M., Zannettino A. C., Evdokiou A. (2011) Anticancer efficacy of Apo2L/TRAIL is retained in the presence of high and biologically active concentrations of osteoprotegerin in vivo. J. Bone Miner. Res. 26, 630&#x2013;643</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC5568243</ArticleId>
-            <ArticleId IdType="pubmed">20818644</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Picarda G., Trichet V., T&#xe9;letch&#xe9;a S., Heymann D., R&#xe9;dini F. (2012) TRAIL receptor signaling and therapeutic option in bone tumors: the trap of the bone microenvironment. Am. J. Cancer Res. 2, 45&#x2013;64</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3236571</ArticleId>
-            <ArticleId IdType="pubmed">22206045</ArticleId>
-          </ArticleIdList>
-        </Reference>
-      </ReferenceList>
-    </PubmedData>
-  </PubmedArticle>
-  <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
-      <PMID Version="1">23826077</PMID>
-      <DateCompleted>
-        <Year>2017</Year>
-        <Month>10</Month>
-        <Day>11</Day>
-      </DateCompleted>
-      <DateRevised>
-        <Year>2021</Year>
-        <Month>12</Month>
-        <Day>04</Day>
-      </DateRevised>
-      <Article PubModel="Electronic-Print">
-        <Journal>
-          <ISSN IssnType="Electronic">1932-6203</ISSN>
-          <JournalIssue CitedMedium="Internet">
-            <Volume>8</Volume>
-            <Issue>6</Issue>
-            <PubDate>
-              <Year>2013</Year>
-            </PubDate>
-          </JournalIssue>
-          <Title>PloS one</Title>
-          <ISOAbbreviation>PLoS One</ISOAbbreviation>
-        </Journal>
-        <ArticleTitle>TGF-β-Neutralizing Antibody 1D11 Enhances Cytarabine-Induced Apoptosis in AML Cells in the Bone Marrow Microenvironment.</ArticleTitle>
-        <Pagination>
-          <StartPage>e62785</StartPage>
-          <MedlinePgn>e62785</MedlinePgn>
-        </Pagination>
-        <ELocationID EIdType="pii" ValidYN="Y">e62785</ELocationID>
-        <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0062785</ELocationID>
-        <Abstract>
-          <AbstractText>Hypoxia and interactions with bone marrow (BM) stromal cells have emerged as essential components of the leukemic BM microenvironment in promoting leukemia cell survival and chemoresistance. High levels of transforming growth factor beta 1 (TGFβ1) produced by BM stromal cells in the BM niche regulate cell proliferation, survival, and apoptosis, depending on the cellular context. Exogenous TGFβ1 induced accumulation of acute myeloid leukemia (AML) cells in a quiescent G0 state, which was further facilitated by the co-culture with BM-derived mesenchymal stem cells (MSCs). In turn, TGFβ-neutralizing antibody 1D11 abrogated rhTGFβ1 induced cell cycle arrest. Blocking TGFβ with 1D11 further enhanced cytarabine (Ara-C)-induced apoptosis of AML cells in hypoxic and in normoxic conditions. Additional constituents of BM niche, the stroma-secreted chemokine CXCL12 and its receptor CXCR4 play crucial roles in cell migration and stroma/leukemia cell interactions. Treatment with 1D11 combined with CXCR4 antagonist plerixafor and Ara-C decreased leukemia burden and prolonged survival in an in vivo leukemia model. These results indicate that blockade of TGFβ by 1D11 and abrogation of CXCL12/CXCR4 signaling may enhance the efficacy of chemotherapy against AML cells in the hypoxic BM microenvironment.</AbstractText>
-        </Abstract>
-        <AuthorList CompleteYN="Y">
-          <Author ValidYN="Y">
-            <LastName>Tabe</LastName>
-            <ForeName>Yoko</ForeName>
-            <Initials>Y</Initials>
-            <AffiliationInfo>
-              <Affiliation>Department of Leukemia, The University of Texas MD Anderson Cancer Center, Houston, Texas, United States of America ; Department of Clinical Laboratory Medicine, Juntendo University School of Medicine, Tokyo, Japan.</Affiliation>
-            </AffiliationInfo>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Shi</LastName>
-            <ForeName>Yue Xi</ForeName>
-            <Initials>YX</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Zeng</LastName>
-            <ForeName>Zhihong</ForeName>
-            <Initials>Z</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Jin</LastName>
-            <ForeName>Linhua</ForeName>
-            <Initials>L</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Shikami</LastName>
-            <ForeName>Masato</ForeName>
-            <Initials>M</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Hatanaka</LastName>
-            <ForeName>Yasuhito</ForeName>
-            <Initials>Y</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Miida</LastName>
-            <ForeName>Takashi</ForeName>
-            <Initials>T</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Hsu</LastName>
-            <ForeName>Frank J</ForeName>
-            <Initials>FJ</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Andreeff</LastName>
-            <ForeName>Michael</ForeName>
-            <Initials>M</Initials>
-          </Author>
-          <Author ValidYN="Y">
-            <LastName>Konopleva</LastName>
-            <ForeName>Marina</ForeName>
-            <Initials>M</Initials>
-          </Author>
-        </AuthorList>
-        <Language>eng</Language>
-        <GrantList CompleteYN="Y">
-          <Grant>
-            <GrantID>P01 CA055164</GrantID>
-            <Acronym>CA</Acronym>
-            <Agency>NCI NIH HHS</Agency>
-            <Country>United States</Country>
-          </Grant>
-          <Grant>
-            <GrantID>P30 CA016672</GrantID>
-            <Acronym>CA</Acronym>
-            <Agency>NCI NIH HHS</Agency>
-            <Country>United States</Country>
-          </Grant>
-        </GrantList>
-        <PublicationTypeList>
-          <PublicationType UI="D016428">Journal Article</PublicationType>
-        </PublicationTypeList>
-        <ArticleDate DateType="Electronic">
-          <Year>2013</Year>
-          <Month>06</Month>
-          <Day>27</Day>
-        </ArticleDate>
-      </Article>
-      <MedlineJournalInfo>
-        <Country>United States</Country>
-        <MedlineTA>PLoS One</MedlineTA>
-        <NlmUniqueID>101285081</NlmUniqueID>
-        <ISSNLinking>1932-6203</ISSNLinking>
-      </MedlineJournalInfo>
-      <ChemicalList>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D057134">Antibodies, Neutralizing</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D000970">Antineoplastic Agents</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D001596">Benzylamines</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C515255">CXCL12 protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C527276">CXCR4 protein, human</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C514936">CXCR4 protein, mouse</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D054377">Chemokine CXCL12</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D000080027">Cyclams</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D006571">Heterocyclic Compounds</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D019718">Receptors, CXCR4</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="D016212">Transforming Growth Factor beta</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>04079A1RDZ</RegistryNumber>
-          <NameOfSubstance UI="D003561">Cytarabine</NameOfSubstance>
-        </Chemical>
-        <Chemical>
-          <RegistryNumber>S915P5499N</RegistryNumber>
-          <NameOfSubstance UI="C088327">plerixafor</NameOfSubstance>
-        </Chemical>
-      </ChemicalList>
-      <CitationSubset>IM</CitationSubset>
-      <MeshHeadingList>
-        <MeshHeading>
-          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D057134" MajorTopicYN="N">Antibodies, Neutralizing</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D000970" MajorTopicYN="N">Antineoplastic Agents</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D017209" MajorTopicYN="N">Apoptosis</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="Y">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001596" MajorTopicYN="N">Benzylamines</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001853" MajorTopicYN="N">Bone Marrow</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="Y">drug effects</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D045744" MajorTopicYN="N">Cell Line, Tumor</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D002465" MajorTopicYN="N">Cell Movement</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D002470" MajorTopicYN="N">Cell Survival</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="N">drug effects</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D054377" MajorTopicYN="N">Chemokine CXCL12</DescriptorName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D018920" MajorTopicYN="N">Coculture Techniques</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D000080027" MajorTopicYN="N">Cyclams</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D003561" MajorTopicYN="N">Cytarabine</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="Y">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D006571" MajorTopicYN="N">Heterocyclic Compounds</DescriptorName>
-          <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D015470" MajorTopicYN="N">Leukemia, Myeloid, Acute</DescriptorName>
-          <QualifierName UI="Q000188" MajorTopicYN="Y">drug therapy</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D016513" MajorTopicYN="N">Mice, SCID</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D009368" MajorTopicYN="N">Neoplasm Transplantation</DescriptorName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D019718" MajorTopicYN="N">Receptors, CXCR4</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="N">antagonists &amp; inhibitors</QualifierName>
-          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D016212" MajorTopicYN="N">Transforming Growth Factor beta</DescriptorName>
-          <QualifierName UI="Q000037" MajorTopicYN="Y">antagonists &amp; inhibitors</QualifierName>
-          <QualifierName UI="Q000276" MajorTopicYN="Y">immunology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D059016" MajorTopicYN="N">Tumor Microenvironment</DescriptorName>
-          <QualifierName UI="Q000187" MajorTopicYN="Y">drug effects</QualifierName>
-          <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
-        </MeshHeading>
-      </MeshHeadingList>
-      <CoiStatement>Competing Interests: Marina Konopleva currently serves on the PLOS ONE Editorial Board. Frank J. Hsu is employed by Genzyme Corporation. This does not alter the authors' adherence to all of the PLOS ONE policies on sharing data and materials.</CoiStatement>
-    </MedlineCitation>
-    <PubmedData>
-      <History>
-        <PubMedPubDate PubStatus="received">
-          <Year>2012</Year>
-          <Month>10</Month>
-          <Day>23</Day>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="accepted">
-          <Year>2013</Year>
-          <Month>3</Month>
-          <Day>25</Day>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="entrez">
-          <Year>2013</Year>
-          <Month>7</Month>
-          <Day>5</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="pubmed">
-          <Year>2013</Year>
-          <Month>7</Month>
-          <Day>5</Day>
-          <Hour>6</Hour>
-          <Minute>0</Minute>
-        </PubMedPubDate>
-        <PubMedPubDate PubStatus="medline">
-          <Year>2013</Year>
-          <Month>7</Month>
-          <Day>5</Day>
-          <Hour>6</Hour>
-          <Minute>1</Minute>
-        </PubMedPubDate>
-      </History>
-      <PublicationStatus>epublish</PublicationStatus>
-      <ArticleIdList>
-        <ArticleId IdType="pubmed">23826077</ArticleId>
-        <ArticleId IdType="pmc">PMC3695026</ArticleId>
-        <ArticleId IdType="doi">10.1371/journal.pone.0062785</ArticleId>
-        <ArticleId IdType="pii">PONE-D-12-32582</ArticleId>
-      </ArticleIdList>
-      <ReferenceList>
-        <Reference>
-          <Citation>Garrido SM, Appelbaum FR, Willman CL, Banker DE (2001) Acute myeloid leukemia cells are protected from spontaneous and drug-induced apoptosis by direct contact with a human bone marrow stromal cell line (HS-5). Experimental Hematology 29: 448&#x2013;457.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">11301185</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Taichman RS (2005) Blood and bone: two tissues whose fates are intertwined to create the hematopoietic stem-cell niche. Blood 105: 2631&#x2013;2639.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">15585658</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Balooch G, Balooch M, Nalla RK, Schilling S, Filvaroff EH, et al. (2005) TGF-beta regulates the mechanical properties and composition of bone matrix. Proc Natl Acad Sci U S A 102: 18813&#x2013;18818.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC1323171</ArticleId>
-            <ArticleId IdType="pubmed">16354837</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Shin I, Bakin AV, Rodeck U, Brunet A, Arteaga CL (2001) Transforming growth factor beta enhances epithelial cell survival via Akt-dependent regulation of FKHRL1. Mol Biol Cell 12: 3328&#x2013;3339.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC60258</ArticleId>
-            <ArticleId IdType="pubmed">11694570</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Jang CW, Chen CH, Chen CC, Chen JY, Su YH (2002) TGF-beta induces apoptosis through Smad-mediated expression of DAP-kinase. Nature Cell Biol 4: 51&#x2013;58.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">11740493</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Massague J (2000) How cells read TGF-beta signals. Nat Rev Mol Cell Biol 1: 169&#x2013;178.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">11252892</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Narayan S, Thangasamy T, Balusu R (2005) Transforming growth factor -beta receptor signaling in cancer. Front Biosci 10: 1135&#x2013;1145.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">15769612</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Massague J, Gomis RR (2006) The logic of TGFbeta signaling. FEBS Lett 580: 2811&#x2013;2820.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">16678165</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Fortunel NO, Hatzfeld A, Hatzfeld JA (2000) Transforming growth factor-beta: pleiotropic role in the regulation of hematopoiesis. Blood 96: 2022&#x2013;2036.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10979943</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Ruscetti FW, Akel S, Bartelmez SH (2005) Autocrine transforming growth factor-beta regulation of hematopoiesis: many outcomes that depend on the context. Oncogene 24: 5751&#x2013;5763.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">16123808</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Xu Y, Tabe Y, Jin L, Watt J, McQueen T, et al. (2008) TGF-beta receptor kinase inhibitor LY2109761 reverses the anti-apoptotic effects of TGF-beta1 in myelo-monocytic leukaemic cells co-cultured with stromal cells. Br J Haematol 142: 192&#x2013;201.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">18492113</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Chin BY, Petrache I, Choi AM, Choi ME (1999) Transforming growth factor beta1 rescues serum deprivation-induced apoptosis via the mitogen-activated protein kinase (MAPK) pathway in macrophages. J Biol Chem 274: 11362&#x2013;11368.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10196228</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Hayashi T, Hideshima T, Nguyen AN, Munoz O, Podar K, et al. (2004) Transforming growth factor beta receptor I kinase inhibitor down-regulates cytokine secretion and multiple myeloma cell growth in the bone marrow microenvironment. Clin Cancer Res 10: 7540&#x2013;7546.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">15569984</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Leask A, Abraham DJ (2004) TGF-beta signaling and the fibrotic response. FASEB J 18: 816&#x2013;827.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">15117886</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Blobe GC, Schiemann WP, Lodish HF (2000) Role of transforming growth factor beta in human disease. N Engl J Med 342: 1350&#x2013;1358.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10793168</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Kim CH, Broxmeyer HE (1998) In vitro behaviour of hematopoietic progenitor cells under the influence of chemoattractants: stromal cell-derived factor-1, steel factor, and the bone marrow microenvironment. Blood 91: 100&#x2013;110.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">9414273</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Buckley CD, Amft N, Bradfield PF, Pilling D, Ross E, et al. (2000) Persistent induction of the chemokine receptor CXCR4 by TGF-beta 1 on synovial T cells contributes to their accumulation within the rheumatoid synovium. J Immunol 165: 3423&#x2013;3429.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10975862</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Katoh M, Katoh M (2010) Integrative genomic analyses of CXCR4: transcriptional regulation of CXCR4 based on TGFbeta, Nodal, Activin signaling and POU5F1, FOXA2, FOXC2, FOXH1, SOX17, and GFI1 transcription factors. Int J Oncol 36: 415&#x2013;420.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">20043076</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Parmar K, Mauch P, Vergilio JA, Sackstein R, Down JD (2007) Distribution of hematopoietic stem cells in the bone marrow according to regional hypoxia. Proc Natl Acad Sci U S A 104: 5431&#x2013;5436.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC1838452</ArticleId>
-            <ArticleId IdType="pubmed">17374716</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Mortensen BT, Jensen PO, Helledie N, Iversen PO, Ralfkiaer E, et al. (1998) Changing bone marrow micro-environment during development of acute myeloid leukaemia in rats. Br J Haematol 102: 458&#x2013;464.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">9695960</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Benito J, Shi Y, Szymanska B, Carol H, Boehm I, et al. (2011) Pronounced Hypoxia in Models of Murine and Human Leukemia: High Efficacy of Hypoxia-Activated Prodrug PR-104. Plos One 6: e23108.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3154919</ArticleId>
-            <ArticleId IdType="pubmed">21853076</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Saed GM, Collins KL, Diamond MP (2002) Transforming growth factors beta1, beta2 and beta3 and their receptors are differentially expressed in human peritoneal fibroblasts in response to hypoxia. Am J Reprod Immunol 48: 387&#x2013;393.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12607775</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Zhang H, Akman HO, Smith EL, Zhao J, Murphy-Ullrich JE, et al. (2003) Cellular response to hypoxia involves signaling via Smad proteins. Blood 101: 2253&#x2013;2260.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12411310</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Piret JP, Mottet D, Raes M, Michiels C (2002) Is HIF-1alpha a pro- or an anti-apoptotic protein? Biochem Pharmacol 64: 889&#x2013;892.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12213583</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Schioppa T, Uranchimeg B, Saccani A, Biswas SK, Doni A, et al. (2003) Regulation of the chemokine receptor CXCR4 by hypoxia. J Exp Med 198: 1391&#x2013;1402.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC2194248</ArticleId>
-            <ArticleId IdType="pubmed">14597738</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Fiegl M, Samudio I, Clise-Dwyer K, Burks JK, Mnjoyan Z, et al. (2009) CXCR4 expression and biologic activity in acute myeloid leukemia are dependent on oxygen partial pressure. Blood 113: 1504&#x2013;1512.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC2644078</ArticleId>
-            <ArticleId IdType="pubmed">18957686</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Dasch JR, Pace DR, Waegell W, Inenaga D, Ellingsworth L (1989) Monoclonal antibodies recognizing transforming growth factor-beta. Bioactivity neutralization and transforming growth factor beta 2 affinity purification. J Immunol 142: 1536&#x2013;1541.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">2537357</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Small D, Levenstein M, Kim E, Carow C, Amin S, et al. (1994) STK-1, the human homolog of Flk-2/Flt-3, is selectively expressed in CD34+ human bone marrow cells and is involved in the proliferation of early progenitor/stem cells. Proc Natl Acad Sci U S A 91: 459&#x2013;463.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC42968</ArticleId>
-            <ArticleId IdType="pubmed">7507245</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Gilliland DG, Griffin JD (2002) The roles of FLT3 in hematopoiesis and leukemia. Blood 100: 1532&#x2013;1542.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12176867</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Nakao M, Yokota S, Iwai T, Kaneko H, Horiike S, et al. (1996) Internal tandem duplication of the flt3 gene found in acute myeloid leukemia. Leukemia 10: 1911&#x2013;1918.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">8946930</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Levis M, Allebach J, Tse KF, Zheng R, Badwin BR, et al. (2002) A FLT3-targeted tyrosine kinase inhibitor is cytotoxic to leukemia cells in vitro and in vivo. Blood 99: 3885&#x2013;3891.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12010785</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Palacios R, Steinmetz M (1985) Il-3-dependent mouse clones that express B-220 surface antigen, contain Ig genes in germ-line configuration, and generate B lymphocytes in vivo. Cell 41: 727&#x2013;734.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">3924409</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Tabe Y, Konopleva M, Munsell MF, Marini FC, Zompetta C, et al. (2004) PML-RAR&#x3b1; is associated with leptin-receptor induction: the role of mesenchymal stem cell-derived adipocytes in APL cell survival. Blood 103: 1815&#x2013;1822.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">14630813</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Pittenger MF, Mackay AM, Beck SC, Jaiswal RK, Douglas R, et al. (1999) Multilineage potential of adult human mesenchymal stem cells. Science 284: 143&#x2013;147.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10102814</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Tabe Y, Jin L, Tsutsumi-Ishii Y, Xu Y, McQueen T, et al. (2007) Activation of integrin-linked kinase is a critical prosurvival pathway induced in leukemic cells by bone marrow-derived stromal cells. Cancer Res 67: 684&#x2013;694.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">17234779</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Konopleva M, Konoplev S, Hu W, Zaritskey AY, Afanasiev BV, et al. (2002) Stromal cells prevent apoptosis of AML cells by up-regulation of anti-apoptotic proteins. Leukemia 16: 1713&#x2013;1724.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12200686</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Dallas SL, Park-Snyder S, Miyazono K, Twardzik D, Mundy GR, et al. (1994) Characterization and autoregulation of latent transforming growth factor beta (TGF beta) complexes in osteoblast-like cell lines. Production of a latent complex lacking the latent TGF beta-binding protein. J Biol Chem 269: 6815&#x2013;6821.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">8120044</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Fortunel NO, Hatzfeld A, Hatzfeld JA (2000) Transforming growth factor-beta: pleiotropic role in the regulation of hematopoiesis. Blood 96: 2022&#x2013;2036.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">10979943</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Burger JA, Peled A (2009) CXCR4 antagonists: targeting the microenvironment in leukemia and other cancers. Leukemia 23: 43&#x2013;52.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">18987663</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Zeng Z, Shi YX, Samudio IJ, Wang RY, Ling X, et al. (2009) Targeting the leukemia microenvironment by CXCR4 inhibition overcomes resistance to kinase inhibitors and chemotherapy in AML. Blood 113: 6215&#x2013;6224.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC2699240</ArticleId>
-            <ArticleId IdType="pubmed">18955566</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Soma T, Yu JM, Dunbar CE (1996) Maintenance of murine long-term repopulating stem cells in ex vivo culture is affected by modulation of transforming growth factor-beta but not macrophage inflammatory protein-1 alpha activities. Blood 87: 4561&#x2013;4567.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">8639824</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Blank U, Karlsson S (2011) The role of Smad signaling in hematopoiesis and translational hematology. Leukemia 25: 1379&#x2013;1388.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">21566654</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Frisch BJ, Ashton JM, Xing L, Becker MW, Jordan CT, et al. (2012) Functional inhibition of osteoblastic cells in an in vivo mouse model of myeloid leukemia. Blood 119: 540&#x2013;550.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC3384480</ArticleId>
-            <ArticleId IdType="pubmed">21957195</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Balooch G, Balooch M, Nalla RK, Schilling S, Filvaroff EH, et al. (2005) TGF-beta regulates the mechanical properties and composition of bone matrix. Proc Natl Acad Sci U S A 102: 18813&#x2013;18.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC1323171</ArticleId>
-            <ArticleId IdType="pubmed">16354837</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Ao M, Williams K, Bhowmick NA, Hayward SW (2006) Transforming growth factor-&#x3b2; promotes invasion in tumorigenic but not in nontumorigenic human prostatic epithelial cells. Cancer Res 66: 8007&#x2013;8016.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC4067141</ArticleId>
-            <ArticleId IdType="pubmed">16912176</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Ao M, Franco OE, Park D, Raman D, Williams K, et al. (2007) Cross-talk between paracrine-acting cytokine and chemokine pathways promotes malignancy in benign human prostatic epithelium. Cancer Res 67: 4244&#x2013;4253.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">17483336</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Kojima Y, Acar A, Eaton EN, Mellody KT, Scheel C, et al. (2010) Autocrine TGF-beta and stromal cell-derived factor-1 (SDF-1) signaling drives the evolution of tumor-promoting mammary stromal myofibroblasts. Proc Natl Acad Sci U S A 107: 20009&#x2013;200014.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pmc">PMC2993333</ArticleId>
-            <ArticleId IdType="pubmed">21041659</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Ruzek MC, Hawes M, Pratt B, McPherson J, Ledbetter S, et al. (2003) Minimal effects on immune parameters following chronic anti-TGF-beta monoclonal antibody administration to normal mice. Immunopharmacol Immunotoxicol 25: 235&#x2013;237.</Citation>
-          <ArticleIdList>
-            <ArticleId IdType="pubmed">12784916</ArticleId>
-          </ArticleIdList>
-        </Reference>
-        <Reference>
-          <Citation>Morris JC, Shapiro GI, Tan AR, Lawrence DP, Olencki TE, et al. (2008) Phase I/II Study of GC1008: A human anti-transforming growth factor-beta (TGFb) monoclonal antibody (MAb) in patients with advanced malignant melanoma (MM) or renal cell carcinoma (RCC). J Clin Oncol 26: abstr 9028.</Citation>
-        </Reference>
-      </ReferenceList>
     </PubmedData>
   </PubmedArticle>
 </PubmedArticleSet>

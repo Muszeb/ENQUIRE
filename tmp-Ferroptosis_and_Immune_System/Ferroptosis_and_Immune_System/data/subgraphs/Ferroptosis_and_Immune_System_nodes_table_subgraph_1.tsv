@@ -1,18 +1,18 @@
 entity	category	node_weight	occurrence
-toll-like receptor 4/metabolism	MESH	0.037037037037037	1
 hypertension pulmonary/chemically induced	MESH	0.037037037037037	1
-endothelial cells/metabolism	MESH	0.037037037037037	1
-NLRP3	GENE	0.037037037037037	1
-bacterial toxins/metabolism	MESH	0.037037037037037	1
-FTH1	GENE	0.037037037037037	1
-NOX4	GENE	0.037037037037037	1
+HMGB1	GENE	0.037037037037037	1
+toll-like receptor 4/metabolism	MESH	0.037037037037037	1
 nlr family pyrin domain-containing 3 protein/metabolism	MESH	0.037037037037037	1
-hemodynamics/drug effects	MESH	0.037037037037037	1
+hmgb1 protein/metabolism	MESH	0.037037037037037	1
+bacterial toxins/metabolism	MESH	0.037037037037037	1
 macrophages/metabolism	MESH	0.037037037037037	1
+NLRP3	GENE	0.037037037037037	1
+NOX4	GENE	0.037037037037037	1
+inflammation/metabolism	MESH	0.037037037037037	1
 lung/blood supply	MESH	0.037037037037037	1
 inflammasomes/metabolism	MESH	0.037037037037037	1
-hmgb1 protein/metabolism	MESH	0.037037037037037	1
+FTH1	GENE	0.037037037037037	1
 monocrotaline/toxicity	MESH	0.037037037037037	1
+endothelial cells/metabolism	MESH	0.037037037037037	1
+hemodynamics/drug effects	MESH	0.037037037037037	1
 heart ventricles/diagnostic imaging	MESH	0.037037037037037	1
-HMGB1	GENE	0.037037037037037	1
-inflammation/metabolism	MESH	0.037037037037037	1

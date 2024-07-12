@@ -1,0 +1,58 @@
+c1	c2	weight	query
+1	2	4.30305987147409	antioxidants/pharmacology_cell proliferation/drug effects_cystine/antagonists &amp; inhibitors_gene expression regulation neoplastic
+1	2	4.20804765566641	antioxidants/pharmacology_cell proliferation/drug effects_gene expression regulation neoplastic_oxidative stress
+1	2	4.16465555061735	acetaminophen/pharmacology_brain neoplasms/genetics_gene expression regulation neoplastic_methotrexate/pharmacology
+10	4	3.46706340095174	antineoplastic agents/chemistry_apoptosis/drug effects_biological products/chemistry_bone marrow/drug effects
+10	4	3.08172920034729	antineoplastic agents/chemistry_apoptosis/drug effects_bone marrow/drug effects_macrophages/cytology
+10	4	2.99528264933701	antineoplastic agents/chemistry_apoptosis/drug effects_bone marrow/drug effects_neoplasms/drug therapy
+10	8	5.63799356937457	bone marrow/drug effects_multiple myeloma/genetics_mutant proteins/metabolism_mutation
+10	8	4.18852048553159	antibodies neutralizing/metabolism_bone marrow/drug effects_multiple myeloma/genetics_mutant proteins/metabolism
+10	8	3.9570100270504	antibodies neutralizing/metabolism_benzylamines_bone marrow/drug effects_multiple myeloma/genetics
+10	9	7.34269749967278	bone marrow/drug effects_drug interactions_ileum/drug effects_necroptosis/drug effects
+10	9	6.25684771026247	bone marrow/drug effects_cytokines/metabolism_drug interactions_ileum/drug effects
+10	9	5.32126162212273	antibodies neutralizing/metabolism_bone marrow/drug effects_drug interactions_ileum/drug effects
+11	3	4.9577805919216	ferritins/blood_genetic variation_hemeproteins/toxicity_TP53
+11	3	4.78274077073389	asparaginase_TP53_transferrin/metabolism_tumor suppressor protein p53/metabolism
+11	3	4.65606118916548	asparaginase_cisplatin_TP53_transferrin/metabolism
+11	5	6.4696549164882	asparaginase_cisplatin_diterpenes/pharmacology_SLC7A11
+11	5	5.11202309946806	asparaginase_cisplatin_SLC7A11_tumor suppressor protein p53/metabolism
+11	5	4.98188419014127	asparaginase_cisplatin_SLC7A11_TP53
+11	8	5.02339993813617	ASAH2_cell line tumor/transplantation_colonic neoplasms/drug therapy_heme oxygenase-1/metabolism
+11	8	4.63143427666834	ASAH2_cell line tumor/transplantation_colonic neoplasms/drug therapy_lymphocytes tumor-infiltrating/immunology
+11	8	4.12022255390076	ASAH2_cell line tumor/transplantation_colonic neoplasms/drug therapy_tumor suppressor protein p53/metabolism
+11	9	5.09615454840762	antibodies monoclonal humanized/administration &amp; dosage_ctla-4 antigen/metabolism_leukocyte common antigens/metabolism_lymphocytes tumor-infiltrating/immunology
+11	9	4.03173940553688	antibodies monoclonal humanized/administration &amp; dosage_cd8-positive t-lymphocytes/cytology_ctla-4 antigen/metabolism_lymphocytes tumor-infiltrating/immunology
+11	9	3.97662642253796	lymphocytes tumor-infiltrating/immunology_melanoma/immunology_TP53_tumor suppressor protein p53/metabolism
+13	3	7.01933780042078	cells cultured_host-pathogen interactions_iron chelating agents/pharmacology_tuberculosis/metabolism
+13	3	6.04360452559999	cells cultured_host-pathogen interactions_iron chelating agents/pharmacology_phospholipid hydroperoxide glutathione peroxidase/metabolism
+13	3	5.14620914044651	bacterial toxins/metabolism_cells cultured_host-pathogen interactions_iron chelating agents/pharmacology
+14	9	6.4531286758299	antibodies monoclonal humanized/pharmacology_CD36_PDCD1_tumor microenvironment
+14	9	6.21760644181606	antibodies monoclonal humanized/pharmacology_CD36_cd36 antigens/antagonists &amp; inhibitors_tumor microenvironment
+14	9	5.88780028188946	antibodies monoclonal humanized/pharmacology_cd8-positive t-lymphocytes/cytology_PDCD1_tumor microenvironment
+2	4	5.82093317934978	ATG5_autophagy-related proteins/genetics_cell cycle/drug effects_jurkat cells
+2	4	5.26447653956626	ATG5_autophagy-related proteins/genetics_autophagy/drug effects_jurkat cells
+2	4	5.12553245277703	ACSL4_AIFM2_autophagy/drug effects_jurkat cells
+2	5	6.02522993651656	cell survival/drug effects_gene expression_gene expression regulation neoplastic/drug effects_NFE2L2
+2	5	6.01007859244394	amino acid transport system y+/genetics_cell survival/drug effects_gene expression regulation neoplastic/drug effects_NFE2L2
+2	5	5.81496268169619	amino acid transport system y+/genetics_antineoplastic agents immunological/administration &amp; dosage_ATM_cell survival/drug effects
+2	7	7.96152832894941	ascorbic acid/pharmacology_CALR_calreticulin/metabolism_oxidative stress
+2	7	5.996069460713	ascorbic acid/pharmacology_CALR_ferric compounds/chemistry_oxidative stress
+2	7	5.53118710261946	antioxidants/pharmacology_ascorbic acid/pharmacology_oxidative stress_t-lymphocytes cytotoxic/metabolism
+3	4	5.92519707740661	glutathione/metabolism_iron/metabolism_phospholipid hydroperoxide glutathione peroxidase/metabolism_precursor cell lymphoblastic leukemia-lymphoma/metabolism
+3	4	5.72547095253901	ATG5_autophagy-related proteins/genetics_cell cycle/drug effects_glutathione/metabolism
+3	4	5.35792202222474	glutathione/metabolism_host-pathogen interactions_iron chelating agents/pharmacology_precursor cell lymphoblastic leukemia-lymphoma/metabolism
+4	7	8.9419621863655	adjuvants immunologic/chemistry_dextrans/chemistry_gels/chemistry_macrophages/cytology
+4	7	7.2639329680014	adjuvants immunologic/chemistry_dextrans/chemistry_ferric compounds/chemistry_macrophages/cytology
+4	7	6.4998983012884	adjuvants immunologic/chemistry_antineoplastic agents/chemistry_macrophages/cytology_urinary bladder neoplasms/pathology
+4	8	5.62926913488367	apoptosis/drug effects_multiple myeloma/genetics_mutant proteins/metabolism_mutation
+4	8	4.25800854792655	antineoplastic agents/chemistry_apoptosis/drug effects_multiple myeloma/genetics_mutant proteins/metabolism
+4	8	4.10843873660555	antineoplastic agents/chemistry_apoptosis/drug effects_biological products/chemistry_multiple myeloma/genetics
+4	9	7.33397306518189	apoptosis/drug effects_drug interactions_ileum/drug effects_necroptosis/drug effects
+4	9	6.24812327577158	apoptosis/drug effects_cytokines/metabolism_drug interactions_ileum/drug effects
+4	9	5.39074968451769	antineoplastic agents/chemistry_apoptosis/drug effects_drug interactions_ileum/drug effects
+5	8	6.06838737944598	b7-h1 antigen/antagonists &amp; inhibitors_cysteine/metabolism_fusion regulatory protein 1 heavy chain/metabolism_interferon-gamma/immunology
+5	8	4.61251953215725	aniline compounds/pharmacology_b7-h1 antigen/antagonists &amp; inhibitors_cysteine/metabolism_fusion regulatory protein 1 heavy chain/metabolism
+5	8	4.38207061077898	aniline compounds/pharmacology_b7-h1 antigen/antagonists &amp; inhibitors_benzylidene compounds/pharmacology_cysteine/metabolism
+7	9	6.41852324664006	antibodies monoclonal humanized/pharmacology_cd8-positive t-lymphocytes/cytology_exosomes/metabolism_PDCD1
+7	9	6.14457682843201	aniline compounds/chemistry_cd8-positive t-lymphocytes/cytology_exosomes/metabolism_PDCD1
+7	9	5.43329859698181	antibodies monoclonal humanized/administration &amp; dosage_cd8-positive t-lymphocytes/cytology_exosomes/metabolism_PDCD1

@@ -26,16 +26,9 @@ PMID	QuerySet
 33926261	pmid-ferroptosis_ImmuneSystem.txt
 31980600	pmid-ferroptosis_ImmuneSystem.txt
 31509699	pmid-ferroptosis_ImmuneSystem.txt
-19548348	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-26883574	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-30243965	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-27638861	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-27023064	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-25523186	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-22684019	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-15488464	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-24763052	('cell survival/drug effects', 'gene expression', 'gene expression regulation neoplastic/drug effects', 'NFE2L2')
-24280212	('apoptosis/drug effects', 'bone marrow/drug effects', 'cytokines/metabolism', 'tumor microenvironment')
 23826077	('apoptosis/drug effects', 'bone marrow/drug effects', 'cytokines/metabolism', 'tumor microenvironment')
-28848090	('ATG5', 'autophagy-related proteins/genetics', 'autophagy/drug effects', 'jurkat cells')
-30645008	('ATG5', 'autophagy-related proteins/genetics', 'autophagy/drug effects', 'jurkat cells')
+24280212	('apoptosis/drug effects', 'bone marrow/drug effects', 'cytokines/metabolism', 'tumor microenvironment')
+27525433	('antibodies monoclonal humanized/pharmacology', 'cd8-positive t-lymphocytes/cytology', 'PDCD1', 'tumor microenvironment')
+31738155	('antineoplastic agents/chemistry', 'apoptosis/drug effects', 'bone marrow/drug effects', 'neoplasms/drug therapy')
+28280037	('lymphocytes tumor-infiltrating/immunology', 'melanoma/immunology', 'TP53', 'tumor suppressor protein p53/metabolism')
+23521677	('antineoplastic agents/chemistry', 'apoptosis/drug effects', 'biological products/chemistry', 'multiple myeloma/genetics')

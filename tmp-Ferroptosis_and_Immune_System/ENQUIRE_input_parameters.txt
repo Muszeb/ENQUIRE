@@ -1,11 +1,11 @@
-wd=/home/musellla/tam_textmining/
-tag=test1
+wd=/mnt/
+tag=Ferroptosis_and_Immune_System
 ncores=6
 K=2
 A=3
 thr=1
 comb=4
-to_py=input/pmid-ferroptosis_ImmuneSystem.txt
+to_py=tmp-Ferroptosis_and_Immune_System_noOT/efetch_inputs/pmid-ferroptosis_ImmuneSystem.txt
 etype=all
 rscript=/opt/env/micromamba/bin/Rscript --no-environ
 CELLTAGSBOOL=False
