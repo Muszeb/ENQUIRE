@@ -1,43 +1,88 @@
+# ENQUIRE_sand_box
+
 # ENQUIRE
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10692274.svg)](https://doi.org/10.5281/zenodo.10692274)
+[![DOI](https://zenodo.org/badge/638528307.svg)](https://zenodo.org/doi/10.5281/zenodo.10036727)
 
-The accelerating growth of scientific literature overwhelms our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, biases in biomedical research and database annotation limit our interpretation of facts and generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers a time- and resource-efficient alternative to manual literature curation and database mining. ENQUIRE reconstructs and expands co-occurrence networks of genes and biomedical ontologies from user-selected input corpora and network-inferred PubMed queries. The integration of text mining, automatic querying, and network-based statistics mitigating literature biases makes ENQUIRE unique in its broad-scope applications. For example, ENQUIRE can generate co-occurrence gene networks that reflect high-confidence, functional networks. When tested on case studies spanning cancer, cell differentiation and immunity, ENQUIRE identified interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation, and facilitating the identification of molecular targets for subsequent experimentation.
+The accelerating growth in scientific literature is overwhelming our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, confirmation biases in search engines and databases influence the interpretation of facts and the generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers an alternative to manual literature curation and database mining to study complex biomedical phenomena. ENQUIRE generates a co-occurrence network of genes and biomedical ontologies (MeSH) using a corpus of publications as input. The algorithm iteratively reconstructs and expands the network by generating PubMed queries from significant interrelations, until it obtains an interconnected network of genes and MeSH relevant to the input corpus. We systematically evaluated ENQUIRE’s versatility and found that it generates co-occurrence networks similar to those based on co-expression data and manually annotated databases with a fraction of the time and human resources. Using case studies spanning cancer, cell differentiation and immunity, ENQUIRE proved to identify interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation and facilitating the identification of molecular targets for subsequent experimentation.
 
 ![](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png)
 
-- If you find ENQUIRE useful to pursue your research, [please cite us](https://www.biorxiv.org/content/10.1101/2023.09.10.556351v1)
+- If you find ENQUIRE useful to pursue your research, [please cite us](https://www.biorxiv.org/content/10.1101/2023.09.10.556351v1).
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html). Please follow the installation steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac) install Apptainer/Singularity in order to use ENQUIRE. The file called `ENQUIRE.sif` (1.5 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
+ENQUIRE can currently be run on Linux, Windows and macOS systems using [Docker](https://docs.docker.com/guides/docker-overview/). Please [install Docker](https://docs.docker.com/engine/install/) following the specific steps for your OS in order to use ENQUIRE. The Docker image necessary to run ENQUIRE is hosted on [Docker Hub](https://hub.docker.com/r/muszeb/enquire). The file contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed.
 
-Next, clone the repository:
+In order to download and start using ENQUIRE, open your command line and run:
+```
+docker pull muszeb/enquire
+```
+
+This will pull ENQUIRE from Docker Hub. Wait until the process is finished, and check the existence of the Docker image with:
+```bash
+# assuming you have downloaded the ENQUIRE image like above:
+docker images
+```
+
+You should see ENQUIRE listed among the images. The `REPOSITORY` and `TAG` columns will inform you about the image name and the current version of ENQUIRE.
+
+Next, choose a directory and clone the ENQUIRE repository with Git or download the data as a zip file:
 
 ```bash
 git clone https://github.com/Muszeb/ENQUIRE.git
-cd ENQUIRE
 ```
 
-then, download the SIF image file `ENQUIRE.sif` from [FigShare](https://figshare.com/articles/software/ENQUIRE/24434845) and place it in the repository, check that the file is intact with `md5sum`, and make it executable
-
+Now, navigate to the `ENQUIRE` folder you just downloaded and create a Docker container of ENQUIRE giving it a name of your choice with:
+```bash
+# Linux and Mac; assuming you are working from the ENQUIRE folder
+docker run  -v $(pwd):/mnt/ --name your_container_name -it muszeb/enquire:latest
 ```
-md5sum -c md5sum_ENQUIRE_sif.txt
-chmod +x ENQUIRE.sif
+
+```bash
+# Windows; assuming you are working from the ENQUIRE folder
+docker run -v %cd%:/mnt/ --name your_container_name -it muszeb/enquire:latest
 ```
 
-You can then place the `ENQUIRE` directory or `ENQUIRE.sif` wherever you wish to, and possibly add its location to your `PATH` variable for an easier calling.
+Where `-v %cd%:/mnt/` mounts the current directory (the contents of the `ENQUIRE` folder) to the Docker container just created, such that the program can access, edit and write files in your local host.
+
+**_NOTE:_**  Take into account that whenever we want to indicate the use of a local directory or file from inside ENQUIRE's Docker container, we must use the linked/mounted directory `/mnt`.
+
+**_NOTE 2:_**  The Docker daemon runs as the root user by default, meaning that files ENQUIRE produces in the mounted directory `/mnt` will be written as the root user. This means that permission conflicts might likely arise whenever ENQUIRE is run in a cluster with mutiple users. In order for a user to use Docker, they will necessarily receive root-level privileges, which will impact the security of your multi-user system. The proper handling of these limitations on Docker's side is beyond the scope of this README. For more information, please refer to the `Multi-user systems` section of this README.
+
+You should see a terminal open up with `/mnt/` as a working directory. You may check the mounting worked well with:
+```bash
+# check files were correctly linked inside the Docker container
+ls
+```
+
+You should see the files inside of the `ENQUIRE` folder.
+
+You can exit ENQUIRE's Docker container any time with `Control + D` or by typing `exit` on the command line. To start ENQUIRE again, you can start the already existing Docker container with:
+```bash
+# assuming you created a container with the name your_container_name
+docker start -i your_container_name
+```
+
+If you do not remember the name given to the container, you can always check with:
+```bash
+# assuming you created a container with the name your_container_name
+docker ps -all
+```
+
+You are then ready to use ENQUIRE.
 
 </details>
 
 <details><summary>USAGE</summary> 
 
-**The exemplary code snippets assume that `apptainer` location is added to your `PATH` variable, and that you're running the commands from the `ENQUIRE` main directory (do `cd /path/to/ENQUIRE` to test them).**
-Here is how you call ENQUIRE scripts using `ENQUIRE.sif`:
+**The exemplary code snippets assume that you're that you have already loaded the ENQUIRE Docker image and that you are inside the bash terminal inside of the Docker container.**
+
+Here is how you call ENQUIRE scripts using Docker:
 
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-Usage: ./ENQUIRE.sif <script_name> [script_argument]
+# assuming you have already loaded the ENQUIRE Docker image, and that you are running the commands from the ENQUIRE main directory
+Usage: run.sh <script_name> [script_argument]
 ```
 
 Where `<script_name>` is one of:
@@ -68,11 +113,10 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
 - The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
 ![Exemplary PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
     
-- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
+- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` Docker container, type on the command line:
 
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE.sif efetch_references.py tag ref1 ref2 ref3 ...
+run.sh efetch_references.py tag ref1 ref2 ref3 ...
 ```
 where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
 **DISCLAIMER**: if the references are not annotated into the Pubmed's API, The script will silently return no match - this may go unnoticed when fetching references from multiple articles. As a rule of thumb, look for "References" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation status of an article.
@@ -83,7 +127,7 @@ where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...
 
 - Before running an actual task, take a look at `ENQUIRE_methods_overview.png`: the figure briefly illustrates the main steps of the algorithm.
 
-- In the next exemplary code snippet, we assumed you cloned this repository and `ENQUIRE` is your current working directory.
+- In the next exemplary code snippet, we assume you have followed the installation steps and are working from inside of the bash terminal in ENQUIRE's Docker container.
 
 - **IMPORTANT NOTE**: it is highly recommended to get an **NCBI API_KEY** before running ENQUIRE. [Getting one is very easy](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us). You can then copy the API key and enter it as an environmental variable on the command line, like so: 
 ```bash
@@ -91,7 +135,7 @@ export NCBI_API_KEY=your_api_key_here
 ```
 This will ensure your API KEY is passed as an environmental variable to all ENQUIRE runs within the same terminal session. 
 
-- you can inspect the code Help section by running (from the `ENQUIRE` directory) `./ENQUIRE.sif ENQUIRE.sh -h`:
+- you can inspect the code Help section by running (from the `ENQUIRE` directory) `run.sh ENQUIRE.sh -h`:
  
 ```
 ####################################################################################
@@ -102,7 +146,7 @@ Expanding Networks by Querying Unexpectedly Inter-Related Entities
 
 ####################################################################################
 
-Usage: ./ENQUIRE.sif ENQUIRE.sh [script_arguments]
+Usage: run.sh ENQUIRE.sh [script_arguments]
 
 Legend:	[-flag_short|--flag_long|config file variable, if available]:
 
@@ -114,32 +158,32 @@ Legend:	[-flag_short|--flag_long|config file variable, if available]:
 	It can be obtained from a PubMed querying specifying 'PMID' as the download format option.
 	A minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.
 
-[-t|--tag|tag] = A tag definining the task.
-	It must be an alphanumeric string (underline_spaced_words are accepted).
+[-t|--tag|tag] = A characteristic tag definining the task.
+	It must be an alphanumeric string.
 
 [-j|--ncores|ncores] = The max number of CPU cores to be used.
 	Default is 6.
 
-[-c|--combine-set|comb] = how many k entities should be intersected to construct a query?
+[-c|--combine-set|comb] = how many N entities to intersect to construct a query?
 	3: loose searches, 4: moderate (default), 5: very strict queries.
 
-[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps (default: 1 %).
-	Example: if a subgraph contains nodes exclusively mentioned in 1 paper out of a total of 100, that subgraph has a 1% representativeness.
+[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).
+	Example: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.
 
-[-a|--attempts|A] = how many query attempts (i.e. k-sized graphlets) should be run to connect any two network communities?
+[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?
 	1: conservative, 2: moderate (default), 3: greedy.
 
 [-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
 	each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
 
-[-e|--entity|etype] = which entity type ('gene','MeSH') are you interested into? Omit or 'all' to textmine both entities.
+[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
 
 [-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
 	This option overwrites any parameter set by a different option.
 
-[-w|--rscript|rscript] = path to the Rscript compiler. If using 'ENQUIRE.sif', it defaults to the containerized version of R.
+[-w|--rscript|rscript] = path to the Rscript compiler. It defaults to the containerized version of R.
 
-[-d|--inputdata|sd] = path to the input data folder. If using 'ENQUIRE.sif', it defaults to the containerized input folder.
+[-d|--inputdata|sd] = path to the input data folder compiler. It defaults to the containerized input folder.
 	WARNING: this option is still under development, to allow users to set different species targets
 	and subsequently change the H.s. specific metadata.
 
@@ -153,22 +197,23 @@ You might be seeing this Help because of an input error.
 ####################################################################################
 ``` 
 
-Let's set up an example: we want to extract biomedical information from publications dealing with chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
+Let's set up an example: we want to know the current state-of-the-art regarding chemically-induced colitis in melanoma patients undergoing checkpoint-inhibitors therapy. Our ENQUIRE job might then look something like
 
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE.sif ENQUIRE.sh -t ICI_and_Colitis -i test_input/pmid-ICI_and_Colitis.txt
+run.sh ENQUIRE.sh -t ICI_and_Colitis -i /mnt/test_input/pmid-ICI_and_Colitis.txt
 ```
 
 Where all the other parameters described in the `Help` message of `ENQUIRE.sh` are set to default values. The passing of the parameters could be easen by using the `ENQUIRE_config.txt` file that resides in the main `ENQUIRE` directory: the left hand side of each variable assignment must be kept unchanged, while the right hand side can be tweaked according to one's needs. Additional information on the parameters are given in `ENQUIRE_flowchart.png`. Then, the program can be launched by running:
 
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
+# assuming you are working from within ENQUIRE's Docker container.
+run.sh ENQUIRE.sh -f ENQUIRE_config.txt
 ```
 </details>
 
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
+
+**_NOTE:_**  The Docker daemon runs as the root user by default, meaning that files ENQUIRE produces in the mounted directory `/mnt` will be written as the root user. If you are having trouble opening the files due to permission issues, please refer to the `Multi-user systems` section of this README.
 
 - Provided a recognisable `tag` has been passed to textmining algorithm, a typical output would produce a folder named `tmp-tag`, which in turn contains as many subdirectories as the number of steps/iterations performed. For example, if the algorithm performed 
     
@@ -207,10 +252,10 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 <details><summary>EXECUTING POST-HOC ANALYSES</summary> 
 
 #### Context-aware gene set annotation 
-- Run `./ENQUIRE.sif context_aware_gene_sets.R [options]` to perform automatic annotation of gene sets, using ENQUIRE-generated, Gene/MeSH edge and node tables and Fuzzy-C-Means (FCM). See the original manuscript for further information.
+- Run `run.sh context_aware_gene_sets.R [options]` to perform automatic annotation of gene sets, using ENQUIRE-generated, Gene/MeSH edge and node tables and Fuzzy-C-Means (FCM). See the original manuscript for further information.
 
 ```
-Usage: ./ENQUIRE.sif context_aware_gene_sets.R [options]
+Usage: run.sh context_aware_gene_sets.R [options]
 
 Options:
 	-w PATH, --directory=PATH
@@ -228,24 +273,8 @@ Options:
 	-d PARAMETER, --membdeg=PARAMETER
 		minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]
 
-	-r PARAMETER, --round=PARAMETER
-		Should membership degrees be rounded to the first significant digit (helps the stability of the results)?
-		default: True [T,F]
-
 	-s PARAMETER, --setsize=PARAMETER
 		minimal gene set size (default: 2)
-
-	-v VARIANCE, --varthreshold=VARIANCE
-		Dimensionality reduction based on the chosen proportion of Variance
-		observed upon PCA-transforming the inverse-log-similarity between nodes (default: 0.99. range [0-1]).
-		Set it to 1 to use untrasformed, scaled node similarities.
-
-	-m MESH, --meshxgs=MESH
-		How many MeSH terms which are closest to the cluster centroids should be used to describe a gene set? (default:3)
-
-	-p PATH, --netpathdata=PATH
-		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
-		If using the ENQUIRE.sif singularity image, the default path should point to the containerized copy of the file.
 
 	-h, --help
 		Show this help message and exit
@@ -253,14 +282,12 @@ Options:
 
 - You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE.sif context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv 
--n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
+run.sh context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv -n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
 ```
-The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_gene_sets.xlsx` as well as a plot showing the reconstructed gene sets as a PNG image. Please note that the script might last quite long, due to the FCM algorithm.
+Please note that the script might last quite long, due to the FCM algorithm.
 
 #### Context-aware pathway enrichment analysis
-- Run `./ENQUIRE.sif context_aware_pathway_enrichment.R [options]` to perform topology-based, pathway enrichment analysis using [SANTA](https://www.bioconductor.org/packages/devel/bioc/vignettes/SANTA/inst/doc/SANTA-vignette.html), Reactome *H. sapiens* pathways, and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
+- Run `eun.sh context_aware_pathway_enrichment.R [options]` to perform topology-based, pathway enrichment analysis using [SANTA](https://www.bioconductor.org/packages/devel/bioc/vignettes/SANTA/inst/doc/SANTA-vignette.html), Reactome *H. sapiens* pathways, and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
 
 ```
 Usage: Rscript code/context_aware_pathway_enrichment.R [options]
@@ -274,7 +301,7 @@ Options:
 
 	-n PATH, --netpathdata=PATH
 		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
-		If using the ENQUIRE.sif singularity image, the default path should point to the containerized copy of the file.
+		If the current working directory is not the 'ENQUIRE' folder, the default path ('input/...') will throw an error.
 
 	-e PATH, --edgetable=PATH
 		Path to an ENQUIRE-generated, gene-gene edge table file (required).
@@ -294,30 +321,23 @@ Options:
 
 	-f PARAMETER, --padjust=PARAMETER
 		P-value adjustment method, must be one of [holm, hochberg, hommel, bonferroni, BH, BY, fdr, none].
-		Default: holm.
-
-	-q QSCORENET, --qscorenet=QSCORENET
-		Do you want to save a copy of the STRING network in GRAPHML format with ENQUIRE-inferred QScores as node weights?
-		default: False [T,F]
+		Default and recommended: holm, as the p-value null distribution is not guaranteed to be uniform.
 
 	-h, --help
 		Show this help message and exit
 ```
 
-- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script (we reduce the number of tested pathways with the `s` parameter to speed up the process):
+- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
 ```bash
-# assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE.sif context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
+run.sh context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
 ```
-The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_pathway_enrichment.xlsx`, together with two PNG images showing the test statistics p-value distribution and the correlation between the Node score and degree. Please note that the script might take quite long to finish, and it benefits from a high performance computer, if available. 
+Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
 
 </details>
 
 <details><summary> POSSIBLE SOURCES OF ERRORS </summary>
 
-- Test the command `which apptainer`: if `apptainer` location is not in your `PATH` variable, you need to invoke it by specifying its path, that is doing `/path/to/apptainer run /path/to/ENQUIRE.sif ...` instead of `./path/to/ENQUIRE.sif ...`
-
-- Test the command `awk '/MemAvailable/ {print $2}' /proc/meminfo` on your command line: this is the way ENQUIRE checks the available RAM on Linux systems, in order to avoid overflows.  Make sure `awk` is installed on your system. If you witness a non-awk related issue, contact us with information on your system and possible solutions to alternatively track the available memory on your OS.
+- Test the command `mawk '/MemAvailable/ {print $2}' /proc/meminfo` on the command line of the Docker container: this is the way ENQUIRE checks the available RAM on Linux systems, in order to avoid overflows. If you witness a non-awk related issue, contact us with information on your system and possible solutions to alternatively track the available memory on your OS.
 
 - When computing large networks, an error related to the default `Stack Size` can potentially appear, especially when running R scripts, such as `Error: C stack usage is too close to the limit`. In this case, one shall set a higher stacksize to allow the script to complete, via 
 
@@ -343,9 +363,41 @@ This will ensure your API KEY is passed as an environmental variable to all ENQU
 <details><summary> REPRODUCIBILITY </summary>
 
 Two identical runs of ENQUIRE should produce identical co-occurrence networks and query formulations, as long as NCBI made no updates on the MeSH indexing of PubMed articles involved during the time that separates the two runs. In that case, the later run should produce queries that are supersets of the earlier one.
-The exemplary output directory `tmp-Ferroptosis_and_Immune_System` was generated between 10.10.23 and 11.10.23 and has been used to generate the results illustrated in the ENQUIRE manuscript. The output was found to be reproducible on 3 different Linux Machines (2 Ubuntu and 1 ARCH-LINUX distributions).
+The exemplary output directory `tmp-Ferroptosis_and_Immune_System` was generated between 10.10.23 and 11.10.23 and has been used to generate the results illustrated in the ENQUIRE manuscript. The output was found to be reproducible on 3 different Linux Machines (2 Ubuntu and 1 ARCH-Linux distributions).
 The use of a containerized image (the SIF file) should guarantee the reproducibility irrespective of the host operating system. While several other tests on different operating systems show consistency in the network reconstruction steps, we cannot rule out the possibility that the network expansion step might diverge in some cases, irrespective of the internally coded, fixed seeds.
 
+</details>
+
+<details><summary>MULTI-USER SYSTEMS</summary> 
+As mentioned in the notes in the `installation` section and in the `explanation of the output` section, the Docker daemon runs as the root user by default, meaning that any user using ENQUIRE in a multi-user system will inevitably have access to root/admin level privileges. This impacts the security of your multi-user system. For more information on this, you can read:
+
+[Manage Docker as a non-root user](https://docs.docker.com/engine/install/Linux-postinstall/#manage-docker-as-a-non-root-user).
+
+To actually allow the Docker Daemon to run rootless to address these security concerns, please refer to:
+[Run the Docker daemon as a non-root user](https://docs.docker.com/engine/security/rootless/).
+
+As an alternative to Docker, you may also run images with [Podman](https://podman.io/), which also allows the setup of multiple users:
+[Basic Setup and Use of Podman in a Rootless environment](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md).
+
+If you decide to run ENQUIRE with a root-based Docker daemon, the files outputted by ENQUIRE will be under root/admin permissions. This might prevent you from accessing files you have produced when you exit ENQUIRE's terminal. In order to address this issue, we offer a quick fix. Find your username and group name identifier by running:
+```bash
+# For username, groupname in Linux and MacOS.
+id -u # username
+id -g # groupname
+```
+
+```bash
+# For Windows.
+whoami # username
+whoami /groups # groups the user is part of
+```
+
+Once you have retrieved your username and groupname identifiers, you may grant yourself permission
+
+```bash
+# To be executed inside ENQUIRE's terminal (which is run as root)
+chown -R username:groupname /mnt
+```
 </details>
 
 <details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
@@ -355,10 +407,10 @@ As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/s
 
 <details><summary>TESTED OPERATING SYSTEMS </summary>
 
- Below is a list of operating systems tested for installation and running of Singularity/Apptainer and ENQUIRE:
+ Below is a list of operating systems tested for installation and running of the dockerized version of ENQUIRE:
 
- - Linux 6.4.12-arch1-1 #1 SMP PREEMPT_DYNAMIC (x86_64 GNU/LINUX)
- - Linux 5.15.0-84-generic #93~20.04.1-Ubuntu SMP (x86_64 GNU/LINUX)
+ - Linux 6.4.12-arch1-1 #1 SMP PREEMPT_DYNAMIC (x86_64 GNU/Linux)
+ - Linux 5.15.0-84-generic #93~20.04.1-Ubuntu SMP (x86_64 GNU/Linux)
  - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS 
  
 </details>
