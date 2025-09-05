@@ -1,8 +1,27 @@
 ![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png)
 
-# ENQUIRE
+# ENQUIRE ![GitHub License](https://img.shields.io/github/license/Muszeb/ENQUIRE)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778)
+<table>
+<tr><th> References </th><th> Distribution </th></tr>
+<tr><td>
+
+| | |
+| --- | --- |
+| __Methods__ | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1371/journal.pcbi.1012745) | 
+| __Application__ | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1038/s41598-025-11944-5) |  
+| __Source Code__ | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778) | 
+| __Updates (Latest Release)__ | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |  
+
+</td><td>
+
+| | | |
+| --- | --- | --- |
+| ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5) | ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF) | ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF) | ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
+
+</td></tr> </table>
 
 The accelerating growth of scientific literature overwhelms our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, biases in biomedical research and database annotation limit our interpretation of facts and generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers a time- and resource-efficient alternative to manual literature curation and database mining. ENQUIRE reconstructs and expands co-occurrence networks of genes and biomedical ontologies from user-selected input corpora and network-inferred PubMed queries. The integration of text mining, automatic querying, and network-based statistics mitigating literature biases makes ENQUIRE unique in its broad-scope applications. For example, ENQUIRE can generate co-occurrence gene networks that reflect high-confidence, functional networks. When tested on case studies spanning cancer, cell differentiation and immunity, ENQUIRE identified interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation, and facilitating the identification of molecular targets for subsequent experimentation.
 
