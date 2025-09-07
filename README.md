@@ -57,6 +57,8 @@ chmod +x ENQUIRE.sif
 
 You can then place the `ENQUIRE` directory or `ENQUIRE.sif` wherever you wish to, and possibly add its location to your `PATH` variable for an easier calling.
 
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
 
 <details><summary>USAGE</summary> 
@@ -76,28 +78,16 @@ Where `<script_name>` is one of:
 - `context_aware_gene_sets.R`
 - `context_aware_pathway_enrichment.R`
 
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
 
 <details><summary>INPUT FILE</summary>
 
-A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per lines, such as:
-
- 
-    26250731
-    22835603   
-    31254155
-    32658557
-    30729513
-    31620854
-    30338457
-    33711241
-    28640701
-    24725689
-
-- The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
-![Exemplary PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
-    
-- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
+A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per line.
+The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
+![Example of a PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
+Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
 
 ```bash
 # assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
@@ -105,6 +95,8 @@ A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored
 ```
 where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
 **DISCLAIMER**: if the references are not annotated into the Pubmed's API, The script will silently return no match - this may go unnoticed when fetching references from multiple articles. As a rule of thumb, look for "References" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation status of an article.
+
+[Back to the beginning of the instruction manual](#instruction-manual)
 
 </details>
 
@@ -195,6 +187,9 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 # assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif ENQUIRE.sh -f ENQUIRE_config.txt
 ```
+
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
 
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
@@ -230,6 +225,8 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 	It is also possible to visually inspect Gene-MeSH networks and the reduced networks containing only cliques in two .html files, respectively stored within each iteration's subfolder as `tag...interactive_Gene-MeSH_Network.html` and `tag...interactive_Cliques_Network.html`.
 
 	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/html.png)
+
+[Back to the beginning of the instruction manual](#instruction-manual)
 
 </details>
 
@@ -340,6 +337,8 @@ Options:
 ```
 The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_pathway_enrichment.xlsx`, together with two PNG images showing the test statistics p-value distribution and the correlation between the Node score and degree. Please note that the script might take quite long to finish, and it benefits from a high performance computer, if available. 
 
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
 
 <details><summary> POSSIBLE SOURCES OF ERRORS </summary>
@@ -375,6 +374,8 @@ Two identical runs of ENQUIRE should produce identical co-occurrence networks an
 The exemplary output directory `tmp-Ferroptosis_and_Immune_System` was generated between 10.10.23 and 11.10.23 and has been used to generate the results illustrated in the ENQUIRE manuscript. The output was found to be reproducible on 3 different Linux Machines (2 Ubuntu and 1 ARCH-LINUX distributions).
 The use of a containerized image (the SIF file) should guarantee the reproducibility irrespective of the host operating system. While several other tests on different operating systems show consistency in the network reconstruction steps, we cannot rule out the possibility that the network expansion step might diverge in some cases, irrespective of the internally coded, fixed seeds.
 
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
 
 <details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
@@ -389,5 +390,7 @@ As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/s
  - Linux 6.4.12-arch1-1 #1 SMP PREEMPT_DYNAMIC (x86_64 GNU/LINUX)
  - Linux 5.15.0-84-generic #93~20.04.1-Ubuntu SMP (x86_64 GNU/LINUX)
  - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS 
- 
+
+[Back to the beginning of the instruction manual](#instruction-manual)
+
 </details>
