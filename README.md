@@ -7,7 +7,7 @@
 [//]: # "<tr><td>"
 
 | References | Link |
-| --- | --- |
+| :---: | :---: |
 | Methods | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1371/journal.pcbi.1012745) | 
 | Application | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1038/s41598-025-11944-5) |  
 | Source Code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778) | 
@@ -15,11 +15,10 @@
 | Media | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2F-Flash_Talk-white?style=plastic&logo=youtube&logoColor=red&logoSize=auto&label=%20&labelColor=white&color=white)](https://www.youtube.com/watch?v=APwoza1JZNY) for ISMB/ECCB 2025 in Liverpool, UK |
 | How to use | [Start here](#instruction-manual) |
 
-
 [//]: # "</td><td>"
 
-| Implementation (Link) | Requires | Containerizes |
-| --- | --- | --- |
+| Implementation (<span id="Link">Link</span>) | Requires | Containerizes |
+| :---: | :---: | :---: |
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5)](https://hub.docker.com/r/muszeb/enquire) | ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.29357207.v2) | ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.24434845.v10) | ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
@@ -37,7 +36,8 @@ The accelerating growth of scientific literature overwhelms our capacity to manu
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/).
+ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/). Please check the [implementation table](#Link) for the latest available images and requirements. The information details below refer to the original image size provided alongside ENQUIRE's original publication. 
+
 If you would rather use Docker instead of Singularity, please follow the dedicated README available [here](https://github.com/Muszeb/ENQUIRE/tree/ENQUIRE-Docker).
 If you want to use ENQUIRE with Apptainer/Singularity, please install the latter following the steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac). The file called `ENQUIRE.sif` (1.5 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
 
@@ -389,7 +389,9 @@ As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/s
 
  - Linux 6.4.12-arch1-1 #1 SMP PREEMPT_DYNAMIC (x86_64 GNU/LINUX)
  - Linux 5.15.0-84-generic #93~20.04.1-Ubuntu SMP (x86_64 GNU/LINUX)
- - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS 
+ - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS
+ - MacOS Catalina 15.7 (Docker implementation, mid-2012 MacBook Pro)
+ - Windows 10 (Docker implementation) 
 
 [Back to the beginning of the instruction manual](#instruction-manual)
 
