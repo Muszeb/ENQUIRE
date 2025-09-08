@@ -249,7 +249,30 @@ Options:
 		Path to an ENQUIRE-generated, Gene/MeSH node table file (required)
 
 	-t TAG, --tag=TAG
-		tag prefix (default to 'ENQUIRE')
+		tag prefix for all output files (default to 'ENQUIRE')
+
+	-o MODALITY, --modality=MODALITY
+		node embedding modality used for clustering.
+		Default is node2vec+ (Liu et al. 2023), using `ztPois.cdf` as weights, as implemented in https://github.com/krishnanlab/PecanPy.
+		Type 'invlogweight' to reproduce the method described in ENQUIRE's original publication (Musella et al. 2025).
+
+	--num-walks=NUMWALKS
+		node2vec parameter. Number of walks per source. (default: 150)
+
+	--walk-length=WALKLENGTH
+		node2vec parameter. Length of walk per source. (default: 150)
+
+	--n2vp=N2VP
+		node2vec parameter. Return hyperparameter. (default: 1)
+
+	--n2vq=N2VQ
+		node2vec parameter. Inout hyperparameter. (default: 2)
+
+	--window-size=WINDOWSIZE
+		node2vec parameter. Context size for optimization. (default: 10)
+
+	--dimensions=DIMENSIONS
+		node2vec parameter. Number of dimensions. (default: 32)
 
 	-d PARAMETER, --membdeg=PARAMETER
 		minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]
