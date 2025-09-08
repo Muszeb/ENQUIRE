@@ -13,7 +13,7 @@
 | Source Code | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Figshare_logo.svg/2560px-Figshare_logo.svg.png" width="100"/>](https://doi.org/10.1371/journal.pcbi.1012745.s001) | 
 | Updates (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
 | Media | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2F-Flash_Talk-white?style=plastic&logo=youtube&logoColor=red&logoSize=auto&label=%20&labelColor=white&color=white)](https://www.youtube.com/watch?v=APwoza1JZNY) for ISMB/ECCB 2025 in Liverpool, UK |
-| How to use | [Start here](#instruction-manual) |
+| How to use | [Start here for Docker Implementation](#instruction-manual-docker-version) |
 
 [//]: # "</td><td>"
 
@@ -22,6 +22,8 @@
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5)](https://hub.docker.com/r/muszeb/enquire) | ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.29357207.v2) | ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
 | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.24434845.v10) | ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
+
+## INSTRUCTION MANUAL (DOCKER VERSION)
 
 <details><summary>INSTALLATION</summary> 
 
@@ -85,6 +87,8 @@ docker ps -all
 
 You are then ready to use ENQUIRE.
 
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary>USAGE</summary> 
@@ -133,6 +137,8 @@ run.sh efetch_references.py tag ref1 ref2 ref3 ...
 ```
 where `tag` is the name of the plain text output file, while `ref1 ref2 ref3 ...` are the PMIDs of the papers you want to extract the references from. The output will look like the example from the previous section and is therefore ready to be used as ENQUIRE input. 
 **DISCLAIMER**: if the references are not annotated into the Pubmed's API, The script will silently return no match - this may go unnoticed when fetching references from multiple articles. As a rule of thumb, look for "References" in the "page navigation" menu on the Pubmed page of the article of interest to tell the web-annotation status of an article.
+
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
 
 </details>
 
@@ -222,6 +228,8 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 # assuming you are working from within ENQUIRE's Docker container.
 run.sh ENQUIRE.sh -f ENQUIRE_config.txt
 ```
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary>EXPLANATION OF THE OUTPUT DATA STRUCTURE</summary>
@@ -259,6 +267,8 @@ run.sh ENQUIRE.sh -f ENQUIRE_config.txt
 	It is also possible to visually inspect Gene-MeSH networks and the reduced networks containing only cliques in two .html files, respectively stored within each iteration's subfolder as `tag...interactive_Gene-MeSH_Network.html` and `tag...interactive_Cliques_Network.html`.
 
 	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/html.png)
+
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
 
 </details>
 
@@ -346,6 +356,8 @@ run.sh context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/F
 ```
 Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
 
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary> POSSIBLE SOURCES OF ERRORS </summary>
@@ -371,13 +383,17 @@ export NCBI_API_KEY=your_api_key_here
 ```
 This will ensure your API KEY is passed as an environmental variable to all ENQUIRE runs within the same terminal session. 
 
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary> REPRODUCIBILITY </summary>
 
 Two identical runs of ENQUIRE should produce identical co-occurrence networks and query formulations, as long as NCBI made no updates on the MeSH indexing of PubMed articles involved during the time that separates the two runs. In that case, the later run should produce queries that are supersets of the earlier one.
 The exemplary output directory `tmp-Ferroptosis_and_Immune_System` was generated between 10.10.23 and 11.10.23 and has been used to generate the results illustrated in the ENQUIRE manuscript. The output was found to be reproducible on 3 different Linux Machines (2 Ubuntu and 1 ARCH-Linux distributions).
-The use of a containerized image (the SIF file) should guarantee the reproducibility irrespective of the host operating system. While several other tests on different operating systems show consistency in the network reconstruction steps, we cannot rule out the possibility that the network expansion step might diverge in some cases, irrespective of the internally coded, fixed seeds.
+The use of a containerized image should guarantee the reproducibility irrespective of the host operating system. While several other tests on different operating systems show consistency in the network reconstruction steps, we cannot rule out the possibility that the network expansion step might diverge in some cases, irrespective of the internally coded, fixed seeds.
+
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
 
 </details>
 
@@ -411,11 +427,16 @@ Once you have retrieved your username and groupname identifiers, you may grant y
 # To be executed inside ENQUIRE's terminal (which is run as root)
 chown -R username:groupname /mnt
 ```
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary>IMPORTANT INFORMATION ON PUBMED ACCESSIBILITY</summary>
 	
 As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/so22_updated_pubmed_e_utilities.html) have been applied to NCBI's e-utilities. In particular, it is now impossible to stream all records exceeding 10,000 PMIDs from any particular query to the PubMed database. This required to redesign the use of the e-utilities. While it's overall functionality was still preserved, we cannot guarantee the retrieval of all matching records, if the network-based queries obtained by intersecting relevant entities match more than 10,000 records (typically, this is a rare event when intersecting at least 4 distinct entities).
+
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary>TESTED OPERATING SYSTEMS </summary>
@@ -424,6 +445,10 @@ As of 21.11.22, [important changes](https://www.nlm.nih.gov/pubs/techbull/so22/s
 
  - Linux 6.4.12-arch1-1 #1 SMP PREEMPT_DYNAMIC (x86_64 GNU/Linux)
  - Linux 5.15.0-84-generic #93~20.04.1-Ubuntu SMP (x86_64 GNU/Linux)
- - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS 
+ - Virtual Machine created using Oracle Virtual Box and running Ubuntu 20 LTS
+ - MacOS Catalina 15.7 (Docker implementation, mid-2012 MacBook Pro)
+ - Windows 10 (Docker implementation) 
+
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
  
 </details>
