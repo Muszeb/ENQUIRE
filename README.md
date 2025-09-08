@@ -1,14 +1,27 @@
 ![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png)
 
-# ENQUIRE
+# ENQUIRE [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778) ![GitHub License](https://img.shields.io/github/license/Muszeb/ENQUIRE)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778)
+[//]: # "<table>"
+[//]: # "<tr><th> References </th><th> Distribution </th></tr>"
+[//]: # "<tr><td>"
 
-The accelerating growth in scientific literature is overwhelming our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, confirmation biases in search engines and databases influence the interpretation of facts and the generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers an alternative to manual literature curation and database mining to study complex biomedical phenomena. ENQUIRE generates a co-occurrence network of genes and biomedical ontologies (MeSH) using a corpus of publications as input. The algorithm iteratively reconstructs and expands the network by generating PubMed queries from significant interrelations, until it obtains an interconnected network of genes and MeSH relevant to the input corpus. We systematically evaluated ENQUIRE’s versatility and found that it generates co-occurrence networks similar to those based on co-expression data and manually annotated databases with a fraction of the time and human resources. Using case studies spanning cancer, cell differentiation and immunity, ENQUIRE proved to identify interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation and facilitating the identification of molecular targets for subsequent experimentation.
+| References | Link |
+| :---: | :---: |
+| Methods | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1371/journal.pcbi.1012745) | 
+| Application | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1038/s41598-025-11944-5) |  
+| Source Code | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Figshare_logo.svg/2560px-Figshare_logo.svg.png" width="100"/>](https://doi.org/10.1371/journal.pcbi.1012745.s001) | 
+| Updates (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
+| Media | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2F-Flash_Talk-white?style=plastic&logo=youtube&logoColor=red&logoSize=auto&label=%20&labelColor=white&color=white)](https://www.youtube.com/watch?v=APwoza1JZNY) for ISMB/ECCB 2025 in Liverpool, UK |
+| How to use | [Start here](#instruction-manual) |
 
-![](https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png)
+[//]: # "</td><td>"
 
-- If you find ENQUIRE useful to pursue your research, [please cite us](https://doi.org/10.1371/journal.pcbi.1012745).
+| Implementation (<span id="Link">Link</span>) | Requires | Containerizes |
+| :---: | :---: | :---: |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5)](https://hub.docker.com/r/muszeb/enquire) | ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.29357207.v2) | ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.24434845.v10) | ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
 
 <details><summary>INSTALLATION</summary> 
 
