@@ -1,4 +1,8 @@
-![](https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png)
+<p align="center">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="800"/>
+</p>
+
+---
 
 # ENQUIRE [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778) ![GitHub License](https://img.shields.io/github/license/Muszeb/ENQUIRE)
 
