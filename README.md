@@ -42,19 +42,19 @@ The accelerating growth of scientific literature overwhelms our capacity to manu
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently be run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/). Please check the [implementation table](#Link) for the latest available images and requirements. The information details below refer to the original image size provided alongside ENQUIRE's original publication. 
+ENQUIRE can currently run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/). Please check the [implementation table](#Link) for the latest available images and requirements. The information details below refer to the original image size provided alongside ENQUIRE's original publication. 
 
 If you would rather use Docker instead of Singularity, please follow the dedicated README available [here](https://github.com/Muszeb/ENQUIRE/tree/ENQUIRE-Docker).
-If you want to use ENQUIRE with Apptainer/Singularity, please install the latter following the steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac). The file called `ENQUIRE.sif` (1.5 GB in size) is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no extra installation steps are needed. We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
+If you want to use ENQUIRE with Apptainer/Singularity, please install the latter following the steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac). The file called `ENQUIRE.sif` is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no further installation steps are needed. The original and latest SIF files are available on Figshare - see [implementation table](#Link). We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
 
-Next, clone the repository:
+To follow the next steps in the tutorial, clone the repository:
 
 ```bash
 git clone https://github.com/Muszeb/ENQUIRE.git
 cd ENQUIRE
 ```
 
-then, download the SIF image file `ENQUIRE.sif` from [FigShare](https://figshare.com/articles/software/ENQUIRE/24434845) and place it in the repository, check that the file is intact with `md5sum`, and make it executable
+then, download the SIF image file `ENQUIRE.sif` from [FigShare](#Link) and place it in the repository. We provided checksum files (`md5sum_ENQUIRE_sif.txt` and `md5sum_original_ENQUIRE_sif.txt`) to ensure the download completed successfully. Remember to also make the SIF file executable.
 
 ```
 md5sum -c md5sum_ENQUIRE_sif.txt
@@ -90,7 +90,7 @@ Where `<script_name>` is one of:
 
 <details><summary>INPUT FILE</summary>
 
-A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per line.
+A valid input file should consist of **a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per line**.
 The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
 ![Example of a PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
 Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
@@ -365,6 +365,73 @@ Options:
 ./ENQUIRE.sif context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
 ```
 The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_pathway_enrichment.xlsx`, together with two PNG images showing the test statistics p-value distribution and the correlation between the Node score and degree. Please note that the script might take quite long to finish, and it benefits from a high performance computer, if available. 
+
+[Back to the beginning of the instruction manual](#instruction-manual)
+
+</details>
+
+<details><summary> <b>UPDATE</b>: TRANSFORM ENQUIRE NETWORK INTO GRAPH DATABASES OF GENE, MESH, AND PMID VIA NEO4J (September 2025) </summary> 
+
+The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh` 
+
+- selects or creates a JOBDIR directory path under which the graph database will outputed;
+- converts ENQUIRE's *Complete* edge and node files into Neo4j-friendly CSV files;
+- uses `neo4j-admin` to establish a graph database and test its functionality;
+- runs `neo4j console` to establish a (remote) connection via http://localhost:7474/. 
+
+Unfortunately, **`ENQUIRE2KG` does not work with ENQUIRE output generated using the original image!**.
+
+```
+############# TURN ENQUIRE NETWORKS INTO KNOWLEDGE GRAPHS USING NEO4J - UTILITY SCRIPT ##############
+Path to code: /path/to/ENQUIRE2KG.sh
+
+####################################################################################
+
+Expanding Networks by Querying Unexpectedly Inter-Related Entities
+
+####################################################################################
+
+####################################################################################
+
+Usage: ENQUIRE2KG.sh [script_arguments]
+
+Legend:	[-flag_short|--flag_long|config file variable, if available]:
+
+[-i|--image|image] = the path to the singularity image file (.sif). Defaults to 'ENQUIRE.sif'.
+
+[-p|--path|wd] = the path to the working directory (wd), where the output directory will be written in.
+	It must be the ENQUIRE main folder, with ./code and ./input as subfolders.
+	The default is the current working directory.
+
+[-t|--tag|tag] = A tag definining the task.
+	It must be an alphanumeric string (underline_spaced_words are accepted).
+
+[-d|--inputdir|input] = path to the input data folder. It must point to an ENQUIRE-generated directory containing co-occurrence network data
+	(e.g https://github.com/Muszeb/ENQUIRE/tree/main/tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System).
+
+[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
+	This option overwrites any parameter set by a different option.
+
+[-h|--help] = print this help message.
+
+You might be seeing this Help because of an input error.
+
+####################################################################################
+```
+
+Here is how you can test this with the example output data `tmp-Ferroptosis_and_Immune_System` available in the GitHub repository. 
+
+```bash
+# assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
+```
+
+Eventually, it should print the following: 
+
+```
+[...previously printed messages and log data...]
+[...here neo4j console is executed...]
+
+```
 
 [Back to the beginning of the instruction manual](#instruction-manual)
 
