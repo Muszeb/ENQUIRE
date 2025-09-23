@@ -423,6 +423,7 @@ Here is how you can test this with the example output data `tmp-Ferroptosis_and_
 
 ```bash
 # assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
+./ENQUIRE2KG.sh -i ENQUIRE.sif -t ICI_and_AID -d tmp-ICI_and_AID/ICI_and_AID/
 ```
 
 Eventually, it should print the following: 
@@ -430,7 +431,19 @@ Eventually, it should print the following:
 ```
 [...previously printed messages and log data...]
 [...here neo4j console is executed...]
-
+Starting Neo4j.
+2025-09-23 16:15:59.033+0000 INFO  Logging config in use: File '/etc/neo4j/user-logs.xml'
+2025-09-23 16:15:59.048+0000 INFO  Starting...
+2025-09-23 16:15:59.650+0000 INFO  This instance is ServerId{68729ca1} (68729ca1-634f-409d-83b9-0a41c2ce8fc2)
+2025-09-23 16:16:00.448+0000 INFO  ======== Neo4j 2025.04.0 ========
+2025-09-23 16:16:01.398+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-09-23 16:16:01.517+0000 INFO  Bolt enabled on ------0-01vpnedf0-0002d-admin-nocnocnoc-us-uforms.gbc.criteo.com:7687.
+2025-09-23 16:16:01.989+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-09-23 16:16:01.990+0000 INFO  Remote interface available at http://localhost:7474/
+2025-09-23 16:16:01.991+0000 INFO  id: D5F5F166C7623343039979E7682345DA2E4F9E9D41BB6A402A579BAB34544889
+2025-09-23 16:16:01.991+0000 INFO  name: system
+2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
+2025-09-23 16:16:01.992+0000 INFO  Started.
 ```
 
 [Back to the beginning of the instruction manual](#instruction-manual)
