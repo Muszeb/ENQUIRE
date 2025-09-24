@@ -508,7 +508,7 @@ RETURN g,p
 Yielding:
 
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="700"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="500"/>
 </p>
 
 
