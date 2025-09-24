@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="800"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="750"/>
 </p>
 
 ---
@@ -33,7 +33,7 @@
 The accelerating growth of scientific literature overwhelms our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, biases in biomedical research and database annotation limit our interpretation of facts and generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers a time- and resource-efficient alternative to manual literature curation and database mining. ENQUIRE reconstructs and expands co-occurrence networks of genes and biomedical ontologies from user-selected input corpora and network-inferred PubMed queries. The integration of text mining, automatic querying, and network-based statistics mitigating literature biases makes ENQUIRE unique in its broad-scope applications. For example, ENQUIRE can generate co-occurrence gene networks that reflect high-confidence, functional networks. When tested on case studies spanning cancer, cell differentiation and immunity, ENQUIRE identified interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation, and facilitating the identification of molecular targets for subsequent experimentation.
 
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png" alt="drawing" width="800"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png" alt="drawing" width="700"/>
 </p>
 
 - If you find ENQUIRE useful to pursue your research, [please cite us](https://www.biorxiv.org/content/10.1101/2023.09.10.556351v1)
@@ -374,7 +374,7 @@ The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context
 
 The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh` 
 
-- selects or creates a JOBDIR directory path under which the graph database will outputed;
+- creates (if not previously existing) a `enquire2kg-tag` directory and mounts it under a containerized path in which the graph database will outputed;
 - converts ENQUIRE's *Complete* edge and node files into Neo4j-friendly CSV files;
 - uses `neo4j-admin` to establish a graph database and test its functionality;
 - runs `neo4j console` to establish a (remote) connection via http://localhost:7474/. 
@@ -445,6 +445,9 @@ Starting Neo4j.
 2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
 2025-09-23 16:16:01.992+0000 INFO  Started.
 ```
+
+This means the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database. 
+
 
 [Back to the beginning of the instruction manual](#instruction-manual)
 
