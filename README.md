@@ -424,8 +424,8 @@ You might be seeing this Help because of an input error.
 Here is how you can test this with the example output data `tmp-Ferroptosis_and_Immune_System` available in the GitHub repository. 
 
 ```bash
-# assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
-./ENQUIRE2KG.sh -i ENQUIRE.sif -t ICI_and_AID -d tmp-ICI_and_AID/ICI_and_AID/
+# assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE`, and `ENQUIRE.sif` is in your working directory
+./ENQUIRE2KG.sh -i ENQUIRE.sif -t Ferroptosis_and_Immune_System -d tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_subgraphs_expansion2/  
 ```
 
 Eventually, it should print the following: 
@@ -508,7 +508,7 @@ RETURN g,p
 Yielding:
 
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="500"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="600"/>
 </p>
 
 
