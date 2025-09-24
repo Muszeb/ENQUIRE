@@ -372,6 +372,8 @@ The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context
 
 <details><summary> <b>UPDATE</b>: TRANSFORM ENQUIRE NETWORK INTO GRAPH DATABASES OF GENE, MESH, AND PMID VIA NEO4J (September 2025) </summary> 
 
+### Usage
+
 The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh` 
 
 - creates (if not previously existing) a `enquire2kg-tag` directory and mounts it under a containerized path in which the graph database will outputed;
@@ -445,8 +447,69 @@ Starting Neo4j.
 2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
 2025-09-23 16:16:01.992+0000 INFO  Started.
 ```
+As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database . 
 
-This means the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database. 
+You can also use Neo4j Desktop - here's how: 
+1) Initialize a "New Project", then add a "Remote connection";
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_1.png" alt="drawing" width="350"/>
+</p>
+2) Keep everything as default and hit "Next";
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_2.png" alt="drawing" width="350"/>
+</p>
+3) Set a username and password;
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_3.png" alt="drawing" width="350"/>
+</p>
+4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access Neo4j Browser
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_4.png" alt="drawing" width="350"/>
+</p>
+
+### Examples
+
+#### A 
+
+Suppose you want to know which entities are related to the concept of *neoplasms*. As a proxy, we can write a query that matches MeSH term containing the word "neoplasm" and return genes (orange), MeSH (turquoise), and Literature (red) nodes like so: 
+
+```cypher
+MATCH (m:MeSH)-[:HAS_SOURCE]-(l:Literature)-[:HAS_SOURCE]-(g:Gene)
+WHERE m.ENTITY =~ '.*neoplasm.*'
+RETURN m,l,g
+```
+
+Yielding:
+
+<p align="center">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example1.png" alt="drawing" width="800"/>
+</p>
+
+#### B 
+
+Suppose you have conducted a differential expression analysis and obtained a list of differentially expressed genes (DEGs). Researchers often want to compare their DEG list with findings from previously published studies to contextualize their results. However, traditional literature searches that explicitly include specific DEGs as search terms are susceptible to cherry-picking bias, where curators may unconsciously select papers that confirm their expectations.
+With ENQUIRE, you can first query for all papers relevant to your experimental topic without specifying individual genes, then leverage statistical significance testing to identify co-occurring entities, and finally examine the literature support and co-occurrence patterns of your DEGs. This workflow minimizes selection bias while maintaining analytical rigor. We employed such validation strategy in [this publication](https://doi.org/10.1038/s41598-025-11944-5). Here's how to construct such a query, using genes contained in the example ENQUIRE network provided in this repository (we also demonstrate additional filtering options such as `Year` of publication)
+
+```cypher
+MATCH (g1:Gene)-[:CO_OCCURS]-(g:Gene)-[:HAS_SOURCE]-(p:Literature)
+WHERE any(x IN g.ENTITY WHERE x IN [
+'CD36',
+'FAM126A',
+'ROS1',
+'SLC7A11',
+'GPX4',
+'IFNA1',
+'ACSL3', \\ will not appear in the output network
+'ACSL4', 
+]) AND p.Year > 2023
+RETURN g,p
+```
+
+Yielding:
+
+<p align="center">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="700"/>
+</p>
 
 
 [Back to the beginning of the instruction manual](#instruction-manual)
