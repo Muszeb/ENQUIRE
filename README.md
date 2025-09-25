@@ -424,7 +424,7 @@ docker run -it  -p 7687:7687 -p 7474:7474 -v $(pwd):/mnt/ muszeb/enquire:latest
 Help section of ENQUIRE2KG:
 
 ```
-############# TURN ENQUIRE NETWORKS INTO KNOWLEDGE GRAPHS USING NEO4J - UTILITY SCRIPT ##############
+############# TURN ENQUIRE NETWORKS INTO KNOWLEDGE GRAPHS USING NEO4J - DOCKER VERSION ##############
 Path to code: /path/to/ENQUIRE2KG.sh
 
 ####################################################################################
@@ -438,8 +438,6 @@ Expanding Networks by Querying Unexpectedly Inter-Related Entities
 Usage: run.sh ENQUIRE2KG.sh [script_arguments]
 
 Legend:	[-flag_short|--flag_long|config file variable, if available]:
-
-[-i|--image|image] = the path to the singularity image file (.sif). Defaults to 'ENQUIRE.sif'.
 
 [-p|--path|wd] = the path to the working directory (wd), where the output directory will be written in.
 	It must be the ENQUIRE main folder, with ./code and ./input as subfolders.
