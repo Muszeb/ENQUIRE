@@ -4,7 +4,7 @@
 
 ---
 
-# ENQUIRE [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12734778.svg)](https://doi.org/10.5281/zenodo.12734778) ![GitHub License](https://img.shields.io/github/license/Muszeb/ENQUIRE)
+# ENQUIRE [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17203206.svg)](https://doi.org/10.5281/zenodo.17203206) ![GitHub License](https://img.shields.io/github/license/Muszeb/ENQUIRE)
 
 [//]: # "<table>"
 [//]: # "<tr><th> References </th><th> Distribution </th></tr>"
