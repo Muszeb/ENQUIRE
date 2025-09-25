@@ -503,7 +503,7 @@ WHERE any(x IN g.ENTITY WHERE x IN [
 'SLC7A11',
 'GPX4',
 'IFNA1',
-'ACSL3', \\ will not appear in the output network
+'ACSL3', // will not appear in the output network
 'ACSL4', 
 ]) AND p.Year > 2023
 RETURN g,p
