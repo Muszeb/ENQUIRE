@@ -375,7 +375,7 @@ The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context
 
 ### Usage
 
-The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh` 
+The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with  Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh` 
 
 - creates (if not previously existing) a `enquire2kg-tag` directory and mounts it under a containerized path in which the graph database will outputed;
 - converts ENQUIRE's *Complete* edge and node files into Neo4j-friendly CSV files;
@@ -448,9 +448,9 @@ Starting Neo4j.
 2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
 2025-09-23 16:16:01.992+0000 INFO  Started.
 ```
-As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database . 
+As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to [Neo4j Browser](https://neo4j.com/docs/browser/visual-tour/), allowing for inspection and querying of the ENQUIRE-derived graph database . 
 
-You can also use Neo4j Desktop - here's how: 
+You can also use [Neo4j Desktop](https://neo4j.com/docs/desktop/current/) - here's how: 
 1) Initialize a "New Project", then add a "Remote connection";
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_1.png" alt="drawing" width="350"/>
@@ -466,7 +466,7 @@ You can also use Neo4j Desktop - here's how:
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_3.png" alt="drawing" width="350"/>
 </p>
 
-4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access Neo4j Browser.
+4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access [Neo4j Browser](https://neo4j.com/docs/browser/visual-tour/).
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_4.png" alt="drawing" width="350"/>
 </p>
