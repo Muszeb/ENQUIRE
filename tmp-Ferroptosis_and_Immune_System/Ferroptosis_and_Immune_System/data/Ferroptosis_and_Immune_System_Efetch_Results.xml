@@ -1293,7 +1293,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34991659</PMID>
       <DateCompleted>
         <Year>2022</Year>
@@ -1617,7 +1617,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34985903</PMID>
       <DateCompleted>
         <Year>2022</Year>
@@ -2601,7 +2601,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34717678</PMID>
       <DateCompleted>
         <Year>2022</Year>
@@ -3360,7 +3360,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34593794</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -3963,7 +3963,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34396451</PMID>
       <DateCompleted>
         <Year>2022</Year>
@@ -4437,7 +4437,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34093872</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -5174,7 +5174,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">34062295</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -5182,9 +5182,9 @@
         <Day>25</Day>
       </DateCompleted>
       <DateRevised>
-        <Year>2021</Year>
-        <Month>12</Month>
-        <Day>04</Day>
+        <Year>2025</Year>
+        <Month>01</Month>
+        <Day>03</Day>
       </DateRevised>
       <Article PubModel="Print-Electronic">
         <Journal>
@@ -5339,7 +5339,7 @@
         </Chemical>
         <Chemical>
           <RegistryNumber>0</RegistryNumber>
-          <NameOfSubstance UI="C409881">metal transporting protein 1</NameOfSubstance>
+          <NameOfSubstance UI="D000098742">Ferroportin</NameOfSubstance>
         </Chemical>
         <Chemical>
           <RegistryNumber>362O9ITL9D</RegistryNumber>
@@ -5408,6 +5408,9 @@
           <DescriptorName UI="D013602" MajorTopicYN="N">T-Lymphocytes, Cytotoxic</DescriptorName>
           <QualifierName UI="Q000276" MajorTopicYN="N">immunology</QualifierName>
         </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D000098742" MajorTopicYN="N">Ferroportin</DescriptorName>
+        </MeshHeading>
       </MeshHeadingList>
       <KeywordList Owner="NOTNLM">
         <Keyword MajorTopicYN="N">Acetaminophen</Keyword>
@@ -5466,7 +5469,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33926261</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -5969,7 +5972,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33691090</PMID>
       <DateCompleted>
         <Year>2022</Year>
@@ -6162,7 +6165,7 @@
       <CitationSubset>IM</CitationSubset>
       <CommentsCorrectionsList>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Cell Metab. 2021 Aug 3;33(8):1509-1511. doi: 10.1016/j.cmet.2021.07.004</RefSource>
+          <RefSource>Cell Metab. 2021 Aug 3;33(8):1509-1511. doi: 10.1016/j.cmet.2021.07.004.</RefSource>
           <PMID Version="1">34348095</PMID>
         </CommentsCorrections>
       </CommentsCorrectionsList>
@@ -6598,7 +6601,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33547170</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -6886,7 +6889,7 @@
         </ArticleDate>
       </Article>
       <MedlineJournalInfo>
-        <Country>United States</Country>
+        <Country>England</Country>
         <MedlineTA>J Immunol</MedlineTA>
         <NlmUniqueID>2985117R</NlmUniqueID>
         <ISSNLinking>0022-1767</ISSNLinking>
@@ -7499,7 +7502,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33311482</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -7507,9 +7510,9 @@
         <Day>04</Day>
       </DateCompleted>
       <DateRevised>
-        <Year>2022</Year>
-        <Month>02</Month>
-        <Day>26</Day>
+        <Year>2024</Year>
+        <Month>10</Month>
+        <Day>06</Day>
       </DateRevised>
       <Article PubModel="Electronic">
         <Journal>
@@ -8054,6 +8057,10 @@
         </Reference>
         <Reference>
           <Citation>Chen, X., Li, J., Kang, R., Klionsky, D. J. &amp; Tang, D. Ferroptosis: machinery and regulation. Autophagy10.1080/15548627.2020.1810918, 1&#x2013;28 (2020).</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC8496712</ArticleId>
+            <ArticleId IdType="pubmed">32804006</ArticleId>
+          </ArticleIdList>
         </Reference>
         <Reference>
           <Citation>Panieri E, Santoro MM. ROS homeostasis and metabolism: a dangerous liason in cancer cells. Cell Death Dis. 2016;7:e2253. doi: 10.1038/cddis.2016.105.</Citation>
@@ -8274,7 +8281,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33277233</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -9025,7 +9032,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">33236624</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -9391,7 +9398,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">32814895</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -9628,15 +9635,15 @@
       <CitationSubset>IM</CitationSubset>
       <CommentsCorrectionsList>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Nature. 2020 Sep;585(7823):36-37. doi: 10.1038/d41586-020-02383-5</RefSource>
+          <RefSource>Nature. 2020 Sep;585(7823):36-37. doi: 10.1038/d41586-020-02383-5.</RefSource>
           <PMID Version="1">32814912</PMID>
         </CommentsCorrections>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Cancer Cell. 2020 Oct 12;38(4):446-448. doi: 10.1016/j.ccell.2020.08.011</RefSource>
+          <RefSource>Cancer Cell. 2020 Oct 12;38(4):446-448. doi: 10.1016/j.ccell.2020.08.011.</RefSource>
           <PMID Version="1">32916127</PMID>
         </CommentsCorrections>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Signal Transduct Target Ther. 2020 Nov 4;5(1):261. doi: 10.1038/s41392-020-00368-4</RefSource>
+          <RefSource>Signal Transduct Target Ther. 2020 Nov 4;5(1):261. doi: 10.1038/s41392-020-00368-4.</RefSource>
           <PMID Version="1">33149129</PMID>
         </CommentsCorrections>
       </CommentsCorrectionsList>
@@ -10074,7 +10081,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">32778843</PMID>
       <DateCompleted>
         <Year>2021</Year>
@@ -10824,7 +10831,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">32686685</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -11344,7 +11351,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">32134361</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -11352,9 +11359,9 @@
         <Day>14</Day>
       </DateCompleted>
       <DateRevised>
-        <Year>2021</Year>
-        <Month>05</Month>
-        <Day>02</Day>
+        <Year>2024</Year>
+        <Month>07</Month>
+        <Day>23</Day>
       </DateRevised>
       <Article PubModel="Print-Electronic">
         <Journal>
@@ -11508,6 +11515,12 @@
             <GrantID>P30 CA047904</GrantID>
             <Acronym>CA</Acronym>
             <Agency>NCI NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>U01 AI172885</GrantID>
+            <Acronym>AI</Acronym>
+            <Agency>NIAID NIH HHS</Agency>
             <Country>United States</Country>
           </Grant>
           <Grant>
@@ -11881,7 +11894,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">31980600</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -12150,7 +12163,7 @@
       <CitationSubset>IM</CitationSubset>
       <CommentsCorrectionsList>
         <CommentsCorrections RefType="ErratumIn">
-          <RefSource>Nat Commun. 2020 Mar 19;11(1):1541. doi: 10.1038/s41467-020-15366-x</RefSource>
+          <RefSource>Nat Commun. 2020 Mar 19;11(1):1541. doi: 10.1038/s41467-020-15366-x.</RefSource>
           <PMID Version="1">32193389</PMID>
         </CommentsCorrections>
       </CommentsCorrectionsList>
@@ -12739,7 +12752,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">31775041</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -12922,7 +12935,7 @@
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">31554642</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -13817,7 +13830,7 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">31509699</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -14090,7 +14103,7 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">31043744</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -14620,15 +14633,15 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
       <CitationSubset>IM</CitationSubset>
       <CommentsCorrectionsList>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Cancer Discov. 2019 Jul;9(7):OF2. doi: 10.1158/2159-8290.CD-NB2019-058</RefSource>
+          <RefSource>Cancer Discov. 2019 Jul;9(7):OF2. doi: 10.1158/2159-8290.CD-NB2019-058.</RefSource>
           <PMID Version="1">31113802</PMID>
         </CommentsCorrections>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Cell Res. 2019 Sep;29(9):692-693. doi: 10.1038/s41422-019-0186-z</RefSource>
+          <RefSource>Cell Res. 2019 Sep;29(9):692-693. doi: 10.1038/s41422-019-0186-z.</RefSource>
           <PMID Version="1">31160718</PMID>
         </CommentsCorrections>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>Cell Metab. 2019 Jul 2;30(1):14-15. doi: 10.1016/j.cmet.2019.06.012</RefSource>
+          <RefSource>Cell Metab. 2019 Jul 2;30(1):14-15. doi: 10.1016/j.cmet.2019.06.012.</RefSource>
           <PMID Version="1">31269423</PMID>
         </CommentsCorrections>
       </CommentsCorrectionsList>
@@ -14953,7 +14966,7 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">30830879</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -15819,7 +15832,7 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
     </PubmedData>
   </PubmedArticle>
   <PubmedArticle>
-    <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual">
       <PMID Version="1">30787033</PMID>
       <DateCompleted>
         <Year>2020</Year>
@@ -15996,7 +16009,7 @@ Ionizing radiation acts on cellular membranes to generate ceramide and initiate 
       <CitationSubset>IM</CitationSubset>
       <CommentsCorrectionsList>
         <CommentsCorrections RefType="CommentIn">
-          <RefSource>J Exp Med. 2019 Mar 4;216(3):471-473. doi: 10.1084/jem.20190038</RefSource>
+          <RefSource>J Exp Med. 2019 Mar 4;216(3):471-473. doi: 10.1084/jem.20190038.</RefSource>
           <PMID Version="1">30787032</PMID>
         </CommentsCorrections>
       </CommentsCorrectionsList>

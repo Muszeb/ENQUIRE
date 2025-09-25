@@ -34,6 +34,7 @@ amino acid transport system y+/metabolism	MESH	0.074074074074074	2
 cell line	MESH	0.037037037037037	1
 collagen type i/metabolism	MESH	0.037037037037037	1
 FN1	GENE	0.037037037037037	1
+FUT1	GENE	0.037037037037037	1
 hepatic stellate cells/drug effects	MESH	0.037037037037037	1
 hepatocytes/drug effects	MESH	0.037037037037037	1
 HIF1A	GENE	0.037037037037037	1
@@ -43,6 +44,7 @@ MMRN1	GENE	0.037037037037037	1
 sorafenib/pharmacology	MESH	0.037037037037037	1
 adaptor proteins vesicular transport/genetics	MESH	0.037037037037037	1
 cyclohexylamines/pharmacology	MESH	0.074074074074074	2
+IFNA1	GENE	0.037037037037037	1
 inflammation/drug therapy	MESH	0.037037037037037	1
 myocardial reperfusion injury/drug therapy	MESH	0.037037037037037	1
 myocardium/immunology	MESH	0.037037037037037	1
@@ -55,11 +57,13 @@ toll-like receptor 4/genetics	MESH	0.037037037037037	1
 TRIM69	GENE	0.037037037037037	1
 ventricular function left/drug effects	MESH	0.037037037037037	1
 adjuvants immunologic/chemistry	MESH	0.037037037037037	1
+CHRM1	GENE	0.074074074074074	2
 dextrans/chemistry	MESH	0.037037037037037	1
 ferric compounds/chemistry	MESH	0.1111111111111111	3
 gels/chemistry	MESH	0.037037037037037	1
 gold/chemistry	MESH	0.037037037037037	1
 macrophages/cytology	MESH	0.074074074074074	2
+MRLN	GENE	0.074074074074074	2
 urinary bladder neoplasms/pathology	MESH	0.037037037037037	1
 amino acid transport system y+/genetics	MESH	0.037037037037037	1
 antineoplastic agents immunological/administration &amp; dosage	MESH	0.037037037037037	1
@@ -105,7 +109,6 @@ cd36 antigens/antagonists &amp; inhibitors	MESH	0.037037037037037	1
 cytokines/metabolism	MESH	0.074074074074074	2
 fatty acids/metabolism	MESH	0.037037037037037	1
 multiple myeloma/drug therapy	MESH	0.037037037037037	1
-PDCD1	GENE	0.1111111111111111	3
 tumor microenvironment	MESH	0.074074074074074	2
 antineoplastic agents/chemistry	MESH	0.037037037037037	1
 apoptosis/drug effects	MESH	0.074074074074074	2
@@ -118,6 +121,7 @@ protein kinase inhibitors/chemistry	MESH	0.037037037037037	1
 pyruvate dehydrogenase acetyl-transferring kinase/antagonists &amp; inhibitors	MESH	0.037037037037037	1
 saponins/chemistry	MESH	0.037037037037037	1
 antioxidants/pharmacology	MESH	0.037037037037037	1
+biopterins/analogs &amp; derivatives	MESH	0.037037037037037	1
 carbolines/pharmacology	MESH	0.074074074074074	2
 cell proliferation/drug effects	MESH	0.037037037037037	1
 cystine/antagonists &amp; inhibitors	MESH	0.037037037037037	1
@@ -150,24 +154,35 @@ tumor suppressor protein p53/metabolism	MESH	0.074074074074074	2
 ascorbic acid/pharmacology	MESH	0.037037037037037	1
 CALR	GENE	0.037037037037037	1
 calreticulin/metabolism	MESH	0.037037037037037	1
+CYREN	GENE	0.037037037037037	1
 neoplasms/diagnostic imaging	MESH	0.037037037037037	1
 t-lymphocytes cytotoxic/metabolism	MESH	0.037037037037037	1
 asparaginase	MESH	0.037037037037037	1
+ASPG	GENE	0.037037037037037	1
+CCK	GENE	0.074074074074074	2
 cisplatin	MESH	0.037037037037037	1
 diterpenes/pharmacology	MESH	0.037037037037037	1
 killer cells natural/metabolism	MESH	0.037037037037037	1
 lymphoma t-cell	MESH	0.037037037037037	1
+NLRP1	GENE	0.037037037037037	1
+XK	GENE	0.037037037037037	1
 ATG5	GENE	0.037037037037037	1
 autophagy-related proteins/genetics	MESH	0.037037037037037	1
 cell cycle/drug effects	MESH	0.037037037037037	1
 flavonolignans/pharmacology	MESH	0.037037037037037	1
 glutathione peroxidase/metabolism	MESH	0.037037037037037	1
 precursor cell lymphoblastic leukemia-lymphoma/metabolism	MESH	0.037037037037037	1
+ROS1	GENE	0.1481481481481481	4
 b-lymphocytes/metabolism	MESH	0.037037037037037	1
+BBS9	GENE	0.037037037037037	1
 BDKRB2	GENE	0.037037037037037	1
 cytoskeletal proteins/metabolism	MESH	0.037037037037037	1
 glutathione peroxidase/therapeutic use	MESH	0.037037037037037	1
+MS4A1	GENE	0.037037037037037	1
+PLEKHM1	GENE	0.037037037037037	1
+SPANXB1	GENE	0.037037037037037	1
 bacterial toxins/metabolism	MESH	0.037037037037037	1
+cells cultured	MESH	0.074074074074074	2
 endothelial cells/metabolism	MESH	0.037037037037037	1
 FTH1	GENE	0.037037037037037	1
 heart ventricles/diagnostic imaging	MESH	0.037037037037037	1
@@ -216,10 +231,11 @@ lipopolysaccharides/toxicity	MESH	0.037037037037037	1
 microglia/drug effects	MESH	0.037037037037037	1
 nf-e2-related factor 2/biosynthesis	MESH	0.037037037037037	1
 raw 264.7 cells	MESH	0.037037037037037	1
+PDCD1	GENE	0.1111111111111111	3
+RPL17	GENE	0.1111111111111111	3
+RPL17-C18orf32	GENE	0.1111111111111111	3
 CD8A	GENE	0.1851851851851851	5
 tumor microenvironment/drug effects	MESH	0.1481481481481481	4
-NFE2L2	GENE	0.074074074074074	2
-cells cultured	MESH	0.074074074074074	2
 host-pathogen interactions	MESH	0.037037037037037	1
 iron chelating agents/pharmacology	MESH	0.037037037037037	1
 tuberculosis/metabolism	MESH	0.037037037037037	1
@@ -232,6 +248,7 @@ malaria/genetics	MESH	0.037037037037037	1
 TF	GENE	0.037037037037037	1
 transferrin/metabolism	MESH	0.037037037037037	1
 tumor suppressor protein p53/genetics	MESH	0.037037037037037	1
+NFE2L2	GENE	0.074074074074074	2
 glutathione	MESH	0.037037037037037	1
 iron/blood	MESH	0.037037037037037	1
 kidney	MESH	0.037037037037037	1
@@ -240,43 +257,380 @@ malondialdehyde/blood	MESH	0.037037037037037	1
 phospholipid hydroperoxide glutathione peroxidase	MESH	0.037037037037037	1
 spleen/pathology	MESH	0.037037037037037	1
 macrophages/drug effects	MESH	0.1481481481481481	4
-BTRC	GENE	0.0333333333333333	1
-lung neoplasms/drug therapy	MESH	0.0333333333333333	1
-nf-e2-related factor 2/genetics	MESH	0.0333333333333333	1
-tor serine-threonine kinases/metabolism	MESH	0.0333333333333333	1
-glycogen synthase kinase 3/metabolism	MESH	0.0333333333333333	1
-allografts	MESH	0.0333333333333333	1
-iron/chemistry	MESH	0.0333333333333333	1
-CTLA4	GENE	0.0333333333333333	1
-GABPA	GENE	0.0333333333333333	1
-GSK3B	GENE	0.0333333333333333	1
-MTOR	GENE	0.0333333333333333	1
-PRKAA2	GENE	0.0333333333333333	1
-reactive oxygen species/metabolism	MESH	0.2333333333333333	7
-multiple myeloma/genetics	MESH	0.0333333333333333	1
-osteoprotegerin/genetics	MESH	0.0333333333333333	1
-tnf-related apoptosis-inducing ligand/genetics	MESH	0.0333333333333333	1
-mutation	MESH	0.0333333333333333	1
-recombinant proteins/metabolism	MESH	0.0333333333333333	1
-TNFRSF11B	GENE	0.0333333333333333	1
-mutant proteins/metabolism	MESH	0.0333333333333333	1
-benzylamines	MESH	0.0333333333333333	1
-leukemia myeloid acute/drug therapy	MESH	0.0333333333333333	1
-receptors cxcr4/antagonists &amp; inhibitors	MESH	0.0333333333333333	1
-cyclams	MESH	0.0333333333333333	1
-transforming growth factor beta/antagonists &amp; inhibitors	MESH	0.0333333333333333	1
-cytarabine/pharmacology	MESH	0.0333333333333333	1
-chemokine cxcl12/metabolism	MESH	0.0333333333333333	1
-antibodies neutralizing/metabolism	MESH	0.0333333333333333	1
-CXCL12	GENE	0.0333333333333333	1
-CXCR4	GENE	0.0333333333333333	1
-skin neoplasms/immunology	MESH	0.0333333333333333	1
-programmed cell death 1 receptor/antagonists &amp; inhibitors	MESH	0.0333333333333333	1
-antibodies monoclonal humanized/administration &amp; dosage	MESH	0.0333333333333333	1
-neoplasm metastasis	MESH	0.0333333333333333	1
-leukocyte common antigens/metabolism	MESH	0.0333333333333333	1
-t-lymphocyte subsets/cytology	MESH	0.0333333333333333	1
-melanoma/immunology	MESH	0.0333333333333333	1
-ctla-4 antigen/metabolism	MESH	0.0333333333333333	1
-phenotype	MESH	0.0333333333333333	1
-tumor microenvironment/immunology	MESH	0.0333333333333333	1
+GPX4	GENE	0.1617647058823529	11
+ferroptosis/drug effects	MESH	0.3970588235294117	27
+CD274	GENE	0.0588235294117647	4
+reactive oxygen species/metabolism	MESH	0.1029411764705882	7
+interleukins/metabolism	MESH	0.0147058823529411	1
+tumor escape/immunology	MESH	0.0147058823529411	1
+liver neoplasms/immunology	MESH	0.0147058823529411	1
+tumor-associated macrophages/immunology	MESH	0.0294117647058823	2
+cellular reprogramming/immunology	MESH	0.0147058823529411	1
+neoplastic stem cells/immunology	MESH	0.0147058823529411	1
+IL34	GENE	0.0147058823529411	1
+metabolic reprogramming	MESH	0.0147058823529411	1
+cancer-associated fibroblasts/pathology	MESH	0.0147058823529411	1
+FAP	GENE	0.0147058823529411	1
+FAM126A	GENE	0.0147058823529411	1
+VIM	GENE	0.0147058823529411	1
+glycyrrhizic acid/pharmacology	MESH	0.0147058823529411	1
+calgranulin a/metabolism	MESH	0.0147058823529411	1
+colon/metabolism	MESH	0.0147058823529411	1
+anti-inflammatory agents/pharmacology	MESH	0.0147058823529411	1
+IRF6	GENE	0.0147058823529411	1
+obesity/metabolism	MESH	0.0294117647058823	2
+drugs chinese herbal	MESH	0.0147058823529411	1
+diterpenes	MESH	0.0147058823529411	1
+hepatitis a virus cellular receptor 2/metabolism	MESH	0.0147058823529411	1
+colorectal neoplasms/drug therapy	MESH	0.0147058823529411	1
+cd8-positive t-lymphocytes	MESH	0.0147058823529411	1
+ARHGEF5	GENE	0.0147058823529411	1
+TPI1	GENE	0.0147058823529411	1
+CCR2	GENE	0.0294117647058823	2
+HAVCR2	GENE	0.0147058823529411	1
+HNF4A	GENE	0.0147058823529411	1
+TCF7	GENE	0.0147058823529411	1
+HNF1A	GENE	0.0147058823529411	1
+TIMELESS	GENE	0.0147058823529411	1
+HAVCR1	GENE	0.0147058823529411	1
+antineoplastic agents/pharmacology	MESH	0.1029411764705882	7
+mesenchymal stem cells	MESH	0.0147058823529411	1
+micrornas/metabolism	MESH	0.0147058823529411	1
+nanog homeobox protein/genetics	MESH	0.0147058823529411	1
+alpha-ketoglutarate-dependent dioxygenase fto/metabolism	MESH	0.0294117647058823	2
+neoplasm invasiveness/pathology	MESH	0.0147058823529411	1
+matrix metalloproteinase 9/metabolism	MESH	0.0147058823529411	1
+adipocytes/pathology	MESH	0.0147058823529411	1
+smad proteins/metabolism	MESH	0.0147058823529411	1
+sweat glands/cytology	MESH	0.0147058823529411	1
+tumor microenvironment/physiology	MESH	0.0441176470588235	3
+stem cells/pathology	MESH	0.0147058823529411	1
+rna messenger/metabolism	MESH	0.0294117647058823	2
+gene expression regulation	MESH	0.0147058823529411	1
+receptors androgen/metabolism	MESH	0.0147058823529411	1
+NANOG	GENE	0.0147058823529411	1
+MMP9	GENE	0.0147058823529411	1
+FTO	GENE	0.0294117647058823	2
+iron/chemistry	MESH	0.0147058823529411	1
+tor serine-threonine kinases/metabolism	MESH	0.0147058823529411	1
+amp-activated protein kinase kinases	MESH	0.0147058823529411	1
+lung neoplasms/drug therapy	MESH	0.0147058823529411	1
+nf-e2-related factor 2/genetics	MESH	0.0147058823529411	1
+glycogen synthase kinase 3/metabolism	MESH	0.0147058823529411	1
+GSK3B	GENE	0.0147058823529411	1
+PRKAA1	GENE	0.0147058823529411	1
+GABPA	GENE	0.0147058823529411	1
+MTOR	GENE	0.0147058823529411	1
+BTRC	GENE	0.0147058823529411	1
+PRKAA2	GENE	0.0147058823529411	1
+PRKAB1	GENE	0.0147058823529411	1
+CTLA4	GENE	0.0147058823529411	1
+interleukin-12/metabolism	MESH	0.0147058823529411	1
+CD4	GENE	0.0147058823529411	1
+CSF3	GENE	0.0147058823529411	1
+PTPRC	GENE	0.0147058823529411	1
+chemokine cxcl13/metabolism	MESH	0.0147058823529411	1
+interleukin-10/metabolism	MESH	0.0147058823529411	1
+t-lymphocytes regulatory/immunology	MESH	0.0147058823529411	1
+immunity innate	MESH	0.0294117647058823	2
+b-lymphocytes/immunology	MESH	0.0147058823529411	1
+extracellular traps/immunology	MESH	0.0147058823529411	1
+ovarian neoplasms/pathology	MESH	0.0147058823529411	1
+peritoneal neoplasms/secondary	MESH	0.0147058823529411	1
+protein tyrosine phosphatase non-receptor type 6/metabolism	MESH	0.0147058823529411	1
+omentum/immunology	MESH	0.0147058823529411	1
+CXCL13	GENE	0.0147058823529411	1
+PTPN6	GENE	0.0147058823529411	1
+IL10	GENE	0.0588235294117647	4
+protease inhibitors/pharmacology	MESH	0.0147058823529411	1
+carcinoma hepatocellular/drug therapy	MESH	0.0147058823529411	1
+stem cell factor/metabolism	MESH	0.0147058823529411	1
+plant extracts/pharmacology	MESH	0.0147058823529411	1
+digestion	MESH	0.0147058823529411	1
+gastrointestinal tract	MESH	0.0147058823529411	1
+capillary permeability	MESH	0.0147058823529411	1
+inflammation mediators/metabolism	MESH	0.0441176470588235	3
+vascular endothelial growth factor a/genetics	MESH	0.0147058823529411	1
+calgranulin a/genetics	MESH	0.0147058823529411	1
+lung neoplasms/metabolism	MESH	0.0294117647058823	2
+calgranulin b/genetics	MESH	0.0147058823529411	1
+angiopoietin-2/genetics	MESH	0.0147058823529411	1
+transforming growth factor beta/metabolism	MESH	0.0294117647058823	2
+ANGPT2	GENE	0.0147058823529411	1
+S100A8	GENE	0.0294117647058823	2
+S100A9	GENE	0.0147058823529411	1
+mitogen-activated protein kinases/metabolism	MESH	0.0147058823529411	1
+amidines/administration &amp; dosage	MESH	0.0147058823529411	1
+cadherins/metabolism	MESH	0.0147058823529411	1
+pancreatic neoplasms/immunology	MESH	0.0147058823529411	1
+cachexia/immunology	MESH	0.0147058823529411	1
+stat3 transcription factor/immunology	MESH	0.0147058823529411	1
+muscle fibers skeletal/drug effects	MESH	0.0147058823529411	1
+immunocompetence	MESH	0.0147058823529411	1
+cadherins/genetics	MESH	0.0147058823529411	1
+glioblastoma/pathology	MESH	0.0147058823529411	1
+SERPINE1	GENE	0.0147058823529411	1
+PDCD1LG2	GENE	0.0147058823529411	1
+FAT1	GENE	0.0147058823529411	1
+tumor microenvironment/immunology	MESH	0.1029411764705882	7
+cd36 antigens/metabolism	MESH	0.1029411764705882	7
+cytokines/analysis	MESH	0.0147058823529411	1
+pten phosphohydrolase/deficiency	MESH	0.0147058823529411	1
+docosahexaenoic acids/analysis	MESH	0.0147058823529411	1
+tumor suppressor protein p53/deficiency	MESH	0.0147058823529411	1
+PTEN	GENE	0.0147058823529411	1
+heterografts	MESH	0.0147058823529411	1
+lipids/chemistry	MESH	0.0147058823529411	1
+metabolic networks and pathways	MESH	0.0147058823529411	1
+cell plasticity/genetics	MESH	0.0147058823529411	1
+IL1B	GENE	0.0294117647058823	2
+lipid metabolism	MESH	0.0147058823529411	1
+prostatic neoplasms/immunology	MESH	0.0147058823529411	1
+ovarian neoplasms/immunology	MESH	0.0147058823529411	1
+interleukin-17/genetics	MESH	0.0147058823529411	1
+palmitic acid/metabolism	MESH	0.0147058823529411	1
+recombinant proteins/metabolism	MESH	0.0147058823529411	1
+phagocytosis	MESH	0.0147058823529411	1
+fatty acid-binding proteins/metabolism	MESH	0.0147058823529411	1
+ovary/pathology	MESH	0.0147058823529411	1
+osteopontin/metabolism	MESH	0.0147058823529411	1
+thyroid cancer papillary/immunology	MESH	0.0147058823529411	1
+tumor-associated macrophages/metabolism	MESH	0.0147058823529411	1
+neoplasms/pathology	MESH	0.0147058823529411	1
+interferon type i/metabolism	MESH	0.0294117647058823	2
+myeloid cells/immunology	MESH	0.0147058823529411	1
+interleukin-6 receptor alpha subunit/blood	MESH	0.0147058823529411	1
+endometrial neoplasms/immunology	MESH	0.0147058823529411	1
+adipocytes/immunology	MESH	0.0147058823529411	1
+disease progression	MESH	0.088235294117647	6
+heme/metabolism	MESH	0.0147058823529411	1
+breast neoplasms/immunology	MESH	0.0147058823529411	1
+macrophages/immunology	MESH	0.0588235294117647	4
+neoplasm recurrence local/immunology	MESH	0.0147058823529411	1
+receptors interleukin-17/metabolism	MESH	0.0147058823529411	1
+MAPK1	GENE	0.0147058823529411	1
+AHSA1	GENE	0.0147058823529411	1
+F9	GENE	0.0147058823529411	1
+AIMP2	GENE	0.0147058823529411	1
+MAPK14	GENE	0.0147058823529411	1
+SPP1	GENE	0.0147058823529411	1
+FABP4	GENE	0.0147058823529411	1
+CCDC6	GENE	0.0147058823529411	1
+DUSP2	GENE	0.0147058823529411	1
+CRK	GENE	0.0147058823529411	1
+ZCCHC12	GENE	0.0147058823529411	1
+IL17RA	GENE	0.0147058823529411	1
+PTCH1	GENE	0.0147058823529411	1
+RET	GENE	0.0147058823529411	1
+RNF19A	GENE	0.0147058823529411	1
+TAS2R38	GENE	0.0147058823529411	1
+POLDIP2	GENE	0.0147058823529411	1
+ITGAM	GENE	0.0147058823529411	1
+glioma/pathology	MESH	0.0147058823529411	1
+mammary glands animal/metabolism	MESH	0.0147058823529411	1
+lipoproteins ldl	MESH	0.0147058823529411	1
+nitric oxide synthase type ii/metabolism	MESH	0.0147058823529411	1
+extracellular matrix/metabolism	MESH	0.0147058823529411	1
+mesenchymal stem cells/metabolism	MESH	0.0147058823529411	1
+epithelial cells/metabolism	MESH	0.0147058823529411	1
+stem cells/metabolism	MESH	0.0147058823529411	1
+mannose receptor	MESH	0.0147058823529411	1
+adenosine/analogs &amp; derivatives	MESH	0.0147058823529411	1
+colorectal neoplasms/metabolism	MESH	0.0147058823529411	1
+mammary glands human/metabolism	MESH	0.0147058823529411	1
+hyperlipidemias	MESH	0.0147058823529411	1
+diet high-fat/adverse effects	MESH	0.0441176470588235	3
+macrophage colony-stimulating factor/metabolism	MESH	0.0147058823529411	1
+scavenger receptors class e/genetics	MESH	0.0147058823529411	1
+brain neoplasms/pathology	MESH	0.0147058823529411	1
+DCN	GENE	0.0147058823529411	1
+CSF1	GENE	0.0441176470588235	3
+PROM1	GENE	0.0147058823529411	1
+YTHDF2	GENE	0.0147058823529411	1
+MRC1	GENE	0.0294117647058823	2
+autophagy	MESH	0.0294117647058823	2
+neoplasms/metabolism	MESH	0.0147058823529411	1
+fibroblasts/metabolism	MESH	0.0147058823529411	1
+cytokines/biosynthesis	MESH	0.0147058823529411	1
+hypoxia	MESH	0.0147058823529411	1
+cell communication	MESH	0.0147058823529411	1
+caveolin 1/deficiency	MESH	0.0147058823529411	1
+CSF2	GENE	0.0147058823529411	1
+CXCL8	GENE	0.0294117647058823	2
+CAV1	GENE	0.0147058823529411	1
+CCL5	GENE	0.0147058823529411	1
+phenotype	MESH	0.0294117647058823	2
+nf-kappa b/metabolism	MESH	0.0294117647058823	2
+diet high-fat	MESH	0.0441176470588235	3
+receptors cell surface/metabolism	MESH	0.0147058823529411	1
+antigens differentiation myelomonocytic/metabolism	MESH	0.0147058823529411	1
+cell communication/drug effects	MESH	0.0147058823529411	1
+tumor necrosis factor alpha-induced protein 3/metabolism	MESH	0.0147058823529411	1
+endometrial neoplasms/genetics	MESH	0.0147058823529411	1
+antigens cd/metabolism	MESH	0.0147058823529411	1
+estradiol/pharmacology	MESH	0.0147058823529411	1
+estrogen receptor alpha/genetics	MESH	0.0147058823529411	1
+hek293 cells	MESH	0.0147058823529411	1
+CD163	GENE	0.0294117647058823	2
+ESR1	GENE	0.0147058823529411	1
+TNFAIP3	GENE	0.0147058823529411	1
+tumor microenvironment/genetics	MESH	0.0147058823529411	1
+endothelial progenitor cells/metabolism	MESH	0.0147058823529411	1
+POSTN	GENE	0.0147058823529411	1
+chemokine ccl2/metabolism	MESH	0.0147058823529411	1
+periostin	MESH	0.0147058823529411	1
+bone neoplasms/pathology	MESH	0.0147058823529411	1
+obesity/pathology	MESH	0.0147058823529411	1
+bone marrow/pathology	MESH	0.0147058823529411	1
+chemokine ccl2/genetics	MESH	0.0147058823529411	1
+kruppel-like transcription factors/genetics	MESH	0.0294117647058823	2
+palmitic acid/pharmacology	MESH	0.0147058823529411	1
+FFAR1	GENE	0.0147058823529411	1
+KLF7	GENE	0.0147058823529411	1
+MSMP	GENE	0.0147058823529411	1
+carcinoma pancreatic ductal/genetics	MESH	0.0294117647058823	2
+endostatins/genetics	MESH	0.0147058823529411	1
+lipocalin-2/genetics	MESH	0.0147058823529411	1
+carcinoma renal cell/blood	MESH	0.0147058823529411	1
+inflammation mediators/blood	MESH	0.0147058823529411	1
+cytokines/blood	MESH	0.0441176470588235	3
+nih 3t3 cells	MESH	0.0147058823529411	1
+angiogenesis inducing agents/metabolism	MESH	0.0147058823529411	1
+rna small interfering/genetics	MESH	0.0147058823529411	1
+anti-inflammatory agents/metabolism	MESH	0.0147058823529411	1
+cell polarity	MESH	0.0147058823529411	1
+IL4	GENE	0.0147058823529411	1
+ARG1	GENE	0.0147058823529411	1
+IL13	GENE	0.0147058823529411	1
+CD209	GENE	0.0147058823529411	1
+LCN2	GENE	0.0147058823529411	1
+SLC22A17	GENE	0.0147058823529411	1
+IL17A	GENE	0.0441176470588235	3
+breast neoplasms/metabolism	MESH	0.0441176470588235	3
+allografts	MESH	0.0294117647058823	2
+chemokines/metabolism	MESH	0.0147058823529411	1
+lymphangiogenesis	MESH	0.0147058823529411	1
+leptin/physiology	MESH	0.0147058823529411	1
+rna messenger/genetics	MESH	0.0147058823529411	1
+neovascularization pathologic	MESH	0.0147058823529411	1
+obesity/etiology	MESH	0.0147058823529411	1
+tumor cells cultured	MESH	0.0147058823529411	1
+receptor melanocortin type 4/physiology	MESH	0.0147058823529411	1
+apoptosis	MESH	0.0147058823529411	1
+lymphatic metastasis	MESH	0.0147058823529411	1
+CCR7	GENE	0.0147058823529411	1
+CCL21	GENE	0.0147058823529411	1
+FLT4	GENE	0.0147058823529411	1
+KDR	GENE	0.0147058823529411	1
+CCL19	GENE	0.0147058823529411	1
+cell movement/drug effects	MESH	0.0441176470588235	3
+neoplasm recurrence local	MESH	0.0147058823529411	1
+hydroxymethylglutaryl-coa reductase inhibitors/pharmacology	MESH	0.0147058823529411	1
+breast neoplasms/drug therapy	MESH	0.0147058823529411	1
+inflammation/immunology	MESH	0.0147058823529411	1
+macrophage colony-stimulating factor/antagonists &amp; inhibitors	MESH	0.0147058823529411	1
+mesenchymal stem cells/immunology	MESH	0.0147058823529411	1
+neoplasm invasiveness	MESH	0.0147058823529411	1
+paracrine communication	MESH	0.0294117647058823	2
+EEF1A2	GENE	0.0147058823529411	1
+interleukin-6/metabolism	MESH	0.0441176470588235	3
+integrin alphavbeta3/metabolism	MESH	0.0147058823529411	1
+carcinoma hepatocellular/pathology	MESH	0.0294117647058823	2
+THBS2	GENE	0.0147058823529411	1
+MAP2K7	GENE	0.0147058823529411	1
+liver cirrhosis/chemically induced	MESH	0.0147058823529411	1
+transforming growth factor beta1/metabolism	MESH	0.0588235294117647	4
+carcinoma hepatocellular/chemically induced	MESH	0.0147058823529411	1
+SNAI2	GENE	0.0147058823529411	1
+SMAD2	GENE	0.0147058823529411	1
+CDH2	GENE	0.0147058823529411	1
+KLF10	GENE	0.0147058823529411	1
+obesity/chemically induced	MESH	0.0147058823529411	1
+biomarkers/blood	MESH	0.0147058823529411	1
+lipid metabolism/physiology	MESH	0.0147058823529411	1
+adiponectin/blood	MESH	0.0147058823529411	1
+stat3 transcription factor/metabolism	MESH	0.0735294117647058	5
+perilipin-5/genetics	MESH	0.0147058823529411	1
+interleukin-6/genetics	MESH	0.0147058823529411	1
+lipids	MESH	0.0147058823529411	1
+hepatocyte growth factor/blood	MESH	0.0147058823529411	1
+EGF	GENE	0.0147058823529411	1
+PLIN1	GENE	0.0147058823529411	1
+LEP	GENE	0.0294117647058823	2
+IL6R	GENE	0.0147058823529411	1
+JUN	GENE	0.0147058823529411	1
+PLIN5	GENE	0.0147058823529411	1
+ADIPOQ	GENE	0.0147058823529411	1
+HGF	GENE	0.0294117647058823	2
+MAPK8	GENE	0.0294117647058823	2
+proto-oncogene proteins c-akt/metabolism	MESH	0.0147058823529411	1
+leptin/metabolism	MESH	0.0147058823529411	1
+procollagen-lysine 2-oxoglutarate 5-dioxygenase/deficiency	MESH	0.0147058823529411	1
+janus kinases/metabolism	MESH	0.0147058823529411	1
+breast neoplasms/pathology	MESH	0.0147058823529411	1
+3t3-l1 cells	MESH	0.0147058823529411	1
+cell movement	MESH	0.0147058823529411	1
+neoplasm metastasis	MESH	0.0735294117647058	5
+PIK3CA	GENE	0.0294117647058823	2
+PLOD2	GENE	0.0147058823529411	1
+PIK3CD	GENE	0.0294117647058823	2
+PIK3CG	GENE	0.0294117647058823	2
+AKT1	GENE	0.0294117647058823	2
+PIK3CB	GENE	0.0294117647058823	2
+non-alcoholic fatty liver disease/genetics	MESH	0.0294117647058823	2
+carcinoma hepatocellular/genetics	MESH	0.0294117647058823	2
+tumor necrosis factor-alpha/metabolism	MESH	0.0441176470588235	3
+caco-2 cells	MESH	0.0147058823529411	1
+colonic neoplasms/microbiology	MESH	0.0147058823529411	1
+prostatic neoplasms/pathology	MESH	0.0441176470588235	3
+APC	GENE	0.0147058823529411	1
+IL22	GENE	0.0147058823529411	1
+ht29 cells	MESH	0.0147058823529411	1
+hep g2 cells	MESH	0.0147058823529411	1
+growth differentiation factor 15/genetics	MESH	0.0147058823529411	1
+hepatic stellate cells/metabolism	MESH	0.0294117647058823	2
+GDF15	GENE	0.0147058823529411	1
+ATG7	GENE	0.0147058823529411	1
+autophagy-related protein 7/genetics	MESH	0.0147058823529411	1
+neovascularization pathologic/genetics	MESH	0.0147058823529411	1
+inflammation/genetics	MESH	0.0147058823529411	1
+hormones/blood	MESH	0.0147058823529411	1
+sexual maturation	MESH	0.0147058823529411	1
+breast neoplasms/etiology	MESH	0.0147058823529411	1
+NFKB1	GENE	0.088235294117647	6
+TNFSF11	GENE	0.0147058823529411	1
+cell proliferation	MESH	0.1176470588235294	8
+TNF	GENE	0.088235294117647	6
+cell differentiation	MESH	0.0441176470588235	3
+osteoclasts/cytology	MESH	0.0147058823529411	1
+osteogenesis/physiology	MESH	0.0147058823529411	1
+cathepsin k/metabolism	MESH	0.0147058823529411	1
+bone and bones/pathology	MESH	0.0147058823529411	1
+bone marrow cells/metabolism	MESH	0.0147058823529411	1
+chemokine cxcl2/metabolism	MESH	0.0147058823529411	1
+bone neoplasms/secondary	MESH	0.0147058823529411	1
+osteolysis/pathology	MESH	0.0147058823529411	1
+CBX8	GENE	0.0147058823529411	1
+ACTR1B	GENE	0.0147058823529411	1
+BTG2	GENE	0.0147058823529411	1
+PCSK1	GENE	0.0147058823529411	1
+CXCR2	GENE	0.0147058823529411	1
+KRT6A	GENE	0.0147058823529411	1
+CXCL1	GENE	0.0147058823529411	1
+bone marrow/metabolism	MESH	0.0147058823529411	1
+CXCL2	GENE	0.0147058823529411	1
+obesity	MESH	0.0147058823529411	1
+chemokine cxcl1/metabolism	MESH	0.0147058823529411	1
+CCL2	GENE	0.0735294117647058	5
+adipocytes/metabolism	MESH	0.0588235294117647	4
+carcinoma hepatocellular/metabolism	MESH	0.0147058823529411	1
+pore forming cytotoxic proteins/metabolism	MESH	0.0147058823529411	1
+phosphate-binding proteins/metabolism	MESH	0.0147058823529411	1
+cellular senescence	MESH	0.0147058823529411	1
+obesity/complications	MESH	0.0147058823529411	1
+interleukin-33/metabolism	MESH	0.0147058823529411	1
+SULT2A1	GENE	0.0147058823529411	1
+IL1RL1	GENE	0.0147058823529411	1
+IL33	GENE	0.0147058823529411	1
+SDCBP2	GENE	0.0147058823529411	1
+GSDMD	GENE	0.0147058823529411	1
