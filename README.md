@@ -15,7 +15,7 @@
 | Methods | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1371/journal.pcbi.1012745) | 
 | Application | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1038/s41598-025-11944-5) |  
 | Source Code | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Figshare_logo.svg/2560px-Figshare_logo.svg.png" width="100"/>](https://doi.org/10.1371/journal.pcbi.1012745.s001) | 
-| Updates (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
+| [Updates](#graphdb) (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
 | Media | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2F-Flash_Talk-white?style=plastic&logo=youtube&logoColor=red&logoSize=auto&label=%20&labelColor=white&color=white)](https://www.youtube.com/watch?v=APwoza1JZNY) for ISMB/ECCB 2025 in Liverpool, UK |
 | How to use | [Start here](#instruction-manual) |
 
@@ -371,7 +371,7 @@ The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context
 
 </details>
 
-<details><summary> <b>UPDATE</b>: TRANSFORM ENQUIRE NETWORK INTO GRAPH DATABASES OF GENE, MESH, AND PMID VIA NEO4J (September 2025) </summary> 
+<details><summary> <b>UPDATE</b>: <span id="graphdb">TRANSFORM</span> ENQUIRE NETWORK INTO GRAPH DATABASES OF GENE, MESH, AND PMID VIA NEO4J (September 2025) </summary> 
 
 ### Usage
 
@@ -455,15 +455,18 @@ You can also use Neo4j Desktop - here's how:
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_1.png" alt="drawing" width="350"/>
 </p>
+
 2) Keep everything as default and hit "Next";
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_2.png" alt="drawing" width="350"/>
 </p>
+
 3) Set a username and password;
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_3.png" alt="drawing" width="350"/>
 </p>
-4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access Neo4j Browser
+
+4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access Neo4j Browser.
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_4.png" alt="drawing" width="350"/>
 </p>
