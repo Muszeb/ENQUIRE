@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="750"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="600"/>
 </p>
 
 ---
