@@ -112,6 +112,7 @@ Where `<script_name>` is one of:
 - `ENQUIRE.sh`
 - `context_aware_gene_sets.R`
 - `context_aware_pathway_enrichment.R`
+- `ENQUIRE2KG.sh`
 
 [Back to the beginning of the instruction manual](#instruction-manual-docker-version)
 
@@ -403,14 +404,24 @@ The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context
 
 ### Usage
 
-The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh`
+The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available on the `main` branch) is containerized under `muszeb/enquire`, orchestrating the database construction and initiation.
+Unfortunately, **`ENQUIRE2KG` does not work with ENQUIRE output generated using the original image!**.
+In short, the `ENQUIRE2KG.sh`
 
 - creates (if not previously existing) a `enquire2kg-tag` directory and mounts it under a containerized path in which the graph database will outputed;
 - converts ENQUIRE's *Complete* edge and node files into Neo4j-friendly CSV files;
 - uses `neo4j-admin` to establish a graph database and test its functionality;
 - runs `neo4j console` to establish a (remote) connection via http://localhost:7474/.
 
-Unfortunately, **`ENQUIRE2KG` does not work with ENQUIRE output generated using the original image!**.
+However, to correctly access the graph database via the [Neo4j Browser](https://neo4j.com/docs/browser/visual-tour/), **two port forwardings are necessary when `docker run`ning ENQUIRE**: 
+
+```bash
+# Use this command to run the image to transform ENQUIRE netowrks into graph databases
+# Publish or expose port (-p, --expose). Syntax is localport:containerport. Container ports must stay 7687 and 7474. 
+docker run -it  -p 7687:7687 -p 7474:7474 -v $(pwd):/mnt/ muszeb/enquire:latest
+```
+
+Help section of ENQUIRE2KG:
 
 ```
 ############# TURN ENQUIRE NETWORKS INTO KNOWLEDGE GRAPHS USING NEO4J - UTILITY SCRIPT ##############
@@ -424,7 +435,7 @@ Expanding Networks by Querying Unexpectedly Inter-Related Entities
 
 ####################################################################################
 
-Usage: ENQUIRE2KG.sh [script_arguments]
+Usage: run.sh ENQUIRE2KG.sh [script_arguments]
 
 Legend:	[-flag_short|--flag_long|config file variable, if available]:
 
@@ -454,7 +465,7 @@ Here is how you can test this with the example output data `tmp-Ferroptosis_and_
 
 ```bash
 # assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE`, and `ENQUIRE.sif` is in your working directory
-./ENQUIRE2KG.sh -i ENQUIRE.sif -t Ferroptosis_and_Immune_System -d tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_subgraphs_expansion2/
+run.sh ENQUIRE2KG.sh -t Ferroptosis_and_Immune_System -d tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_subgraphs_expansion2/
 ```
 
 Eventually, it should print the following:
@@ -476,9 +487,9 @@ Starting Neo4j.
 2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
 2025-09-23 16:16:01.992+0000 INFO  Started.
 ```
-As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database .
+As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to [Neo4j Browser](https://neo4j.com/docs/browser/visual-tour/), allowing for inspection and querying of the ENQUIRE-derived graph database .
 
-You can also use Neo4j Desktop - here's how:
+You can also use [Neo4j Desktop](https://neo4j.com/docs/desktop/current/) - here's how:
 1) Initialize a "New Project", then add a "Remote connection";
 <p align="right">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_1.png" alt="drawing" width="350"/>
