@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="800"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/ENQUIRE-Docker/ENQUIRE_2025_LOGO_github.png" alt="drawing" width="750"/>
 </p>
 
 ---
@@ -15,7 +15,7 @@
 | Methods | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1371/journal.pcbi.1012745) | 
 | Application | [<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg" width="20"/>](https://doi.org/10.1038/s41598-025-11944-5) |  
 | Source Code | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Figshare_logo.svg/2560px-Figshare_logo.svg.png" width="100"/>](https://doi.org/10.1371/journal.pcbi.1012745.s001) | 
-| Updates (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
+| <a href="https://github.com/Muszeb/ENQUIRE/blob/main/README.md#usage" target="_blank">Updates</a>  (Latest Release) | [![GitHub Release](https://img.shields.io/github/v/release/muszeb/enquire?label=%20)](https://github.com/Muszeb/ENQUIRE/releases/latest) |
 | Media | [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2F-Flash_Talk-white?style=plastic&logo=youtube&logoColor=red&logoSize=auto&label=%20&labelColor=white&color=white)](https://www.youtube.com/watch?v=APwoza1JZNY) for ISMB/ECCB 2025 in Liverpool, UK |
 | How to use | [Start here for Docker Implementation](#instruction-manual-docker-version) |
 
@@ -23,9 +23,9 @@
 
 | Implementation (<span id="Link">Link</span>) | Requires | Containerizes |
 | :---: | :---: | :---: |
-| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5)](https://hub.docker.com/r/muszeb/enquire) | [![Static Badge](https://img.shields.io/badge/OS-Docker--supported_platforms-azure?labelColor=gray?logoSize=auto)](https://docs.docker.com/engine/install/) <br> ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray?logoSize=auto) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray?logoSize=auto) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
-| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.29357207.v2) | [![Static Badge](https://img.shields.io/badge/OS-Linux_and_Linux--VM-azure?labelColor=gray?logoSize=auto)](https://apptainer.org/docs/admin/main/installation.html) <br> ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange?logoSize=auto) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray?logoSize=auto) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
-| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.24434845.v10) | [![Static Badge](https://img.shields.io/badge/OS-Linux_and_Linux--VM-azure?labelColor=gray)](https://apptainer.org/docs/admin/main/installation.html) <br> ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDocker-latest-white?logo=Docker&logoColor=FFFFFF&label=Docker&labelColor=42a4f5)](https://hub.docker.com/r/muszeb/enquire) | [![Static Badge](https://img.shields.io/badge/OS-Docker--supported_platforms-azure?labelColor=gray?)](https://docs.docker.com/engine/install/) <br> ![Docker Image Size](https://img.shields.io/docker/image-size/muszeb/enquire) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <br>  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-latest-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.29357207) | [![Static Badge](https://img.shields.io/badge/OS-Linux_and_Linux--VM-azure?labelColor=gray?logoSize=auto)](https://apptainer.org/docs/admin/main/installation.html) <br> ![Static Badge](https://img.shields.io/badge/image_size-2_GiB-orange?logoSize=auto) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray?logoSize=auto) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <br>  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> ![Static Badge](https://img.shields.io/badge/_-_-green?style=plastic&logo=Neo4j&logoColor=white&logoSize=auto) |
+| [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FApptainer-original-white?logo=Figshare&logoColor=FFFFFF&label=Apptainer&labelColor=CC7700&color=FFFFFF)](https://doi.org/10.6084/m9.figshare.24434845.v10) | [![Static Badge](https://img.shields.io/badge/OS-Linux_and_Linux--VM-azure?labelColor=gray)](https://apptainer.org/docs/admin/main/installation.html) <br> ![Static Badge](https://img.shields.io/badge/image_size-1.4_GiB-orange) ![Static Badge](https://img.shields.io/badge/RAM-%E2%89%A58GB-maroon?labelColor=gray) <br> ![Static Badge](https://img.shields.io/badge/GPU_acceleration-No-FFFF66?labelColor=gray) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png" width="19"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/512px-Bash_Logo_Colored.svg.png?20180723054350" width="21"/> <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="20"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527" width="23"/> |
 
 ## INSTRUCTION MANUAL (DOCKER VERSION)
 
@@ -113,28 +113,16 @@ Where `<script_name>` is one of:
 - `context_aware_gene_sets.R`
 - `context_aware_pathway_enrichment.R`
 
+[Back to the beginning of the instruction manual](#instruction-manual-docker-version)
+
 </details>
 
 <details><summary>INPUT FILE</summary>
 
-A valid input file should consist of a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per lines, such as:
-
- 
-    26250731
-    22835603   
-    31254155
-    32658557
-    30729513
-    31620854
-    30338457
-    33711241
-    28640701
-    24725689
-
-- The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**: 
-![Exemplary PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
-    
-- Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` Docker container, type on the command line:
+A valid input file should consist of **a list of PubMed Identifiers (PMIDs) stored in plain text files, one PMID per line**.
+The easiest way to generate a valid ENQUIRE input file is to generate a [PubMed query on the NCBI's website](https://pubmed.ncbi.nlm.nih.gov/). Use of MeSH terms and exclusion of review articles is recommended but not mandatory. Then, click on **Save**, choose **Selection: All results** and **Format: PMID**, and **Create file**:
+![Example of a PubMed Query with ENQUIRE-compliant Save options](https://github.com/Muszeb/ENQUIRE/blob/main/Example_Input_PubMed_Query.png)
+Alternatively, we also offer a Python script to extract the PubMed identifiers of all papers cited in a reading of interest (e.g. a review paper of a particular topic). From the `ENQUIRE` folder and virtual environment, type on the command line:
 
 ```bash
 run.sh efetch_references.py tag ref1 ref2 ref3 ...
@@ -181,25 +169,25 @@ Legend:	[-flag_short|--flag_long|config file variable, if available]:
 	It can be obtained from a PubMed querying specifying 'PMID' as the download format option.
 	A minimun of 3 entries is required, but a list at least a few dozens articles is highly recommended.
 
-[-t|--tag|tag] = A characteristic tag definining the task.
-	It must be an alphanumeric string.
+[-t|--tag|tag] = A tag definining the task.
+	It must be an alphanumeric string (underline_spaced_words are accepted).
 
 [-j|--ncores|ncores] = The max number of CPU cores to be used.
 	Default is 6.
 
-[-c|--combine-set|comb] = how many N entities to intersect to construct a query?
+[-c|--combine-set|comb] = how many k entities should be intersected to construct a query?
 	3: loose searches, 4: moderate (default), 5: very strict queries.
 
-[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps? (default: 0 %).
-	Example: if a subgraph contains nodes exclusively mentioned in 10 papers out of a total of 100, that subgraph has a 10% representativeness.
+[-r|--representativeness|thr] = representativeness threshold (%) for a subgraph to be included in the network expansion steps (default: 1 %).
+	Example: if a subgraph contains nodes exclusively mentioned in 1 paper out of a total of 100, that subgraph has a 1% representativeness.
 
-[-a|--attempts|A] = how many query attempts (i.e. pairs of motifs or genes) should be run in order to connect any two subgraphs?
+[-a|--attempts|A] = how many query attempts (i.e. k-sized graphlets) should be run to connect any two network communities?
 	1: conservative, 2: moderate (default), 3: greedy.
 
 [-k|--connectivity|K] = minimal community connectivity (K), which applies to any expansion-derived entities:
 	each gene/MeSH term must be connected to at least K original communities to be incorporated in the expanded network - default: 2.
 
-[-e|--entity|etype] = which entity type (gene/MeSH) are you interested into? Omit or 'all' to textmine both entities.
+[-e|--entity|etype] = which entity type ('gene','MeSH') are you interested into? Omit or 'all' to textmine both entities.
 
 [-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
 	This option overwrites any parameter set by a different option.
@@ -262,7 +250,7 @@ run.sh ENQUIRE.sh -f ENQUIRE_config.txt
 	
 	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/data.png)
 
-    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`.
+    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`. Starting from release v4.0.0, this subdirectory also contains literature metadata for all ierations under `CitationToPMID_record.tsv`.
    
     Please don't hesitate to contact us for any clarification on the purposes of any file.
   
@@ -295,26 +283,68 @@ Options:
 		Path to an ENQUIRE-generated, Gene/MeSH node table file (required)
 
 	-t TAG, --tag=TAG
-		tag prefix (default to 'ENQUIRE')
+		tag prefix for all output files (default to 'ENQUIRE')
+
+	-o MODALITY, --modality=MODALITY
+		node embedding modality used for clustering.
+		Default is node2vec+ (Liu et al. 2023), using `ztPois.cdf` as weights, as implemented in https://github.com/krishnanlab/PecanPy.
+		Type 'invlogweight' to reproduce the method described in ENQUIRE's original publication (Musella et al. 2025).
+
+	--num-walks=NUMWALKS
+		node2vec parameter. Number of walks per source. (default: 150)
+
+	--walk-length=WALKLENGTH
+		node2vec parameter. Length of walk per source. (default: 150)
+
+	--n2vp=N2VP
+		node2vec parameter. Return hyperparameter. (default: 1)
+
+	--n2vq=N2VQ
+		node2vec parameter. Inout hyperparameter. (default: 2)
+
+	--window-size=WINDOWSIZE
+		node2vec parameter. Context size for optimization. (default: 10)
+
+	--dimensions=DIMENSIONS
+		node2vec parameter. Number of dimensions. (default: 32)
 
 	-d PARAMETER, --membdeg=PARAMETER
 		minimal membership degree for gene-to-cluster association (default: 0.05), range [0-1]
 
+	-r PARAMETER, --round=PARAMETER
+		Should membership degrees be rounded to the first significant digit (helps the stability of the results)?
+		default: True [T,F]
+
 	-s PARAMETER, --setsize=PARAMETER
 		minimal gene set size (default: 2)
+
+	-v VARIANCE, --varthreshold=VARIANCE
+		Dimensionality reduction based on the chosen proportion of Variance
+		observed upon PCA-transforming the inverse-log-similarity between nodes (default: 0.99. range [0-1]).
+		Set it to 1 to use untrasformed, scaled node similarities.
+
+	-m MESH, --meshxgs=MESH
+		How many MeSH terms which are closest to the cluster centroids should be used to describe a gene set? (default:3)
+
+	-p PATH, --netpathdata=PATH
+		Path to 'ENQUIRE-KNet_STRING_RefNet_Reactome_Paths.RData.gz' (required).
+		If using the ENQUIRE.sif singularity image, the default path should point to the containerized copy of the file.
 
 	-h, --help
 		Show this help message and exit
 ```
 
-- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
+- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script. As of release v4.0.0 the default node embedding modality is `node2vec+`  ([Liu et al. 2023](https://doi.org/10.1093/bioinformatics/btad047)). Set `-o invlogweight` for original behaviour. For comparison, both modalities have been precomputed and distributed under ` tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/`.
+
 ```bash
-run.sh context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv -n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
+run.sh context_aware_gene_sets.R \
+-e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv \
+-n tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_nodes_table_subgraph.tsv
 ```
-Please note that the script might last quite long, due to the FCM algorithm.
+The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_gene_sets.xlsx` as well as a plot showing the reconstructed gene sets as a PNG image. Please note that the script might last quite long, due to the FCM algorithm.
 
 #### Context-aware pathway enrichment analysis
-- Run `eun.sh context_aware_pathway_enrichment.R [options]` to perform topology-based, pathway enrichment analysis using [SANTA](https://www.bioconductor.org/packages/devel/bioc/vignettes/SANTA/inst/doc/SANTA-vignette.html), Reactome *H. sapiens* pathways, and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
+- Run `run.sh context_aware_pathway_enrichment.R [options]` to perform topology-based, pathway enrichment analysis using [SANTA](https://www.bioconductor.org/packages/devel/bioc/vignettes/SANTA/inst/doc/SANTA-vignette.html), Reactome *H. sapiens* pathways, and STRING's *H. sapiens*, physical PPI network, using ENQUIRE-generated, gene-gene edge table. See the original manuscript for further information.
 
 ```
 Usage: Rscript code/context_aware_pathway_enrichment.R [options]
@@ -348,17 +378,171 @@ Options:
 
 	-f PARAMETER, --padjust=PARAMETER
 		P-value adjustment method, must be one of [holm, hochberg, hommel, bonferroni, BH, BY, fdr, none].
-		Default and recommended: holm, as the p-value null distribution is not guaranteed to be uniform.
+		Default: holm.
+
+	-q QSCORENET, --qscorenet=QSCORENET
+		Do you want to save a copy of the STRING network in GRAPHML format with ENQUIRE-inferred QScores as node weights?
+		default: False [T,F]
 
 	-h, --help
 		Show this help message and exit
 ```
 
-- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
+- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script (we reduce the number of tested pathways with the `s` parameter to speed up the process):
 ```bash
+# assuming you are working from within ENQUIRE's Docker container.
 run.sh context_aware_pathway_enrichment.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Genes_edges_table_subgraph.tsv -s 30
 ```
-Please note that the script might last quite long, and it benefits from a high performance computer, if available. 
+The output will be saved in the default-tagged spreadsheet file `ENQUIRE_context_aware_pathway_enrichment.xlsx`, together with two PNG images showing the test statistics p-value distribution and the correlation between the Node score and degree. Please note that the script might take quite long to finish, and it benefits from a high performance computer, if available.
+
+[Back to the beginning of the instruction manual](#instruction-manual)
+
+</details>
+
+<details><summary> <b>UPDATE</b> (September 2025): <span id="graphdb">TRANSFORM</span> ENQUIRE NETWORKS INTO GRAPH DATABASES </summary>
+
+### Usage
+
+The [latest Apptainer and Docker images](#Link) also retrieve bibliographic data associated to queried PMIDs and are shipped with Neo4j Community Edition (v5.25), allowing for easy graph database construction starting from ENQUIRE's `*_Complete_*` TSV files. The SIF image is complemented with the shell script [`ENQUIRE2KG.sh`](https://doi.org/10.6084/m9.figshare.29357207.v5)(also available in the GitHub repository),orchestrating the database construction and initiation. If you downloaded the script from FigShare, remember to make `ENQUIRE2KG.sh` executable via `chmod +x`. In short, the `ENQUIRE2KG.sh`
+
+- creates (if not previously existing) a `enquire2kg-tag` directory and mounts it under a containerized path in which the graph database will outputed;
+- converts ENQUIRE's *Complete* edge and node files into Neo4j-friendly CSV files;
+- uses `neo4j-admin` to establish a graph database and test its functionality;
+- runs `neo4j console` to establish a (remote) connection via http://localhost:7474/.
+
+Unfortunately, **`ENQUIRE2KG` does not work with ENQUIRE output generated using the original image!**.
+
+```
+############# TURN ENQUIRE NETWORKS INTO KNOWLEDGE GRAPHS USING NEO4J - UTILITY SCRIPT ##############
+Path to code: /path/to/ENQUIRE2KG.sh
+
+####################################################################################
+
+Expanding Networks by Querying Unexpectedly Inter-Related Entities
+
+####################################################################################
+
+####################################################################################
+
+Usage: ENQUIRE2KG.sh [script_arguments]
+
+Legend:	[-flag_short|--flag_long|config file variable, if available]:
+
+[-i|--image|image] = the path to the singularity image file (.sif). Defaults to 'ENQUIRE.sif'.
+
+[-p|--path|wd] = the path to the working directory (wd), where the output directory will be written in.
+	It must be the ENQUIRE main folder, with ./code and ./input as subfolders.
+	The default is the current working directory.
+
+[-t|--tag|tag] = A tag definining the task.
+	It must be an alphanumeric string (underline_spaced_words are accepted).
+
+[-d|--inputdir|input] = path to the input data folder. It must point to an ENQUIRE-generated directory containing co-occurrence network data
+	(e.g https://github.com/Muszeb/ENQUIRE/tree/main/tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System).
+
+[-f|--config] = if a config file is being used, specify its full path (e.g. input/textmining_config.txt).
+	This option overwrites any parameter set by a different option.
+
+[-h|--help] = print this help message.
+
+You might be seeing this Help because of an input error.
+
+####################################################################################
+```
+
+Here is how you can test this with the example output data `tmp-Ferroptosis_and_Immune_System` available in the GitHub repository.
+
+```bash
+# assuming the `apptainer` location is in your PATH variable, you did `cd ENQUIRE`, and `ENQUIRE.sif` is in your working directory
+./ENQUIRE2KG.sh -i ENQUIRE.sif -t Ferroptosis_and_Immune_System -d tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_subgraphs_expansion2/
+```
+
+Eventually, it should print the following:
+
+```
+[...previously printed messages and log data...]
+[...here neo4j console is executed...]
+Starting Neo4j.
+2025-09-23 16:15:59.033+0000 INFO  Logging config in use: File '/etc/neo4j/user-logs.xml'
+2025-09-23 16:15:59.048+0000 INFO  Starting...
+2025-09-23 16:15:59.650+0000 INFO  This instance is ServerId{68729ca1} (68729ca1-634f-409d-83b9-0a41c2ce8fc2)
+2025-09-23 16:16:00.448+0000 INFO  ======== Neo4j 2025.04.0 ========
+2025-09-23 16:16:01.398+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-09-23 16:16:01.517+0000 INFO  Bolt enabled on ------0-01vpnedf0-0002d-admin-nocnocnoc-us-uforms.gbc.criteo.com:7687.
+2025-09-23 16:16:01.989+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-09-23 16:16:01.990+0000 INFO  Remote interface available at http://localhost:7474/
+2025-09-23 16:16:01.991+0000 INFO  id: D5F5F166C7623343039979E7682345DA2E4F9E9D41BB6A402A579BAB34544889
+2025-09-23 16:16:01.991+0000 INFO  name: system
+2025-09-23 16:16:01.991+0000 INFO  creationDate: 2025-09-23T16:15:27.007Z
+2025-09-23 16:16:01.992+0000 INFO  Started.
+```
+As long as the session stays open (or detached via `screen` or `tmux`), the local HTTP port http://localhost:7474/ is pointing to Neo4j Browser, allowing for inspection and querying of the ENQUIRE-derived graph database .
+
+You can also use Neo4j Desktop - here's how:
+1) Initialize a "New Project", then add a "Remote connection";
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_1.png" alt="drawing" width="350"/>
+</p>
+
+2) Keep everything as default and hit "Next";
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_2.png" alt="drawing" width="350"/>
+</p>
+
+3) Set a username and password;
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_3.png" alt="drawing" width="350"/>
+</p>
+
+4) Click on "Connect", wait for the Remote DBMS to be active, the click "Open" to access Neo4j Browser.
+<p align="right">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/Neo4jDesktophowto_4.png" alt="drawing" width="350"/>
+</p>
+
+### Examples
+
+#### A
+
+Suppose you want to know which entities are related to the concept of *neoplasms* within a broader search concerning the interrelation between ferroptosis and immune system. As a proxy, we can write a query that matches MeSH terms containing the word "neoplasm" and that returns genes (orange), MeSH (turquoise), and Literature (red) nodes from the example ENQUIRE network like so:
+
+```cypher
+MATCH (m:MeSH)-[:HAS_SOURCE]-(l:Literature)-[:HAS_SOURCE]-(g:Gene)
+WHERE m.ENTITY =~ '.*neoplasm.*'
+RETURN m,l,g
+```
+
+yielding
+
+<p align="center">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example1.png" alt="drawing" width="800"/>
+</p>
+
+#### B
+
+Suppose you have conducted a differential expression analysis and obtained a list of differentially expressed genes (DEGs). Researchers often want to compare their DEG list with findings from previously published studies to contextualize their results. However, traditional literature searches that explicitly include specific DEGs as search terms are susceptible to cherry-picking bias, where curators may (unconsciously) select papers that confirm their expectations.
+With ENQUIRE, you can first query for all papers relevant to your experimental topic without specifying individual genes, then extract significantly co-occurring entities, and finally examine the literature support and co-occurrence patterns of your DEGs. This workflow is reproducible and it minimizes selection bias. We employed such validation strategy in [this publication](https://doi.org/10.1038/s41598-025-11944-5). Here's how to construct such a query, using genes contained in the example ENQUIRE network (we also demonstrate additional filtering options such as `Year` of publication):
+
+```cypher
+MATCH (g1:Gene)-[:CO_OCCURS]-(g:Gene)-[:HAS_SOURCE]-(p:Literature)
+WHERE any(x IN g.ENTITY WHERE x IN [
+'CD36',
+'FAM126A',
+'ROS1',
+'SLC7A11',
+'GPX4',
+'IFNA1',
+'ACSL3', // will not appear in the output network
+'ACSL4',
+]) AND p.Year > 2023
+RETURN g,p
+```
+
+yielding
+
+<p align="center">
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="600"/>
+</p>
+
 
 [Back to the beginning of the instruction manual](#instruction-manual-docker-version)
 
@@ -367,6 +551,8 @@ Please note that the script might last quite long, and it benefits from a high p
 <details><summary> POSSIBLE SOURCES OF ERRORS </summary>
 
 - Test the command `mawk '/MemAvailable/ {print $2}' /proc/meminfo` on the command line of the Docker container: this is the way ENQUIRE checks the available RAM on Linux systems, in order to avoid overflows. If you witness a non-awk related issue, contact us with information on your system and possible solutions to alternatively track the available memory on your OS.
+
+
 
 - When computing large networks, an error related to the default `Stack Size` can potentially appear, especially when running R scripts, such as `Error: C stack usage is too close to the limit`. In this case, one shall set a higher stacksize to allow the script to complete, via 
 
