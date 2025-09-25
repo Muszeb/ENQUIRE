@@ -222,7 +222,7 @@ Where all the other parameters described in the `Help` message of `ENQUIRE.sh` a
 	
 	![](https://github.com/Muszeb/ENQUIRE/blob/main/output_overview/data.png)
 
-    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`.
+    Furthemore, under `tmp-tag`, the file `source_pmids.txt` contains all the inspected articles for the given ENQUIRE job. These can also be consulted specifically for each iteration under `tmp-tag/efetch_inputs`. Starting from release v4.0.0, this subdirectory also contains literature metadata for all ierations under `CitationToPMID_record.tsv`.
    
     Please don't hesitate to contact us for any clarification on the purposes of any file.
   
@@ -306,7 +306,8 @@ Options:
 		Show this help message and exit
 ```
 
-- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script:
+- You can use the exemplary output files contained in `tmp-Ferroptosis_and_Immune_System` to test the script. As of release v4.0.0 the default node embedding modality is `node2vec+`  ([Liu et al. 2023](https://doi.org/10.1093/bioinformatics/btad047)). Set `-o invlogweight` for original behaviour. For comparison, both modalities have been precomputed and distributed under ` tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/`.
+
 ```bash
 # assuming the `apptainer` location is in your PATH variable and you did `cd ENQUIRE` or `ENQUIRE.sif` is in your working directory
 ./ENQUIRE.sif context_aware_gene_sets.R -e tmp-Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System/Ferroptosis_and_Immune_System_Complete_edges_table_subgraph.tsv 
@@ -471,7 +472,7 @@ You can also use Neo4j Desktop - here's how:
 
 #### A 
 
-Suppose you want to know which entities are related to the concept of *neoplasms*. As a proxy, we can write a query that matches MeSH term containing the word "neoplasm" and return genes (orange), MeSH (turquoise), and Literature (red) nodes like so: 
+Suppose you want to know which entities are related to the concept of *neoplasms* within a broader search concerning the interrelation between ferroptosis and immune system. As a proxy, we can write a query that matches MeSH terms containing the word "neoplasm" and that returns genes (orange), MeSH (turquoise), and Literature (red) nodes from the example ENQUIRE network like so: 
 
 ```cypher
 MATCH (m:MeSH)-[:HAS_SOURCE]-(l:Literature)-[:HAS_SOURCE]-(g:Gene)
@@ -479,7 +480,7 @@ WHERE m.ENTITY =~ '.*neoplasm.*'
 RETURN m,l,g
 ```
 
-Yielding:
+yielding
 
 <p align="center">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example1.png" alt="drawing" width="800"/>
@@ -487,8 +488,8 @@ Yielding:
 
 #### B 
 
-Suppose you have conducted a differential expression analysis and obtained a list of differentially expressed genes (DEGs). Researchers often want to compare their DEG list with findings from previously published studies to contextualize their results. However, traditional literature searches that explicitly include specific DEGs as search terms are susceptible to cherry-picking bias, where curators may unconsciously select papers that confirm their expectations.
-With ENQUIRE, you can first query for all papers relevant to your experimental topic without specifying individual genes, then leverage statistical significance testing to identify co-occurring entities, and finally examine the literature support and co-occurrence patterns of your DEGs. This workflow minimizes selection bias while maintaining analytical rigor. We employed such validation strategy in [this publication](https://doi.org/10.1038/s41598-025-11944-5). Here's how to construct such a query, using genes contained in the example ENQUIRE network provided in this repository (we also demonstrate additional filtering options such as `Year` of publication)
+Suppose you have conducted a differential expression analysis and obtained a list of differentially expressed genes (DEGs). Researchers often want to compare their DEG list with findings from previously published studies to contextualize their results. However, traditional literature searches that explicitly include specific DEGs as search terms are susceptible to cherry-picking bias, where curators may (unconsciously) select papers that confirm their expectations.
+With ENQUIRE, you can first query for all papers relevant to your experimental topic without specifying individual genes, then extract significantly co-occurring entities, and finally examine the literature support and co-occurrence patterns of your DEGs. This workflow is reproducible and it minimizes selection bias. We employed such validation strategy in [this publication](https://doi.org/10.1038/s41598-025-11944-5). Here's how to construct such a query, using genes contained in the example ENQUIRE network (we also demonstrate additional filtering options such as `Year` of publication):
 
 ```cypher
 MATCH (g1:Gene)-[:CO_OCCURS]-(g:Gene)-[:HAS_SOURCE]-(p:Literature)
@@ -505,7 +506,7 @@ WHERE any(x IN g.ENTITY WHERE x IN [
 RETURN g,p
 ```
 
-Yielding:
+yielding
 
 <p align="center">
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/enquire2k_pictures_readme/FIS_enquire2kg_example2.png" alt="drawing" width="600"/>
