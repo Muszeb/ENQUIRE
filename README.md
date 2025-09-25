@@ -33,7 +33,7 @@
 The accelerating growth of scientific literature overwhelms our capacity to manually distil complex phenomena like molecular networks linked to diseases. Moreover, biases in biomedical research and database annotation limit our interpretation of facts and generation of hypotheses. ENQUIRE (Expanding Networks by Querying Unexpectedly Inter-Related Entities) offers a time- and resource-efficient alternative to manual literature curation and database mining. ENQUIRE reconstructs and expands co-occurrence networks of genes and biomedical ontologies from user-selected input corpora and network-inferred PubMed queries. The integration of text mining, automatic querying, and network-based statistics mitigating literature biases makes ENQUIRE unique in its broad-scope applications. For example, ENQUIRE can generate co-occurrence gene networks that reflect high-confidence, functional networks. When tested on case studies spanning cancer, cell differentiation and immunity, ENQUIRE identified interlinked genes and enriched pathways unique to each topic, thereby preserving their underlying diversity. ENQUIRE supports biomedical researchers by easing literature annotation, boosting hypothesis formulation, and facilitating the identification of molecular targets for subsequent experimentation.
 
 <p align="center">
-	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png" alt="drawing" width="700"/>
+	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png" alt="drawing" width="650"/>
 </p>
 
 - If you find ENQUIRE useful to pursue your research, [please cite us](https://www.biorxiv.org/content/10.1101/2023.09.10.556351v1)
@@ -42,9 +42,8 @@ The accelerating growth of scientific literature overwhelms our capacity to manu
 
 <details><summary>INSTALLATION</summary> 
 
-ENQUIRE can currently run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/). Please check the [implementation table](#Link) for the latest available images and requirements. The information details below refer to the original image size provided alongside ENQUIRE's original publication. 
+ENQUIRE can currently run on LINUX systems and LINUX virtual machines using [Apptainer/Singularity](https://apptainer.org/docs/user/latest/introduction.html) and on Linux, MacOS, and Windows using [Docker](https://www.docker.com/). If you would rather use **Docker** instead of Singularity, please follow the [dedicated README available here](https://github.com/Muszeb/ENQUIRE/tree/ENQUIRE-Docker). Please check the [implementation table](#Link) for the latest available images and requirements. 
 
-If you would rather use Docker instead of Singularity, please follow the dedicated README available [here](https://github.com/Muszeb/ENQUIRE/tree/ENQUIRE-Docker).
 If you want to use ENQUIRE with Apptainer/Singularity, please install the latter following the steps for [Linux](https://apptainer.org/docs/admin/main/installation.html#install-from-pre-built-packages) or [Windows/Mac](https://apptainer.org/docs/admin/main/installation.html#installation-on-windows-or-mac). The file called `ENQUIRE.sif` is a compressed Singularity Image File (SIF) that already contains all the code, dependendencies and stable metadata needed to run ENQUIRE, so no further installation steps are needed. The original and latest SIF files are available on Figshare - see [implementation table](#Link). We recommend adding the path to the `apptainer` executable to your `PATH` variable (e.g. by editing your `.bashrc` file). This allows to directly execute `ENQUIRE.sif` as any other executable (`./ENQUIRE.sif`).
 
 To follow the next steps in the tutorial, clone the repository:
