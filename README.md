@@ -36,7 +36,7 @@ The accelerating growth of scientific literature overwhelms our capacity to manu
 	<img src="https://github.com/Muszeb/ENQUIRE/blob/main/ENQUIRE_graphical_abstract.png" alt="drawing" width="650"/>
 </p>
 
-- If you find ENQUIRE useful to pursue your research, [please cite us](https://www.biorxiv.org/content/10.1101/2023.09.10.556351v1)
+- If you find ENQUIRE useful to pursue your research, [please cite us](https://doi.org/10.1371/journal.pcbi.1012745)
 
 ## INSTRUCTION MANUAL
 
